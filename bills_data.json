@@ -1,0 +1,1066 @@
+{
+  "metadata": {
+    "generado": "2026-03-20T16:32:21.626809",
+    "total": 39,
+    "fuente": "PDFs locales del proyecto (raíz + Mateo proyectos)",
+    "carpetas_fuente": [
+      ".",
+      "Mateo proyectos"
+    ]
+  },
+  "bloque_stats": [
+    {
+      "bloque": "Innovación Federal",
+      "proyectos": 7,
+      "promedio_autores": 1.0
+    },
+    {
+      "bloque": "La Libertad Avanza",
+      "proyectos": 7,
+      "promedio_autores": 4.7
+    },
+    {
+      "bloque": "Unión por la Patria",
+      "proyectos": 6,
+      "promedio_autores": 1.0
+    },
+    {
+      "bloque": "Encuentro Federal",
+      "proyectos": 5,
+      "promedio_autores": 1.2
+    },
+    {
+      "bloque": "PRO",
+      "proyectos": 4,
+      "promedio_autores": 1.0
+    },
+    {
+      "bloque": "UCR",
+      "proyectos": 2,
+      "promedio_autores": 1.5
+    },
+    {
+      "bloque": "Futuro y Libertad",
+      "proyectos": 2,
+      "promedio_autores": 1.0
+    },
+    {
+      "bloque": "Democracia para Siempre",
+      "proyectos": 2,
+      "promedio_autores": 1.0
+    },
+    {
+      "bloque": "Unidad Justicialista",
+      "proyectos": 1,
+      "promedio_autores": 1.0
+    },
+    {
+      "bloque": "Frente de Todos",
+      "proyectos": 1,
+      "promedio_autores": 1.0
+    },
+    {
+      "bloque": "Coalición Cívica",
+      "proyectos": 1,
+      "promedio_autores": 1.0
+    },
+    {
+      "bloque": "Pro",
+      "proyectos": 1,
+      "promedio_autores": 1.0
+    }
+  ],
+  "top_destinatarios": [
+    {
+      "destinatario": "Ciudadanía general",
+      "total": 25
+    },
+    {
+      "destinatario": "Empresas / Sector privado",
+      "total": 24
+    },
+    {
+      "destinatario": "Estado / Organismo público",
+      "total": 19
+    },
+    {
+      "destinatario": "Investigadores / Científicos",
+      "total": 9
+    },
+    {
+      "destinatario": "Sector educativo",
+      "total": 5
+    },
+    {
+      "destinatario": "Jóvenes / Estudiantes",
+      "total": 5
+    },
+    {
+      "destinatario": "Salud",
+      "total": 1
+    },
+    {
+      "destinatario": "Sector audiovisual",
+      "total": 1
+    }
+  ],
+  "top_topics": [
+    {
+      "tema": "Inteligencia Artificial",
+      "total": 38
+    },
+    {
+      "tema": "Tecnología / IA",
+      "total": 1
+    }
+  ],
+  "bills": [
+    {
+      "id": "0509-D-2019",
+      "titulo": "Creación del Consejo Federal de Inteligencia Artificial",
+      "autores": [
+        "ROSSO, VICTORIA"
+      ],
+      "autor_principal": "ROSSO, VICTORIA",
+      "total_autores": 1,
+      "bloque": "Frente de Todos",
+      "camara": "Diputados",
+      "año": 2019,
+      "mes": 2,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Investigadores / Científicos"
+      ],
+      "resumen": "Establece un consejo federal con funciones consultivas y propositivas para promover investigación, estudio, concientización y difusión de temáticas relacionadas a inteligencia artificial.",
+      "expediente": "0509/2019",
+      "tipo": "CREA ORGANOS",
+      "dashboard": "SI",
+      "pdf_path": "./Mateo proyectos/0509-D-2019.pdf"
+    },
+    {
+      "id": "1472-D-2023",
+      "titulo": "Modificación Ley Nacional 25.467 - Regulación Ética de Sistemas de Inteligencia Artificial",
+      "autores": [
+        "LATORRE, JIMENA"
+      ],
+      "autor_principal": "LATORRE, JIMENA",
+      "total_autores": 1,
+      "bloque": "UCR",
+      "camara": "Diputados",
+      "año": 2023,
+      "mes": 3,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Empresas / Sector privado",
+        "Ciudadanía general"
+      ],
+      "resumen": "Incorpora principios éticos para regulación de IA al sistema de ciencia y tecnología, estableciendo registro obligatorio de sistemas de IA y procedimientos de supervisión con apelación.",
+      "expediente": "1472/2023",
+      "tipo": "REGULA PRINCIPIOS",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./Mateo proyectos/1472-D-2023.pdf"
+    },
+    {
+      "id": "2504-D-2023",
+      "titulo": "Ley de Regulación y Uso de la Inteligencia Artificial en Educación",
+      "autores": [
+        "MORALES GORLERI, VICTORIA"
+      ],
+      "autor_principal": "MORALES GORLERI, VICTORIA",
+      "total_autores": 1,
+      "bloque": "PRO",
+      "camara": "Diputados",
+      "año": 2023,
+      "mes": 4,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Sector educativo",
+        "Jóvenes / Estudiantes"
+      ],
+      "resumen": "Regula uso de IA en educación desde inicial hasta superior, estableciendo protección de datos, transparencia, evaluación de sistemas y supervisión del impacto en aprendizaje estudiantil.",
+      "expediente": "2504/2023",
+      "tipo": "EDUCATIVA",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./Mateo proyectos/2504-D-2023.pdf"
+    },
+    {
+      "id": "2505-D-2023",
+      "titulo": "Marco Regulatorio para Sistemas de Inteligencia Artificial",
+      "autores": [
+        "MORALES GORLERI, VICTORIA"
+      ],
+      "autor_principal": "MORALES GORLERI, VICTORIA",
+      "total_autores": 1,
+      "bloque": "PRO",
+      "camara": "Diputados",
+      "año": 2023,
+      "mes": 4,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Empresas / Sector privado",
+        "Ciudadanía general"
+      ],
+      "resumen": "Establece marco legal integral para desarrollo responsable de IA en Argentina con principios de crecimiento inclusivo, valores humanos, transparencia y regulación de riesgos según ciclo de vida de sistemas.",
+      "expediente": "2505/2023",
+      "tipo": "MARCO REGULATORIO",
+      "dashboard": "SI",
+      "pdf_path": "./Mateo proyectos/2505-D-2023.pdf"
+    },
+    {
+      "id": "3161-D-2023",
+      "titulo": "Creación del Observatorio Federal de Inteligencia Artificial",
+      "autores": [
+        "CALLETTI, PAMELA"
+      ],
+      "autor_principal": "CALLETTI, PAMELA",
+      "total_autores": 1,
+      "bloque": "Innovación Federal",
+      "camara": "Diputados",
+      "año": 2023,
+      "mes": 5,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Investigadores / Científicos"
+      ],
+      "resumen": "Crea observatorio federal para investigación, análisis y monitoreo de IA, generando recomendaciones sobre buenas prácticas y políticas públicas con participación de actores interdisciplinarios.",
+      "expediente": "3161/2023",
+      "tipo": "CREA ORGANOS",
+      "dashboard": "SI",
+      "pdf_path": "./Mateo proyectos/3161-D-2023.pdf"
+    },
+    {
+      "id": "4329-D-2023",
+      "titulo": "Proyecto de Ley sobre Regulación y Uso de la Inteligencia Artificial",
+      "autores": [
+        "COSTA, ANAHI"
+      ],
+      "autor_principal": "COSTA, ANAHI",
+      "total_autores": 1,
+      "bloque": "Frente de Todos",
+      "camara": "Diputados",
+      "año": 2023,
+      "mes": 5,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Empresas / Sector privado",
+        "Ciudadanía general"
+      ],
+      "resumen": "Promueve uso de IA como herramienta de desarrollo digital, estableciendo marco normativo ético, principios rectores, prohibiciones y registro de actores de IA bajo supervisión estatal.",
+      "expediente": "4329/2023",
+      "tipo": "MARCO REGULATORIO",
+      "dashboard": "SI",
+      "pdf_path": "./Mateo proyectos/4329-D-2023.pdf"
+    },
+    {
+      "id": "4410-D-2023",
+      "titulo": "Violencia Digital contra la Mujer: Incorporación de IA a Ley 27.736",
+      "autores": [
+        "Gerardo Milman"
+      ],
+      "autor_principal": "Gerardo Milman",
+      "total_autores": 1,
+      "bloque": "PRO",
+      "camara": "Diputados",
+      "año": 2023,
+      "mes": 5,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Ciudadanía general"
+      ],
+      "resumen": "Modifica la Ley 27.736 para incluir la violencia digital contra mujeres cometida mediante IA, incorporando producción y difusión no consentida de imágenes manipuladas como forma de violencia de género.",
+      "expediente": "4410/2023",
+      "tipo": "DEEPFAKE Y SIMILARES",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./4410-D-2023.pdf"
+    },
+    {
+      "id": "4411-D-2023",
+      "titulo": "Modificación del Art. 128 del Código Penal: Pornografía Infantil Generada por IA",
+      "autores": [
+        "Gerardo Milman"
+      ],
+      "autor_principal": "Gerardo Milman",
+      "total_autores": 1,
+      "bloque": "PRO",
+      "camara": "Diputados",
+      "año": 2023,
+      "mes": 5,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Ciudadanía general"
+      ],
+      "resumen": "Modifica el artículo 128 del Código Penal para incluir expresamente la producción y distribución de material de explotación sexual de menores generado mediante IA, incluyendo imágenes sintéticas y composiciones.",
+      "expediente": "4411/2023",
+      "tipo": "DEEPFAKE Y SIMILARES",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./4411-D-2023.pdf"
+    },
+    {
+      "id": "4436-D-2023",
+      "titulo": "Imágenes Sexuales de Menores Generadas por IA — Incorporación Art. 128 bis al Código Penal",
+      "autores": [
+        "Gabriel M. Bornoroni"
+      ],
+      "autor_principal": "Gabriel M. Bornoroni",
+      "total_autores": 14,
+      "bloque": "PRO",
+      "camara": "Diputados",
+      "año": 2023,
+      "mes": 5,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Ciudadanía general"
+      ],
+      "resumen": "Incorpora el artículo 128 bis al Código Penal para sancionar la producción y distribución mediante IA de material de abuso sexual infantil que involucre imágenes de víctimas reales con partes genitales añadidas digitalmente.",
+      "expediente": "4436/2023",
+      "tipo": "DEEPFAKE Y SIMILARES",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./4436-D-2023.pdf"
+    },
+    {
+      "id": "0805-D-2024",
+      "titulo": "Responsabilidad Algorítmica y Promoción de la Robótica, Algoritmos Verdes e Inteligencia Artificial en la República Argentina",
+      "autores": [
+        "FERRARO, MAXIMILIANO"
+      ],
+      "autor_principal": "FERRARO, MAXIMILIANO",
+      "total_autores": 1,
+      "bloque": "Coalición Cívica",
+      "camara": "Diputados",
+      "año": 2024,
+      "mes": 2,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Empresas / Sector privado",
+        "Investigadores / Científicos"
+      ],
+      "resumen": "Establece marco legal para crear certificaciones de buenas prácticas en IA, implementar registro de riesgos significativos, promover transparencia algorítmica y responsabilidad en nuevas tecnologías.",
+      "expediente": "0805/2024",
+      "tipo": "MARCO REGULATORIO",
+      "dashboard": "SI",
+      "pdf_path": "./Mateo proyectos/0805-D-2024.pdf"
+    },
+    {
+      "id": "1013-D-2024",
+      "titulo": "Ley Turing: Readecuación del Sistema Legal Argentino por el Impacto de la Inteligencia Artificial",
+      "autores": [
+        "AGOST CARREÑO, OSCAR"
+      ],
+      "autor_principal": "AGOST CARREÑO, OSCAR",
+      "total_autores": 1,
+      "bloque": "Encuentro Federal",
+      "camara": "Diputados",
+      "año": 2024,
+      "mes": 3,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Ciudadanía general",
+        "Empresas / Sector privado"
+      ],
+      "resumen": "Adapta normativa argentina respecto a derechos de imagen, propiedad intelectual y delitos sexuales ante impacto de IA, regulando producciones sintéticas y estableciendo consentimiento requerido para uso de datos biométricos.",
+      "expediente": "1013/2024",
+      "tipo": "MARCO REGULATORIO",
+      "dashboard": "SI",
+      "pdf_path": "./Mateo proyectos/1013-D-2024.pdf"
+    },
+    {
+      "id": "3003-D-2024",
+      "titulo": "Régimen Jurídico Aplicable para el Uso Responsable de la Inteligencia Artificial",
+      "autores": [
+        "BRÜGGE, JUAN FERNANDO"
+      ],
+      "autor_principal": "BRÜGGE, JUAN FERNANDO",
+      "total_autores": 1,
+      "bloque": "Provincias Unidas",
+      "camara": "Diputados",
+      "año": 2024,
+      "mes": 5,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Empresas / Sector privado",
+        "Ciudadanía general"
+      ],
+      "resumen": "Regula uso responsable de IA mediante régimen jurídico que garantiza transparencia, robustez, privacidad, seguridad y evaluación de impacto en derechos humanos y constitucionales.",
+      "expediente": "3003/2024",
+      "tipo": "MARCO REGULATORIO",
+      "dashboard": "SI",
+      "pdf_path": "./Mateo proyectos/3003-D-2024.pdf"
+    },
+    {
+      "id": "3422-D-2024",
+      "titulo": "[-Proyecto De Ley Sistema Deentornosregulatorios Experimentales(Sere) “Sandbox Regulatorios”",
+      "autores": [
+        "Martín Yeza"
+      ],
+      "autor_principal": "Martín Yeza",
+      "total_autores": 1,
+      "bloque": "PRO",
+      "camara": "Diputados",
+      "año": 2024,
+      "mes": 5,
+      "tema": "Tecnología / IA",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Empresas / Sector privado",
+        "Ciudadanía general",
+        "Salud"
+      ],
+      "resumen": "ARTÍCULO 1. Creación. Créase el sistema de entornos regulatorios experimentales, denominados “sandbox regulatorios”, con el fin de impulsar el desarrollo de modelos de...",
+      "expediente": "3422/2024",
+      "tipo": "Sandbox",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./Mateo proyectos/3422-D-2024.pdf"
+    },
+    {
+      "id": "3654-D-2024",
+      "titulo": "Creación de la Comisión Multisectorial de Análisis y Estudio de Alternativas Regulatorias de la IA",
+      "autores": [
+        "Monica Fein"
+      ],
+      "autor_principal": "Monica Fein",
+      "total_autores": 2,
+      "bloque": "Encuentro Federal",
+      "camara": "Diputados",
+      "año": 2024,
+      "mes": 4,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Investigadores / Científicos"
+      ],
+      "resumen": "Crea una comisión bicameral multisectorial integrada por legisladores, Poder Ejecutivo, ONG, CONICET y empresas para estudiar alternativas regulatorias de IA y elaborar un proyecto de ley en 365 días.",
+      "expediente": "3654/2024",
+      "tipo": "CREA ORGANOS",
+      "dashboard": "SI",
+      "pdf_path": "./3654-D-2024.pdf"
+    },
+    {
+      "id": "3900-D-2024",
+      "titulo": "Creación del Observatorio Federal sobre Inteligencia Artificial",
+      "autores": [
+        "GINOCCHIO, SILVANA MICAELA"
+      ],
+      "autor_principal": "GINOCCHIO, SILVANA MICAELA",
+      "total_autores": 1,
+      "bloque": "Unión por la Patria",
+      "camara": "Diputados",
+      "año": 2024,
+      "mes": 5,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Investigadores / Científicos"
+      ],
+      "resumen": "Crea observatorio federal para monitoreo, análisis y recomendaciones sobre desarrollo de IA, con participación de actores públicos y privados para garantizar buenas prácticas y respeto a derechos.",
+      "expediente": "3900/2024",
+      "tipo": "CREA ORGANOS",
+      "dashboard": "SI",
+      "pdf_path": "./Mateo proyectos/3900-D-2024.pdf"
+    },
+    {
+      "id": "3955-D-2024",
+      "titulo": "Regulación de Deepfakes y Manipulación de Imágenes Sintéticas",
+      "autores": [
+        "BRÜGGE, JUAN FERNANDO"
+      ],
+      "autor_principal": "BRÜGGE, JUAN FERNANDO",
+      "total_autores": 1,
+      "bloque": "Provincias Unidas",
+      "camara": "Diputados",
+      "año": 2024,
+      "mes": 5,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Ciudadanía general",
+        "Empresas / Sector privado"
+      ],
+      "resumen": "Incorpora al código penal sanciones para creación y distribución de deepfakes sin consentimiento, con penas agravadas para menores, personas vulnerables y contenido de índole sexual.",
+      "expediente": "3955/2024",
+      "tipo": "DEEPFAKE Y SIMILARES",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./Mateo proyectos/3955-D-2024.pdf"
+    },
+    {
+      "id": "4079-D-2024",
+      "titulo": "Presupuestos Mínimos para la Promoción del desarrollo de la Inteligencia Artificial",
+      "autores": [
+        "GIUDICI, SILVANA"
+      ],
+      "autor_principal": "GIUDICI, SILVANA",
+      "total_autores": 1,
+      "bloque": "La Libertad Avanza",
+      "camara": "Diputados",
+      "año": 2024,
+      "mes": 5,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Empresas / Sector privado",
+        "Investigadores / Científicos"
+      ],
+      "resumen": "Promueve fomento, desarrollo e innovación de sistemas de IA en el sector productivo argentino con respeto a derechos humanos, principios de transparencia, privacidad y responsabilidad en contexto regulatorio.",
+      "expediente": "4079/2024",
+      "tipo": "MARCO REGULATORIO",
+      "dashboard": "SI",
+      "pdf_path": "./Mateo proyectos/4079-D-2024.pdf"
+    },
+    {
+      "id": "4898-D-2024",
+      "titulo": "Derechos del Consumidor ante Sistemas de Inteligencia Artificial",
+      "autores": [
+        "VEGA, YOLANDA"
+      ],
+      "autor_principal": "VEGA, YOLANDA",
+      "total_autores": 1,
+      "bloque": "Innovación Federal",
+      "camara": "Diputados",
+      "año": 2024,
+      "mes": 6,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Ciudadanía general",
+        "Empresas / Sector privado"
+      ],
+      "resumen": "Incorpora disposiciones a ley de defensa del consumidor para proteger derechos ante IA, regulando obligaciones de información, consentimiento informado y responsabilidad de proveedores.",
+      "expediente": "4898/2024",
+      "tipo": "CONSUMIDOR",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./Mateo proyectos/4898-D-2024.pdf"
+    },
+    {
+      "id": "5327-D-2024",
+      "titulo": "Incorporación Art. 128 bis al Código Penal: Abuso Sexual Infantil Generado por IA",
+      "autores": [
+        "Gabriel M. Bornoroni"
+      ],
+      "autor_principal": "Gabriel M. Bornoroni",
+      "total_autores": 14,
+      "bloque": "La Libertad Avanza",
+      "camara": "Diputados",
+      "año": 2024,
+      "mes": 6,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Ciudadanía general"
+      ],
+      "resumen": "Incorpora el artículo 128 bis al Código Penal con penas de 2 a 6 años para quien produzca, financie o distribuya representaciones de menores en situaciones sexuales generadas mediante IA que involucren imágenes de víctimas reales.",
+      "expediente": "5327/2024",
+      "tipo": "DEEPFAKE Y SIMILARES",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./5327-D-2024.pdf"
+    },
+    {
+      "id": "6156-D-2024",
+      "titulo": "Protección contra Explotación de Datos Personales en Sistemas de IA",
+      "autores": [
+        "GIULIANO, DIEGO A."
+      ],
+      "autor_principal": "GIULIANO, DIEGO A.",
+      "total_autores": 1,
+      "bloque": "Unión por la Patria",
+      "camara": "Diputados",
+      "año": 2024,
+      "mes": 7,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Ciudadanía general",
+        "Empresas / Sector privado"
+      ],
+      "resumen": "Establece marco regulatorio para proteger datos personales en IA, con obligaciones de transparencia, evaluación de riesgos, clasificación de niveles de riesgo y registro nacional de sistemas.",
+      "expediente": "6156/2024",
+      "tipo": "MARCO REGULATORIO",
+      "dashboard": "SI",
+      "pdf_path": "./Mateo proyectos/6156-D-2024.pdf"
+    },
+    {
+      "id": "6976-D-2024",
+      "titulo": "Programa Nacional de Laboratorios de Informática e Inteligencia Artificial en Nivel Medio",
+      "autores": [
+        "LOPEZ RODRIGUEZ, DANTE"
+      ],
+      "autor_principal": "LOPEZ RODRIGUEZ, DANTE",
+      "total_autores": 1,
+      "bloque": "Unión por la Patria",
+      "camara": "Diputados",
+      "año": 2024,
+      "mes": 7,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Sector educativo",
+        "Jóvenes / Estudiantes"
+      ],
+      "resumen": "Crea programa nacional de laboratorios de IA y programación en escuelas de nivel medio, promoviendo digital literacy, pensamiento computacional y competencias tecnológicas futuras.",
+      "expediente": "6976/2024",
+      "tipo": "EDUCATIVA",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./Mateo proyectos/6976-D-2024.pdf"
+    },
+    {
+      "id": "7045-D-2024",
+      "titulo": "Información y Responsabilidad de Proveedores en el Uso de Sistemas de IA",
+      "autores": [
+        "CALLETTI, PAMELA"
+      ],
+      "autor_principal": "CALLETTI, PAMELA",
+      "total_autores": 1,
+      "bloque": "Innovación Federal",
+      "camara": "Diputados",
+      "año": 2024,
+      "mes": 7,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Ciudadanía general",
+        "Empresas / Sector privado"
+      ],
+      "resumen": "Modifica ley de defensa del consumidor para exigir información clara sobre uso de IA en productos, estableciendo obligaciones de transparencia y responsabilidad de proveedores ante consumidores.",
+      "expediente": "7045/2024",
+      "tipo": "CONSUMIDOR",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./Mateo proyectos/7045-D-2024.pdf"
+    },
+    {
+      "id": "1937-D-2025",
+      "titulo": "Ley Nacional de Inteligencia Artificial",
+      "autores": [
+        "CHUMPITAZ, GABRIEL FELIPE"
+      ],
+      "autor_principal": "CHUMPITAZ, GABRIEL FELIPE",
+      "total_autores": 1,
+      "bloque": "La Libertad Avanza",
+      "camara": "Diputados",
+      "año": 2025,
+      "mes": 3,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Empresas / Sector privado",
+        "Ciudadanía general"
+      ],
+      "resumen": "Regula desarrollo, implementación y uso de IA garantizando protección de derechos fundamentales, privacidad, y estableciendo principios de transparencia, equidad e inclusión en contexto nacional.",
+      "expediente": "1937/2025",
+      "tipo": "MARCO REGULATORIO",
+      "dashboard": "SI",
+      "pdf_path": "./Mateo proyectos/1937-D-2025.pdf"
+    },
+    {
+      "id": "2130-D-2025",
+      "titulo": "Regulación de Producciones Sintéticas y Tecnologías Generativas de Inteligencia Artificial",
+      "autores": [
+        "GOLLAN, DANIEL"
+      ],
+      "autor_principal": "GOLLAN, DANIEL",
+      "total_autores": 1,
+      "bloque": "Unión por la Patria",
+      "camara": "Diputados",
+      "año": 2025,
+      "mes": 4,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Ciudadanía general",
+        "Empresas / Sector privado"
+      ],
+      "resumen": "Establece marco normativo para desarrollo responsable de sistemas de IA, regulando producciones sintéticas, contenidos generativos y definiendo niveles de riesgo con enfoque de protección integral.",
+      "expediente": "2130/2025",
+      "tipo": "MARCO REGULATORIO",
+      "dashboard": "SI",
+      "pdf_path": "./Mateo proyectos/2130-D-2025.pdf"
+    },
+    {
+      "id": "2300-D-2025",
+      "titulo": "Manipulación de imágenes con desnudos mediante Inteligencia Artificial",
+      "autores": [
+        "AGUIRRE, MANUEL IGNACIO"
+      ],
+      "autor_principal": "AGUIRRE, MANUEL IGNACIO",
+      "total_autores": 1,
+      "bloque": "UCR",
+      "camara": "Diputados",
+      "año": 2025,
+      "mes": 4,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Ciudadanía general",
+        "Empresas / Sector privado"
+      ],
+      "resumen": "Protege privacidad y dignidad frente a manipulación de imágenes con IA sin consentimiento, especialmente desnudos, estableciendo sanciones para creación, distribución y agravantes para menores.",
+      "expediente": "2300/2025",
+      "tipo": "DEEPFAKE Y SIMILARES",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./Mateo proyectos/2300-D-2025.pdf"
+    },
+    {
+      "id": "2903-D-2025",
+      "titulo": "Ley de Implementación de Sistemas de Inteligencia Artificial por la Administración Pública Nacional",
+      "autores": [
+        "TAVELA, DANYA"
+      ],
+      "autor_principal": "TAVELA, DANYA",
+      "total_autores": 1,
+      "bloque": "Democracia para Siempre",
+      "camara": "Diputados",
+      "año": 2025,
+      "mes": 4,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Ciudadanía general"
+      ],
+      "resumen": "Establece marco regulatorio para implementación de IA en administración pública con principios de transparencia, responsabilidad, protección de datos y supervisión humana en decisiones sensibles.",
+      "expediente": "2903/2025",
+      "tipo": "ADMINISTRACIÓN PUBLICA",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./Mateo proyectos/2903-D-2025.pdf"
+    },
+    {
+      "id": "3558-D-2025",
+      "titulo": "Regulación del Uso de Inteligencia Artificial en Locución y Producción Audiovisual",
+      "autores": [
+        "SARAPURA, NATALIA SILVINA - TAVELA, DANYA"
+      ],
+      "autor_principal": "SARAPURA, NATALIA SILVINA - TAVELA, DANYA",
+      "total_autores": 2,
+      "bloque": "UCR",
+      "camara": "Diputados",
+      "año": 2025,
+      "mes": 5,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Sector audiovisual",
+        "Empresas / Sector privado"
+      ],
+      "resumen": "Regula uso de IA para generación de voces sintéticas en locución audiovisual, protegiendo fuentes laborales y derechos de locutores profesionales mediante identificación obligatoria y registro nacional de voces sintéticas.",
+      "expediente": "3558/2025",
+      "tipo": "PRODUCCIÓN AUDIOVISUAL",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./Mateo proyectos/3558-D-2025.pdf"
+    },
+    {
+      "id": "4080-D-2025",
+      "titulo": "Régimen de Protección contra Contenidos Sintéticos No Consentidos",
+      "autores": [
+        "Oscar Agost Carreño"
+      ],
+      "autor_principal": "Oscar Agost Carreño",
+      "total_autores": 1,
+      "bloque": "PRO",
+      "camara": "Diputados",
+      "año": 2025,
+      "mes": 4,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Ciudadanía general",
+        "Empresas / Sector privado"
+      ],
+      "resumen": "Crea régimen de etiquetado obligatorio, presunción de falsedad y procedimiento ágil de remoción de contenidos sintéticos no consentidos; modifica Código Civil y Penal e incorpora Registro Nacional de Alertas.",
+      "expediente": "4080/2025",
+      "tipo": "DEEPFAKE Y SIMILARES",
+      "dashboard": "SI",
+      "pdf_path": "./4080-D-2025.pdf"
+    },
+    {
+      "id": "4094-D-2025",
+      "titulo": "Regulación del uso de imágenes digitales y figuras humanas creadas por inteligencia artificial en publicidad comercial y política",
+      "autores": [
+        "OUTES, PABLO"
+      ],
+      "autor_principal": "OUTES, PABLO",
+      "total_autores": 1,
+      "bloque": "Innovación Federal",
+      "camara": "Diputados",
+      "año": 2025,
+      "mes": 5,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Ciudadanía general",
+        "Empresas / Sector privado"
+      ],
+      "resumen": "Establece marco regulatorio para uso de imágenes digitales y figuras generadas por IA en publicidad, exigiendo identificación clara y prohibiendo uso no consentido de rostros e identidades.",
+      "expediente": "4094/2025",
+      "tipo": "DEEPFAKE Y SIMILARES",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./Mateo proyectos/4094-D-2025.pdf"
+    },
+    {
+      "id": "4145-D-2025",
+      "titulo": "Incorporación de Inteligencia Artificial a las Currículas Educativas",
+      "autores": [
+        "CHUMPITAZ, GABRIEL FELIPE"
+      ],
+      "autor_principal": "CHUMPITAZ, GABRIEL FELIPE",
+      "total_autores": 1,
+      "bloque": "Futuro y Libertad",
+      "camara": "Diputados",
+      "año": 2025,
+      "mes": 5,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Sector educativo",
+        "Jóvenes / Estudiantes"
+      ],
+      "resumen": "Establece régimen nacional progresivo de incorporación de contenidos sobre IA en sistema educativo desde nivel inicial hasta universitario, respetando autonomía jurisdiccional educativa.",
+      "expediente": "4145/2025",
+      "tipo": "EDUCATIVA",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./Mateo proyectos/4145-D-2025.pdf"
+    },
+    {
+      "id": "4219-D-2025",
+      "titulo": "Marco regulatorio para el desarrollo, implementación y uso de la Inteligencia Artificial (IA) en la Administración Pública Nacional",
+      "autores": [
+        "VEGA, YOLANDA"
+      ],
+      "autor_principal": "VEGA, YOLANDA",
+      "total_autores": 1,
+      "bloque": "Unión por la Patria",
+      "camara": "Diputados",
+      "año": 2025,
+      "mes": 5,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Ciudadanía general"
+      ],
+      "resumen": "Regula desarrollo e implementación de IA en administración pública nacional con principios de igualdad, transparencia, protección de derechos humanos y supervisión humana en decisiones críticas.",
+      "expediente": "4219/2025",
+      "tipo": "ADMINISTRACIÓN PUBLICA",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./Mateo proyectos/4219-D-2025.pdf"
+    },
+    {
+      "id": "4243-D-2025",
+      "titulo": "Protección de Datos Personales en Sistemas de Inteligencia Artificial",
+      "autores": [
+        "MARZIOTTA, GISELA"
+      ],
+      "autor_principal": "MARZIOTTA, GISELA",
+      "total_autores": 1,
+      "bloque": "Unión por la Patria",
+      "camara": "Diputados",
+      "año": 2025,
+      "mes": 5,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Ciudadanía general",
+        "Empresas / Sector privado"
+      ],
+      "resumen": "Regula utilización de datos personales por sistemas de IA, estableciendo obligaciones de transparencia, evaluación de riesgos, registro nacional de sistemas de riesgo medio y alto.",
+      "expediente": "4243/2025",
+      "tipo": "MARCO REGULATORIO",
+      "dashboard": "SI",
+      "pdf_path": "./Mateo proyectos/4243-D-2025.pdf"
+    },
+    {
+      "id": "6189-D-2025",
+      "titulo": "Educación en Inteligencia Artificial en la Currícula Escolar",
+      "autores": [
+        "MARZIOTTA, GISELA"
+      ],
+      "autor_principal": "MARZIOTTA, GISELA",
+      "total_autores": 1,
+      "bloque": "Unión por la Patria",
+      "camara": "Diputados",
+      "año": 2025,
+      "mes": 7,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Sector educativo",
+        "Jóvenes / Estudiantes",
+        "Ciudadanía general"
+      ],
+      "resumen": "Incorpora educación en IA a currícula escolar de niveles inicial, primario y secundario con enfoque progresivo y Federal, promoviendo pensamiento crítico y competencias digitales.",
+      "expediente": "6189/2025",
+      "tipo": "EDUCATIVA",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./Mateo proyectos/6189-D-2025.pdf"
+    },
+    {
+      "id": "6655-D-2025",
+      "titulo": "Ley de Transparencia y Regulación de Algoritmos en Procesos Automatizados",
+      "autores": [
+        "CALLETTI, PAMELA"
+      ],
+      "autor_principal": "CALLETTI, PAMELA",
+      "total_autores": 1,
+      "bloque": "Unión por la Patria",
+      "camara": "Diputados",
+      "año": 2025,
+      "mes": 7,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Ciudadanía general",
+        "Empresas / Sector privado",
+        "Estado / Organismo público"
+      ],
+      "resumen": "Asegura equidad, transparencia y rendición de cuentas en algoritmos usados en decisiones automatizadas, estableciendo derecho a explicación, auditorías y sanciones para incumplimiento.",
+      "expediente": "6655/2025",
+      "tipo": "MARCO REGULATORIO",
+      "dashboard": "SI",
+      "pdf_path": "./Mateo proyectos/6655-D-2025.pdf"
+    },
+    {
+      "id": "6656-D-2025",
+      "titulo": "Inclusión de Inteligencia Artificial en la Currícula Escolar",
+      "autores": [
+        "CALLETTI, PAMELA"
+      ],
+      "autor_principal": "CALLETTI, PAMELA",
+      "total_autores": 1,
+      "bloque": "Unión por la Patria",
+      "camara": "Diputados",
+      "año": 2025,
+      "mes": 7,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Sector educativo",
+        "Jóvenes / Estudiantes"
+      ],
+      "resumen": "Incorpora contenidos sobre IA a educación inicial, primaria y secundaria con énfasis en pensamiento crítico, ética digital y competencias tecnológicas para ciudadanía digital.",
+      "expediente": "6656/2025",
+      "tipo": "EDUCATIVA",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "./Mateo proyectos/6656-D-2025.pdf"
+    },
+    {
+      "id": "0004-D-2026",
+      "titulo": "Presupuestos Mínimos para la Promoción del desarrollo de la Inteligencia Artificial (IA) en la República Argentina",
+      "autores": [
+        "GIUDICI, SILVANA"
+      ],
+      "autor_principal": "GIUDICI, SILVANA",
+      "total_autores": 1,
+      "bloque": "La Libertad Avanza",
+      "camara": "Diputados",
+      "año": 2026,
+      "mes": 1,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Empresas / Sector privado",
+        "Estado / Organismo público",
+        "Investigadores / Científicos"
+      ],
+      "resumen": "Establece un marco legal para promover el fomento, desarrollo, innovación e implementación de sistemas de IA en Argentina, respetando derechos humanos y con principios de transparencia, privacidad y responsabilidad algorítmica.",
+      "expediente": "0004/2026",
+      "tipo": "MARCO REGULATORIO",
+      "dashboard": "SI",
+      "pdf_path": "./Mateo proyectos/0004-D-2026.pdf"
+    },
+    {
+      "id": "0005-D-2026",
+      "titulo": "Modificación al Código Penal. Clonación de rostro y voz.",
+      "autores": [
+        "GIUDICI, SILVANA"
+      ],
+      "autor_principal": "GIUDICI, SILVANA",
+      "total_autores": 1,
+      "bloque": "La Libertad Avanza",
+      "camara": "Diputados",
+      "año": 2026,
+      "mes": 1,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Ciudadanía general",
+        "Empresas / Sector privado"
+      ],
+      "resumen": "Sanciona penalmente la generación, manipulación y publicación de deepfakes sin consentimiento, con penas agravadas para casos que afecten a menores de edad o causas electorales.",
+      "expediente": "0005/2026",
+      "tipo": "DEEPFAKE Y SIMILARES",
+      "dashboard": "SI",
+      "pdf_path": "./Mateo proyectos/0005-D-2026.pdf"
+    },
+    {
+      "id": "0253-D-2026",
+      "titulo": "Ley Nacional de Inteligencia Artificial Soberana",
+      "autores": [
+        "PAGANO, MARCELA MARINA"
+      ],
+      "autor_principal": "PAGANO, MARCELA MARINA",
+      "total_autores": 1,
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "mes": 2,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Empresas / Sector privado",
+        "Investigadores / Científicos"
+      ],
+      "resumen": "Establece marco integral para desarrollo de IA con énfasis en soberanía tecnológica nacional, fortalecimiento de capacidades propias y regulación según niveles de riesgo de los sistemas.",
+      "expediente": "0253/2026",
+      "tipo": "MARCO REGULATORIO",
+      "dashboard": "SI",
+      "pdf_path": "./Mateo proyectos/0253-D-2026.pdf"
+    },
+    {
+      "id": "0519-D-2026",
+      "titulo": "Ley de Inteligencia Artificial Productiva - Régimen Nacional de Promoción de la IA Aplicada a la Producción",
+      "autores": [
+        "PAGANO, MARCELA MARINA"
+      ],
+      "autor_principal": "PAGANO, MARCELA MARINA",
+      "total_autores": 1,
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "mes": 3,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Empresas / Sector privado",
+        "Estado / Organismo público",
+        "Investigadores / Científicos"
+      ],
+      "resumen": "Crea régimen nacional para impulsar adopción de IA en sectores productivos, establecer centros de IA, promover política de datos abiertos y formar capital humano especializado para asegurar soberanía tecnológica.",
+      "expediente": "0519/2026",
+      "tipo": "MARCO REGULATORIO",
+      "dashboard": "SI",
+      "pdf_path": "./Mateo proyectos/0519-D-2026.pdf"
+    }
+  ]
+}

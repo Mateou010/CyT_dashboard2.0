@@ -1,0 +1,40 @@
+/* Smooth cursor (desktop only) */
+.smooth-cursor-dot,
+.smooth-cursor-ring {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 99999;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease;
+}
+
+.smooth-cursor-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #aaff00;
+  box-shadow: 0 0 16px rgba(170, 255, 0, 0.5);
+}
+
+.smooth-cursor-ring {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 212, 255, 0.75);
+  background: rgba(0, 212, 255, 0.06);
+}
+
+.smooth-cursor-ring.active {
+  width: 44px;
+  height: 44px;
+  border-color: rgba(170, 255, 0, 0.8);
+  background: rgba(170, 255, 0, 0.08);
+}
+
+body.has-smooth-cursor,
+body.has-smooth-cursor * {
+  cursor: none !important;
+}

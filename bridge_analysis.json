@@ -1,0 +1,1840 @@
+{
+  "metadata": {
+    "generado": "2026-03-20T16:32:21.956912",
+    "metodo": "Lectura textual completa con codificacion por ejes + evidencia trazable",
+    "version": "bridge-v2-text-evidence",
+    "total_bills": 39,
+    "axis_order": [
+      "intervencion",
+      "economia",
+      "datos",
+      "punitividad",
+      "sujeto"
+    ]
+  },
+  "bills": {
+    "0509-D-2019": {
+      "scores": {
+        "intervencion": 1.5,
+        "economia": 7.4,
+        "datos": 5.0,
+        "punitividad": 1.0,
+        "sujeto": 3.7
+      },
+      "evidence": {
+        "intervencion": [
+          "L18: e) Elaborar guías de mejores prácticas y fomentar la transparencia y el uso de código [-fomentar, guía]",
+          "L2: cuya misión será la de fomentar el estudio, concientización, investigación y difusión de [-fomentar]",
+          "L4: organismo interjurisdiccional consultivo en estas materias. El Consejo tendrá sede en la [-consultivo]"
+        ],
+        "economia": [
+          "L9: b) Vincular a los actores relacionados con esta temática, tales como emprendedores, [+emprendedor]",
+          "L37: representantes de organismos oficiales, de entidades privadas, emprendedores y [+emprendedor]",
+          "L114: capacitarlos, lo cual implica una baja tasa de alumnos recibidos y de documentos de tesis [-tasa]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L2: cuya misión será la de fomentar el estudio, concientización, investigación y difusión de [-concientización]",
+          "L4: organismo interjurisdiccional consultivo en estas materias. El Consejo tendrá sede en la [-consultivo]",
+          "L7: a) Promover el estudio y difusión de conocimientos y la investigación de temáticas [-promover]"
+        ],
+        "sujeto": [
+          "L104: internacional. Solo fomentando el estudio y desarrollo de las IAs como política de Estado [-estado, nacional]",
+          "L152: recopilación y uso de los datos frente a la privacidad de los usuarios, en materia de [+usuario, privacidad]",
+          "L32: Ciencia y Tecnología a nivel nacional, quien será el que lo presida, y por un representante [-nacional]"
+        ]
+      },
+      "evidence_lines": [
+        "L18: e) Elaborar guías de mejores prácticas y fomentar la transparencia y el uso de código [-fomentar, guía]",
+        "L9: b) Vincular a los actores relacionados con esta temática, tales como emprendedores, [+emprendedor]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L2: cuya misión será la de fomentar el estudio, concientización, investigación y difusión de [-concientización]",
+        "L104: internacional. Solo fomentando el estudio y desarrollo de las IAs como política de Estado [-estado, nacional]"
+      ],
+      "quality": {
+        "solidez": 0.627,
+        "ambiguedad": 0.418,
+        "peso": 0.365,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "0509-D-2019.txt"
+    },
+    "1472-D-2023": {
+      "scores": {
+        "intervencion": 6.9,
+        "economia": 9.0,
+        "datos": 5.0,
+        "punitividad": 1.0,
+        "sujeto": 5.7
+      },
+      "evidence": {
+        "intervencion": [
+          "L45: debe estructurarse cualquier regulación en la materia. [+regula, regulación]",
+          "L49: promueva la investigación, el desarrollo y la regulación de la IA y, al mismo tiempo, [+regula, regulación]",
+          "L80: voluntaria, medidas legislativas de regulación para estos nuevos sistemas en conformidad [+regula, regulación]"
+        ],
+        "economia": [
+          "L6: ARTÍCULO 3° BIS.- El Sistema de Ciencia, Tecnología e Innovación de la Nación, a fin de [+innovación]",
+          "L39: innovación a partir de la incorporación de los Sistemas de Inteligencia Artificial (IA). Se [+innovación]",
+          "L71: búsqueda de beneficios para la humanidad. Para ello, resulta necesaria una legislación que [+beneficio]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L78: países miembros, entre ellos Argentina, una Recomendación universal sobre la Ética de las [-recomendación]",
+          "L82: Esta Recomendación propone a su vez, que estos sistemas de Inteligencia Artificial se [-recomendación]",
+          "L92: es necesario que las nuevas tecnologías proporcionen nuevos medios para promover y [-promover]"
+        ],
+        "sujeto": [
+          "L3: MODIFICACIÓN LEY NACIONAL 25.467 [-nacional]",
+          "L10: personas o grupos, con independencia de su raza, color, ascendencia, género, edad, [+persona]",
+          "L17: a las personas y los grupos, o amenazar la coexistencia entre los seres humanos, los [+persona]"
+        ]
+      },
+      "evidence_lines": [
+        "L45: debe estructurarse cualquier regulación en la materia. [+regula, regulación]",
+        "L6: ARTÍCULO 3° BIS.- El Sistema de Ciencia, Tecnología e Innovación de la Nación, a fin de [+innovación]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L78: países miembros, entre ellos Argentina, una Recomendación universal sobre la Ética de las [-recomendación]",
+        "L3: MODIFICACIÓN LEY NACIONAL 25.467 [-nacional]"
+      ],
+      "quality": {
+        "solidez": 0.638,
+        "ambiguedad": 0.153,
+        "peso": 0.54,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "1472-D-2023.txt"
+    },
+    "2504-D-2023": {
+      "scores": {
+        "intervencion": 8.1,
+        "economia": 9.0,
+        "datos": 5.0,
+        "punitividad": 2.0,
+        "sujeto": 6.6
+      },
+      "evidence": {
+        "intervencion": [
+          "L60: d) Supervisión y regulación: las instituciones educativas deberán estar sujetas a la [+regula, regulación]",
+          "L61: supervisión y regulación de las autoridades competentes en materia de educación y [+regula, regulación]",
+          "L4: Ley de Regulación y Uso de la Inteligencia Artificial en la Educación [+regula, regulación]"
+        ],
+        "economia": [
+          "L128: implementación en escuelas y universidades de todo el mundo, creando un mercado [+mercado]",
+          "L189: profundo impacto en las sociedades humanas, las economías y el mercado laboral, así [+mercado]",
+          "L221: Al hacerlo, se busca asegurar que la IA sea una herramienta beneficiosa y segura en el [+beneficio]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L2: El Senado y la Cámara de Diputados de la Nación Argentina, sancionan con fuerza de [+sancion]",
+          "L80: Artículo 8°: Formación y capacitación [-capacitación]",
+          "L83: de formación y capacitación en el uso ético, pedagógico y efectivo de la IA a todos los [-capacitación]"
+        ],
+        "sujeto": [
+          "L135: 1. Protección de la privacidad y los datos personales: La IA en educación implica la [+persona, privacidad]",
+          "L166: viceministros, así como 500 representantes internacionales de más de 100 Estados [-estado, nacional]",
+          "L16: materiales educativos, la tutoría personalizada y la evaluación automatizada. [+persona]"
+        ]
+      },
+      "evidence_lines": [
+        "L60: d) Supervisión y regulación: las instituciones educativas deberán estar sujetas a la [+regula, regulación]",
+        "L128: implementación en escuelas y universidades de todo el mundo, creando un mercado [+mercado]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L2: El Senado y la Cámara de Diputados de la Nación Argentina, sancionan con fuerza de [+sancion]",
+        "L135: 1. Protección de la privacidad y los datos personales: La IA en educación implica la [+persona, privacidad]"
+      ],
+      "quality": {
+        "solidez": 0.782,
+        "ambiguedad": 0.51,
+        "peso": 0.383,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "2504-D-2023.txt"
+    },
+    "2505-D-2023": {
+      "scores": {
+        "intervencion": 7.0,
+        "economia": 8.5,
+        "datos": 5.0,
+        "punitividad": 4.1,
+        "sujeto": 6.5
+      },
+      "evidence": {
+        "intervencion": [
+          "L4: Marco legal para la regulación del desarrollo y uso de la Inteligencia [+regula, regulación]",
+          "L9: 1.1 Establecer el marco legal para la investigación, desarrollo, uso y regulación de la [+regula, regulación]",
+          "L149: Autoridad de supervisión y control [+control, supervisión]"
+        ],
+        "economia": [
+          "L13: 1.2 Fomentar la innovación y el progreso en el campo de la IA, promoviendo el beneficio [+innovación, beneficio]",
+          "L118: Innovación. [+innovación]",
+          "L270: Artículo 24: Fomento de la Investigación en Inteligencia Artificial [+fomento]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L218: 18.2. Las sanciones por violación de esta ley pueden incluir multas, prohibición de uso [+multa, sancion]",
+          "L296: 26.1. Se promoverá la capacitación y formación en IA para profesionales, investigadores [-capacitación, promover]",
+          "L3: sancionan con fuerza de Ley. [+sancion]"
+        ],
+        "sujeto": [
+          "L11: derechos humanos, la privacidad y la seguridad de los ciudadanos, fomentando la [+ciudadano, derechos humanos]",
+          "L62: 6.1. Los sistemas de IA deben respetar y proteger la privacidad de los usuarios y el [+usuario, privacidad]",
+          "L68: obligación de obtener el consentimiento informado de los individuos para el uso de sus [+individuo, consentimiento]"
+        ]
+      },
+      "evidence_lines": [
+        "L4: Marco legal para la regulación del desarrollo y uso de la Inteligencia [+regula, regulación]",
+        "L13: 1.2 Fomentar la innovación y el progreso en el campo de la IA, promoviendo el beneficio [+innovación, beneficio]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L218: 18.2. Las sanciones por violación de esta ley pueden incluir multas, prohibición de uso [+multa, sancion]",
+        "L11: derechos humanos, la privacidad y la seguridad de los ciudadanos, fomentando la [+ciudadano, derechos humanos]"
+      ],
+      "quality": {
+        "solidez": 0.91,
+        "ambiguedad": 0.68,
+        "peso": 0.291,
+        "complejidad_normativa_elevada": true
+      },
+      "fuente_texto": "2505-D-2023.txt"
+    },
+    "3161-D-2023": {
+      "scores": {
+        "intervencion": 5.0,
+        "economia": 5.0,
+        "datos": 5.0,
+        "punitividad": 5.0,
+        "sujeto": 1.0
+      },
+      "evidence": {
+        "intervencion": [
+          "Sin evidencia textual fuerte para Intervencion Estatal."
+        ],
+        "economia": [
+          "Sin evidencia textual fuerte para Enfoque Economico."
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "Sin evidencia textual fuerte para Punitividad."
+        ],
+        "sujeto": [
+          "L100: Nacional. AAuuttoorriizzaassee aaalll PPPooodddeeerrr EEEjjjeeecccuuutttiiivvvooo NNNaaaccciiiooonnnaaalll aaa rrreeeaaallliiizzzaaarrr lllaaasss aaadddeeecccuuuaaaccciiiooonnneeesss [-nacional]"
+        ]
+      },
+      "evidence_lines": [
+        "Sin evidencia textual fuerte para Intervencion Estatal.",
+        "Sin evidencia textual fuerte para Enfoque Economico.",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "Sin evidencia textual fuerte para Punitividad.",
+        "L100: Nacional. AAuuttoorriizzaassee aaalll PPPooodddeeerrr EEEjjjeeecccuuutttiiivvvooo NNNaaaccciiiooonnnaaalll aaa rrreeeaaallliiizzzaaarrr lllaaasss aaadddeeecccuuuaaaccciiiooonnneeesss [-nacional]"
+      ],
+      "quality": {
+        "solidez": 0.32,
+        "ambiguedad": 0.0,
+        "peso": 0.32,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "3161-D-2023.txt"
+    },
+    "4329-D-2023": {
+      "scores": {
+        "intervencion": 7.6,
+        "economia": 9.0,
+        "datos": 5.0,
+        "punitividad": 3.0,
+        "sujeto": 5.9
+      },
+      "evidence": {
+        "intervencion": [
+          "L38: e) Supervisión y decisión humanas, garantizar el control y la decisión final en los [+control, supervisión]",
+          "L4: reunidos en Congreso, etc. sancionan con fuerza de Ley: [+sancion]",
+          "L5: PROYECTO DE LEY SOBRE REGULACION Y USO DE LA [+regula]"
+        ],
+        "economia": [
+          "L69: Artículo 9°. Promoción- El organismo será la encargada de promover una educación [+promoción]",
+          "L134: y la promoción de los derechos humanos, las libertades fundamentales y los principios [+promoción]",
+          "L161: organismos de fomento de la igualdad, los órganos de vigilancia de la lucha contra la [+fomento]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L43: h) Sensibilización y educación, garantizar el acceso y capacitación a todos los [-capacitación, sensibilización]",
+          "L81: sanciones: a) Apercibimiento; b) Multa; c) Suspensión y d) Exclusión. [+multa, sancion]",
+          "L4: reunidos en Congreso, etc. sancionan con fuerza de Ley: [+sancion]"
+        ],
+        "sujeto": [
+          "L9: el territorio de la nación, resguardando a las personas y protegiendo sus derechos [+persona]",
+          "L14: territorio nacional vinculadas a la utilización de la Inteligencia Artificial como [-nacional]",
+          "L17: nacional. [-nacional]"
+        ]
+      },
+      "evidence_lines": [
+        "L38: e) Supervisión y decisión humanas, garantizar el control y la decisión final en los [+control, supervisión]",
+        "L69: Artículo 9°. Promoción- El organismo será la encargada de promover una educación [+promoción]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L43: h) Sensibilización y educación, garantizar el acceso y capacitación a todos los [-capacitación, sensibilización]",
+        "L9: el territorio de la nación, resguardando a las personas y protegiendo sus derechos [+persona]"
+      ],
+      "quality": {
+        "solidez": 0.712,
+        "ambiguedad": 0.64,
+        "peso": 0.256,
+        "complejidad_normativa_elevada": true
+      },
+      "fuente_texto": "4329-D-2023.txt"
+    },
+    "4410-D-2023": {
+      "scores": {
+        "intervencion": 9.0,
+        "economia": 5.0,
+        "datos": 5.0,
+        "punitividad": 9.0,
+        "sujeto": 7.2
+      },
+      "evidence": {
+        "intervencion": [
+          "L4: SANCIONAN CON FUERZA DE LEY… [+sancion]",
+          "L24: amenaza, extorsión , control o espionaje de la actividad virtual, accesos [+control]",
+          "L39: sancionada en octubre del presente año, sobre 1la difusión no consentida de [+sancion]"
+        ],
+        "economia": [
+          "Sin evidencia textual fuerte para Enfoque Economico."
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L4: SANCIONAN CON FUERZA DE LEY… [+sancion]",
+          "L39: sancionada en octubre del presente año, sobre 1la difusión no consentida de [+sancion]",
+          "L43: Si bien la ley actual de delitos informáticos contra la integridad sexual protege a los [+delito]"
+        ],
+        "sujeto": [
+          "L20: otro medio tecnológico , sin consentimiento de material real, total o [+consentimiento]",
+          "L26: difusión no consentida de datos personales en la medida en que no sean [+persona]",
+          "L50: o parcial, de imágenes que involucran a personas mayores de edad simulando o [+persona]"
+        ]
+      },
+      "evidence_lines": [
+        "L4: SANCIONAN CON FUERZA DE LEY… [+sancion]",
+        "Sin evidencia textual fuerte para Enfoque Economico.",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L4: SANCIONAN CON FUERZA DE LEY… [+sancion]",
+        "L20: otro medio tecnológico , sin consentimiento de material real, total o [+consentimiento]"
+      ],
+      "quality": {
+        "solidez": 0.583,
+        "ambiguedad": 0.225,
+        "peso": 0.452,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "4410-D-2023.txt"
+    },
+    "4411-D-2023": {
+      "scores": {
+        "intervencion": 9.0,
+        "economia": 5.0,
+        "datos": 5.0,
+        "punitividad": 9.0,
+        "sujeto": 9.0
+      },
+      "evidence": {
+        "intervencion": [
+          "L4: SANCIONAN CON FUERZA DE LEY… [+sancion]",
+          "L39: Según nuestro Código Penal, sanciona los delitos informáticos contra la integridad [+sancion]",
+          "L40: sexual, sancionando las siguientes conductas: [+sancion]"
+        ],
+        "economia": [
+          "Sin evidencia textual fuerte para Enfoque Economico."
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L39: Según nuestro Código Penal, sanciona los delitos informáticos contra la integridad [+pena, delito]",
+          "L7: Artículo 128: Será reprimido con prisión de tres (3) a seis (6) años el que produjere, [+prisión, reprimido]",
+          "L16: Será reprimido con prisión de cuatro (4) meses a un (1) año el que a sabiendas [+prisión, reprimido]"
+        ],
+        "sujeto": [
+          "L11: el cuerpo de otra persona (sin importar la edad de este último) ,ya sea ficticia o real [+persona]",
+          "L25: mínimo y en su máximo cuando la víctima fuere menor de trece (13) años. [+víctima]",
+          "L35: “deepfakes”) donde se utiliza el rostro de personas reales cuyos cuerpos son [+persona]"
+        ]
+      },
+      "evidence_lines": [
+        "L4: SANCIONAN CON FUERZA DE LEY… [+sancion]",
+        "Sin evidencia textual fuerte para Enfoque Economico.",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L39: Según nuestro Código Penal, sanciona los delitos informáticos contra la integridad [+pena, delito]",
+        "L11: el cuerpo de otra persona (sin importar la edad de este último) ,ya sea ficticia o real [+persona]"
+      ],
+      "quality": {
+        "solidez": 0.543,
+        "ambiguedad": 0.0,
+        "peso": 0.543,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "4411-D-2023.txt"
+    },
+    "4436-D-2023": {
+      "scores": {
+        "intervencion": 9.0,
+        "economia": 5.0,
+        "datos": 5.0,
+        "punitividad": 9.0,
+        "sujeto": 9.0
+      },
+      "evidence": {
+        "intervencion": [
+          "L73: Esta regulación es esencial para abordar los desafíos que plantea la tecnología [+regula, regulación]",
+          "L6: sancionan con fuerza de ley [+sancion]",
+          "L46: para prevenir y sancionar efectivamente la producción y distribución de material ilegal [+sancion]"
+        ],
+        "economia": [
+          "Sin evidencia textual fuerte para Enfoque Economico."
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L9: ARTÍCULO 128.- Será reprimido con prisión de tres (3) a seis (6) años el que [+prisión, reprimido]",
+          "L17: Será reprimido con prisión de cuatro (4) meses a un (1) año el que a sabiendas tuviere [+prisión, reprimido]",
+          "L19: Será reprimido con prisión de seis (6) meses a dos (2) años el que tuviere en su poder [+prisión, reprimido]"
+        ],
+        "sujeto": [
+          "L26: mínimo y en su máximo cuando la víctima fuere menor de trece (13) años. [+víctima]"
+        ]
+      },
+      "evidence_lines": [
+        "L73: Esta regulación es esencial para abordar los desafíos que plantea la tecnología [+regula, regulación]",
+        "Sin evidencia textual fuerte para Enfoque Economico.",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L9: ARTÍCULO 128.- Será reprimido con prisión de tres (3) a seis (6) años el que [+prisión, reprimido]",
+        "L26: mínimo y en su máximo cuando la víctima fuere menor de trece (13) años. [+víctima]"
+      ],
+      "quality": {
+        "solidez": 0.503,
+        "ambiguedad": 0.0,
+        "peso": 0.503,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "4436-D-2023.txt"
+    },
+    "0805-D-2024": {
+      "scores": {
+        "intervencion": 6.4,
+        "economia": 9.0,
+        "datos": 9.0,
+        "punitividad": 2.7,
+        "sujeto": 4.8
+      },
+      "evidence": {
+        "intervencion": [
+          "L11: buenas prácticas, implementar un registro de riesgos significativos, promover la [+registro | -promover, buenas prácticas]",
+          "L163: Artículo 8.- Registro de riesgos significativos. La Autoridad de Aplicación [+autoridad de aplicación, registro]",
+          "L231: d) Incentivar en el sector privado la competitividad y fomentar un perfil [-fomentar, incentivar]"
+        ],
+        "economia": [
+          "L4: RESPONSABILIDAD ALGORÍTMICA Y PROMOCIÓN DE LA ROBÓTICA, [+promoción]",
+          "L26: a) los proveedores que introduzcan en el mercado o pongan en servicio sistemas [+mercado]",
+          "L27: de IA o que introduzcan en el mercado modelos de IA de uso general, con independencia [+mercado]"
+        ],
+        "datos": [
+          "L446: depende, en gran medida, de la constante absorción de datos, del flujo y manejo de la [+flujo]"
+        ],
+        "punitividad": [
+          "L3: reunidos en Congreso sancionan con fuerza de Ley: [+sancion]",
+          "L11: buenas prácticas, implementar un registro de riesgos significativos, promover la [-promover]",
+          "L47: humanas y mejorar la creatividad, promover la inclusión de poblaciones [-promover]"
+        ],
+        "sujeto": [
+          "L136: Comisión Nacional de Defensa de la Competencia y un (1) representante de la Defensoría [-nacional, defensa]",
+          "L179: seguridad nacional, como así también sistemas que puedan tener un impacto significativo [-nacional, seguridad nacional]",
+          "L193: certidumbre avalado y de interés del Estado Nacional que promueva diseños algorítmicos [-estado, nacional]"
+        ]
+      },
+      "evidence_lines": [
+        "L11: buenas prácticas, implementar un registro de riesgos significativos, promover la [+registro | -promover, buenas prácticas]",
+        "L4: RESPONSABILIDAD ALGORÍTMICA Y PROMOCIÓN DE LA ROBÓTICA, [+promoción]",
+        "L446: depende, en gran medida, de la constante absorción de datos, del flujo y manejo de la [+flujo]",
+        "L3: reunidos en Congreso sancionan con fuerza de Ley: [+sancion]",
+        "L136: Comisión Nacional de Defensa de la Competencia y un (1) representante de la Defensoría [-nacional, defensa]"
+      ],
+      "quality": {
+        "solidez": 0.857,
+        "ambiguedad": 0.55,
+        "peso": 0.386,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "0805-D-2024.txt"
+    },
+    "1013-D-2024": {
+      "scores": {
+        "intervencion": 7.9,
+        "economia": 9.0,
+        "datos": 5.0,
+        "punitividad": 9.0,
+        "sujeto": 8.3
+      },
+      "evidence": {
+        "intervencion": [
+          "L89: Registro vocal. Los derechos de propiedad se extienden hacia el registro vocal de los [+registro]",
+          "L129: - Archivo, registro, base o banco de datos: Indistintamente, designan al conjunto [+registro]",
+          "L138: - Responsable de archivo, registro, base o banco de datos: Persona física o de [+registro]"
+        ],
+        "economia": [
+          "L7: b. Proveer de normas armonizadas para la introducción en el mercado, la puesta en [+mercado]",
+          "L269: precaución para evitar dañar una industria naciente que promete ser muy beneficiosa [+beneficio]",
+          "L277: promoción de planes dentales o Scarlett Johansson quien demandó a una empresa de IA [+promoción]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L14: e. Adecuar la legislación penal relativa a los delitos contra la integridad sexual [+pena, delito]",
+          "L99: Sera reprimido con prisión de tres (3) meses a un (1) año, el que produjere, financiare, [+prisión, reprimido]",
+          "L114: Sera reprimido con prisión de tres (3) a seis (6) años quien produjere, financiare, [+prisión, reprimido]"
+        ],
+        "sujeto": [
+          "L42: voz de una persona de cualquier modo que se haga, es necesario su consentimiento, salvo [+persona, consentimiento]",
+          "L45: En caso de personas fallecidas pueden prestar el consentimiento sus herederos o la [+persona, consentimiento]",
+          "L145: - Usuario de datos: Toda persona, pública o privada que realice a su arbitrio el [+persona, usuario]"
+        ]
+      },
+      "evidence_lines": [
+        "L89: Registro vocal. Los derechos de propiedad se extienden hacia el registro vocal de los [+registro]",
+        "L7: b. Proveer de normas armonizadas para la introducción en el mercado, la puesta en [+mercado]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L14: e. Adecuar la legislación penal relativa a los delitos contra la integridad sexual [+pena, delito]",
+        "L42: voz de una persona de cualquier modo que se haga, es necesario su consentimiento, salvo [+persona, consentimiento]"
+      ],
+      "quality": {
+        "solidez": 0.728,
+        "ambiguedad": 0.64,
+        "peso": 0.262,
+        "complejidad_normativa_elevada": true
+      },
+      "fuente_texto": "1013-D-2024.txt"
+    },
+    "3003-D-2024": {
+      "scores": {
+        "intervencion": 7.8,
+        "economia": 8.5,
+        "datos": 1.0,
+        "punitividad": 7.2,
+        "sujeto": 7.6
+      },
+      "evidence": {
+        "intervencion": [
+          "L129: implementación y regulación de los sistemas de I.A. [+regula, regulación]",
+          "L140: 9) Se promoverá la implementación de mecanismos de supervisión y control de los [+control, supervisión | -promover]",
+          "L263: ARTICULO 10° Autoridad de aplicación y fiscalización [+autoridad de aplicación, fiscalización]"
+        ],
+        "economia": [
+          "L392: fomentará la innovación y la competitividad en el sector tecnológico argentino. Esto [+innovación, competitividad]",
+          "L488: los ciudadanos, promover la innovación y la competitividad, fomentar la colaboración [+innovación, competitividad]",
+          "L14: 1) El desarrollo, introducción en el mercado y utilización de sistemas de I.A. en la [+mercado]"
+        ],
+        "datos": [
+          "L193: judiciales, ex post facto, incluida la localización y aprehensión de personas [-localización]"
+        ],
+        "punitividad": [
+          "L171: penal de delitos de homicidio (art. 79 y 80 Código Penal), delitos contra la [+pena, delito]",
+          "L2: El Senado y la Honorable Cámara de Diputados sancionan con fuerza de ley [+sancion]",
+          "L87: 3) Equidad y no discriminación: Se evitará la discriminación y se promoverá la equidad, [-promover]"
+        ],
+        "sujeto": [
+          "L44: transparente, respetando los derechos humanos, la privacidad, la seguridad y la equidad. [+derechos humanos, privacidad]",
+          "L46: en todo momento, la dignidad, libertad y privacidad de la persona humana que accede a [+persona, privacidad]",
+          "L59: 8) Usuario: Persona humana o jurídica, pública o privada, bajo cuya autoridad se utilice [+persona, usuario]"
+        ]
+      },
+      "evidence_lines": [
+        "L129: implementación y regulación de los sistemas de I.A. [+regula, regulación]",
+        "L392: fomentará la innovación y la competitividad en el sector tecnológico argentino. Esto [+innovación, competitividad]",
+        "L193: judiciales, ex post facto, incluida la localización y aprehensión de personas [-localización]",
+        "L171: penal de delitos de homicidio (art. 79 y 80 Código Penal), delitos contra la [+pena, delito]",
+        "L44: transparente, respetando los derechos humanos, la privacidad, la seguridad y la equidad. [+derechos humanos, privacidad]"
+      ],
+      "quality": {
+        "solidez": 0.897,
+        "ambiguedad": 0.7,
+        "peso": 0.269,
+        "complejidad_normativa_elevada": true
+      },
+      "fuente_texto": "3003-D-2024.txt"
+    },
+    "3422-D-2024": {
+      "scores": {
+        "intervencion": 5.0,
+        "economia": 5.0,
+        "datos": 5.0,
+        "punitividad": 5.0,
+        "sujeto": 5.0
+      },
+      "evidence": {
+        "intervencion": [
+          "Sin evidencia textual fuerte para Intervencion Estatal."
+        ],
+        "economia": [
+          "Sin evidencia textual fuerte para Enfoque Economico."
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "Sin evidencia textual fuerte para Punitividad."
+        ],
+        "sujeto": [
+          "Sin evidencia textual fuerte para Sujeto Protegido."
+        ]
+      },
+      "evidence_lines": [
+        "Sin evidencia textual fuerte para Intervencion Estatal.",
+        "Sin evidencia textual fuerte para Enfoque Economico.",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "Sin evidencia textual fuerte para Punitividad.",
+        "Sin evidencia textual fuerte para Sujeto Protegido."
+      ],
+      "quality": {
+        "solidez": 0.267,
+        "ambiguedad": 0.02,
+        "peso": 0.262,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "sin_txt"
+    },
+    "3654-D-2024": {
+      "scores": {
+        "intervencion": 8.3,
+        "economia": 9.0,
+        "datos": 5.0,
+        "punitividad": 1.0,
+        "sujeto": 4.4
+      },
+      "evidence": {
+        "intervencion": [
+          "L9: nacionales e internacionales en materia de regulación de la Inteligencia Artificial y otras [+regula, regulación]",
+          "L14: Asimismo, dicha regulación deberá contemplar los siguientes objetivos: [+regula, regulación]",
+          "L31: políticas de regulación de la Inteligencia Artificial y otras innovaciones tecnológicas afines [+regula, regulación]"
+        ],
+        "economia": [
+          "L60: términos de la gestión colectiva de esta nueva innovación tecnológica. [+innovación]",
+          "L90: garantice la promoción de la tecnología así como la salvaguarda de los derechos [+promoción]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L15: a) Promover el uso seguro de la Inteligencia Artificial y otras innovaciones tecnológicas [-promover]"
+        ],
+        "sujeto": [
+          "L83: hay un Estado Nacional que esté en condiciones de dar una respuesta efectiva por sí sola a [-estado, nacional]",
+          "L9: nacionales e internacionales en materia de regulación de la Inteligencia Artificial y otras [-nacional]",
+          "L12: sistemas de inteligencia artificial sean completamente coherentes con los derechos humanos, [+derechos humanos]"
+        ]
+      },
+      "evidence_lines": [
+        "L9: nacionales e internacionales en materia de regulación de la Inteligencia Artificial y otras [+regula, regulación]",
+        "L60: términos de la gestión colectiva de esta nueva innovación tecnológica. [+innovación]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L15: a) Promover el uso seguro de la Inteligencia Artificial y otras innovaciones tecnológicas [-promover]",
+        "L83: hay un Estado Nacional que esté en condiciones de dar una respuesta efectiva por sí sola a [-estado, nacional]"
+      ],
+      "quality": {
+        "solidez": 0.467,
+        "ambiguedad": 0.02,
+        "peso": 0.458,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "3654-D-2024.txt"
+    },
+    "3900-D-2024": {
+      "scores": {
+        "intervencion": 3.8,
+        "economia": 9.0,
+        "datos": 5.0,
+        "punitividad": 2.1,
+        "sujeto": 4.7
+      },
+      "evidence": {
+        "intervencion": [
+          "L9: generar buenas prácticas y garantizar el desarrollo y uso eficiente, confiable, no [-buenas prácticas]",
+          "L21: diagnósticos, generar y promover espacios de reflexión, investigación y extensión, [-promover]",
+          "L32: d) Evaluar el régimen normativo vigente sobre nuevas tecnologías e inteligencia [+régimen]"
+        ],
+        "economia": [
+          "L20: datos e información, la dimensión ética, beneficios y niveles de riesgos, efectos, [+beneficio]",
+          "L63: Senado de la Nación, de Educación, Ciencia, Tecnología e Innovación productiva, [+innovación]",
+          "L152: generando debate acerca de los alcances, beneficios y potenciales riesgos que su [+beneficio]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L21: diagnósticos, generar y promover espacios de reflexión, investigación y extensión, [-promover]",
+          "L109: Conforme su “Recomendación sobre la Ética de la Inteligencia Artificial” los sistemas de [-recomendación]",
+          "L117: La Recomendación de UNESCO, dirige su objeto a “servir de base para poner los [-recomendación]"
+        ],
+        "sujeto": [
+          "L45: Estado, miembros de la administración pública nacional, provincial, de la Ciudad [-estado, nacional]",
+          "L191: mientras se protege la privacidad, los datos personales, la equidad, y respeto de los [+persona, privacidad]",
+          "L192: derechos humanos de las personas y su crecimiento inclusivo”.6 [+persona, derechos humanos]"
+        ]
+      },
+      "evidence_lines": [
+        "L9: generar buenas prácticas y garantizar el desarrollo y uso eficiente, confiable, no [-buenas prácticas]",
+        "L20: datos e información, la dimensión ética, beneficios y niveles de riesgos, efectos, [+beneficio]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L21: diagnósticos, generar y promover espacios de reflexión, investigación y extensión, [-promover]",
+        "L45: Estado, miembros de la administración pública nacional, provincial, de la Ciudad [-estado, nacional]"
+      ],
+      "quality": {
+        "solidez": 0.678,
+        "ambiguedad": 0.57,
+        "peso": 0.292,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "3900-D-2024.txt"
+    },
+    "3955-D-2024": {
+      "scores": {
+        "intervencion": 9.0,
+        "economia": 5.0,
+        "datos": 5.0,
+        "punitividad": 8.7,
+        "sujeto": 8.1
+      },
+      "evidence": {
+        "intervencion": [
+          "L94: aprobó por unanimidad la regulación del uso de inteligencia artificial en los contextos [+regula, regulación]",
+          "L114: las instituciones. En Argentina, la ausencia de una regulación específica sobre el uso [+regula, regulación]",
+          "L2: El Senado y la Cámara de Diputados de la Nación, sancionan con fuerza [+sancion]"
+        ],
+        "economia": [
+          "Sin evidencia textual fuerte para Enfoque Economico."
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L6: “Artículo 139° ter: Será reprimido con prisión de cuatro (4) a ocho (8) años, quien [+prisión, reprimido]",
+          "L31: “Artículo 129 bis Será reprimido con prisión de cuatro (4) a ocho (8) años, quien [+prisión, reprimido]",
+          "L37: Si los afectados fueren menores de dieciocho años, la pena será de prisión de seis (6) a [+pena, prisión]"
+        ],
+        "sujeto": [
+          "L34: de índole sexual íntimo de una persona o grupo de personas sin su consentimiento, o [+persona, consentimiento]",
+          "L53: humanos de las personas que sean víctimas de las maniobras dañosas y perjudiciales, [+persona, víctima]",
+          "L124: de afectar la imagen personal o profesional de individuos o entidades. Establece [+persona, individuo]"
+        ]
+      },
+      "evidence_lines": [
+        "L94: aprobó por unanimidad la regulación del uso de inteligencia artificial en los contextos [+regula, regulación]",
+        "Sin evidencia textual fuerte para Enfoque Economico.",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L6: “Artículo 139° ter: Será reprimido con prisión de cuatro (4) a ocho (8) años, quien [+prisión, reprimido]",
+        "L34: de índole sexual íntimo de una persona o grupo de personas sin su consentimiento, o [+persona, consentimiento]"
+      ],
+      "quality": {
+        "solidez": 0.581,
+        "ambiguedad": 0.133,
+        "peso": 0.504,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "3955-D-2024.txt"
+    },
+    "4079-D-2024": {
+      "scores": {
+        "intervencion": 7.2,
+        "economia": 9.0,
+        "datos": 5.0,
+        "punitividad": 3.0,
+        "sujeto": 5.0
+      },
+      "evidence": {
+        "intervencion": [
+          "L94: introducir mejoras en el marco de la autorregulación. [+regula, regulación]",
+          "L160: y la implementación de medidas en el marco de la autorregulación para [+regula, regulación]",
+          "L264: La regulación que aquí se propone se enmarca en aquellos principios y [+regula, regulación]"
+        ],
+        "economia": [
+          "L235: como principal objetivo promover el fomento, el desarrollo, la innovación y la [+fomento, innovación]",
+          "L5: Presupuestos Mínimos para la Promoción del desarrollo [+promoción]",
+          "L7: Artículo 1°- Objeto. La presente ley tiene por objeto promover el fomento, [+fomento]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L4: Congreso, sancionan con fuerza de ley… [+sancion]",
+          "L7: Artículo 1°- Objeto. La presente ley tiene por objeto promover el fomento, [-promover]",
+          "L99: capacitación y de evaluación de procesos a fin de detectar sesgos [-capacitación]"
+        ],
+        "sujeto": [
+          "L12: Artículo 2°- Interés estratégico. Declárase de interés nacional y estratégico [-nacional, interés estratégico]",
+          "L42: uso, la transparencia frente al usuario, la gestión de datos personales [+persona, usuario]",
+          "L50: 8) Usuario: persona humana o jurídica, ya sea ésta de carácter público [+persona, usuario]"
+        ]
+      },
+      "evidence_lines": [
+        "L94: introducir mejoras en el marco de la autorregulación. [+regula, regulación]",
+        "L235: como principal objetivo promover el fomento, el desarrollo, la innovación y la [+fomento, innovación]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L4: Congreso, sancionan con fuerza de ley… [+sancion]",
+        "L12: Artículo 2°- Interés estratégico. Declárase de interés nacional y estratégico [-nacional, interés estratégico]"
+      ],
+      "quality": {
+        "solidez": 0.781,
+        "ambiguedad": 0.55,
+        "peso": 0.351,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "4079-D-2024.txt"
+    },
+    "4898-D-2024": {
+      "scores": {
+        "intervencion": 9.0,
+        "economia": 9.0,
+        "datos": 5.0,
+        "punitividad": 9.0,
+        "sujeto": 8.8
+      },
+      "evidence": {
+        "intervencion": [
+          "L3: SANCIONAN CON FUERZA DE LEY [+sancion]",
+          "L91: un factor ajeno a su control. [+control]",
+          "L164: consciente que está siendo analizado y, de cierta forma, controlado, por este tipo [+control]"
+        ],
+        "economia": [
+          "L7: o beneficios directos de la misma, como así también a quienes utilizan productos [+beneficio]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L3: SANCIONAN CON FUERZA DE LEY [+sancion]"
+        ],
+        "sujeto": [
+          "L52: que tanto usuarios como consumidores deberán prestar un consentimiento [+usuario, consumidor]",
+          "L202: comprensibles sobre cómo los usuarios y consumidores toman sus decisiones y [+usuario, consumidor]",
+          "L5: Articulo 1bis: Se considera usuario directo de la IA a aquellos que interactúan [+usuario]"
+        ]
+      },
+      "evidence_lines": [
+        "L3: SANCIONAN CON FUERZA DE LEY [+sancion]",
+        "L7: o beneficios directos de la misma, como así también a quienes utilizan productos [+beneficio]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L3: SANCIONAN CON FUERZA DE LEY [+sancion]",
+        "L52: que tanto usuarios como consumidores deberán prestar un consentimiento [+usuario, consumidor]"
+      ],
+      "quality": {
+        "solidez": 0.517,
+        "ambiguedad": 0.358,
+        "peso": 0.332,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "4898-D-2024.txt"
+    },
+    "5327-D-2024": {
+      "scores": {
+        "intervencion": 7.7,
+        "economia": 5.0,
+        "datos": 5.0,
+        "punitividad": 8.6,
+        "sujeto": 4.3
+      },
+      "evidence": {
+        "intervencion": [
+          "L91: punitivo del Estado, quedando fuera de los alcances previstos en la regulación penal prevista [+regula, regulación]",
+          "L4: SANCIONAN CON FUERZA DE LEY: [+sancion]",
+          "L66: que corresponde legislar y promover las medidas que les garanticen el pleno goce de sus [-promover]"
+        ],
+        "economia": [
+          "Sin evidencia textual fuerte para Enfoque Economico."
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L9: “ARTICULO 128 BIS.- Será reprimido con prisión de dos (2) a seis (6) años el que produjere, [+prisión, reprimido]",
+          "L16: Será reprimido con prisión de cinco (5) meses a dos (2) años el que tuviere en su poder [+prisión, reprimido]",
+          "L19: Todas las escalas penales previstas en este artículo se elevarán en un tercio en su mínimo y [+pena, escalas penales]"
+        ],
+        "sujeto": [
+          "L1: “2024 – AÑO DE LA DEFENSA A LA VIDA, LA LIBERTAD Y LA PROPIEDAD” [-defensa]",
+          "L14: sistemas de inteligencia artificial, involucrando imágenes de personas reales y adicionando [+persona]",
+          "L20: en su máximo cuando la víctima fuere menor de trece (13) años.” [+víctima]"
+        ]
+      },
+      "evidence_lines": [
+        "L91: punitivo del Estado, quedando fuera de los alcances previstos en la regulación penal prevista [+regula, regulación]",
+        "Sin evidencia textual fuerte para Enfoque Economico.",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L9: “ARTICULO 128 BIS.- Será reprimido con prisión de dos (2) a seis (6) años el que produjere, [+prisión, reprimido]",
+        "L1: “2024 – AÑO DE LA DEFENSA A LA VIDA, LA LIBERTAD Y LA PROPIEDAD” [-defensa]"
+      ],
+      "quality": {
+        "solidez": 0.464,
+        "ambiguedad": 0.17,
+        "peso": 0.385,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "5327-D-2024.txt"
+    },
+    "6156-D-2024": {
+      "scores": {
+        "intervencion": 8.1,
+        "economia": 8.3,
+        "datos": 1.0,
+        "punitividad": 6.1,
+        "sujeto": 6.4
+      },
+      "evidence": {
+        "intervencion": [
+          "L54: Artículo 6. Evaluación de impacto. Para la inscripción en el REGISTRO [+registro, evaluación de impacto]",
+          "L322: una regulación específica plantea riesgos relacionados con la privacidad, la [+regula, regulación]",
+          "L352: regulación tecnológica en América Latina. Este enfoque proactivo no solo [+regula, regulación]"
+        ],
+        "economia": [
+          "L83: trabajadores y emprendedores. [+emprendedor]",
+          "L135: 3) Incluyan sistemas de categorización biométrica que infieran atributos [-tribut]",
+          "L217: Al establecer un equilibrio entre la innovación y la protección de derechos, la UE [+innovación]"
+        ],
+        "datos": [
+          "L77: policiales y judiciales, ex post facto, incluida la localización y [-localización]"
+        ],
+        "punitividad": [
+          "L143: 5) Evalúen el riesgo de que un individuo cometa delitos penales basándose [+pena, delito]",
+          "L4: reunidos en Congreso, etc. sancionan con fuerza de LEY [+sancion]",
+          "L112: fundamento de una acción, predicción, recomendación o decisión, a [-recomendación]"
+        ],
+        "sujeto": [
+          "L9: humanos, la privacidad y la seguridad de los ciudadanos y asegurar la [+ciudadano, privacidad]",
+          "L30: e) Usuario: Persona humana o jurídica, de carácter público o privado, que [+persona, usuario]",
+          "L35: uso, la transparencia frente al usuario, la gestión de datos personales y la [+persona, usuario]"
+        ]
+      },
+      "evidence_lines": [
+        "L54: Artículo 6. Evaluación de impacto. Para la inscripción en el REGISTRO [+registro, evaluación de impacto]",
+        "L83: trabajadores y emprendedores. [+emprendedor]",
+        "L77: policiales y judiciales, ex post facto, incluida la localización y [-localización]",
+        "L143: 5) Evalúen el riesgo de que un individuo cometa delitos penales basándose [+pena, delito]",
+        "L9: humanos, la privacidad y la seguridad de los ciudadanos y asegurar la [+ciudadano, privacidad]"
+      ],
+      "quality": {
+        "solidez": 0.792,
+        "ambiguedad": 0.66,
+        "peso": 0.269,
+        "complejidad_normativa_elevada": true
+      },
+      "fuente_texto": "6156-D-2024.txt"
+    },
+    "6976-D-2024": {
+      "scores": {
+        "intervencion": 2.6,
+        "economia": 9.0,
+        "datos": 5.0,
+        "punitividad": 1.8,
+        "sujeto": 1.5
+      },
+      "evidence": {
+        "intervencion": [
+          "L5: sancionan con fuerza de ley: [+sancion]",
+          "L12: con el objetivo de promover el desarrollo de habilidades digitales y el uso [-promover]",
+          "L32: a) Fomentar la alfabetización digital de los estudiantes de nivel medio; [-fomentar]"
+        ],
+        "economia": [
+          "L82: educación de calidad en las áreas de tecnología e innovación. [+innovación]",
+          "L120: en las industrias, el mercado laboral y la vida cotidiana. La educación secundaria, [+mercado]",
+          "L127: Beneficios del Proyecto: [+beneficio]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L5: sancionan con fuerza de ley: [+sancion]",
+          "L12: con el objetivo de promover el desarrollo de habilidades digitales y el uso [-promover]",
+          "L35: c) Promover el desarrollo de competencias tecnológicas y habilidades para el [-promover]"
+        ],
+        "sujeto": [
+          "L49: Artículo 6°: Infraestructura y Equipamiento. - El Estado Nacional, a través de [-estado, nacional]",
+          "L2: 2024- “Año de la Defensa de la Vida, la Libertad y la Propiedad” [-defensa]",
+          "L9: Artículo 1°: Objeto. - Créase el Programa Nacional de Laboratorios de [-nacional]"
+        ]
+      },
+      "evidence_lines": [
+        "L5: sancionan con fuerza de ley: [+sancion]",
+        "L82: educación de calidad en las áreas de tecnología e innovación. [+innovación]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L5: sancionan con fuerza de ley: [+sancion]",
+        "L49: Artículo 6°: Infraestructura y Equipamiento. - El Estado Nacional, a través de [-estado, nacional]"
+      ],
+      "quality": {
+        "solidez": 0.807,
+        "ambiguedad": 0.438,
+        "peso": 0.454,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "6976-D-2024.txt"
+    },
+    "7045-D-2024": {
+      "scores": {
+        "intervencion": 7.4,
+        "economia": 5.0,
+        "datos": 5.0,
+        "punitividad": 6.3,
+        "sujeto": 5.8
+      },
+      "evidence": {
+        "intervencion": [
+          "L3: El Senado y la Honorable Cámara de Diputados sancionan con fuerza de ley [+sancion]",
+          "L51: ARTÍCULO 5º: Sanciones. Se establecerán sanciones proporcionales a la gravedad [+sancion]",
+          "L53: en sede administrativa conforme lo regulado en el art. 47 de la Ley 24.240, las que [+regula]"
+        ],
+        "economia": [
+          "L95: Grupo Mercado Común del MERCOSUR, relativa a la protección del consumidor. [+mercado]",
+          "L104: mundo: desde el tratamiento de las enfermedades crónicas o la reducción de las tasas [-tasa]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L3: El Senado y la Honorable Cámara de Diputados sancionan con fuerza de ley [+sancion]",
+          "L46: orientación sexual. [-orientación]",
+          "L51: ARTÍCULO 5º: Sanciones. Se establecerán sanciones proporcionales a la gravedad [+sancion]"
+        ],
+        "sujeto": [
+          "L11: los productos o servicios que se ofrecen a consumidores y usuarios y las condiciones [+usuario, consumidor]",
+          "L15: suplantar la comunicación en soporte físico si el consumidor o usuario optase de forma [+usuario, consumidor]",
+          "L69: destinados a usuarios y consumidores de la República Argentina, en resguardo del [+usuario, consumidor]"
+        ]
+      },
+      "evidence_lines": [
+        "L3: El Senado y la Honorable Cámara de Diputados sancionan con fuerza de ley [+sancion]",
+        "L95: Grupo Mercado Común del MERCOSUR, relativa a la protección del consumidor. [+mercado]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L3: El Senado y la Honorable Cámara de Diputados sancionan con fuerza de ley [+sancion]",
+        "L11: los productos o servicios que se ofrecen a consumidores y usuarios y las condiciones [+usuario, consumidor]"
+      ],
+      "quality": {
+        "solidez": 0.704,
+        "ambiguedad": 0.245,
+        "peso": 0.532,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "7045-D-2024.txt"
+    },
+    "1937-D-2025": {
+      "scores": {
+        "intervencion": 8.7,
+        "economia": 9.0,
+        "datos": 1.0,
+        "punitividad": 5.0,
+        "sujeto": 5.8
+      },
+      "evidence": {
+        "intervencion": [
+          "L100: fiscalizar, controlar y sancionar el cumplimiento de esta ley. Tendrá facultades para dictar [+control, sancion]",
+          "L117: personas. Por esta razón, su regulación no puede ser postergada. Lejos de adoptar una lógica [+regula, regulación]",
+          "L3: El Senado y la Cámara de Diputados de la Nación sancionan con fuerza de ley: [+sancion]"
+        ],
+        "economia": [
+          "L9: personales, y promoviendo un entorno seguro, ético, transparente e inclusivo para la innovación [+innovación]",
+          "L37: discriminación, promoviendo el acceso equitativo a sus beneficios por parte de toda la [+beneficio]",
+          "L45: ● Innovación ética y progreso social: Se fomentará el desarrollo de soluciones innovadoras [+innovación]"
+        ],
+        "datos": [
+          "L113: tecnológicas que atraviesan el mundo y con una perspectiva de soberanía digital, inclusión social y [-soberanía]"
+        ],
+        "punitividad": [
+          "L106: sanciones administrativas, incluyendo multas, suspensión o cancelación de autorizaciones, y otras [+multa, sancion]",
+          "L3: El Senado y la Cámara de Diputados de la Nación sancionan con fuerza de ley: [+sancion]",
+          "L50: contextos específicos, garantizando la capacitación progresiva del personal público, la [-capacitación]"
+        ],
+        "sujeto": [
+          "L62: Artículo 6: Consentimiento de los Usuarios El tratamiento de datos personales mediante IA [+persona, usuario]",
+          "L119: en todos los ámbitos del territorio nacional, con foco particular en el Estado. [-estado, nacional]",
+          "L130: personales, consentimiento informado, evaluaciones de impacto, transparencia algorítmica, [+persona, consentimiento]"
+        ]
+      },
+      "evidence_lines": [
+        "L100: fiscalizar, controlar y sancionar el cumplimiento de esta ley. Tendrá facultades para dictar [+control, sancion]",
+        "L9: personales, y promoviendo un entorno seguro, ético, transparente e inclusivo para la innovación [+innovación]",
+        "L113: tecnológicas que atraviesan el mundo y con una perspectiva de soberanía digital, inclusión social y [-soberanía]",
+        "L106: sanciones administrativas, incluyendo multas, suspensión o cancelación de autorizaciones, y otras [+multa, sancion]",
+        "L62: Artículo 6: Consentimiento de los Usuarios El tratamiento de datos personales mediante IA [+persona, usuario]"
+      ],
+      "quality": {
+        "solidez": 0.792,
+        "ambiguedad": 0.547,
+        "peso": 0.359,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "1937-D-2025.txt"
+    },
+    "2130-D-2025": {
+      "scores": {
+        "intervencion": 7.4,
+        "economia": 8.3,
+        "datos": 2.6,
+        "punitividad": 5.6,
+        "sujeto": 6.6
+      },
+      "evidence": {
+        "intervencion": [
+          "L198: i) Acción administrativa: Ante los órganos competentes de fiscalización y control. [+control, fiscalización]",
+          "L300: La Autoridad de Aplicación creará un registro público de “Sistemas de Inteligencia Artificial de alto riesgo” que [+autoridad de aplicación, registro]",
+          "L312: ARTÍCULO 20. - Regulación: Corresponderá a la autoridad competente regular los sistemas de inteligencia [+regula, regulación]"
+        ],
+        "economia": [
+          "L463: Fomento de la Innovación y el Desarrollo en Sistemas de Inteligencia [+fomento, innovación]",
+          "L480: b) Incentivos fiscales: promover beneficios tributarios para empresas e instituciones que inviertan en [+incentivo, beneficio | -tribut]",
+          "L840: e) Fomento a la innovación, y [+fomento, innovación]"
+        ],
+        "datos": [
+          "L362: interoperabilidad, arquitectura empresarial de gobierno, capital humano y adquisiciones vinculadas [+interoperabilidad]",
+          "L559: de localización, un identificador en línea, o por uno o varios elementos característicos de su identidad [-localización]",
+          "L570: almacenamiento, organización, tipo de soporte, tratamiento, procesamiento, localización o acceso, [-localización]"
+        ],
+        "punitividad": [
+          "L253: a) persecución de delitos que pueden ser castigados con una pena máxima de reclusión superior a dos [+pena, delito]",
+          "L287: cometer infracciones o de reincidir, o el riesgo de posibles víctimas de delitos penales o para evaluar [+pena, delito]",
+          "L458: multas, suspensiones y, en casos graves, la prohibición de uso de sistemas de IA. [+multa, prohibición]"
+        ],
+        "sujeto": [
+          "L715: - Violación de privacidad: que es el uso masivo de datos personales sin consentimiento. Teniendo [+persona, privacidad]",
+          "L20: f) promover el desarrollo y la adopción de los sistemas de Inteligencia Artificial en el estado nacional y [-estado, nacional]",
+          "L41: ii) Personas afectadas: Individuos o grupos sujetos a decisiones, recomendaciones o [+persona, individuo]"
+        ]
+      },
+      "evidence_lines": [
+        "L198: i) Acción administrativa: Ante los órganos competentes de fiscalización y control. [+control, fiscalización]",
+        "L463: Fomento de la Innovación y el Desarrollo en Sistemas de Inteligencia [+fomento, innovación]",
+        "L362: interoperabilidad, arquitectura empresarial de gobierno, capital humano y adquisiciones vinculadas [+interoperabilidad]",
+        "L253: a) persecución de delitos que pueden ser castigados con una pena máxima de reclusión superior a dos [+pena, delito]",
+        "L715: - Violación de privacidad: que es el uso masivo de datos personales sin consentimiento. Teniendo [+persona, privacidad]"
+      ],
+      "quality": {
+        "solidez": 0.885,
+        "ambiguedad": 0.72,
+        "peso": 0.248,
+        "complejidad_normativa_elevada": true
+      },
+      "fuente_texto": "2130-D-2025.txt"
+    },
+    "2300-D-2025": {
+      "scores": {
+        "intervencion": 7.2,
+        "economia": 5.0,
+        "datos": 5.0,
+        "punitividad": 7.4,
+        "sujeto": 6.8
+      },
+      "evidence": {
+        "intervencion": [
+          "L150: regulación clara y específica sobre el uso de IA para la creación de imágenes engañosas o [+regula, regulación]",
+          "L6: SANCIONAN CON FUERZA DE [+sancion]",
+          "L32: Capítulo II - Delitos y Sanciones. [+sancion]"
+        ],
+        "economia": [
+          "Sin evidencia textual fuerte para Enfoque Economico."
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L32: Capítulo II - Delitos y Sanciones. [+delito, sancion]",
+          "L78: sancionadas con multas económicas o la suspensión temporal de su servicio [+multa, sancion]",
+          "L91: Además de las sanciones penales, el infractor estará obligado a reparar el [+pena, sancion]"
+        ],
+        "sujeto": [
+          "L35: Quien, sin el consentimiento expreso de la persona afectada, utilice [+persona, consentimiento]",
+          "L76: imágenes manipuladas sin el consentimiento de la persona afectada. [+persona, consentimiento]",
+          "L127: privacidad y la integridad personal de las personas afectadas. [+persona, privacidad]"
+        ]
+      },
+      "evidence_lines": [
+        "L150: regulación clara y específica sobre el uso de IA para la creación de imágenes engañosas o [+regula, regulación]",
+        "Sin evidencia textual fuerte para Enfoque Economico.",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L32: Capítulo II - Delitos y Sanciones. [+delito, sancion]",
+        "L35: Quien, sin el consentimiento expreso de la persona afectada, utilice [+persona, consentimiento]"
+      ],
+      "quality": {
+        "solidez": 0.624,
+        "ambiguedad": 0.55,
+        "peso": 0.281,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "2300-D-2025.txt"
+    },
+    "2903-D-2025": {
+      "scores": {
+        "intervencion": 7.2,
+        "economia": 5.0,
+        "datos": 9.0,
+        "punitividad": 2.0,
+        "sujeto": 3.2
+      },
+      "evidence": {
+        "intervencion": [
+          "L3: el Senado de la Nación Sancionan con Fuerza de Ley [+sancion]",
+          "L29: ARTÍCULO 5.- Autoridad de Aplicación. La Jefatura de Gabinete de Ministros del Poder [+autoridad de aplicación]",
+          "L30: Ejecutivo Nacional, o el organismo que la misma establezca, será la Autoridad de Aplicación [+autoridad de aplicación]"
+        ],
+        "economia": [
+          "Sin evidencia textual fuerte para Enfoque Economico."
+        ],
+        "datos": [
+          "L83: interoperabilidad entre sistemas, la disponibilidad de datos útiles, y el posterior [+interoperabilidad]"
+        ],
+        "punitividad": [
+          "L3: el Senado de la Nación Sancionan con Fuerza de Ley [+sancion]",
+          "L91: ARTÍCULO 15- Inversión en formación y capacitación. El Poder Ejecutivo Nacional [-capacitación]",
+          "L93: de trabajo y en sensibilización de los actores en general para garantizar un buen nivel de [-sensibilización]"
+        ],
+        "sujeto": [
+          "L197: por parte del Estado es primordial para promover una Administración Pública Nacional [-estado, nacional]",
+          "L5: ADMINISTRACIÓN PÚBLICA NACIONAL [-nacional, administración pública]",
+          "L41: A tal fin la administración pública nacional deberá generar marcos regulatorios claros y [-nacional, administración pública]"
+        ]
+      },
+      "evidence_lines": [
+        "L3: el Senado de la Nación Sancionan con Fuerza de Ley [+sancion]",
+        "Sin evidencia textual fuerte para Enfoque Economico.",
+        "L83: interoperabilidad entre sistemas, la disponibilidad de datos útiles, y el posterior [+interoperabilidad]",
+        "L3: el Senado de la Nación Sancionan con Fuerza de Ley [+sancion]",
+        "L197: por parte del Estado es primordial para promover una Administración Pública Nacional [-estado, nacional]"
+      ],
+      "quality": {
+        "solidez": 0.806,
+        "ambiguedad": 0.547,
+        "peso": 0.365,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "2903-D-2025.txt"
+    },
+    "3558-D-2025": {
+      "scores": {
+        "intervencion": 9.0,
+        "economia": 9.0,
+        "datos": 5.0,
+        "punitividad": 9.0,
+        "sujeto": 3.7
+      },
+      "evidence": {
+        "intervencion": [
+          "L6: REGULACIÓN DEL USO DE INTELIGENCIA ARTIFICIAL EN LOCUCIÓN Y [+regula, regulación]",
+          "L42: Artículo 6° – Regulación y Responsabilidad [+regula, regulación]",
+          "L89: explícitamente al público. Además, establece regulaciones claras y sanciones para las [+regula, sancion]"
+        ],
+        "economia": [
+          "L97: El futuro debe construirse con innovación, pero también con justicia y respeto [+innovación]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L5: SANCIONA CON FUERZA DE LEY: [+sancion]",
+          "L40: violación a los derechos de propiedad intelectual y estará sujeto a las sanciones [+sancion]",
+          "L49: Artículo 7° – Sanciones [+sancion]"
+        ],
+        "sujeto": [
+          "L18: comunicación nacionales. [-nacional]",
+          "L25: Artículo 4° – Registro Nacional de Voces Sintéticas [-nacional]",
+          "L26: Créase el Registro Nacional de Voces Sintéticas en el ámbito del Ente Nacional [-nacional]"
+        ]
+      },
+      "evidence_lines": [
+        "L6: REGULACIÓN DEL USO DE INTELIGENCIA ARTIFICIAL EN LOCUCIÓN Y [+regula, regulación]",
+        "L97: El futuro debe construirse con innovación, pero también con justicia y respeto [+innovación]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L5: SANCIONA CON FUERZA DE LEY: [+sancion]",
+        "L18: comunicación nacionales. [-nacional]"
+      ],
+      "quality": {
+        "solidez": 0.751,
+        "ambiguedad": 0.02,
+        "peso": 0.736,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "3558-D-2025.txt"
+    },
+    "4080-D-2025": {
+      "scores": {
+        "intervencion": 9.0,
+        "economia": 5.0,
+        "datos": 5.0,
+        "punitividad": 9.0,
+        "sujeto": 5.9
+      },
+      "evidence": {
+        "intervencion": [
+          "L4: El Senado y la Cámara de Diputados sancionan con fuerza de ley… [+sancion]",
+          "L5: RÉGIMEN JURÍDICO DE PROTECCIÓN CONTRA [+régimen]",
+          "L27: c) que se trate del ejercicio regular del derecho de informar sobre acontecimientos de [+regula]"
+        ],
+        "economia": [
+          "Sin evidencia textual fuerte para Enfoque Economico."
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L42: Gísica determinada será reprimido con una multa de entre un (1) salario mínimo vital [+multa, reprimido]",
+          "L48: de inteligencia artiGicial su autor será reprimido con prisión de seis (6) meses a dos [+prisión, reprimido]",
+          "L4: El Senado y la Cámara de Diputados sancionan con fuerza de ley… [+sancion]"
+        ],
+        "sujeto": [
+          "L14: una persona, de cualquier modo que se haga, es necesario su consentimiento, aún si [+persona, consentimiento]",
+          "L29: En caso de personas fallecidas pueden prestar el consentimiento sus herederos o el [+persona, consentimiento]",
+          "L181: protección de los derechos de los consumidores y usuarios de servicios digitales. [+usuario, consumidor]"
+        ]
+      },
+      "evidence_lines": [
+        "L4: El Senado y la Cámara de Diputados sancionan con fuerza de ley… [+sancion]",
+        "Sin evidencia textual fuerte para Enfoque Economico.",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L42: Gísica determinada será reprimido con una multa de entre un (1) salario mínimo vital [+multa, reprimido]",
+        "L14: una persona, de cualquier modo que se haga, es necesario su consentimiento, aún si [+persona, consentimiento]"
+      ],
+      "quality": {
+        "solidez": 0.641,
+        "ambiguedad": 0.358,
+        "peso": 0.412,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "4080-D-2025.txt"
+    },
+    "4094-D-2025": {
+      "scores": {
+        "intervencion": 8.1,
+        "economia": 9.0,
+        "datos": 1.0,
+        "punitividad": 6.5,
+        "sujeto": 7.5
+      },
+      "evidence": {
+        "intervencion": [
+          "L5: Regulación del uso de imágenes digitales y figuras humanas creadas por inteligencia [+regula, regulación]",
+          "L131: La regulación propuesta en el presente proyecto de ley tiene como objeto poner en debate [+regula, regulación]",
+          "L195: trazables. Deben existir mecanismos de supervisión, evaluación de impacto, auditoría y [+supervisión, evaluación de impacto]"
+        ],
+        "economia": [
+          "L25: de edición, alterando sustancialmente su apariencia, cualidades, calidades o beneficios. [+beneficio]",
+          "L144: informativa, que establezca parámetros a la innovación tecnológica –basada en principios [+innovación]",
+          "L166: respeto, protección y promoción de los derechos humanos y las libertades fundamentales [+promoción]"
+        ],
+        "datos": [
+          "L191: datos, deben respetarse el derecho internacional y la soberanía nacional. La participación [-soberanía]"
+        ],
+        "punitividad": [
+          "L113: Serán también de aplicación las sanciones civiles, disciplinarias y penales [+pena, sancion]",
+          "L49: ARTÍCULO 5° – Prohibición de uso no consentido de imagen o identidad [+prohibición]",
+          "L74: Es de aplicación a la presente ley las penalidades y prohibiciones establecidas en la ley [+pena]"
+        ],
+        "sujeto": [
+          "L33: inducen a error al consumidor sobre la identidad de una persona, sus cualidades físicas o [+persona, consumidor]",
+          "L134: evolucionando día a día, lo que hace que los usuarios y consumidores estén cada vez más [+usuario, consumidor]",
+          "L138: Esta situación vulnera derechos fundamentales de los usuarios, consumidores y electores [+usuario, consumidor]"
+        ]
+      },
+      "evidence_lines": [
+        "L5: Regulación del uso de imágenes digitales y figuras humanas creadas por inteligencia [+regula, regulación]",
+        "L25: de edición, alterando sustancialmente su apariencia, cualidades, calidades o beneficios. [+beneficio]",
+        "L191: datos, deben respetarse el derecho internacional y la soberanía nacional. La participación [-soberanía]",
+        "L113: Serán también de aplicación las sanciones civiles, disciplinarias y penales [+pena, sancion]",
+        "L33: inducen a error al consumidor sobre la identidad de una persona, sus cualidades físicas o [+persona, consumidor]"
+      ],
+      "quality": {
+        "solidez": 0.832,
+        "ambiguedad": 0.66,
+        "peso": 0.283,
+        "complejidad_normativa_elevada": true
+      },
+      "fuente_texto": "4094-D-2025.txt"
+    },
+    "4145-D-2025": {
+      "scores": {
+        "intervencion": 6.5,
+        "economia": 9.0,
+        "datos": 1.0,
+        "punitividad": 2.0,
+        "sujeto": 2.9
+      },
+      "evidence": {
+        "intervencion": [
+          "L22: Artículo 3° – Autoridad de aplicación: La autoridad de aplicación del presente régimen será la [+régimen, autoridad de aplicación]",
+          "L3: El Senado y la Cámara de Diputados sancionan con fuerza de ley: [+sancion]",
+          "L5: Artículo 1° – Objeto: La presente ley establece el Régimen Nacional de Incorporación de [+régimen]"
+        ],
+        "economia": [
+          "L17: d) Fomento del pensamiento crítico, la creatividad y la resolución de problemas. [+fomento]",
+          "L18: e) Promoción de una ciudadanía digital activa y responsable. [+promoción]",
+          "L73: tecnología e innovación en sus respectivos niveles y contextos. Para las escuelas técnicas, se [+innovación]"
+        ],
+        "datos": [
+          "L191: también una política de Estado orientada al desarrollo, la soberanía tecnológica y la inclusión [-soberanía]"
+        ],
+        "punitividad": [
+          "L3: El Senado y la Cámara de Diputados sancionan con fuerza de ley: [+sancion]",
+          "L6: Contenidos sobre Inteligencia Artificial (IA) en el sistema educativo con el objetivo de promover, [-promover]",
+          "L25: materiales de apoyo, guías para docentes, y programas de capacitación en coordinación con las [-capacitación]"
+        ],
+        "sujeto": [
+          "L134: generar incentivos, recursos y orientación desde el Estado nacional, para que las provincias, si [-estado, nacional]",
+          "L191: también una política de Estado orientada al desarrollo, la soberanía tecnológica y la inclusión [-estado, soberanía]",
+          "L5: Artículo 1° – Objeto: La presente ley establece el Régimen Nacional de Incorporación de [-nacional]"
+        ]
+      },
+      "evidence_lines": [
+        "L22: Artículo 3° – Autoridad de aplicación: La autoridad de aplicación del presente régimen será la [+régimen, autoridad de aplicación]",
+        "L17: d) Fomento del pensamiento crítico, la creatividad y la resolución de problemas. [+fomento]",
+        "L191: también una política de Estado orientada al desarrollo, la soberanía tecnológica y la inclusión [-soberanía]",
+        "L3: El Senado y la Cámara de Diputados sancionan con fuerza de ley: [+sancion]",
+        "L134: generar incentivos, recursos y orientación desde el Estado nacional, para que las provincias, si [-estado, nacional]"
+      ],
+      "quality": {
+        "solidez": 0.764,
+        "ambiguedad": 0.325,
+        "peso": 0.516,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "4145-D-2025.txt"
+    },
+    "4219-D-2025": {
+      "scores": {
+        "intervencion": 8.1,
+        "economia": 9.0,
+        "datos": 5.0,
+        "punitividad": 5.0,
+        "sujeto": 5.2
+      },
+      "evidence": {
+        "intervencion": [
+          "L95: En este sentido, la regulación estatal se vuelve imperiosa. La [+regula, regulación]",
+          "L96: autorregulación privada no es suficiente frente al impacto de estas tecnologías en [+regula, regulación]",
+          "L3: El Senado y la Cámara de Diputados de la Nación sancionan con fuerza de ley. [+sancion]"
+        ],
+        "economia": [
+          "L119: prohibitivo. Busca permitir el avance de la innovación tecnológica, pero con reglas claras [+innovación]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L3: El Senado y la Cámara de Diputados de la Nación sancionan con fuerza de ley. [+sancion]",
+          "L118: El modelo regulatorio propuesto es preventivo, no punitivo ni [-preventivo]"
+        ],
+        "sujeto": [
+          "L5: Artificial (IA) en la Administración Pública Nacional [-nacional, administración pública]",
+          "L10: desde la Administración Pública Nacional. [-nacional, administración pública]",
+          "L21: d) Asegurar la protección de los derechos humanos, la privacidad y la equidad en [+derechos humanos, privacidad]"
+        ]
+      },
+      "evidence_lines": [
+        "L95: En este sentido, la regulación estatal se vuelve imperiosa. La [+regula, regulación]",
+        "L119: prohibitivo. Busca permitir el avance de la innovación tecnológica, pero con reglas claras [+innovación]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L3: El Senado y la Cámara de Diputados de la Nación sancionan con fuerza de ley. [+sancion]",
+        "L5: Artificial (IA) en la Administración Pública Nacional [-nacional, administración pública]"
+      ],
+      "quality": {
+        "solidez": 0.782,
+        "ambiguedad": 0.547,
+        "peso": 0.354,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "4219-D-2025.txt"
+    },
+    "4243-D-2025": {
+      "scores": {
+        "intervencion": 9.0,
+        "economia": 9.0,
+        "datos": 5.0,
+        "punitividad": 9.0,
+        "sujeto": 6.7
+      },
+      "evidence": {
+        "intervencion": [
+          "L63: Artículo 9°. - Supervisión y control. La autoridad de aplicación podrá: [+autoridad de aplicación, control]",
+          "L128: supervisión y control, así como la posibilidad de sanciones ante incumplimientos normativos, [+control, supervisión]",
+          "L68: Artículo 10°. - Sanciones. Sin perjuicio del régimen de la Ley 25.326, la Autoridad de [+régimen, sancion]"
+        ],
+        "economia": [
+          "L73: infractor en la Argentina y factores como beneficios obtenidos, número de afectados y dolo o [+beneficio]",
+          "L94: que nuestro país cuente con un marco normativo que garantice no solo la promoción de la [+promoción]",
+          "L95: innovación, sino también la protección de los derechos fundamentales de los ciudadanos. Este [+innovación]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L3: Sancionan con Fuerza de Ley. [+sancion]",
+          "L68: Artículo 10°. - Sanciones. Sin perjuicio del régimen de la Ley 25.326, la Autoridad de [+sancion]",
+          "L72: Las multas podrán graduarse hasta un máximo proporcional al volumen de negocios del [+multa]"
+        ],
+        "sujeto": [
+          "L6: personales de ciudadanos por parte de las personas humanas o jurídicas que desarrollen, [+persona, ciudadano]",
+          "L42: especialmente en lo relativo a la privacidad y la protección de datos personales. La evaluación [+persona, privacidad]",
+          "L91: de ciudadanos argentinos por parte de las personas humanas o jurídicas que desarrollen, [+persona, ciudadano]"
+        ]
+      },
+      "evidence_lines": [
+        "L63: Artículo 9°. - Supervisión y control. La autoridad de aplicación podrá: [+autoridad de aplicación, control]",
+        "L73: infractor en la Argentina y factores como beneficios obtenidos, número de afectados y dolo o [+beneficio]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L3: Sancionan con Fuerza de Ley. [+sancion]",
+        "L6: personales de ciudadanos por parte de las personas humanas o jurídicas que desarrollen, [+persona, ciudadano]"
+      ],
+      "quality": {
+        "solidez": 0.845,
+        "ambiguedad": 0.265,
+        "peso": 0.621,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "4243-D-2025.txt"
+    },
+    "6189-D-2025": {
+      "scores": {
+        "intervencion": 5.0,
+        "economia": 9.0,
+        "datos": 5.0,
+        "punitividad": 2.1,
+        "sujeto": 2.7
+      },
+      "evidence": {
+        "intervencion": [
+          "L121: demostrando que la alfabetización en IA puede ser una obligación regulatoria [+regula, obligación]",
+          "L3: SANCIONA [+sancion]",
+          "L16: énfasis en los niveles primario y secundario, a los efectos de promover la utilización [-promover]"
+        ],
+        "economia": [
+          "L42: b) La construcción de una plataforma integral de innovación educativa y de [+innovación]",
+          "L44: c) El impulso de proyectos de investigación e innovación que promuevan la [+innovación]",
+          "L55: b) La creación de centros jurisdiccionales de innovación educativa con [+innovación]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L3: SANCIONA [+sancion]",
+          "L16: énfasis en los niveles primario y secundario, a los efectos de promover la utilización [-promover]",
+          "L24: a) Promover la alfabetización digital y la educación en el buen uso de las [-promover]"
+        ],
+        "sujeto": [
+          "L4: PROGRAMA NACIONAL DE USO RESPONSABLE DE LA INTELIGENCIA [-nacional]",
+          "L6: Artículo 1º-: Créase el Programa Nacional de “Uso responsable de la Inteligencia [-nacional]",
+          "L12: Artículo 2º-: Las acciones que promueva el Programa Nacional de “Uso [-nacional]"
+        ]
+      },
+      "evidence_lines": [
+        "L121: demostrando que la alfabetización en IA puede ser una obligación regulatoria [+regula, obligación]",
+        "L42: b) La construcción de una plataforma integral de innovación educativa y de [+innovación]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L3: SANCIONA [+sancion]",
+        "L4: PROGRAMA NACIONAL DE USO RESPONSABLE DE LA INTELIGENCIA [-nacional]"
+      ],
+      "quality": {
+        "solidez": 0.597,
+        "ambiguedad": 0.455,
+        "peso": 0.325,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "6189-D-2025.txt"
+    },
+    "6655-D-2025": {
+      "scores": {
+        "intervencion": 8.1,
+        "economia": 5.0,
+        "datos": 5.0,
+        "punitividad": 7.2,
+        "sujeto": 5.0
+      },
+      "evidence": {
+        "intervencion": [
+          "L4: LEYDE TRANSPARENCIAY REGULACIÓN DEALGORITMOS EN [+regula, regulación]",
+          "L51: TÍTULO IV: SANCIONES YCONTROL [+control, sancion]",
+          "L65: 3)Sancionaraquienesincumplanlasregulaciones. [+regula, sancion]"
+        ],
+        "economia": [
+          "L14: 1. Finanzas:Otorgamientodecréditos,tasasdeinterés,seguros. [-tasa]",
+          "L60: Es autoridad de aplicación de la presente norma la Secretaría de Innovación Ciencia [+innovación]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L3: ElSenadoylaCámaradeDiputadosdelaNaciónsancionanconfuerza deley [+sancion]",
+          "L19: 5. Redes Sociales y Plataformas Digitales: Algoritmos de recomendación y [-recomendación]",
+          "L51: TÍTULO IV: SANCIONES YCONTROL [+sancion]"
+        ],
+        "sujeto": [
+          "L13: ciudadanos,incluyendoperonolimitado a: [+ciudadano]",
+          "L35: ARTÍCULO 5º. DERECHO A EXPLICACIÓN: Toda persona afectada por una [+persona]",
+          "L44: ARTÍCULO 7º. REGISTRO NACIONAL DE ALGORITMOS: Se crea un [-nacional]"
+        ]
+      },
+      "evidence_lines": [
+        "L4: LEYDE TRANSPARENCIAY REGULACIÓN DEALGORITMOS EN [+regula, regulación]",
+        "L14: 1. Finanzas:Otorgamientodecréditos,tasasdeinterés,seguros. [-tasa]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L3: ElSenadoylaCámaradeDiputadosdelaNaciónsancionanconfuerza deley [+sancion]",
+        "L13: ciudadanos,incluyendoperonolimitado a: [+ciudadano]"
+      ],
+      "quality": {
+        "solidez": 0.823,
+        "ambiguedad": 0.547,
+        "peso": 0.373,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "6655-D-2025.txt"
+    },
+    "6656-D-2025": {
+      "scores": {
+        "intervencion": 5.0,
+        "economia": 5.0,
+        "datos": 5.0,
+        "punitividad": 1.0,
+        "sujeto": 2.2
+      },
+      "evidence": {
+        "intervencion": [
+          "L15: no universitario, con el fin de promover el pensamiento crítico, la alfabetización [-promover]",
+          "L40: ARTÍCULO 8°: Será autoridad de aplicación de la presente ley el Ministerio de [+autoridad de aplicación]"
+        ],
+        "economia": [
+          "Sin evidencia textual fuerte para Enfoque Economico."
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L15: no universitario, con el fin de promover el pensamiento crítico, la alfabetización [-promover]"
+        ],
+        "sujeto": [
+          "L2: MODIFICACIÓN DELALEYDEEDUCACIÓN NACIONALNº26.206 - [-nacional]",
+          "L7: Educación Nacional, el que quedará redactado de la siguiente manera: “w) [-nacional]",
+          "L12: EducaciónNacional, elquequedaráredactado delasiguientemanera:“m)incorporar [-nacional]"
+        ]
+      },
+      "evidence_lines": [
+        "L15: no universitario, con el fin de promover el pensamiento crítico, la alfabetización [-promover]",
+        "Sin evidencia textual fuerte para Enfoque Economico.",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L15: no universitario, con el fin de promover el pensamiento crítico, la alfabetización [-promover]",
+        "L2: MODIFICACIÓN DELALEYDEEDUCACIÓN NACIONALNº26.206 - [-nacional]"
+      ],
+      "quality": {
+        "solidez": 0.585,
+        "ambiguedad": 0.153,
+        "peso": 0.495,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "6656-D-2025.txt"
+    },
+    "0004-D-2026": {
+      "scores": {
+        "intervencion": 7.2,
+        "economia": 9.0,
+        "datos": 5.0,
+        "punitividad": 3.0,
+        "sujeto": 7.1
+      },
+      "evidence": {
+        "intervencion": [
+          "L78: experimental de la IA a fin de introducir mejoras en el marco de la autorregulación. [+regula, regulación]",
+          "L128: autorregulación para prevenir inconvenientes futuros. [+regula, regulación]",
+          "L210: La regulación que aquí se propone se enmarca en aquellos principios y recomendaciones, [+regula, regulación]"
+        ],
+        "economia": [
+          "L186: principal objetivo promover el fomento, el desarrollo, la innovación y la implementación [+fomento, innovación]",
+          "L5: “Presupuestos Mínimos para la Promoción del desarrollo de la Inteligencia [+promoción]",
+          "L7: Artículo 1°: Objeto. La presente ley tiene por objeto promover el fomento, el desarrollo, [+fomento]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L4: sancionan con fuerza de ley… [+sancion]",
+          "L7: Artículo 1°: Objeto. La presente ley tiene por objeto promover el fomento, el desarrollo, [-promover]",
+          "L81: sistemas sean trazables. Asimismo, se deberán implementar sistemas de capacitación y [-capacitación]"
+        ],
+        "sujeto": [
+          "L11: Artículo 2°: Interés estratégico. Declárase de interés nacional y estratégico el desarrollo [-nacional, interés estratégico]",
+          "L38: de datos personales y la protección de los Derechos Humanos y garantías individuales. [+persona, derechos humanos]",
+          "L44: 8) Usuario: persona humana o jurídica, ya sea ésta de carácter público o privado que [+persona, usuario]"
+        ]
+      },
+      "evidence_lines": [
+        "L78: experimental de la IA a fin de introducir mejoras en el marco de la autorregulación. [+regula, regulación]",
+        "L186: principal objetivo promover el fomento, el desarrollo, la innovación y la implementación [+fomento, innovación]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L4: sancionan con fuerza de ley… [+sancion]",
+        "L11: Artículo 2°: Interés estratégico. Declárase de interés nacional y estratégico el desarrollo [-nacional, interés estratégico]"
+      ],
+      "quality": {
+        "solidez": 0.781,
+        "ambiguedad": 0.55,
+        "peso": 0.351,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "0004-D-2026.txt"
+    },
+    "0005-D-2026": {
+      "scores": {
+        "intervencion": 9.0,
+        "economia": 9.0,
+        "datos": 5.0,
+        "punitividad": 9.0,
+        "sujeto": 7.6
+      },
+      "evidence": {
+        "intervencion": [
+          "L48: Es por ello que resulta imprescindible regular su uso y prever sanciones adecuadas para [+regula, sancion]",
+          "L62: encuentra en vías de análisis para su regulación en muchos países del mundo. [+regula, regulación]",
+          "L138: ante estos riesgos. La regulación del uso de tecnologías emergentes no debe ser vista [+regula, regulación]"
+        ],
+        "economia": [
+          "L139: como una limitación de la innovación, sino como una medida necesaria para garantizar [+innovación]"
+        ],
+        "datos": [
+          "Sin evidencia textual fuerte para Gobernanza de Datos."
+        ],
+        "punitividad": [
+          "L7: “Artículo 117 ter. - Uso indebido de datos personales. Será reprimido con prisión de un [+prisión, reprimido]",
+          "L13: La pena será de uno (1) a seis (6) años prisión cuando las conductas descriptas en el [+pena, prisión]",
+          "L127: de los datos biométricos se emplea para cometer otro delito tipificado en el Código Penal, [+pena, delito]"
+        ],
+        "sujeto": [
+          "L32: privacidad, y la protección de datos personales. [+persona, privacidad]",
+          "L100: utilización de datos personales sin el consentimiento del titular para generar videos con [+persona, consentimiento]",
+          "L106: que replican la voz y el rostro de una persona sin su consentimiento es un fenómeno que [+persona, consentimiento]"
+        ]
+      },
+      "evidence_lines": [
+        "L48: Es por ello que resulta imprescindible regular su uso y prever sanciones adecuadas para [+regula, sancion]",
+        "L139: como una limitación de la innovación, sino como una medida necesaria para garantizar [+innovación]",
+        "Sin evidencia textual fuerte para Gobernanza de Datos.",
+        "L7: “Artículo 117 ter. - Uso indebido de datos personales. Será reprimido con prisión de un [+prisión, reprimido]",
+        "L32: privacidad, y la protección de datos personales. [+persona, privacidad]"
+      ],
+      "quality": {
+        "solidez": 0.585,
+        "ambiguedad": 0.378,
+        "peso": 0.364,
+        "complejidad_normativa_elevada": false
+      },
+      "fuente_texto": "0005-D-2026.txt"
+    },
+    "0253-D-2026": {
+      "scores": {
+        "intervencion": 8.1,
+        "economia": 7.2,
+        "datos": 3.7,
+        "punitividad": 7.0,
+        "sujeto": 3.2
+      },
+      "evidence": {
+        "intervencion": [
+          "L9: regulación y supervisión de sistemas de inteligencia artificial (IA) en la República [+regula, regulación]",
+          "L166: 4. Regulación y supervisión [+regula, regulación]",
+          "L1179: autárquico y técnico que concentrará la regulación, auditoría, certificación y promoción [+regula, regulación]"
+        ],
+        "economia": [
+          "L20: riesgo y promoción de innovación responsable. [+promoción, innovación]",
+          "L124: k) Innovación responsable y fomento de investigación local. [+fomento, innovación]",
+          "L156: financiamiento, incentivos fiscales, incubadoras y apoyo a PyMEs y startups. [+incentivo, pyme]"
+        ],
+        "datos": [
+          "L15: c) fortalecer la soberanía tecnológica mediante capacidades propias de cómputo, [-soberanía]",
+          "L81: j) Soberanía tecnológica: capacidad del Estado Nacional para gobernar, controlar y [-soberanía]",
+          "L82: decidir sobre los flujos de datos, cómputo, modelos y conocimiento estratégico [+flujo]"
+        ],
+        "punitividad": [
+          "L883: Agravantes: las penas previstas se aumentarán en un tercio cuando: el autor sea [+pena, agravante]",
+          "L3: CONGRESO SANCIONAN CON FUERZA DE LEY: [+sancion]",
+          "L13: b) promover el desarrollo científico, tecnológico e industrial nacional en materia de [-promover]"
+        ],
+        "sujeto": [
+          "L81: j) Soberanía tecnológica: capacidad del Estado Nacional para gobernar, controlar y [-estado, soberanía]",
+          "L21: Artículo 2° — Interés estratégico nacional. [-nacional, interés estratégico]",
+          "L22: Declárase de interés estratégico nacional el desarrollo, investigación, producción y [-nacional, interés estratégico]"
+        ]
+      },
+      "evidence_lines": [
+        "L9: regulación y supervisión de sistemas de inteligencia artificial (IA) en la República [+regula, regulación]",
+        "L20: riesgo y promoción de innovación responsable. [+promoción, innovación]",
+        "L15: c) fortalecer la soberanía tecnológica mediante capacidades propias de cómputo, [-soberanía]",
+        "L883: Agravantes: las penas previstas se aumentarán en un tercio cuando: el autor sea [+pena, agravante]",
+        "L81: j) Soberanía tecnológica: capacidad del Estado Nacional para gobernar, controlar y [-estado, soberanía]"
+      ],
+      "quality": {
+        "solidez": 0.938,
+        "ambiguedad": 0.7,
+        "peso": 0.281,
+        "complejidad_normativa_elevada": true
+      },
+      "fuente_texto": "0253-D-2026.txt"
+    },
+    "0519-D-2026": {
+      "scores": {
+        "intervencion": 8.6,
+        "economia": 8.1,
+        "datos": 1.5,
+        "punitividad": 7.0,
+        "sujeto": 1.4
+      },
+      "evidence": {
+        "intervencion": [
+          "L255: inscriptos en el registro de la autoridad de aplicación; (ii) condiciones de reciprocidad o [+autoridad de aplicación, registro]",
+          "L276: inscriptos en un registro de la autoridad de aplicación acceden a crédito fiscal del [+autoridad de aplicación, registro]",
+          "L380: en entornos controlados, con requisitos regulatorios adaptados, durante un plazo [+regula, control]"
+        ],
+        "economia": [
+          "L281: Artículo 19 – Incentivo MiPyME. [+incentivo, pyme]",
+          "L629: productividad real, sus datos en activos estratégicos, su ecosistema emprendedor en [+productividad, emprendedor]",
+          "L5: Régimen Nacional de Promoción de la IA Aplicada a la Producción, la [+promoción]"
+        ],
+        "datos": [
+          "L15: Argentina como hub de IA del Sur Global; y (h) garantizar la soberanía tecnológica [-soberanía]",
+          "L17: Artículo 2º – Principio de soberanía tecnológica. [-soberanía]",
+          "L19: capacidades soberanas en inteligencia artificial. A los efectos de esta ley, la soberanía [-soberanía]"
+        ],
+        "punitividad": [
+          "L3: REUNIDOS EN CONGRESO SANCIONAN CON FUERZA DE LEY: [+sancion]",
+          "L13: entrenamiento de modelos; (d) promover la compra pública de soluciones de IA; (e) [-promover]",
+          "L81: Créase el Consejo Asesor de Inteligencia Artificial (CAIA), de carácter consultivo, [-consultivo]"
+        ],
+        "sujeto": [
+          "L18: La República Argentina declara de interés estratégico nacional el desarrollo de [-nacional, interés estratégico]",
+          "L65: g) Soberanía tecnológica en IA: capacidad nacional de desarrollar, entrenar, desplegar y [-soberanía, nacional]",
+          "L200: Declárase de interés estratégico nacional el desarrollo de capacidades de diseño de [-nacional, interés estratégico]"
+        ]
+      },
+      "evidence_lines": [
+        "L255: inscriptos en el registro de la autoridad de aplicación; (ii) condiciones de reciprocidad o [+autoridad de aplicación, registro]",
+        "L281: Artículo 19 – Incentivo MiPyME. [+incentivo, pyme]",
+        "L15: Argentina como hub de IA del Sur Global; y (h) garantizar la soberanía tecnológica [-soberanía]",
+        "L3: REUNIDOS EN CONGRESO SANCIONAN CON FUERZA DE LEY: [+sancion]",
+        "L18: La República Argentina declara de interés estratégico nacional el desarrollo de [-nacional, interés estratégico]"
+      ],
+      "quality": {
+        "solidez": 0.922,
+        "ambiguedad": 0.66,
+        "peso": 0.313,
+        "complejidad_normativa_elevada": true
+      },
+      "fuente_texto": "0519-D-2026.txt"
+    }
+  }
+}
