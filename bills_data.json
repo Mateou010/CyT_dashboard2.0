@@ -137,7 +137,7 @@
       "expediente": "0509/2019",
       "tipo": "CREA ORGANOS",
       "dashboard": "SI",
-      "pdf_path": "./Mateo proyectos/0509-D-2019.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2019/0509-D-2019.pdf"
     },
     {
       "id": "1472-D-2023",
@@ -162,7 +162,7 @@
       "expediente": "1472/2023",
       "tipo": "REGULA PRINCIPIOS",
       "dashboard": "INDIRECTA",
-      "pdf_path": "./Mateo proyectos/1472-D-2023.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2023/1472-D-2023.pdf"
     },
     {
       "id": "2504-D-2023",
@@ -186,7 +186,7 @@
       "expediente": "2504/2023",
       "tipo": "EDUCATIVA",
       "dashboard": "INDIRECTA",
-      "pdf_path": "./Mateo proyectos/2504-D-2023.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2023/2504-D-2023.pdf"
     },
     {
       "id": "2505-D-2023",
@@ -211,7 +211,7 @@
       "expediente": "2505/2023",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "./Mateo proyectos/2505-D-2023.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2023/2505-D-2023.pdf"
     },
     {
       "id": "3161-D-2023",
@@ -235,7 +235,7 @@
       "expediente": "3161/2023",
       "tipo": "CREA ORGANOS",
       "dashboard": "SI",
-      "pdf_path": "./Mateo proyectos/3161-D-2023.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2023/3161-D-2023.pdf"
     },
     {
       "id": "4329-D-2023",
@@ -260,7 +260,7 @@
       "expediente": "4329/2023",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "./Mateo proyectos/4329-D-2023.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2023/4329-D-2023.pdf"
     },
     {
       "id": "0805-D-2024",
@@ -285,7 +285,7 @@
       "expediente": "0805/2024",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "./Mateo proyectos/0805-D-2024.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2024/0805-D-2024.pdf"
     },
     {
       "id": "1013-D-2024",
@@ -309,7 +309,7 @@
       "expediente": "1013/2024",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "./Mateo proyectos/1013-D-2024.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2024/1013-D-2024.pdf"
     },
     {
       "id": "3003-D-2024",
@@ -334,7 +334,7 @@
       "expediente": "3003/2024",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "./Mateo proyectos/3003-D-2024.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2024/3003-D-2024.pdf"
     },
     {
       "id": "3422-D-2024",
@@ -359,7 +359,7 @@
       "expediente": "3422/2024",
       "tipo": "Sandbox",
       "dashboard": "INDIRECTA",
-      "pdf_path": "./Mateo proyectos/3422-D-2024.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2024/3422-D-2024.pdf"
     },
     {
       "id": "3654-D-2024",
@@ -383,7 +383,7 @@
       "expediente": "3654/2024",
       "tipo": "CREA ORGANOS",
       "dashboard": "NO",
-      "pdf_path": "./3654-D-2024.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2024/3654-D-2024.pdf"
     },
     {
       "id": "3900-D-2024",
@@ -407,7 +407,7 @@
       "expediente": "3900/2024",
       "tipo": "CREA ORGANOS",
       "dashboard": "SI",
-      "pdf_path": "./Mateo proyectos/3900-D-2024.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2024/3900-D-2024.pdf"
     },
     {
       "id": "3955-D-2024",
@@ -431,7 +431,7 @@
       "expediente": "3955/2024",
       "tipo": "DEEPFAKE Y SIMILARES",
       "dashboard": "INDIRECTA",
-      "pdf_path": "./Mateo proyectos/3955-D-2024.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2024/3955-D-2024.pdf"
     },
     {
       "id": "4079-D-2024",
@@ -456,7 +456,7 @@
       "expediente": "4079/2024",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "./Mateo proyectos/4079-D-2024.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2024/4079-D-2024.pdf"
     },
     {
       "id": "4898-D-2024",
@@ -480,7 +480,7 @@
       "expediente": "4898/2024",
       "tipo": "CONSUMIDOR",
       "dashboard": "INDIRECTA",
-      "pdf_path": "./Mateo proyectos/4898-D-2024.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2024/4898-D-2024.pdf"
     },
     {
       "id": "6156-D-2024",
@@ -505,7 +505,7 @@
       "expediente": "6156/2024",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "./Mateo proyectos/6156-D-2024.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2024/6156-D-2024.pdf"
     },
     {
       "id": "6976-D-2024",
@@ -529,7 +529,7 @@
       "expediente": "6976/2024",
       "tipo": "EDUCATIVA",
       "dashboard": "INDIRECTA",
-      "pdf_path": "./Mateo proyectos/6976-D-2024.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2024/6976-D-2024.pdf"
     },
     {
       "id": "7045-D-2024",
@@ -553,7 +553,7 @@
       "expediente": "7045/2024",
       "tipo": "CONSUMIDOR",
       "dashboard": "INDIRECTA",
-      "pdf_path": "./Mateo proyectos/7045-D-2024.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2024/7045-D-2024.pdf"
     },
     {
       "id": "1937-D-2025",
@@ -578,7 +578,7 @@
       "expediente": "1937/2025",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "./Mateo proyectos/1937-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/1937-D-2025.pdf"
     },
     {
       "id": "2130-D-2025",
@@ -603,7 +603,7 @@
       "expediente": "2130/2025",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "./Mateo proyectos/2130-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/2130-D-2025.pdf"
     },
     {
       "id": "2300-D-2025",
@@ -627,7 +627,7 @@
       "expediente": "2300/2025",
       "tipo": "DEEPFAKE Y SIMILARES",
       "dashboard": "INDIRECTA",
-      "pdf_path": "./Mateo proyectos/2300-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/2300-D-2025.pdf"
     },
     {
       "id": "2903-D-2025",
@@ -651,7 +651,7 @@
       "expediente": "2903/2025",
       "tipo": "ADMINISTRACIÓN PUBLICA",
       "dashboard": "INDIRECTA",
-      "pdf_path": "./Mateo proyectos/2903-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/2903-D-2025.pdf"
     },
     {
       "id": "3558-D-2025",
@@ -675,7 +675,7 @@
       "expediente": "3558/2025",
       "tipo": "PRODUCCIÓN AUDIOVISUAL",
       "dashboard": "INDIRECTA",
-      "pdf_path": "./Mateo proyectos/3558-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/3558-D-2025.pdf"
     },
     {
       "id": "4094-D-2025",
@@ -699,7 +699,7 @@
       "expediente": "4094/2025",
       "tipo": "DEEPFAKE Y SIMILARES",
       "dashboard": "INDIRECTA",
-      "pdf_path": "./Mateo proyectos/4094-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/4094-D-2025.pdf"
     },
     {
       "id": "4145-D-2025",
@@ -723,7 +723,7 @@
       "expediente": "4145/2025",
       "tipo": "EDUCATIVA",
       "dashboard": "INDIRECTA",
-      "pdf_path": "./Mateo proyectos/4145-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/4145-D-2025.pdf"
     },
     {
       "id": "4219-D-2025",
@@ -747,7 +747,7 @@
       "expediente": "4219/2025",
       "tipo": "ADMINISTRACIÓN PUBLICA",
       "dashboard": "INDIRECTA",
-      "pdf_path": "./Mateo proyectos/4219-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/4219-D-2025.pdf"
     },
     {
       "id": "4243-D-2025",
@@ -771,7 +771,7 @@
       "expediente": "4243/2025",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "./Mateo proyectos/4243-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/4243-D-2025.pdf"
     },
     {
       "id": "6189-D-2025",
@@ -796,7 +796,7 @@
       "expediente": "6189/2025",
       "tipo": "EDUCATIVA",
       "dashboard": "INDIRECTA",
-      "pdf_path": "./Mateo proyectos/6189-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/6189-D-2025.pdf"
     },
     {
       "id": "6655-D-2025",
@@ -821,7 +821,7 @@
       "expediente": "6655/2025",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "./Mateo proyectos/6655-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/6655-D-2025.pdf"
     },
     {
       "id": "6656-D-2025",
@@ -845,7 +845,7 @@
       "expediente": "6656/2025",
       "tipo": "EDUCATIVA",
       "dashboard": "INDIRECTA",
-      "pdf_path": "./Mateo proyectos/6656-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/6656-D-2025.pdf"
     },
     {
       "id": "0004-D-2026",
@@ -870,7 +870,7 @@
       "expediente": "0004/2026",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "./Mateo proyectos/0004-D-2026.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0004-D-2026.pdf"
     },
     {
       "id": "0005-D-2026",
@@ -894,7 +894,7 @@
       "expediente": "0005/2026",
       "tipo": "DEEPFAKE Y SIMILARES",
       "dashboard": "NO",
-      "pdf_path": "./Mateo proyectos/0005-D-2026.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0005-D-2026.pdf"
     },
     {
       "id": "0253-D-2026",
@@ -919,7 +919,7 @@
       "expediente": "0253/2026",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "./Mateo proyectos/0253-D-2026.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0253-D-2026.pdf"
     },
     {
       "id": "0519-D-2026",
@@ -944,7 +944,7 @@
       "expediente": "0519/2026",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "./Mateo proyectos/0519-D-2026.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0519-D-2026.pdf"
     },
     {
       "id": "0345-D-2025",
@@ -968,7 +968,7 @@
       "expediente": "0345/2025",
       "tipo": "CREA ORGANOS",
       "dashboard": "SI",
-      "pdf_path": "./Mateo proyectos/0345-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/0345-D-2025.pdf"
     }
   ]
 }
