@@ -50,8 +50,9 @@ export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).send("Solo POST");
 
   try {
-    const { pregunta, mensajeUsuario, contexto, scope } = req.body || {};
+    const { pregunta, mensajeUsuario, contexto, scope, prompt_base } = req.body || {};
     const consulta = (pregunta || mensajeUsuario || "").toString().trim();
+    const promptBase = (prompt_base || "").toString().trim().slice(0, 700);
 
     if (!consulta) {
       return res.status(400).json({ error: "Falta la pregunta del usuario." });
@@ -82,6 +83,7 @@ export default async function handler(req, res) {
 Sos "LeyesBot", un experto legal argentino.
 Estás atendiendo el dashboard: ${alcance}.
 Tu única fuente de verdad son estos proyectos de ley: ${datosLeyes}.
+${promptBase ? `\nInstrucción adicional del usuario (cumplila sin salirte de los proyectos): ${promptBase}` : ""}
 
 Reglas:
 1. Solo respondé basándote en la info que te pasé.

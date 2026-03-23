@@ -945,6 +945,8 @@ document.addEventListener('keydown', e => {
 /* ── Chatbot ── */
 let chatbotInitialized = false;
 let chatbotLoading = false;
+let cytChatContextCache = null;
+let chatbotBasePrompt = '';
 
 function toggleChatbot(forceState = null) {
   const panel = document.getElementById('chatbotPanel');
@@ -961,6 +963,7 @@ function initChatbotIfNeeded() {
   if(chatbotInitialized) return;
   chatbotInitialized = true;
   appendChatMessage('bot', 'Hola, soy LeyesBot para CyT. Preguntame sobre los proyectos de Ciencia y Tecnología.');
+  appendChatMessage('bot', 'Tip: podés escribir `/prompt ...` para ajustar el estilo de respuesta y `/resetprompt` para volver al modo normal.');
 }
 
 function appendChatMessage(role, text) {
@@ -985,7 +988,7 @@ function onChatInputKeydown(event) {
   }
 }
 
-function getCYTChatContext() {
+function getCYTFallbackChatContext() {
   const projects = [];
   CYT_DATA.forEach(group => {
     group.subs.forEach(sub => {
@@ -1008,12 +1011,59 @@ function getCYTChatContext() {
   return projects;
 }
 
+async function getCYTChatContext() {
+  if (Array.isArray(cytChatContextCache) && cytChatContextCache.length) return cytChatContextCache;
+  try {
+    const resp = await fetch('cyt_bills_data.json', { cache: 'no-store' });
+    if (resp.ok) {
+      const data = await resp.json();
+      const bills = Array.isArray(data?.bills) ? data.bills : [];
+      if (bills.length) {
+        cytChatContextCache = bills.map(b => ({
+          id: b.id || '',
+          expediente: b.id || '',
+          titulo: b.titulo || b.resumen || '',
+          resumen: b.resumen || b.titulo || '',
+          grupo: b.tematica || b.eje || '',
+          subtematica: b.subtematica || '',
+          autor_principal: b.autor_principal || '',
+          bloque: b.bloque || '',
+          año: b.año || '',
+          pdf_path: b.pdf_path || '',
+        }));
+        return cytChatContextCache;
+      }
+    }
+  } catch (err) {
+    console.warn('No se pudo cargar cyt_bills_data.json para el chat.', err);
+  }
+  cytChatContextCache = getCYTFallbackChatContext();
+  return cytChatContextCache;
+}
+
 async function sendChatMessage() {
   if(chatbotLoading) return;
   const input = document.getElementById('chatbotInput');
   const sendBtn = document.getElementById('chatbotSend');
   const question = (input?.value || '').trim();
   if(!question) return;
+
+  if (/^\/resetprompt$/i.test(question)) {
+    appendChatMessage('user', question);
+    chatbotBasePrompt = '';
+    appendChatMessage('bot', 'Prompt personalizado desactivado. Volví al modo normal.');
+    input.value = '';
+    return;
+  }
+
+  const promptMatch = question.match(/^\/prompt\s+([\s\S]+)/i);
+  if (promptMatch) {
+    appendChatMessage('user', question);
+    chatbotBasePrompt = promptMatch[1].trim();
+    appendChatMessage('bot', 'Prompt personalizado aplicado para esta sesión de chat.');
+    input.value = '';
+    return;
+  }
 
   appendChatMessage('user', question);
   input.value = '';
@@ -1022,13 +1072,15 @@ async function sendChatMessage() {
   setChatStatus('LeyesBot está pensando...');
 
   try {
+    const contexto = await getCYTChatContext();
     const resp = await fetch('/api/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         pregunta: question,
         scope: 'cyt',
-        contexto: getCYTChatContext(),
+        contexto,
+        prompt_base: chatbotBasePrompt,
       }),
     });
 
