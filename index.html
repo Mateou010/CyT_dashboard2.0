@@ -512,17 +512,73 @@
 
     /* ─── RESPONSIVE ──────────────────────────────── */
     @media (max-width: 768px) {
-        .hero-content { padding: 80px 20px 60px; }
-        .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 16px; }
-        .features-grid { grid-template-columns: 1fr; }
-        .dashboard-cards { grid-template-columns: 1fr; }
-        .cta-banner { margin: 32px 16px; padding: 32px 20px; }
-        .hero-actions { flex-direction: column; }
-        .btn-primary, .btn-secondary { text-align: center; justify-content: center; }
+        .hero { min-height: auto; }
+        .hero-content { padding: 48px 16px 36px; }
+        .hero h1 { font-size: clamp(26px, 7vw, 36px); margin-bottom: 14px; }
+        .hero-subtitle { font-size: 15px; margin-bottom: 24px; line-height: 1.55; }
+        .hero-badge { font-size: 11px; padding: 5px 12px; margin-bottom: 20px; }
+        .hero-actions { flex-direction: column; gap: 10px; }
+        .btn-primary, .btn-secondary {
+            text-align: center; justify-content: center;
+            font-size: 13px; padding: 11px 20px; border-radius: 8px;
+        }
+        .stats-strip { padding: 20px 16px; }
+        .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+        .stat-item { padding: 10px 8px; }
+        .stat-number { font-size: 28px; }
+        .stat-label { font-size: 12px; }
+        .section { padding: 32px 16px; }
+        .section-header { margin-bottom: 28px; }
+        .section-header h2 { font-size: 22px; margin-bottom: 8px; }
+        .section-header p { font-size: 14px; }
+        .dashboard-cards { grid-template-columns: 1fr; gap: 16px; }
+        .dashboard-card { padding: 24px 16px; border-radius: 12px; }
+        .dashboard-card-icon { font-size: 32px; margin-bottom: 10px; }
+        .dashboard-card-title { font-size: 18px; }
+        .dashboard-card-desc { font-size: 13px; margin-bottom: 14px; }
+        .dashboard-card-stat { font-size: 28px; }
+        .dashboard-card-btn { padding: 8px 18px; font-size: 12px; margin-top: 14px; }
+        .eje-landing-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+        .eje-landing-card { padding: 16px; border-radius: 10px; }
+        .eje-landing-icon { font-size: 22px; margin-bottom: 8px; }
+        .eje-landing-name { font-size: 13px; }
+        .eje-landing-count { font-size: 20px; }
+        .eje-landing-count span { font-size: 11px; }
+        .features-grid { grid-template-columns: 1fr; gap: 16px; }
+        .feature-card { padding: 20px 16px; }
+        .feature-icon { width: 44px; height: 44px; border-radius: 10px; font-size: 20px; margin-bottom: 12px; }
+        .feature-card h3 { font-size: 15px; }
+        .feature-card p { font-size: 13px; }
+        .cta-banner { margin: 24px 12px; padding: 24px 16px; border-radius: 12px; }
+        .cta-banner h2 { font-size: 20px; margin-bottom: 8px; }
+        .cta-banner p { font-size: 13px; margin-bottom: 16px; }
+        .cta-banner .btn-primary { font-size: 13px; padding: 10px 20px; }
+        .footer { padding: 24px 16px; }
+        .footer-logo { font-size: 15px; }
+        .footer p { font-size: 12px; }
+        .footer-links { gap: 16px; margin-top: 12px; }
+        .footer-links a { font-size: 12px; }
     }
 
     @media (max-width: 480px) {
-        .stats-inner { grid-template-columns: 1fr; }
+        .hero-content { padding: 36px 14px 28px; }
+        .hero h1 { font-size: clamp(22px, 6.5vw, 30px); }
+        .hero-subtitle { font-size: 14px; }
+        .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+        .stat-number { font-size: 24px; }
+        .section { padding: 24px 14px; }
+        .section-header h2 { font-size: 20px; }
+        .dashboard-card { padding: 20px 14px; }
+        .dashboard-card-icon { font-size: 28px; }
+        .dashboard-card-title { font-size: 16px; }
+        .dashboard-card-stat { font-size: 24px; }
+        .eje-landing-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+        .eje-landing-card { padding: 12px; }
+        .eje-landing-icon { font-size: 20px; margin-bottom: 6px; }
+        .eje-landing-name { font-size: 12px; }
+        .eje-landing-count { font-size: 18px; }
+        .cta-banner { margin: 20px 8px; padding: 20px 14px; }
+        .cta-banner h2 { font-size: 18px; }
     }
 </style>
 </head>

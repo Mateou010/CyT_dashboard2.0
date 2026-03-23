@@ -836,63 +836,119 @@ tr:hover{background:var(--surface2)}
 }
 
 @media (max-width:640px){
-  .app{padding:0 12px 30px}
-  .header{padding:16px 0 14px;margin-bottom:16px}
-  .logo{gap:10px}
-  .logo-icon{width:40px;height:40px;font-size:16px;border-radius:12px}
-  .logo-text h1{font-size:18px}
-  .logo-text p{font-size:11px}
-  .header-actions a{padding:6px 10px !important;font-size:11px !important}
-  .header-badge{padding:6px 10px;border-radius:999px}
-  .kpi-grid{gap:12px}
-  .kpi-card{padding:16px}
-  .kpi-value{font-size:28px}
-  .semaforo-wrap{padding:14px}
-  .semaforo-stack{gap:14px}
-  .semaforo-row{border-radius:16px}
-  .semaforo-stage{min-height:210px;padding:14px 0 4px}
-  .semaforo-stage-card{height:188px;width:min(92vw,300px);border-radius:16px}
-  .semaforo-stage-title{font-size:17px}
-  .semaforo-copy{padding:16px 14px 14px}
-  .semaforo-copy-title{font-size:clamp(24px,8vw,32px);line-height:1.08}
-  .semaforo-copy-quote{font-size:15px;line-height:1.55}
-  .semaforo-copy-actions{margin-top:14px;gap:10px}
-  .semaforo-nav-btn{width:44px;height:44px;font-size:20px}
-  .semaforo-open-btn{padding:10px 14px;font-size:12px}
-  .semaforo-page{font-size:13px}
-  .semaforo-detail{padding:14px}
-  .semaforo-bills{grid-template-columns:1fr}
-  .year-pie-wrap{padding:14px}
-  #yearPieCanvas,#tipoProyectoPieCanvas{width:160px;height:160px}
-  .year-pie-title,.simple-table-title{font-size:16px}
-  .outside-cyt-note{margin:-6px 0 18px;padding:11px 12px;font-size:12px}
-  .simple-table{font-size:11px}
-  .simple-table thead th,.simple-table tbody td{padding:8px}
-  .carousel-btn{width:34px;height:34px;font-size:18px}
-  .dest-grid{grid-template-columns:repeat(2,1fr);gap:10px}
-  .dest-item{padding:12px}
-  .modal-content{width:calc(100vw - 16px);max-height:90vh;padding:16px}
+  .app{padding:0 10px 24px}
+  .header{padding:14px 0 12px;margin-bottom:14px}
+  .logo{gap:8px}
+  .logo-icon{width:36px;height:36px;font-size:14px;border-radius:10px}
+  .logo-text h1{font-size:16px}
+  .logo-text p{font-size:10px}
+  .header-actions a{padding:5px 8px !important;font-size:10px !important}
+  .header-badge{padding:5px 10px;border-radius:999px;font-size:10px}
+  .kpi-grid{gap:10px;grid-template-columns:repeat(2,1fr)}
+  .kpi-card{padding:12px}
+  .kpi-value{font-size:24px;margin-bottom:8px}
+  .kpi-label{font-size:10px;margin-bottom:5px}
+  .kpi-tag{font-size:10px;padding:3px 8px}
+  .consenso-intro{font-size:clamp(15px,4.5vw,20px);padding:2px 4px 8px;margin-bottom:14px}
+  .semaforo-wrap{padding:10px}
+  .semaforo-stack{gap:12px}
+  .semaforo-row{border-radius:14px}
+  .semaforo-stage{min-height:190px;padding:12px 0 4px}
+  .semaforo-stage-card{height:170px;width:min(88vw,280px);border-radius:14px;padding:12px 12px 10px}
+  .semaforo-stage-kicker{font-size:8.5px}
+  .semaforo-stage-title{font-size:15px;line-height:1.15}
+  .semaforo-stage-chip{font-size:9px;padding:3px 8px}
+  .semaforo-copy{padding:14px 12px 12px}
+  .semaforo-copy-kicker{font-size:10px;margin-bottom:8px}
+  .semaforo-copy-title{font-size:clamp(20px,6vw,28px);line-height:1.08}
+  .semaforo-copy-quote{font-size:13px;line-height:1.5}
+  .semaforo-copy-actions{margin-top:12px;gap:8px}
+  .semaforo-nav-btn{width:38px;height:38px;font-size:16px}
+  .semaforo-open-btn{padding:8px 12px;font-size:11px}
+  .semaforo-page{font-size:11px}
+  .semaforo-detail{padding:12px}
+  .semaforo-detail-title{font-size:13px}
+  .semaforo-detail-sub{font-size:11px;margin-bottom:10px}
+  .semaforo-bills{grid-template-columns:1fr;gap:8px}
+  .semaforo-bill{padding:10px}
+  .semaforo-bill-id{font-size:9px}
+  .semaforo-bill-title{font-size:12px;margin-top:4px}
+  .semaforo-bill-meta{font-size:10px;margin-top:4px}
+  .year-pie-wrap{padding:12px}
+  .year-pie-title{font-size:15px}
+  .year-pie-sub{font-size:11px}
+  #yearPieCanvas,#tipoProyectoPieCanvas{width:140px;height:140px}
+  .simple-table-title{font-size:14px}
+  .outside-cyt-note{margin:-6px 0 14px;padding:10px;font-size:11px;border-radius:10px}
+  .simple-table{font-size:10px}
+  .simple-table thead th,.simple-table tbody td{padding:6px 8px}
+  .simple-table-wrap{padding:10px;border-radius:10px}
+  .card{padding:14px;border-radius:10px}
+  .card-title{font-size:15px}
+  .card-subtitle{font-size:11px}
+  .chart-wrapper{height:220px}
+  .carousel-btn{width:30px;height:30px;font-size:16px}
+  .carousel-section .card{padding:16px}
+  .insight-emoji{font-size:24px;margin-bottom:6px}
+  .insight-num{font-size:18px}
+  .insight-label{font-size:11px}
+  .insight-item{padding:12px}
+  .sector-icon{font-size:20px}
+  .sector-count{font-size:22px}
+  .sector-label{font-size:10.5px}
+  .sector-cell{padding:12px 10px 10px;border-radius:10px}
+  .dest-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  .dest-item{padding:10px;border-radius:10px}
+  .dest-icon{font-size:22px;margin-bottom:6px}
+  .dest-name{font-size:11px}
+  .dest-count{font-size:12px}
+  .tipo-canvas-container{width:180px;height:180px}
+  .tipo-canvas-center-num{font-size:28px}
+  .tipo-legend-item{padding:7px 10px}
+  .tipo-legend-name{font-size:11px}
+  .tipo-legend-count{font-size:14px}
+  .bills-list{grid-template-columns:1fr;gap:10px}
+  .bill-card{padding:10px;border-radius:10px}
+  .bill-num{font-size:10px}
+  .bill-title{font-size:12px;margin-bottom:6px}
+  .bill-author{font-size:10px}
+  .modal-content{width:calc(100vw - 12px);max-height:92vh;padding:14px;border-radius:12px}
   .modal-content-wide{max-width:none}
-  .chatbot-fab{right:18px;bottom:18px;width:70px;height:70px;font-size:28px}
-  .chatbot-panel{left:8px;right:8px;bottom:84px;width:auto;max-width:none;border-radius:12px}
-  .chatbot-messages{max-height:48vh;padding:10px}
-  .chatbot-input{padding:8px}
-  .chatbot-text{height:44px;font-size:13px}
-  table{font-size:12px}
-  th,td{padding:8px}
+  .modal-title{font-size:18px}
+  .modal-subtitle{font-size:11px;margin-bottom:14px}
+  .modal-close{width:28px;height:28px;font-size:16px}
+  .chatbot-fab{right:12px;bottom:12px;width:54px;height:54px;font-size:24px}
+  .chatbot-panel{left:6px;right:6px;bottom:70px;width:auto;max-width:none;border-radius:10px}
+  .chatbot-messages{max-height:44vh;padding:8px}
+  .chatbot-input{padding:6px}
+  .chatbot-text{height:36px;font-size:12px;padding:8px 10px}
+  .chatbot-send{padding:0 10px;font-size:11px}
+  table{font-size:11px}
+  th,td{padding:7px}
+  .pagination{gap:6px;margin:16px 0}
+  .pag-btn{padding:5px 8px;font-size:11px}
 }
 
 @media (max-width:420px){
-  .header-actions{gap:8px}
-  .header-actions a{padding:5px 8px !important}
-  .consenso-intro{font-size:17px}
-  .semaforo-stage-card{width:min(92vw,284px);height:176px}
-  .semaforo-stage-title{font-size:16px}
-  .semaforo-copy-title{font-size:24px}
-  .semaforo-copy-quote{font-size:14px}
+  .app{padding:0 8px 20px}
+  .header-actions{gap:6px}
+  .header-actions a{padding:4px 7px !important;font-size:9px !important}
+  .logo-text h1{font-size:14px}
+  .consenso-intro{font-size:14px}
+  .kpi-value{font-size:22px}
+  .semaforo-stage-card{width:min(90vw,260px);height:156px}
+  .semaforo-stage-title{font-size:14px}
+  .semaforo-copy-title{font-size:20px}
+  .semaforo-copy-quote{font-size:12px;line-height:1.45}
   .semaforo-open-btn{width:100%;justify-content:center}
-  .semaforo-copy-actions{gap:8px}
-  .modal-title{font-size:18px}
+  .semaforo-copy-actions{gap:6px}
+  .semaforo-nav-btn{width:36px;height:36px;font-size:15px}
+  .modal-title{font-size:16px}
+  .modal-content{padding:12px}
+  .sector-count{font-size:20px}
+  .insight-num{font-size:16px}
+  .tipo-canvas-container{width:150px;height:150px}
+  .tipo-canvas-center-num{font-size:24px}
 }
 </style>
 
