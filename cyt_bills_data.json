@@ -5,7 +5,7 @@
     "fuente": "Comisión de Ciencia, Tecnología e Innovación Productiva — H. Cámara de Diputados",
     "periodo": "2024–2026",
     "con_autor": 68,
-    "con_bloque": 45
+    "con_bloque": 46
   },
   "eje_stats": [
     {
@@ -98,7 +98,7 @@
   "bloque_stats": [
     {
       "bloque": "Sin datos",
-      "total": 30,
+      "total": 29,
       "color": "#9ca3af"
     },
     {
@@ -108,7 +108,7 @@
     },
     {
       "bloque": "Unión por la Patria",
-      "total": 11,
+      "total": 10,
       "color": "#00AEEF"
     },
     {
@@ -120,6 +120,11 @@
       "bloque": "Innovación Federal",
       "total": 4,
       "color": "#1e3a8a"
+    },
+    {
+      "bloque": "Provincias Unidas",
+      "total": 4,
+      "color": "#9a3412"
     },
     {
       "bloque": "UCR",
@@ -135,11 +140,6 @@
       "bloque": "PRO",
       "total": 2,
       "color": "#FFD700"
-    },
-    {
-      "bloque": "Provincias Unidas",
-      "total": 2,
-      "color": "#9a3412"
     },
     {
       "bloque": "Democracia para Siempre",
@@ -1200,7 +1200,7 @@
         "Esteban Paulón / M. Fein"
       ],
       "autor_principal": "Esteban Paulón / M. Fein",
-      "bloque": "Sin datos",
+      "bloque": "Provincias Unidas",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Gobernanza e Institucionalidad CyT",
@@ -2078,7 +2078,7 @@
         "Natalia Sarapura\nDiputada Margarita Stolbizer"
       ],
       "autor_principal": "Diputado Esteban Paulón",
-      "bloque": "Unión por la Patria",
+      "bloque": "Provincias Unidas",
       "camara": "Diputados",
       "año": 2024,
       "eje": "Salud y Tecnología Médica",
