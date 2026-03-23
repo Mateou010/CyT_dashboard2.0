@@ -1,11 +1,11 @@
 {
   "metadata": {
     "generado": "2026-03-22T22:36:30.903895",
-    "total": 75,
+    "total": 68,
     "fuente": "Comisión de Ciencia, Tecnología e Innovación Productiva — H. Cámara de Diputados",
     "periodo": "2024–2026",
     "con_autor": 60,
-    "con_bloque": 35
+    "con_bloque": 44
   },
   "eje_stats": [
     {
@@ -98,28 +98,33 @@
   "bloque_stats": [
     {
       "bloque": "Sin datos",
-      "total": 40,
+      "total": 31,
       "color": "#9ca3af"
     },
     {
       "bloque": "La Libertad Avanza",
-      "total": 20,
+      "total": 13,
       "color": "#7B2D8E"
     },
     {
-      "bloque": "Unión por la Patria",
-      "total": 5,
-      "color": "#00AEEF"
+      "bloque": "Union por la patria",
+      "total": 6,
+      "color": "#475569"
     },
     {
-      "bloque": "Innovación Federal",
-      "total": 4,
-      "color": "#2E86C1"
+      "bloque": "INNOVACION FEDERAL",
+      "total": 3,
+      "color": "#1e3a8a"
     },
     {
-      "bloque": "Encuentro Federal",
+      "bloque": "COHERENCIA",
       "total": 2,
-      "color": "#FF9800"
+      "color": "#991b1b"
+    },
+    {
+      "bloque": "LA LIBERTAD AVANZA",
+      "total": 2,
+      "color": "#6d28d9"
     },
     {
       "bloque": "UCR",
@@ -127,14 +132,69 @@
       "color": "#E30613"
     },
     {
+      "bloque": "Unión por la Patria",
+      "total": 2,
+      "color": "#00AEEF"
+    },
+    {
+      "bloque": "PROVINCIAS UNIDAS",
+      "total": 2,
+      "color": "#0f766e"
+    },
+    {
+      "bloque": "UNION POR LA PATRIA",
+      "total": 2,
+      "color": "#c2410c"
+    },
+    {
+      "bloque": "La libertad avanza",
+      "total": 1,
+      "color": "#065f46"
+    },
+    {
+      "bloque": "DEMOCRACIA PARA SIEMPRE",
+      "total": 1,
+      "color": "#4c1d95"
+    },
+    {
+      "bloque": "Futuro y libertad",
+      "total": 1,
+      "color": "#9a3412"
+    },
+    {
+      "bloque": "Encuentro Federal",
+      "total": 1,
+      "color": "#FF9800"
+    },
+    {
       "bloque": "PRO",
       "total": 1,
       "color": "#FFD700"
     },
     {
-      "bloque": "Coalición Cívica",
+      "bloque": "COALICION CIVICA",
       "total": 1,
-      "color": "#8BC34A"
+      "color": "#334155"
+    },
+    {
+      "bloque": "ENCUENTRO FEDERAL",
+      "total": 1,
+      "color": "#111827"
+    },
+    {
+      "bloque": "Pro",
+      "total": 1,
+      "color": "#475569"
+    },
+    {
+      "bloque": "INNOVACIÓN FEDERAL",
+      "total": 1,
+      "color": "#1e3a8a"
+    },
+    {
+      "bloque": "UNIÓN POR LA PATRIA",
+      "total": 1,
+      "color": "#991b1b"
     }
   ],
   "top_autores": [
@@ -859,7 +919,7 @@
         "Silvana Giudici"
       ],
       "autor_principal": "Silvana Giudici",
-      "bloque": "La Libertad Avanza",
+      "bloque": "La libertad avanza",
       "camara": "Diputados",
       "año": 2026,
       "eje": "Gobernanza e Institucionalidad CyT",
@@ -878,7 +938,7 @@
         "Marcela Marina Pagano"
       ],
       "autor_principal": "Marcela Marina Pagano",
-      "bloque": "La Libertad Avanza",
+      "bloque": "COHERENCIA",
       "camara": "Diputados",
       "año": 2026,
       "eje": "Inteligencia Artificial",
@@ -1049,7 +1109,7 @@
         "Marcela Marina Pagano"
       ],
       "autor_principal": "Marcela Marina Pagano",
-      "bloque": "La Libertad Avanza",
+      "bloque": "COHERENCIA",
       "camara": "Diputados",
       "año": 2026,
       "eje": "Inteligencia Artificial",
@@ -1087,7 +1147,7 @@
         "Pamela Calletti"
       ],
       "autor_principal": "Pamela Calletti",
-      "bloque": "Innovación Federal",
+      "bloque": "INNOVACION FEDERAL",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Gobernanza e Institucionalidad CyT",
@@ -1199,7 +1259,7 @@
         "Gabriel Chumpitaz"
       ],
       "autor_principal": "Gabriel Chumpitaz",
-      "bloque": "La Libertad Avanza",
+      "bloque": "LA LIBERTAD AVANZA",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Inteligencia Artificial",
@@ -1258,7 +1318,7 @@
         "Diego Giuliano"
       ],
       "autor_principal": "Maximiliano Ferraro",
-      "bloque": "Coalición Cívica",
+      "bloque": "Union por la patria",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Inteligencia Artificial",
@@ -1275,7 +1335,7 @@
       "titulo": "Objeto de la Ley",
       "autores": [],
       "autor_principal": "No disponible",
-      "bloque": "Sin datos",
+      "bloque": "UCR",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Inteligencia Artificial",
@@ -1294,7 +1354,7 @@
         "Danya Tavela"
       ],
       "autor_principal": "Danya Tavela",
-      "bloque": "UCR",
+      "bloque": "DEMOCRACIA PARA SIEMPRE",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Inteligencia Artificial",
@@ -1371,7 +1431,7 @@
         "Pablo Outes"
       ],
       "autor_principal": "Pablo Outes",
-      "bloque": "Innovación Federal",
+      "bloque": "INNOVACION FEDERAL",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Gobernanza e Institucionalidad CyT",
@@ -1390,7 +1450,7 @@
         "Gabriel Chumpitaz"
       ],
       "autor_principal": "Gabriel Chumpitaz",
-      "bloque": "La Libertad Avanza",
+      "bloque": "Futuro y libertad",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Gobernanza e Institucionalidad CyT",
@@ -1409,7 +1469,7 @@
         "Julián Pinciaroli"
       ],
       "autor_principal": "Julián Pinciaroli",
-      "bloque": "La Libertad Avanza",
+      "bloque": "Union por la patria",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Inteligencia Artificial",
@@ -1426,7 +1486,7 @@
       "titulo": "regular la utilización de los datos personales de ciudadanos por parte de las personas humanas o jurídicas que desarrollen, operen, implementen o come",
       "autores": [],
       "autor_principal": "No disponible",
-      "bloque": "Sin datos",
+      "bloque": "Union por la patria",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Datos y Digitalización",
@@ -1538,7 +1598,7 @@
         "Maria Gisela Marziotta"
       ],
       "autor_principal": "Maria Gisela Marziotta",
-      "bloque": "Unión por la Patria",
+      "bloque": "Union por la patria",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Educación y Formación CyT",
@@ -1595,7 +1655,7 @@
         "Julian Pinciaroli"
       ],
       "autor_principal": "Julian Pinciaroli",
-      "bloque": "La Libertad Avanza",
+      "bloque": "Union por la patria",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Gobernanza e Institucionalidad CyT",
@@ -1614,7 +1674,7 @@
         "Pamela Calletti"
       ],
       "autor_principal": "Pamela Calletti",
-      "bloque": "Innovación Federal",
+      "bloque": "Union por la patria",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Educación y Formación CyT",
@@ -1797,7 +1857,7 @@
       "titulo": "Responsabilidad Algorítmica Y Promoción De La Robótica, Algoritmos Verdes E Inteligencia Artificial En La Capítulo I Responsabilidad Y Transparencia Algorítmica",
       "autores": [],
       "autor_principal": "No disponible",
-      "bloque": "Sin datos",
+      "bloque": "COALICION CIVICA",
       "camara": "Diputados",
       "año": 2024,
       "eje": "Inteligencia Artificial",
@@ -1835,7 +1895,7 @@
         "Oscar Agost Carreño"
       ],
       "autor_principal": "Oscar Agost Carreño",
-      "bloque": "Encuentro Federal",
+      "bloque": "ENCUENTRO FEDERAL",
       "camara": "Diputados",
       "año": 2024,
       "eje": "Inteligencia Artificial",
@@ -1964,7 +2024,7 @@
       "titulo": "“Régimen Juridico Aplicable Para El Uso Responsable De La Inteligencia Artificial En La República Argentina”",
       "autores": [],
       "autor_principal": "No disponible",
-      "bloque": "Sin datos",
+      "bloque": "PROVINCIAS UNIDAS",
       "camara": "Diputados",
       "año": 2024,
       "eje": "Gobernanza e Institucionalidad CyT",
@@ -1981,7 +2041,7 @@
       "titulo": "SandBox IA Argentina",
       "autores": [],
       "autor_principal": "No disponible",
-      "bloque": "Sin datos",
+      "bloque": "Pro",
       "camara": "Diputados",
       "año": 2024,
       "eje": "Gobernanza e Institucionalidad CyT",
@@ -2077,7 +2137,7 @@
         "Silvana Micaela Ginocchio"
       ],
       "autor_principal": "Silvana Micaela Ginocchio",
-      "bloque": "Unión por la Patria",
+      "bloque": "UNION POR LA PATRIA",
       "camara": "Diputados",
       "año": 2024,
       "eje": "Gobernanza e Institucionalidad CyT",
@@ -2094,7 +2154,7 @@
       "titulo": "INCORPORASE el artículo 139 ter al Código Penal de la Nación, cuyo texto es el siguiente: “Artículo 139° ter: Será reprimido con prisión de cuatro (4)",
       "autores": [],
       "autor_principal": "No disponible",
-      "bloque": "Sin datos",
+      "bloque": "PROVINCIAS UNIDAS",
       "camara": "Diputados",
       "año": 2024,
       "eje": "Inteligencia Artificial",
@@ -2115,7 +2175,7 @@
         "Silvana Giudici \nDiputada Nacional"
       ],
       "autor_principal": "Sergio Eduardo",
-      "bloque": "Sin datos",
+      "bloque": "LA LIBERTAD AVANZA",
       "camara": "Diputados",
       "año": 2024,
       "eje": "Inteligencia Artificial",
@@ -2132,7 +2192,7 @@
       "titulo": "Incorpórese como artículo 1bis de la ley 24.240, el siguiente: Articulo 1bis: Se considera usuario directo de la IA a aquellos que interactúan directa",
       "autores": [],
       "autor_principal": "No disponible",
-      "bloque": "Sin datos",
+      "bloque": "INNOVACIÓN FEDERAL",
       "camara": "Diputados",
       "año": 2024,
       "eje": "Gobernanza e Institucionalidad CyT",
@@ -2151,7 +2211,7 @@
         "Jorge Neri"
       ],
       "autor_principal": "Jorge Neri",
-      "bloque": "Sin datos",
+      "bloque": "UNIÓN POR LA PATRIA",
       "camara": "Diputados",
       "año": 2024,
       "eje": "Inteligencia Artificial",
@@ -2193,7 +2253,7 @@
         "Dante López Rodríguez"
       ],
       "autor_principal": "Dante López Rodríguez",
-      "bloque": "Unión por la Patria",
+      "bloque": "UNION POR LA PATRIA",
       "camara": "Diputados",
       "año": 2024,
       "eje": "Inteligencia Artificial",
@@ -2212,7 +2272,7 @@
         "Pamela Calletti"
       ],
       "autor_principal": "Pamela Calletti",
-      "bloque": "Innovación Federal",
+      "bloque": "INNOVACION FEDERAL",
       "camara": "Diputados",
       "año": 2024,
       "eje": "Inteligencia Artificial",
