@@ -1,7 +1,64 @@
 import fs from "fs";
 import path from "path";
 
-const MODEL_CANDIDATES = ["gemini-2.0-flash", "gemini-2.5-flash", "gemini-2.0-flash-lite"];
+const MODEL_CANDIDATES = [
+  (process.env.GEMINI_MODEL || "").trim(),
+  "gemini-2.5-pro",
+  "gemini-2.5-flash",
+  "gemini-2.0-flash",
+  "gemini-2.0-flash-lite",
+].filter(Boolean);
+
+const MAX_CONTEXT_ITEMS = 40;
+
+function normalizeText(text) {
+  return (text || "")
+    .toString()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+}
+
+function tokenize(text) {
+  return normalizeText(text)
+    .split(/[^a-z0-9]+/g)
+    .filter((w) => w.length >= 3);
+}
+
+function pickRelevantContext(consulta, contexto, limit = MAX_CONTEXT_ITEMS) {
+  const items = Array.isArray(contexto) ? contexto : [];
+  if (!items.length) return [];
+  if (items.length <= limit) return items;
+
+  const q = normalizeText(consulta || "");
+  const words = tokenize(q);
+  const idMatch = q.match(/\b\d{4}-d-\d{4}\b/i);
+  const targetId = idMatch ? idMatch[0].toUpperCase() : null;
+
+  const scored = items
+    .map((x) => {
+      const id = (x.id || x.expediente || "").toUpperCase();
+      const text = normalizeText(
+        `${x.titulo || ""} ${x.resumen || ""} ${x.desc || ""} ${x.tema || ""} ${x.grupo || ""} ${x.subtematica || ""} ${x.autor_principal || ""} ${x.bloque || ""}`,
+      );
+      let score = 0;
+      if (targetId && id === targetId) score += 100;
+      words.forEach((w) => {
+        if (text.includes(w)) score += 3;
+      });
+      if ((x.año || "").toString() && q.includes((x.año || "").toString())) score += 1;
+      return { x, score };
+    })
+    .sort((a, b) => b.score - a.score);
+
+  const positives = scored.filter((s) => s.score > 0).slice(0, limit).map((s) => s.x);
+  if (positives.length >= Math.min(12, limit)) return positives;
+
+  // Fallback mixed set when query is broad or weak.
+  const head = scored.slice(0, Math.max(0, limit - 10)).map((s) => s.x);
+  const tail = items.slice(-10);
+  return [...new Map([...head, ...tail].map((it) => [it.id || it.expediente || Math.random(), it])).values()].slice(0, limit);
+}
 
 function fallbackFromContext(consulta, contexto) {
   const q = (consulta || "").toLowerCase();
@@ -61,7 +118,6 @@ export default async function handler(req, res) {
     let datosLeyes = "";
     let contextoArray = null;
     if (contexto && (Array.isArray(contexto) || typeof contexto === "object")) {
-      datosLeyes = JSON.stringify(contexto);
       if (Array.isArray(contexto)) contextoArray = contexto;
     } else {
       const rutaArchivo = path.join(process.cwd(), "api", "leyes.json");
@@ -71,6 +127,11 @@ export default async function handler(req, res) {
         if (Array.isArray(parsed?.proyectos)) contextoArray = parsed.proyectos;
         else if (Array.isArray(parsed?.bills)) contextoArray = parsed.bills;
       } catch (_) {}
+    }
+
+    const contextoRelevante = pickRelevantContext(consulta, contextoArray, MAX_CONTEXT_ITEMS);
+    if (contextoRelevante.length) {
+      datosLeyes = JSON.stringify(contextoRelevante);
     }
 
     const alcance = scope === "cyt"
@@ -90,12 +151,16 @@ Reglas:
 2. Si te preguntan algo que NO está en los proyectos, decí: "Esa información no figura en los proyectos actuales".
 3. Sé amable pero técnico.
 4. Si citás un proyecto, incluí su ID (ejemplo: 2505-D-2023).
+5. Respondé en español claro y estructurado, priorizando precisión legal.
+6. Si la pregunta es comparativa, contrastá al menos 2 proyectos.
+7. Si hay ambigüedad, explicala brevemente y proponé cómo desambiguar.
 `;
 
     if (!process.env.GEMINI_API_KEY) {
       return res.status(200).json({
-        texto: fallbackFromContext(consulta, contextoArray),
+        texto: fallbackFromContext(consulta, contextoRelevante.length ? contextoRelevante : contextoArray),
         model: "fallback-local",
+        context_items: (contextoRelevante.length ? contextoRelevante : contextoArray || []).length,
       });
     }
 
@@ -113,19 +178,32 @@ Reglas:
     let lastError = null;
     for (const modelName of MODEL_CANDIDATES) {
       try {
-        const model = genAI.getGenerativeModel({ model: modelName });
+        const model = genAI.getGenerativeModel({
+          model: modelName,
+          generationConfig: {
+            temperature: 0.2,
+            topP: 0.9,
+            topK: 40,
+            maxOutputTokens: 1400,
+          },
+        });
         const result = await model.generateContent([instruccionSistema, consulta]);
         const response = await result.response;
-        return res.status(200).json({ texto: response.text(), model: modelName });
+        return res.status(200).json({
+          texto: response.text(),
+          model: modelName,
+          context_items: contextoRelevante.length || (contextoArray || []).length,
+        });
       } catch (err) {
         lastError = err;
       }
     }
 
     return res.status(200).json({
-      texto: fallbackFromContext(consulta, contextoArray),
+      texto: fallbackFromContext(consulta, contextoRelevante.length ? contextoRelevante : contextoArray),
       model: "fallback-local",
       note: lastError?.message || "Sin modelo Gemini disponible",
+      context_items: (contextoRelevante.length ? contextoRelevante : contextoArray || []).length,
     });
   } catch (error) {
     console.error("/api/chat error:", error);

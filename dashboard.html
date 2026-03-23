@@ -3564,16 +3564,23 @@ async function sendChatMessage() {
     if(!resp.ok) {
       const err = data?.error || 'No se pudo obtener respuesta del servidor.';
       appendChatMessage('bot', `Error: ${err}`);
+      setChatStatus('Error en la respuesta del servidor.');
     } else {
       const answer = data?.texto || data?.respuesta || 'Sin respuesta del modelo.';
       appendChatMessage('bot', answer);
+      if (data?.model === 'fallback-local') {
+        setChatStatus('Modo local rápido activo. Configurá GEMINI_API_KEY para respuestas más profundas.');
+      } else {
+        const ctx = data?.context_items ? ` · contexto: ${data.context_items}` : '';
+        setChatStatus(`Modelo: ${data?.model || 'desconocido'}${ctx}`);
+      }
     }
   } catch (err) {
     appendChatMessage('bot', 'Error de conexión con el endpoint /api/chat.');
+    setChatStatus('Error de conexión con /api/chat.');
   } finally {
     chatbotLoading = false;
     if(sendBtn) sendBtn.disabled = false;
-    setChatStatus('');
   }
 }
 
