@@ -148,6 +148,31 @@ a { color:inherit; text-decoration:none }
 .legend-name { font-size:14px; font-weight:600; flex:1 }
 .legend-count { font-size:13px; color:var(--muted); font-weight:700 }
 
+/* ── SUB DONUT ─────────────────────────── */
+.subdonut-wrap{
+  margin-top:22px;
+  padding-top:18px;
+  border-top:1px solid var(--border);
+  display:none;
+}
+.subdonut-wrap.open{display:block}
+.subdonut-title{font-size:16px;font-weight:700}
+.subdonut-sub{font-size:12px;color:var(--muted);margin-top:3px}
+.subdonut-layout{display:flex;align-items:center;gap:34px;margin-top:12px}
+.subdonut-canvas-wrap{flex-shrink:0;position:relative;width:320px;height:320px}
+.subdonut-canvas-wrap canvas{cursor:pointer;width:100%;height:100%}
+.subdonut-center{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  text-align:center;pointer-events:none;
+}
+.subdonut-center-num{font-size:30px;font-weight:800;line-height:1}
+.subdonut-center-label{font-size:12px;color:var(--muted);margin-top:4px}
+.subdonut-legend{flex:1;min-width:220px}
+@media(max-width:900px){
+  .subdonut-layout{flex-direction:column;align-items:stretch}
+  .subdonut-canvas-wrap{width:100% !important;height:auto !important;aspect-ratio:1}
+}
+
 /* ── MODAL ─────────────────────────────── */
 .modal-overlay {
   position:fixed; inset:0; z-index:1000;
@@ -295,6 +320,20 @@ footer { border-top:1px solid var(--border); padding:24px; text-align:center }
       </div>
       <div class="donut-legend" id="donutLegend"></div>
     </div>
+    <div class="subdonut-wrap" id="subdonutWrap">
+      <div class="subdonut-title" id="subdonutTitle"></div>
+      <div class="subdonut-sub">Click en un subgrupo para ver sus proyectos</div>
+      <div class="subdonut-layout">
+        <div class="subdonut-canvas-wrap">
+          <canvas id="subdonutCanvas"></canvas>
+          <div class="subdonut-center">
+            <div class="subdonut-center-num" id="subdonutTotal"></div>
+            <div class="subdonut-center-label">proyectos</div>
+          </div>
+        </div>
+        <div class="donut-legend subdonut-legend" id="subdonutLegend"></div>
+      </div>
+    </div>
   </div>
 
 </div>
@@ -365,8 +404,11 @@ function renderIntro() {
 /* ── Donut chart on Canvas ── */
 const canvas = document.getElementById('donutCanvas');
 const ctx = canvas.getContext('2d');
+const subCanvas = document.getElementById('subdonutCanvas');
+const subCtx = subCanvas.getContext('2d');
 const dpr = window.devicePixelRatio || 1;
 let W, H, cx, cy, outerR, innerR;
+let subW, subH, subCx, subCy, subOuterR, subInnerR;
 
 function sizeCanvas() {
   const wrap = canvas.parentElement;
@@ -381,9 +423,34 @@ function sizeCanvas() {
   outerR = W * 0.397; innerR = W * 0.228;
 }
 sizeCanvas();
-window.addEventListener('resize', () => { sizeCanvas(); buildSlices(); drawDonut(); });
+function sizeSubCanvas() {
+  const wrap = subCanvas.parentElement;
+  const sz = Math.min(wrap.clientWidth, wrap.clientHeight || wrap.clientWidth);
+  subW = sz; subH = sz;
+  subCanvas.width = sz * dpr;
+  subCanvas.height = sz * dpr;
+  subCanvas.style.width = sz + 'px';
+  subCanvas.style.height = sz + 'px';
+  subCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  subCx = subW / 2; subCy = subH / 2;
+  subOuterR = subW * 0.39; subInnerR = subW * 0.23;
+}
+sizeSubCanvas();
+window.addEventListener('resize', () => {
+  sizeCanvas();
+  sizeSubCanvas();
+  buildSlices();
+  drawDonut();
+  if (selectedGroupIdx >= 0) {
+    buildSubSlices(selectedGroupIdx);
+    drawSubDonut();
+  }
+});
 let slices = [];
 let hoveredSlice = -1;
+let subSlices = [];
+let hoveredSubSlice = -1;
+let selectedGroupIdx = -1;
 
 function buildSlices() {
   const total = CYT_DATA.reduce((s,g) => s + g.count, 0);
@@ -440,6 +507,86 @@ function drawDonut() {
   });
 }
 
+function hexToRgba(hex, alpha) {
+  const h = hex.replace('#', '');
+  const full = h.length === 3 ? h.split('').map(ch => ch + ch).join('') : h;
+  const r = parseInt(full.slice(0, 2), 16);
+  const g = parseInt(full.slice(2, 4), 16);
+  const b = parseInt(full.slice(4, 6), 16);
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+}
+
+function subPalette(baseColor, len) {
+  const list = [];
+  for (let i = 0; i < len; i++) {
+    list.push(hexToRgba(baseColor, Math.max(0.35, 0.9 - i * 0.1)));
+  }
+  return list;
+}
+
+function buildSubSlices(groupIdx) {
+  const group = CYT_DATA[groupIdx];
+  const subs = group?.subs || [];
+  const total = subs.reduce((sum, s) => sum + s.count, 0) || 1;
+  const palette = subPalette(COLORS[groupIdx % COLORS.length], subs.length);
+  let angle = -Math.PI / 2;
+  subSlices = [];
+  subs.forEach((sub, i) => {
+    const sweep = (sub.count / total) * Math.PI * 2;
+    subSlices.push({
+      start: angle,
+      end: angle + sweep,
+      color: palette[i],
+      sub,
+      subIndex: i,
+    });
+    angle += sweep;
+  });
+}
+
+function drawSubDonut() {
+  subCtx.clearRect(0, 0, subW, subH);
+  if (!subSlices.length) return;
+  const total = subSlices.reduce((sum, s) => sum + s.sub.count, 0);
+  subSlices.forEach((s, i) => {
+    const isHovered = i === hoveredSubSlice;
+    const midAngle = (s.start + s.end) / 2;
+    const offset = isHovered ? 7 : 0;
+    const ox = subCx + Math.cos(midAngle) * offset;
+    const oy = subCy + Math.sin(midAngle) * offset;
+    const r = isHovered ? subOuterR + 4 : subOuterR;
+
+    subCtx.beginPath();
+    subCtx.arc(ox, oy, r, s.start, s.end);
+    subCtx.arc(ox, oy, subInnerR, s.end, s.start, true);
+    subCtx.closePath();
+    subCtx.fillStyle = s.color;
+    subCtx.globalAlpha = (hoveredSubSlice >= 0 && !isHovered) ? 0.45 : 1;
+    subCtx.fill();
+    subCtx.globalAlpha = 1;
+
+    subCtx.beginPath();
+    subCtx.arc(ox, oy, r, s.start, s.end);
+    subCtx.arc(ox, oy, subInnerR, s.end, s.start, true);
+    subCtx.closePath();
+    subCtx.strokeStyle = 'rgba(245,240,232,.7)';
+    subCtx.lineWidth = 2;
+    subCtx.stroke();
+
+    const pct = Math.round((s.sub.count / total) * 100);
+    if (pct >= 8) {
+      const labelR = (subOuterR + subInnerR) / 2;
+      const lx = ox + Math.cos(midAngle) * labelR;
+      const ly = oy + Math.sin(midAngle) * labelR;
+      subCtx.fillStyle = '#fff';
+      subCtx.font = '700 12px Neco, sans-serif';
+      subCtx.textAlign = 'center';
+      subCtx.textBaseline = 'middle';
+      subCtx.fillText(`${pct}%`, lx, ly);
+    }
+  });
+}
+
 function getSliceAt(x, y) {
   const dx = x - cx, dy = y - cy;
   const dist = Math.sqrt(dx*dx + dy*dy);
@@ -478,7 +625,7 @@ canvas.addEventListener('mouseleave', () => {
 canvas.addEventListener('click', e => {
   const {x, y} = canvasCoords(e);
   const idx = getSliceAt(x, y);
-  if (idx >= 0) openModal(idx);
+  if (idx >= 0) selectGroup(idx);
 });
 
 /* Touch support for mobile */
@@ -487,7 +634,7 @@ canvas.addEventListener('touchstart', e => {
   const touch = e.touches[0];
   const {x, y} = canvasCoords(touch);
   const idx = getSliceAt(x, y);
-  if (idx >= 0) openModal(idx);
+  if (idx >= 0) selectGroup(idx);
 }, { passive: false });
 
 /* ── Legend ── */
@@ -496,7 +643,7 @@ function renderLegend() {
   legend.innerHTML = CYT_DATA.map((g, i) => `
     <div class="legend-item" data-idx="${i}"
          onmouseenter="hoverSlice(${i})" onmouseleave="hoverSlice(-1)"
-         onclick="openModal(${i})">
+         onclick="selectGroup(${i})">
       <div class="legend-swatch" style="background:${COLORS[i % COLORS.length]}"></div>
       <span class="legend-name">${g.name}</span>
       <span class="legend-count">${g.count}</span>
@@ -516,15 +663,116 @@ function syncLegendHover(idx) {
   });
 }
 
+function renderSubLegend(groupIdx) {
+  const group = CYT_DATA[groupIdx];
+  const legend = document.getElementById('subdonutLegend');
+  const palette = subPalette(COLORS[groupIdx % COLORS.length], group.subs.length);
+  legend.innerHTML = group.subs.map((sub, i) => `
+    <div class="legend-item" data-sub-idx="${i}"
+         onmouseenter="hoverSubSlice(${i})" onmouseleave="hoverSubSlice(-1)"
+         onclick="openModal(${groupIdx}, ${i})">
+      <div class="legend-swatch" style="background:${palette[i]}"></div>
+      <span class="legend-name">${sub.name}</span>
+      <span class="legend-count">${sub.count}</span>
+    </div>
+  `).join('');
+}
+
+function syncSubLegendHover(idx) {
+  document.querySelectorAll('#subdonutLegend .legend-item').forEach((el, i) => {
+    el.classList.toggle('active', i === idx);
+  });
+}
+
+function subCanvasCoords(e) {
+  const rect = subCanvas.getBoundingClientRect();
+  return {
+    x: (e.clientX - rect.left) * (subW / rect.width),
+    y: (e.clientY - rect.top) * (subH / rect.height),
+  };
+}
+
+function getSubSliceAt(x, y) {
+  const dx = x - subCx;
+  const dy = y - subCy;
+  const dist = Math.sqrt(dx * dx + dy * dy);
+  if (dist < subInnerR || dist > subOuterR + 12) return -1;
+  let angle = Math.atan2(dy, dx);
+  if (angle < -Math.PI / 2) angle += Math.PI * 2;
+  for (let i = 0; i < subSlices.length; i++) {
+    const s = subSlices[i];
+    if (angle >= s.start && angle <= s.end) return i;
+  }
+  return -1;
+}
+
+function hoverSubSlice(idx) {
+  hoveredSubSlice = idx;
+  drawSubDonut();
+  syncSubLegendHover(idx);
+}
+
+function selectGroup(idx) {
+  selectedGroupIdx = idx;
+  hoveredSlice = idx;
+  drawDonut();
+  syncLegendHover(idx);
+  const group = CYT_DATA[idx];
+  buildSubSlices(idx);
+  drawSubDonut();
+  hoveredSubSlice = -1;
+  renderSubLegend(idx);
+  document.getElementById('subdonutTotal').textContent = group.count;
+  document.getElementById('subdonutTitle').textContent = `${group.name}: subgrupos`;
+  document.getElementById('subdonutWrap').classList.add('open');
+  document.getElementById('subdonutWrap').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+subCanvas.addEventListener('mousemove', e => {
+  const {x, y} = subCanvasCoords(e);
+  const idx = getSubSliceAt(x, y);
+  if (idx !== hoveredSubSlice) {
+    hoveredSubSlice = idx;
+    drawSubDonut();
+    syncSubLegendHover(idx);
+    subCanvas.style.cursor = idx >= 0 ? 'pointer' : 'default';
+  }
+});
+
+subCanvas.addEventListener('mouseleave', () => {
+  hoveredSubSlice = -1;
+  drawSubDonut();
+  syncSubLegendHover(-1);
+});
+
+subCanvas.addEventListener('click', e => {
+  if (selectedGroupIdx < 0) return;
+  const {x, y} = subCanvasCoords(e);
+  const idx = getSubSliceAt(x, y);
+  if (idx >= 0) openModal(selectedGroupIdx, idx);
+});
+
+subCanvas.addEventListener('touchstart', e => {
+  if (selectedGroupIdx < 0) return;
+  e.preventDefault();
+  const touch = e.touches[0];
+  const {x, y} = subCanvasCoords(touch);
+  const idx = getSubSliceAt(x, y);
+  if (idx >= 0) openModal(selectedGroupIdx, idx);
+}, { passive: false });
+
 /* ── Modal ── */
-function openModal(idx) {
+function openModal(idx, subIdx = null) {
   const group = CYT_DATA[idx];
   const color = COLORS[idx % COLORS.length];
+  const selectedSub = Number.isInteger(subIdx) ? group.subs[subIdx] : null;
+  const modalCount = selectedSub ? selectedSub.count : group.count;
   document.getElementById('modalTitle').innerHTML =
-    `<span style="color:${color}">●</span> ${group.name} <span style="font-weight:400;font-size:14px;color:var(--muted)">(${group.count} proyectos)</span>`;
+    `<span style="color:${color}">●</span> ${group.name}${selectedSub ? ` · ${selectedSub.name}` : ''} <span style="font-weight:400;font-size:14px;color:var(--muted)">(${modalCount} proyectos)</span>`;
 
   let html = '';
-  group.subs.forEach(sub => {
+  const subsToRender = selectedSub ? [selectedSub] : group.subs;
+  subsToRender.forEach(sub => {
     html += `<div class="sub-section">
       <div class="sub-header">
         <div class="sub-swatch" style="background:${color}"></div>
