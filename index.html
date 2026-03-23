@@ -659,15 +659,6 @@
         </div>
     </div>
 
-    <!-- EJES TEMÁTICOS -->
-    <div class="section">
-        <div class="section-header reveal">
-            <h2>Ejes Temáticos</h2>
-            <p>Los proyectos se distribuyen en áreas de trabajo definidas por la comisión</p>
-        </div>
-        <div class="eje-landing-grid" id="eje-grid"></div>
-    </div>
-
     <!-- FEATURES -->
     <div class="features-section">
         <div class="section">
@@ -731,17 +722,6 @@
                 document.getElementById('card-cyt-total').textContent = cytData.metadata.total;
                 const bloqueCount = (cytData.bloque_stats || []).filter(s => s.bloque !== 'Sin datos').length;
                 document.getElementById('stat-bloques').textContent = bloqueCount;
-
-                // Eje cards
-                const grid = document.getElementById('eje-grid');
-                grid.innerHTML = cytData.eje_stats.map(s => `
-                    <a href="dashboard-cyt.html" class="eje-landing-card reveal" style="--accent: ${s.color};">
-                        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:${s.color};"></div>
-                        <div class="eje-landing-icon">${s.icon}</div>
-                        <div class="eje-landing-name">${s.eje}</div>
-                        <div class="eje-landing-count">${s.total} <span>proyectos</span></div>
-                    </a>
-                `).join('');
 
                 // Load IA data
                 try {
