@@ -5,7 +5,7 @@
     "fuente": "Comisión de Ciencia, Tecnología e Innovación Productiva — H. Cámara de Diputados",
     "periodo": "2025–2026",
     "con_autor": 41,
-    "con_bloque": 30
+    "con_bloque": 31
   },
   "eje_stats": [
     {
@@ -82,7 +82,7 @@
   "bloque_stats": [
     {
       "bloque": "Sin datos",
-      "total": 14,
+      "total": 13,
       "color": "#9ca3af"
     },
     {
@@ -124,6 +124,11 @@
       "bloque": "Futuro y Libertad",
       "total": 1,
       "color": "#0369a1"
+    },
+    {
+      "bloque": "PRO",
+      "total": 1,
+      "color": "#1d4ed8"
     },
     {
       "bloque": "Provincias Unidas",
@@ -1199,7 +1204,7 @@
         "Martín Yeza"
       ],
       "autor_principal": "Martín Yeza",
-      "bloque": "Sin datos",
+      "bloque": "PRO",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Inteligencia Artificial",
