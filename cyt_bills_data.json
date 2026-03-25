@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generado": "2026-03-25T13:20:09.178693",
+    "generado": "2026-03-25T23:23:53.579Z",
     "total": 44,
     "fuente": "Comisión de Ciencia, Tecnología e Innovación Productiva — H. Cámara de Diputados",
     "periodo": "2025–2026",
-    "con_autor": 41,
-    "con_bloque": 31
+    "con_autor": 44,
+    "con_bloque": 44
   },
   "eje_stats": [
     {
@@ -81,9 +81,9 @@
   ],
   "bloque_stats": [
     {
-      "bloque": "Sin datos",
+      "bloque": "Unión por la Patria",
       "total": 13,
-      "color": "#9ca3af"
+      "color": "#00AEEF"
     },
     {
       "bloque": "COHERENCIA",
@@ -91,14 +91,24 @@
       "color": "#991b1b"
     },
     {
-      "bloque": "Unión por la Patria",
-      "total": 7,
-      "color": "#00AEEF"
-    },
-    {
       "bloque": "La Libertad Avanza",
       "total": 4,
       "color": "#7B2D8E"
+    },
+    {
+      "bloque": "Coalición Cívica",
+      "total": 3,
+      "color": "#0f766e"
+    },
+    {
+      "bloque": "Frente de Izquierda",
+      "total": 3,
+      "color": "#be123c"
+    },
+    {
+      "bloque": "Democracia para Siempre",
+      "total": 2,
+      "color": "#9a3412"
     },
     {
       "bloque": "Innovación Federal",
@@ -109,11 +119,6 @@
       "bloque": "UCR",
       "total": 2,
       "color": "#E30613"
-    },
-    {
-      "bloque": "Democracia para Siempre",
-      "total": 1,
-      "color": "#9a3412"
     },
     {
       "bloque": "Encuentro Federal",
@@ -146,10 +151,6 @@
       "total": 3
     },
     {
-      "autor": "No disponible",
-      "total": 3
-    },
-    {
       "autor": "Cecilia Solange Wissocq",
       "total": 2
     },
@@ -166,7 +167,19 @@
       "total": 1
     },
     {
+      "autor": "Ana Carla Carrizo",
+      "total": 1
+    },
+    {
       "autor": "Ariel Rauschenberger y otros",
+      "total": 1
+    },
+    {
+      "autor": "Carlos Daniel Castagneto y otros",
+      "total": 1
+    },
+    {
+      "autor": "Christian Castillo y otros",
       "total": 1
     },
     {
@@ -187,14 +200,6 @@
     },
     {
       "autor": "Esteban Paulón / M. Fein",
-      "total": 1
-    },
-    {
-      "autor": "José Pablo Carro",
-      "total": 1
-    },
-    {
-      "autor": "Julian Pinciaroli",
       "total": 1
     }
   ],
@@ -846,7 +851,7 @@
         "Juan M. López y otros"
       ],
       "autor_principal": "Juan M. López y otros",
-      "bloque": "Sin datos",
+      "bloque": "Coalición Cívica",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Gobernanza e Institucionalidad CyT",
@@ -865,7 +870,7 @@
         "Juan M. López y otros"
       ],
       "autor_principal": "Juan M. López y otros",
-      "bloque": "Sin datos",
+      "bloque": "Coalición Cívica",
       "camara": "Diputados",
       "año": 2025,
       "eje": "I+D y Financiamiento",
@@ -884,7 +889,7 @@
         "Juan M. López y otros"
       ],
       "autor_principal": "Juan M. López y otros",
-      "bloque": "Sin datos",
+      "bloque": "Coalición Cívica",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Gobernanza e Institucionalidad CyT",
@@ -899,9 +904,11 @@
     {
       "id": "0903-D-2025",
       "titulo": "Modificación De La Ley 25.467 Incorporando La Perspectiva, Paridad E Identidad De Género",
-      "autores": [],
-      "autor_principal": "No disponible",
-      "bloque": "Sin datos",
+      "autores": [
+        "Ana Carla Carrizo"
+      ],
+      "autor_principal": "Ana Carla Carrizo",
+      "bloque": "Democracia para Siempre",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Gobernanza e Institucionalidad CyT",
@@ -954,9 +961,15 @@
     {
       "id": "2079-D-2025",
       "titulo": "Financiamiento universitario",
-      "autores": [],
-      "autor_principal": "No disponible",
-      "bloque": "Sin datos",
+      "autores": [
+        "Christian Castillo",
+        "Nicolás del Caño",
+        "Alejandro Vilca",
+        "Vanina Biasi",
+        "Vilma Ripoll"
+      ],
+      "autor_principal": "Christian Castillo y otros",
+      "bloque": "Frente de Izquierda",
       "camara": "Diputados",
       "año": 2025,
       "eje": "I+D y Financiamiento",
@@ -975,7 +988,7 @@
         "Mónica Macha"
       ],
       "autor_principal": "Mónica Macha",
-      "bloque": "Sin datos",
+      "bloque": "Unión por la Patria",
       "camara": "Diputados",
       "año": 2025,
       "eje": "I+D y Financiamiento",
@@ -1073,7 +1086,7 @@
         "Mercedes de Mendieta"
       ],
       "autor_principal": "Mercedes de Mendieta",
-      "bloque": "Sin datos",
+      "bloque": "Frente de Izquierda",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Gobernanza e Institucionalidad CyT",
@@ -1092,7 +1105,7 @@
         "Ariel Rauschenberger y otros"
       ],
       "autor_principal": "Ariel Rauschenberger y otros",
-      "bloque": "Sin datos",
+      "bloque": "Unión por la Patria",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Educación y Formación CyT",
@@ -1185,7 +1198,7 @@
         "Daniel Gollan y otros"
       ],
       "autor_principal": "Daniel Gollan y otros",
-      "bloque": "Sin datos",
+      "bloque": "Unión por la Patria",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Gobernanza e Institucionalidad CyT",
@@ -1219,9 +1232,11 @@
     {
       "id": "5539-D-2025",
       "titulo": "Castagneto",
-      "autores": [],
-      "autor_principal": "No disponible",
-      "bloque": "Sin datos",
+      "autores": [
+        "Carlos Daniel Castagneto"
+      ],
+      "autor_principal": "Carlos Daniel Castagneto y otros",
+      "bloque": "Unión por la Patria",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Gobernanza e Institucionalidad CyT",
@@ -1240,7 +1255,7 @@
         "José Pablo Carro"
       ],
       "autor_principal": "José Pablo Carro",
-      "bloque": "Sin datos",
+      "bloque": "Unión por la Patria",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Educación y Formación CyT",
@@ -1392,7 +1407,7 @@
         "Eduardo Toniolli"
       ],
       "autor_principal": "Eduardo Toniolli",
-      "bloque": "Sin datos",
+      "bloque": "Unión por la Patria",
       "camara": "Diputados",
       "año": 2025,
       "eje": "Gobernanza e Institucionalidad CyT",
@@ -1411,7 +1426,7 @@
         "Romina Del Plá y otros"
       ],
       "autor_principal": "Romina Del Plá y otros",
-      "bloque": "Sin datos",
+      "bloque": "Frente de Izquierda",
       "camara": "Diputados",
       "año": 2025,
       "eje": "I+D y Financiamiento",
