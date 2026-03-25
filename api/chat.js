@@ -110,6 +110,38 @@ function isDashboardOverviewQuestion(consulta) {
   return asksOverview && referencesDashboard;
 }
 
+function isLatestProjectsQuestion(consulta) {
+  const q = normalizeText(consulta || "");
+  if (!q) return false;
+  const asksLatest = /(ultimos|ultimas|mas nuevos|mas recientes|recientes|nuevos)/.test(q);
+  const asksProjects = /(proyecto|proyectos|ley|leyes|expediente)/.test(q);
+  const implicitCount = /\b\d+\b/.test(q);
+  return asksLatest && (asksProjects || implicitCount);
+}
+
+function buildLatestProjectsResponse(contexto, limit = 3) {
+  const items = Array.isArray(contexto) ? contexto : [];
+  if (!items.length) return "Esa información no figura en los proyectos actuales";
+
+  const normalized = items
+    .map((x) => ({
+      id: x.id || x.expediente || "Sin ID",
+      year: Number(x.año || x.anio || 0),
+      title: x.titulo || x.resumen || x.desc || "Sin título",
+    }))
+    .filter((x) => Number.isFinite(x.year) && x.year > 0)
+    .sort((a, b) => {
+      if (b.year !== a.year) return b.year - a.year;
+      return String(b.id).localeCompare(String(a.id));
+    });
+
+  if (!normalized.length) return "Esa información no figura en los proyectos actuales";
+
+  const top = normalized.slice(0, limit);
+  const lines = top.map((p, i) => `${i + 1}. **${p.id}** (${p.year}) — ${p.title}`);
+  return `Los ${top.length} proyectos más nuevos del dashboard son:\n${lines.join("\n")}`;
+}
+
 function buildDashboardOverview(contexto, alcance) {
   const items = Array.isArray(contexto) ? contexto : [];
   const total = items.length;
@@ -166,6 +198,7 @@ function isOpinionQuestion(consulta) {
 }
 
 function isOutOfScopeQuestion(consulta) {
+  if (isLatestProjectsQuestion(consulta)) return false;
   const q = normalizeText(consulta || "");
   if (!q) return false;
   if (/\b\d{4}-d-\d{4}\b/i.test(consulta || "")) return false;
@@ -260,6 +293,14 @@ export default async function handler(req, res) {
       });
     }
 
+    if (totalProyectos > 0 && isLatestProjectsQuestion(consulta)) {
+      return res.status(200).json({
+        texto: buildLatestProjectsResponse(contextoArray, 3),
+        model: "latest-local",
+        context_items: totalProyectos,
+      });
+    }
+
     const contextoRelevante = pickRelevantContext(consulta, contextoArray, MAX_CONTEXT_ITEMS);
     if (contextoRelevante.length) {
       datosLeyes = JSON.stringify(contextoRelevante);
@@ -317,12 +358,8 @@ Reglas:
         const response = await result.response;
         const modelText = extractGeminiText(response);
         if (!modelText) {
-          return res.status(200).json({
-            texto: fallbackFromContext(consulta, contextoRelevante.length ? contextoRelevante : contextoArray),
-            model: "fallback-local",
-            note: "Respuesta vacía del modelo; se aplicó fallback local.",
-            context_items: (contextoRelevante.length ? contextoRelevante : contextoArray || []).length,
-          });
+          lastError = new Error(`Respuesta vacía del modelo ${modelName}`);
+          continue;
         }
         return res.status(200).json({
           texto: modelText,

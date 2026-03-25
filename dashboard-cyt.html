@@ -1081,7 +1081,11 @@ async function sendChatMessage() {
       const answer = data?.texto || data?.respuesta || 'Sin respuesta del modelo.';
       appendChatMessage('bot', answer);
       if (data?.model === 'fallback-local') {
-        setChatStatus('Modo local rápido activo. Configurá GEMINI_API_KEY para respuestas más profundas.');
+        if (data?.note) {
+          setChatStatus('Gemini no respondió en esta consulta. Se aplicó modo local de respaldo.');
+        } else {
+          setChatStatus('Modo local rápido activo. Configurá GEMINI_API_KEY para respuestas más profundas.');
+        }
       } else {
         const ctx = data?.context_items ? ` · contexto: ${data.context_items}` : '';
         setChatStatus(`Modelo: ${data?.model || 'desconocido'}${ctx}`);
