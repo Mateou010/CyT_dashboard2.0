@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generado": "2026-03-25T13:01:09.761246",
+    "generado": "2026-03-25T13:20:09.178693",
     "total": 44,
     "fuente": "Comisión de Ciencia, Tecnología e Innovación Productiva — H. Cámara de Diputados",
     "periodo": "2025–2026",
@@ -16,7 +16,7 @@
     },
     {
       "eje": "Inteligencia Artificial",
-      "total": 9,
+      "total": 10,
       "icon": "🤖",
       "color": "#2563eb"
     },
@@ -33,28 +33,22 @@
       "color": "#ea580c"
     },
     {
+      "eje": "Biotecnología",
+      "total": 2,
+      "icon": "🧬",
+      "color": "#16a34a"
+    },
+    {
       "eje": "Espacio y Antártida",
       "total": 2,
       "icon": "🚀",
       "color": "#0891b2"
     },
     {
-      "eje": "Biotecnología",
-      "total": 3,
-      "icon": "🧬",
-      "color": "#16a34a"
-    },
-    {
       "eje": "Datos y Digitalización",
       "total": 1,
       "icon": "🔐",
       "color": "#4f46e5"
-    },
-    {
-      "eje": "Tecnologías Cuánticas",
-      "total": 1,
-      "icon": "🔮",
-      "color": "#7c3aed"
     },
     {
       "eje": "Neuroderechos",
@@ -67,6 +61,12 @@
       "total": 1,
       "icon": "⚛️",
       "color": "#dc2626"
+    },
+    {
+      "eje": "Tecnologías Cuánticas",
+      "total": 1,
+      "icon": "🔮",
+      "color": "#7c3aed"
     }
   ],
   "year_stats": [
@@ -87,12 +87,12 @@
     },
     {
       "bloque": "COHERENCIA",
-      "total": 12,
+      "total": 11,
       "color": "#991b1b"
     },
     {
       "bloque": "Unión por la Patria",
-      "total": 6,
+      "total": 7,
       "color": "#00AEEF"
     },
     {
@@ -111,14 +111,14 @@
       "color": "#E30613"
     },
     {
-      "bloque": "Provincias Unidas",
+      "bloque": "Democracia para Siempre",
       "total": 1,
       "color": "#9a3412"
     },
     {
-      "bloque": "Democracia para Siempre",
+      "bloque": "Encuentro Federal",
       "total": 1,
-      "color": "#9a3412"
+      "color": "#FF9800"
     },
     {
       "bloque": "Futuro y Libertad",
@@ -126,22 +126,26 @@
       "color": "#0369a1"
     },
     {
-      "bloque": "Encuentro Federal",
+      "bloque": "Provincias Unidas",
       "total": 1,
-      "color": "#FF9800"
+      "color": "#9a3412"
     }
   ],
   "top_autores": [
     {
       "autor": "Marcela Marina Pagano",
-      "total": 11
+      "total": 10
     },
     {
       "autor": "Juan M. López y otros",
       "total": 3
     },
     {
-      "autor": "Pamela Calletti",
+      "autor": "No disponible",
+      "total": 3
+    },
+    {
+      "autor": "Cecilia Solange Wissocq",
       "total": 2
     },
     {
@@ -149,39 +153,11 @@
       "total": 2
     },
     {
-      "autor": "Cecilia Solange Wissocq",
+      "autor": "Pamela Calletti",
       "total": 2
     },
     {
-      "autor": "Silvana Giudici",
-      "total": 1
-    },
-    {
-      "autor": "Esteban Paulón / M. Fein",
-      "total": 1
-    },
-    {
-      "autor": "Mónica Macha",
-      "total": 1
-    },
-    {
-      "autor": "Maximiliano Ferraro",
-      "total": 1
-    },
-    {
       "autor": "AGUIRRE, MANUEL IGNACIO",
-      "total": 1
-    },
-    {
-      "autor": "Danya Tavela",
-      "total": 1
-    },
-    {
-      "autor": "Natalia Sarapura",
-      "total": 1
-    },
-    {
-      "autor": "Mercedes de Mendieta",
       "total": 1
     },
     {
@@ -189,23 +165,47 @@
       "total": 1
     },
     {
-      "autor": "Pablo Outes",
+      "autor": "Daniel Gollan y otros",
+      "total": 1
+    },
+    {
+      "autor": "Danya Tavela",
+      "total": 1
+    },
+    {
+      "autor": "Diego Giuliano",
+      "total": 1
+    },
+    {
+      "autor": "Eduardo Toniolli",
+      "total": 1
+    },
+    {
+      "autor": "Esteban Paulón / M. Fein",
+      "total": 1
+    },
+    {
+      "autor": "José Pablo Carro",
+      "total": 1
+    },
+    {
+      "autor": "Julian Pinciaroli",
       "total": 1
     }
   ],
   "year_tematica_matrix": {
     "2025": {
-      "IA": 13,
       "Estrategia Tecnologica Nacional": 12,
+      "IA": 13,
       "Innovación y Desarrollo Productivo": 3,
       "Privacidad Digital / Derechos Digitales": 2,
       "Tecnologías Estratégicas": 2
     },
     "2026": {
-      "Tecnologías Estratégicas": 4,
-      "IA": 3,
+      "Estrategia Tecnologica Nacional": 2,
+      "IA": 4,
       "Innovación y Desarrollo Productivo": 3,
-      "Estrategia Tecnologica Nacional": 2
+      "Tecnologías Estratégicas": 3
     }
   },
   "tipo_stats": [
@@ -216,7 +216,7 @@
     },
     {
       "tipo": "MARCO REGULATORIO",
-      "total": 9,
+      "total": 10,
       "color": "#64748b"
     },
     {
@@ -226,7 +226,7 @@
     },
     {
       "tipo": "CREA ÓRGANOS",
-      "total": 8,
+      "total": 7,
       "color": "#64748b"
     },
     {
@@ -235,12 +235,12 @@
       "color": "#64748b"
     },
     {
-      "tipo": "PENAL",
+      "tipo": "EDUCATIVA",
       "total": 2,
       "color": "#64748b"
     },
     {
-      "tipo": "EDUCATIVA",
+      "tipo": "PENAL",
       "total": 2,
       "color": "#64748b"
     },
@@ -253,7 +253,7 @@
   "subtema_stats": [
     {
       "subtema": "Marco Regulatorio",
-      "total": 5
+      "total": 6
     },
     {
       "subtema": "Estrategía Nacional de Ciencia y Tecnologia",
@@ -264,6 +264,10 @@
       "total": 4
     },
     {
+      "subtema": "Educación",
+      "total": 3
+    },
+    {
       "subtema": "Implementación de la IA por parte de la Administración Publica",
       "total": 3
     },
@@ -272,19 +276,15 @@
       "total": 3
     },
     {
-      "subtema": "Educación",
-      "total": 3
-    },
-    {
       "subtema": "Utilización de la IA en el Sistema Educativo",
       "total": 3
     },
     {
-      "subtema": "Desarrollo Productivo",
+      "subtema": "Biotecnología",
       "total": 2
     },
     {
-      "subtema": "Biotecnología",
+      "subtema": "Desarrollo Productivo",
       "total": 2
     },
     {
@@ -292,19 +292,7 @@
       "total": 2
     },
     {
-      "subtema": "Salud",
-      "total": 1
-    },
-    {
-      "subtema": "Ecosistema Startup",
-      "total": 1
-    },
-    {
-      "subtema": "Nuclear",
-      "total": 1
-    },
-    {
-      "subtema": "Espcial",
+      "subtema": "Brecha Digital",
       "total": 1
     },
     {
@@ -312,7 +300,23 @@
       "total": 1
     },
     {
+      "subtema": "Ecosistema Startup",
+      "total": 1
+    },
+    {
+      "subtema": "Espcial",
+      "total": 1
+    },
+    {
       "subtema": "I+D",
+      "total": 1
+    },
+    {
+      "subtema": "Neurederechos",
+      "total": 1
+    },
+    {
+      "subtema": "Nuclear",
       "total": 1
     },
     {
@@ -324,19 +328,11 @@
       "total": 1
     },
     {
-      "subtema": "Brecha Digital",
-      "total": 1
-    },
-    {
       "subtema": "Sector Antartico",
       "total": 1
     },
     {
       "subtema": "Tecnología Cuantica",
-      "total": 1
-    },
-    {
-      "subtema": "Neurederechos",
       "total": 1
     }
   ],
@@ -630,23 +626,23 @@
       "pdf_path": "PDFs_Proyectos_Ley/2026/0253-D-2026.pdf"
     },
     {
-      "id": "0439-D-2026",
-      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley De Acceso Acelerado A Terapias Génicas Personalizadas Para Enfermedades Poco Frecuentes Y Ultra-Raras",
+      "id": "0664-D-2026",
+      "titulo": "Proyecto de Ley: Marco Regulatoria de la Inteligencia Artificial",
       "autores": [
-        "Marcela Marina Pagano"
+        "Diego Giuliano"
       ],
-      "autor_principal": "Marcela Marina Pagano",
-      "bloque": "COHERENCIA",
+      "autor_principal": "Diego Giuliano",
+      "bloque": "Unión por la Patria",
       "camara": "Diputados",
       "año": 2026,
-      "eje": "Biotecnología",
-      "eje_score": 10,
-      "tematica": "Tecnologías Estratégicas",
-      "subtematica": "Salud",
-      "resumen": "Objeto. Créase el Sistema Nacional de Acceso Acelerado a Terapias Génicas Individualizadas para Enfermedades Poco Frecuentes y Ultra- Raras (SNATIGEP), con el fin de establecer un procedimiento regulatorio especial que permita la evaluación y autorización acelerada de terapias génicas personalizadas...",
-      "tipo": "CREA ÓRGANOS",
+      "eje": "Inteligencia Artificial",
+      "eje_score": 9,
+      "tematica": "IA",
+      "subtematica": "Marco Regulatorio",
+      "resumen": "Objeto. La presente ley tiene por objeto definir el marco legal para el desarrollo, investigación y uso de inteligencia artificial dentro del territorio nacional con la finalidad de preservar la protección de los derechos humanos, la privacidad, la seguridad de los ciudadanos y el estado de derecho.",
+      "tipo": "MARCO REGULATORIO",
       "paginas": 15,
-      "pdf_path": "PDFs_Proyectos_Ley/2026/0439-D-2026.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0664-D-2026.pdf"
     },
     {
       "id": "0478-D-2026",
