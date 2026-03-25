@@ -1,14 +1,9 @@
 import fs from "fs";
 import path from "path";
 
-const MODEL_CANDIDATES = [
-  (process.env.GEMINI_MODEL || "").trim(),
-  "gemini-2.5-pro",
-  "gemini-2.5-flash",
-  "gemini-2.0-flash",
-].filter(Boolean);
-
-const MAX_CONTEXT_ITEMS = 40;
+const MODEL_CANDIDATES = ["gemini-2.5-pro"];
+const MAX_CONTEXT_ITEMS = 120;
+const MAX_GEMINI_ATTEMPTS = 2;
 
 function normalizeText(text) {
   return (text || "")
@@ -64,6 +59,18 @@ function fallbackFromContext(consulta, contexto) {
   const items = Array.isArray(contexto) ? contexto : [];
   if (!items.length) return "Esa información no figura en los proyectos actuales";
 
+  if (isLatestProjectsQuestion(consulta)) {
+    return buildLatestProjectsResponse(contexto, extractRequestedLimit(consulta, 3, 10));
+  }
+
+  if (isDashboardOverviewQuestion(consulta)) {
+    return buildDashboardOverview(contexto, "este dashboard");
+  }
+
+  if (isTotalProjectsQuestion(consulta)) {
+    return `Actualmente se registran **${items.length} proyectos de ley** en el dashboard.`;
+  }
+
   const idMatch = q.match(/\b\d{4}-d-\d{4}\b/i);
   if (idMatch) {
     const id = idMatch[0].toUpperCase();
@@ -80,7 +87,7 @@ function fallbackFromContext(consulta, contexto) {
   const words = q.split(/\s+/).filter((w) => w.length > 3);
   const scored = items
     .map((x) => {
-      const text = `${x.titulo || ""} ${x.resumen || ""} ${x.desc || ""}`.toLowerCase();
+      const text = `${x.titulo || ""} ${x.resumen || ""} ${x.desc || ""} ${x.tematica || ""} ${x.subtematica || ""} ${x.bloque || ""} ${x.autor_principal || ""} ${x.autor || ""}`.toLowerCase();
       let score = 0;
       words.forEach((w) => {
         if (text.includes(w)) score += 1;
@@ -89,9 +96,25 @@ function fallbackFromContext(consulta, contexto) {
     })
     .filter((s) => s.score > 0)
     .sort((a, b) => b.score - a.score)
-    .slice(0, 3);
+    .slice(0, 5);
 
-  if (!scored.length) return "Esa información no figura en los proyectos actuales";
+  if (!scored.length) {
+    const preview = items
+      .map((x) => ({
+        id: x.id || x.expediente || "Sin ID",
+        year: Number(x.año || x.anio || 0),
+        titulo: x.titulo || x.desc || "Sin título",
+      }))
+      .filter((x) => x.year > 0)
+      .sort((a, b) => b.year - a.year || String(b.id).localeCompare(String(a.id)))
+      .slice(0, 3)
+      .map((x) => `• ${x.id} (${x.year}): ${x.titulo}`)
+      .join("\n");
+
+    return preview
+      ? `No encontré coincidencia exacta con esa formulación. Como referencia, estos son algunos proyectos recientes:\n${preview}`
+      : "Esa información no figura en los proyectos actuales";
+  }
 
   const lines = scored.map(({ x }) => {
     const id = x.id || x.expediente || "Sin ID";
@@ -117,6 +140,15 @@ function isLatestProjectsQuestion(consulta) {
   const asksProjects = /(proyecto|proyectos|ley|leyes|expediente)/.test(q);
   const implicitCount = /\b\d+\b/.test(q);
   return asksLatest && (asksProjects || implicitCount);
+}
+
+function extractRequestedLimit(consulta, defaultValue = 3, max = 10) {
+  const q = normalizeText(consulta || "");
+  const m = q.match(/\b(\d{1,2})\b/);
+  if (!m) return defaultValue;
+  const n = Number(m[1]);
+  if (!Number.isFinite(n) || n <= 0) return defaultValue;
+  return Math.min(n, max);
 }
 
 function buildLatestProjectsResponse(contexto, limit = 3) {
@@ -294,8 +326,9 @@ export default async function handler(req, res) {
     }
 
     if (totalProyectos > 0 && isLatestProjectsQuestion(consulta)) {
+      const limit = extractRequestedLimit(consulta, 3, 10);
       return res.status(200).json({
-        texto: buildLatestProjectsResponse(contextoArray, 3),
+        texto: buildLatestProjectsResponse(contextoArray, limit),
         model: "latest-local",
         context_items: totalProyectos,
       });
@@ -344,30 +377,32 @@ Reglas:
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
     let lastError = null;
     for (const modelName of MODEL_CANDIDATES) {
-      try {
-        const model = genAI.getGenerativeModel({
-          model: modelName,
-          generationConfig: {
-            temperature: 0.2,
-            topP: 0.9,
-            topK: 40,
-            maxOutputTokens: 1400,
-          },
-        });
-        const result = await model.generateContent([instruccionSistema, consulta]);
-        const response = await result.response;
-        const modelText = extractGeminiText(response);
-        if (!modelText) {
-          lastError = new Error(`Respuesta vacía del modelo ${modelName}`);
-          continue;
+      for (let attempt = 1; attempt <= MAX_GEMINI_ATTEMPTS; attempt += 1) {
+        try {
+          const model = genAI.getGenerativeModel({
+            model: modelName,
+            generationConfig: {
+              temperature: 0.2,
+              topP: 0.9,
+              topK: 40,
+              maxOutputTokens: 1400,
+            },
+          });
+          const result = await model.generateContent([instruccionSistema, consulta]);
+          const response = await result.response;
+          const modelText = extractGeminiText(response);
+          if (!modelText) {
+            lastError = new Error(`Respuesta vacía del modelo ${modelName} (intento ${attempt})`);
+            continue;
+          }
+          return res.status(200).json({
+            texto: modelText,
+            model: modelName,
+            context_items: contextoRelevante.length || (contextoArray || []).length,
+          });
+        } catch (err) {
+          lastError = err;
         }
-        return res.status(200).json({
-          texto: modelText,
-          model: modelName,
-          context_items: contextoRelevante.length || (contextoArray || []).length,
-        });
-      } catch (err) {
-        lastError = err;
       }
     }
 
