@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generado": "2026-03-25T23:23:53.579Z",
+    "generado": "2026-03-26T02:46:35.855Z",
     "total": 44,
     "fuente": "Comisión de Ciencia, Tecnología e Innovación Productiva — H. Cámara de Diputados",
     "periodo": "2025–2026",
@@ -144,15 +144,11 @@
   "top_autores": [
     {
       "autor": "Marcela Marina Pagano",
-      "total": 10
+      "total": 12
     },
     {
       "autor": "Juan M. López y otros",
       "total": 3
-    },
-    {
-      "autor": "Cecilia Solange Wissocq",
-      "total": 2
     },
     {
       "autor": "Gabriel Chumpitaz",
@@ -200,6 +196,10 @@
     },
     {
       "autor": "Esteban Paulón / M. Fein",
+      "total": 1
+    },
+    {
+      "autor": "José Pablo Carro",
       "total": 1
     }
   ],
@@ -1309,9 +1309,9 @@
       "id": "6539-D-2025",
       "titulo": "Tecnologías Cuánticas",
       "autores": [
-        "Cecilia Solange Wissocq"
+        "Marcela Marina Pagano"
       ],
-      "autor_principal": "Cecilia Solange Wissocq",
+      "autor_principal": "Marcela Marina Pagano",
       "bloque": "La Libertad Avanza",
       "camara": "Diputados",
       "año": 2025,
@@ -1328,9 +1328,9 @@
       "id": "6548-D-2025",
       "titulo": "Biotecnología",
       "autores": [
-        "Cecilia Solange Wissocq"
+        "Marcela Marina Pagano"
       ],
-      "autor_principal": "Cecilia Solange Wissocq",
+      "autor_principal": "Marcela Marina Pagano",
       "bloque": "La Libertad Avanza",
       "camara": "Diputados",
       "año": 2025,

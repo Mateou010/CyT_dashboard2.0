@@ -263,7 +263,7 @@ button,a,.simple-title-btn,.semaforo-stage-card.front{touch-action:manipulation}
 
 .semaforo-stage-card.back {transform:translate(46px,14px) rotate(6deg);opacity:.28;z-index:1}
 .semaforo-stage-card.mid  {transform:translate(24px,8px)  rotate(3deg);opacity:.52;z-index:2}
-.semaforo-stage-card.front{transform:translate(0,0)        rotate(0);   opacity:1;  z-index:3;cursor:pointer}
+.semaforo-stage-card.front{transform:translate(0,0)        rotate(0);   opacity:1;  z-index:3;cursor:default}
 .semaforo-stage-card.front:hover{transform:translate(0,-3px) scale(1.02)}
 
 /* flip animation classes */
@@ -1896,7 +1896,7 @@ function renderSemaforoBucket(bucketName, rowId, groups, label, animate) {
           ${label ? `<div class="semaforo-stage-kicker">${label}</div>` : ''}
           <div class="semaforo-stage-title">${next.cardTitle || next.title}</div>
         </div>
-        <button class="semaforo-stage-card front" onclick="openSemaforoGroup('${bucketName}','${current.groupKey}')">
+        <button class="semaforo-stage-card front" type="button" aria-label="Grupo del semáforo">
           ${label ? `<div class="semaforo-stage-kicker">${label}</div>` : ''}
           <div class="semaforo-stage-title">${current.cardTitle || current.title}</div>
           <span class="semaforo-stage-chip">${current.projects} proyecto${current.projects !== 1 ? 's' : ''}</span>
@@ -1916,9 +1916,6 @@ function renderSemaforoBucket(bucketName, rowId, groups, label, animate) {
             onclick="stepSemaforoSlide('${bucketName}',1)"
             ${slides.length <= 1 ? 'disabled' : ''}>→</button>
           <span class="semaforo-page">${idx + 1}/${slides.length}</span>
-          <button class="semaforo-open-btn" onclick="openSemaforoGroup('${bucketName}','${current.groupKey}')">
-            Ver proyectos
-          </button>
         </div>
       </div>
     </div>`;
