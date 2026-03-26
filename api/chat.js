@@ -81,6 +81,9 @@ const TOPIC_QUERY_STOPWORDS = new Set([
   "con",
   "del",
   "al",
+  "tiene",
+  "tenes",
+  "tener",
 ]);
 
 let FULL_TEXT_INDEX_CACHE = null;
@@ -152,9 +155,10 @@ function extractTopicTerms(consulta) {
     .filter((t) => t && t.length >= 4 && !TOPIC_QUERY_STOPWORDS.has(t) && !/^\d+$/.test(t));
 }
 
-function isTopicProjectsQuestion(consulta) {
+function isTopicProjectsQuestion(consulta, contexto = []) {
   const q = normalizeText(consulta || "");
   if (!q) return false;
+  if (pickAuthorTargetFromQuery(consulta, contexto)) return false;
   const terms = extractTopicTerms(consulta);
   if (!terms.length) return false;
   const asksProjects = /(proyecto|proyectos|ley|leyes)/.test(q);
@@ -283,6 +287,11 @@ function fallbackFromContext(consulta, contexto, historial = []) {
     if (expResponse) return expResponse;
   }
 
+  if (isAuthorProjectsListQuestion(consulta, items)) {
+    const authorListResponse = buildAuthorProjectsListResponse(consulta, items);
+    if (authorListResponse) return authorListResponse;
+  }
+
   if (isAuthorProjectsCountQuestion(consulta)) {
     const authorCountResponse = buildAuthorProjectsCountResponse(consulta, items);
     if (authorCountResponse) return authorCountResponse;
@@ -293,7 +302,7 @@ function fallbackFromContext(consulta, contexto, historial = []) {
     if (relationResponse) return relationResponse;
   }
 
-  if (isTopicProjectsQuestion(consulta)) {
+  if (isTopicProjectsQuestion(consulta, items)) {
     const topicResponse = buildTopicProjectsResponse(consulta, items);
     if (topicResponse) return topicResponse;
   }
@@ -613,6 +622,51 @@ function isAuthorProjectsCountQuestion(consulta) {
     /(tiene|presento|presento|de|autor)/.test(q);
 }
 
+function pickAuthorTargetFromQuery(consulta, contexto) {
+  const items = Array.isArray(contexto) ? contexto : [];
+  if (!items.length) return null;
+  const q = normalizeText(consulta || "");
+  if (!q) return null;
+
+  const authorScores = new Map();
+  const displayNameByNorm = new Map();
+  items.forEach((x) => {
+    const author = getProjectAuthor(x);
+    const normAuthor = normalizeText(author);
+    if (!normAuthor) return;
+    const score = scoreAuthorMentionInQuery(author, q);
+    if (score <= 0) return;
+    authorScores.set(normAuthor, (authorScores.get(normAuthor) || 0) + score);
+    if (!displayNameByNorm.has(normAuthor)) displayNameByNorm.set(normAuthor, author);
+  });
+  if (!authorScores.size) return null;
+
+  const ranked = [...authorScores.entries()].sort((a, b) => b[1] - a[1]);
+  if (ranked.length > 1 && ranked[0][1] === ranked[1][1]) return null;
+
+  const targetNormAuthor = ranked[0][0];
+  const targetDisplayName = displayNameByNorm.get(targetNormAuthor) || "Autor";
+  const authoredProjects = items
+    .filter((x) => normalizeText(getProjectAuthor(x)) === targetNormAuthor)
+    .sort((a, b) => {
+      const ay = Number(a?.año || a?.anio || 0);
+      const by = Number(b?.año || b?.anio || 0);
+      if (by !== ay) return by - ay;
+      return getProjectId(b).localeCompare(getProjectId(a));
+    });
+
+  return { targetNormAuthor, targetDisplayName, authoredProjects };
+}
+
+function isAuthorProjectsListQuestion(consulta, contexto = []) {
+  const q = normalizeText(consulta || "");
+  if (!q) return false;
+  if (!pickAuthorTargetFromQuery(consulta, contexto)) return false;
+  const asksProjects = /(proyecto|proyectos|ley|leyes|presento|presentó|presentados|presentadas|tiene)/.test(q);
+  const asksCount = /(cuantos|cuantas|cantidad|total|numero|nro)/.test(q);
+  return asksProjects && !asksCount;
+}
+
 function isAuthorExpedienteQuestion(consulta) {
   const q = normalizeText(consulta || "");
   if (!q) return false;
@@ -677,31 +731,9 @@ function pickReferenceProjectFromHistory(items, historial = []) {
 }
 
 function buildAuthorProjectsCountResponse(consulta, contexto) {
-  const items = Array.isArray(contexto) ? contexto : [];
-  if (!items.length) return null;
-  const q = normalizeText(consulta || "");
-
-  const authorScores = new Map();
-  const displayNameByNorm = new Map();
-
-  items.forEach((x) => {
-    const author = getProjectAuthor(x);
-    const normAuthor = normalizeText(author);
-    if (!normAuthor) return;
-    const score = scoreAuthorMentionInQuery(author, q);
-    if (score <= 0) return;
-    authorScores.set(normAuthor, (authorScores.get(normAuthor) || 0) + score);
-    if (!displayNameByNorm.has(normAuthor)) displayNameByNorm.set(normAuthor, author);
-  });
-
-  if (!authorScores.size) return null;
-
-  const ranked = [...authorScores.entries()].sort((a, b) => b[1] - a[1]);
-  if (ranked.length > 1 && ranked[0][1] === ranked[1][1]) return null;
-
-  const targetNormAuthor = ranked[0][0];
-  const targetDisplayName = displayNameByNorm.get(targetNormAuthor) || "Autor";
-  const authoredProjects = items.filter((x) => normalizeText(getProjectAuthor(x)) === targetNormAuthor);
+  const target = pickAuthorTargetFromQuery(consulta, contexto);
+  if (!target) return null;
+  const { targetDisplayName, authoredProjects } = target;
   const total = authoredProjects.length;
   const ids = authoredProjects.slice(0, 6).map((x) => getProjectId(x)).filter(Boolean);
   const idSuffix = ids.length ? ` Expedientes: ${ids.join(", ")}${total > ids.length ? ", ..." : ""}.` : "";
@@ -709,29 +741,9 @@ function buildAuthorProjectsCountResponse(consulta, contexto) {
 }
 
 function buildAuthorExpedienteResponse(consulta, contexto) {
-  const items = Array.isArray(contexto) ? contexto : [];
-  if (!items.length) return null;
-  const q = normalizeText(consulta || "");
-
-  const authorScores = new Map();
-  const displayNameByNorm = new Map();
-  items.forEach((x) => {
-    const author = getProjectAuthor(x);
-    const normAuthor = normalizeText(author);
-    if (!normAuthor) return;
-    const score = scoreAuthorMentionInQuery(author, q);
-    if (score <= 0) return;
-    authorScores.set(normAuthor, (authorScores.get(normAuthor) || 0) + score);
-    if (!displayNameByNorm.has(normAuthor)) displayNameByNorm.set(normAuthor, author);
-  });
-  if (!authorScores.size) return null;
-
-  const ranked = [...authorScores.entries()].sort((a, b) => b[1] - a[1]);
-  if (ranked.length > 1 && ranked[0][1] === ranked[1][1]) return null;
-
-  const targetNormAuthor = ranked[0][0];
-  const targetDisplayName = displayNameByNorm.get(targetNormAuthor) || "Autor";
-  const authoredProjects = items.filter((x) => normalizeText(getProjectAuthor(x)) === targetNormAuthor);
+  const target = pickAuthorTargetFromQuery(consulta, contexto);
+  if (!target) return null;
+  const { targetDisplayName, authoredProjects } = target;
   if (!authoredProjects.length) return null;
 
   const ids = authoredProjects.map((x) => getProjectId(x)).filter(Boolean);
@@ -739,6 +751,16 @@ function buildAuthorExpedienteResponse(consulta, contexto) {
     return `El expediente del proyecto de ${targetDisplayName} es **${ids[0]}**.`;
   }
   return `Los expedientes de ${targetDisplayName} en este dashboard son: ${ids.map((id) => `**${id}**`).join(", ")}.`;
+}
+
+function buildAuthorProjectsListResponse(consulta, contexto) {
+  const target = pickAuthorTargetFromQuery(consulta, contexto);
+  if (!target) return null;
+  const { targetDisplayName, authoredProjects } = target;
+  if (!authoredProjects.length) return null;
+  const lines = authoredProjects.slice(0, 10).map(formatProjectLine).join("\n");
+  const suffix = authoredProjects.length > 10 ? "\n… (mostrando 10 de mayor relevancia/recencia)" : "";
+  return `${targetDisplayName} tiene **${authoredProjects.length} proyecto${authoredProjects.length === 1 ? "" : "s"}** en este dashboard:\n${lines}${suffix}`;
 }
 
 function scoreProjectMentionInQuery(item, queryNorm) {
@@ -1215,7 +1237,18 @@ export default async function handler(req, res) {
       }
     }
 
-    if (!hasGemini && totalProyectos > 0 && isAuthorProjectsCountQuestion(consulta)) {
+    if (totalProyectos > 0 && isAuthorProjectsListQuestion(consulta, contextoArray)) {
+      const authorListResponse = buildAuthorProjectsListResponse(consulta, contextoArray);
+      if (authorListResponse) {
+        return res.status(200).json({
+          texto: authorListResponse,
+          model: "author-list-local",
+          context_items: totalProyectos,
+        });
+      }
+    }
+
+    if (totalProyectos > 0 && isAuthorProjectsCountQuestion(consulta)) {
       const authorCountResponse = buildAuthorProjectsCountResponse(consulta, contextoArray);
       if (authorCountResponse) {
         return res.status(200).json({
@@ -1237,7 +1270,7 @@ export default async function handler(req, res) {
       }
     }
 
-    if (totalProyectos > 0 && isTopicProjectsQuestion(consulta)) {
+    if (totalProyectos > 0 && isTopicProjectsQuestion(consulta, contextoArray)) {
       const topicResponse = buildTopicProjectsResponse(consulta, contextoArray);
       if (topicResponse) {
         return res.status(200).json({
