@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-const MODEL_CANDIDATES = ["gemini-2.5-pro"];
+const MODEL_CANDIDATES = ["gemini-2.5-pro", "gemini-2.5-flash"];
 const MAX_CONTEXT_ITEMS = 120;
 const MAX_GEMINI_ATTEMPTS = 2;
 const AUTHOR_TOKEN_STOPWORDS = new Set([
@@ -68,13 +68,23 @@ function tokenize(text) {
     .filter((w) => w.length >= 3);
 }
 
+function getQueryTerms(text) {
+  const out = new Set();
+  tokenize(text).forEach((w) => {
+    if (w.length >= 4) out.add(w);
+    if (w.endsWith("es") && w.length >= 6) out.add(w.slice(0, -2));
+    if (w.endsWith("s") && w.length >= 5) out.add(w.slice(0, -1));
+  });
+  return [...out];
+}
+
 function pickRelevantContext(consulta, contexto, limit = MAX_CONTEXT_ITEMS) {
   const items = Array.isArray(contexto) ? contexto : [];
   if (!items.length) return [];
   if (items.length <= limit) return items;
 
   const q = normalizeText(consulta || "");
-  const words = tokenize(q);
+  const words = getQueryTerms(q);
   const idMatch = q.match(/\b\d{4}-d-\d{4}\b/i);
   const targetId = idMatch ? idMatch[0].toUpperCase() : null;
 
@@ -153,7 +163,7 @@ function fallbackFromContext(consulta, contexto, historial = []) {
     }
   }
 
-  const words = q.split(/\s+/).filter((w) => w.length > 3);
+  const words = getQueryTerms(q);
   const scored = items
     .map((x) => {
       const text = `${x.titulo || ""} ${x.resumen || ""} ${x.desc || ""} ${x.tematica || ""} ${x.subtematica || ""} ${x.bloque || ""} ${x.autor_principal || ""} ${x.autor || ""}`.toLowerCase();
