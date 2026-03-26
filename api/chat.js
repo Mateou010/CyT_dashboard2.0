@@ -329,6 +329,23 @@ function extractHistoryMessages(historial) {
     .slice(-12);
 }
 
+function hasLegalContextInHistory(historial, items = []) {
+  const msgs = extractHistoryMessages(historial);
+  if (!msgs.length) return false;
+  const merged = normalizeText(msgs.join(" "));
+  if (!merged) return false;
+  if (/\b\d{4}-[ds]-20\d{2}\b/.test(merged)) return true;
+  if (/(proyecto|ley|expediente|subgrupo|grupo|tematica|tema|bloque|autor|dashboard|cyt|ia)/.test(merged)) return true;
+  const knownIds = getKnownProjectIds(items).slice(0, 300).map((id) => normalizeText(id));
+  return knownIds.some((id) => id && merged.includes(id));
+}
+
+function isClarificationFollowUpQuestion(consulta) {
+  const q = normalizeText(consulta || "");
+  if (!q) return false;
+  return /(no entiendo|no entendi|explica mejor|explicalo mejor|mas claro|mas simple|aclara|aclarame|no me quedo claro|de nuevo|reformula)/.test(q);
+}
+
 function buildHistoryForPrompt(historial) {
   const msgs = extractHistoryMessages(historial).slice(-8);
   if (!msgs.length) return "";
@@ -475,6 +492,17 @@ function pickReferenceProjectFromQuery(consulta, items, historial = []) {
     if (found) return found;
   }
 
+  return null;
+}
+
+function pickReferenceProjectFromHistory(items, historial = []) {
+  const historyMessages = extractHistoryMessages(historial).slice().reverse();
+  for (const msg of historyMessages) {
+    const idFromHistory = parseProjectIdFromText(msg, items);
+    if (!idFromHistory) continue;
+    const found = findProjectById(items, idFromHistory);
+    if (found) return found;
+  }
   return null;
 }
 
@@ -860,8 +888,14 @@ function buildSubgroupRelationResponse(consulta, contexto, historial = []) {
     return `Subgrupo identificado: ${subgroupByQuery}. Hay ${sameSubgroup.length} proyectos en ese subgrupo:\n${lines}`;
   }
 
-  if (/(su subgrupo|ese subgrupo|mismo tema|mismos temas|es el unico|hay otros|parecido|similares|compar)/.test(q)) {
-    return "Para relacionarlo por subgrupo, indicame un expediente (ejemplo: 4420-D-2025) o el nombre del autor.";
+  if (/(relacion|su subgrupo|ese subgrupo|mismo tema|mismos temas|es el unico|hay otros|parecido|similares|compar)/.test(q)) {
+    const fromHistory = pickReferenceProjectFromHistory(items, historial);
+    if (fromHistory) {
+      const id = getProjectId(fromHistory);
+      const sg = getProjectSubgroup(fromHistory) || "Sin subgrupo";
+      return `Para relacionarlo bien, ¿querés que tome como referencia **${id}** (subgrupo: ${sg})?\n\nSi preferís, también podés indicarme:\n1) Expediente (ej. 4420-D-2025)\n2) Autor (ej. Martín Yeza)\n3) Subgrupo/tema.`;
+    }
+    return "Para relacionarlo bien, indicame una referencia y te lo comparo de inmediato:\n1) Expediente (ej. 4420-D-2025)\n2) Autor (ej. Martín Yeza)\n3) Subgrupo o temática.";
   }
 
   return null;
@@ -911,8 +945,9 @@ function queryMatchesKnownAuthor(consulta, contexto) {
   return best >= 1 && trimmedWords.length <= 2;
 }
 
-function isOutOfScopeQuestion(consulta, contexto = []) {
+function isOutOfScopeQuestion(consulta, contexto = [], historial = []) {
   if (isLatestProjectsQuestion(consulta)) return false;
+  if (isClarificationFollowUpQuestion(consulta) && hasLegalContextInHistory(historial, contexto)) return false;
   const q = normalizeText(consulta || "");
   if (!q) return false;
   if (parseProjectIdFromText(consulta || "", contexto)) return false;
@@ -1021,7 +1056,7 @@ export default async function handler(req, res) {
       }
     }
 
-    if (!hasGemini && totalProyectos > 0 && isRelationQuestion(consulta)) {
+    if (totalProyectos > 0 && isRelationQuestion(consulta)) {
       const relationResponse = buildSubgroupRelationResponse(consulta, contextoArray, historyItems);
       if (relationResponse) {
         return res.status(200).json({
@@ -1030,6 +1065,18 @@ export default async function handler(req, res) {
           context_items: totalProyectos,
         });
       }
+    }
+
+    if (totalProyectos > 0 && isClarificationFollowUpQuestion(consulta) && hasLegalContextInHistory(historyItems, contextoArray)) {
+      const hintProject = pickReferenceProjectFromHistory(contextoArray, historyItems);
+      const scopedHint = hintProject
+        ? `Si querés, lo hacemos sobre **${getProjectId(hintProject)}**.`
+        : "Si querés, lo hacemos sobre un expediente puntual.";
+      return res.status(200).json({
+        texto: `Claro. Para darte una respuesta precisa, elegí cómo querés continuar:\n1) Resumen simple del proyecto.\n2) Relación con otros del mismo subgrupo.\n3) Comparación con otro expediente.\n\n${scopedHint}`,
+        model: "clarify-local",
+        context_items: totalProyectos,
+      });
     }
 
     if (!hasGemini && isAmbiguousQuery(consulta) && !queryMatchesKnownAuthor(consulta, contextoArray)) {
@@ -1056,7 +1103,7 @@ export default async function handler(req, res) {
       });
     }
 
-    if (isOutOfScopeQuestion(consulta, contextoArray)) {
+    if (isOutOfScopeQuestion(consulta, contextoArray, historyItems)) {
       return res.status(200).json({
         texto: `Solo puedo responder sobre proyectos legislativos del dashboard de ${alcance}. Si querés, indicame un expediente (por ejemplo: 0664-D-2026) o una temática.`,
         model: "guardrail-local",
