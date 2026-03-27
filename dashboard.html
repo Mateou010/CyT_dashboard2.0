@@ -243,23 +243,17 @@ button,a,.simple-title-btn,.semaforo-stage-card.front{touch-action:manipulation}
   padding:16px 16px 14px;overflow:hidden;
   transition:transform .35s cubic-bezier(.34,1.56,.64,1),opacity .3s ease,box-shadow .3s ease;
 }
-/* gradient overlay so text is always legible */
-.semaforo-stage-card::before{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(to top, rgba(0,0,0,.75) 0%, rgba(0,0,0,.2) 55%, transparent 100%);
-  pointer-events:none;border-radius:inherit;z-index:0;
-}
-.semaforo-stage-card > *{position:relative;z-index:1}
+/* dark gradient overlay removed for cleaner look */
 
 /* front card colored border + glow */
 .semaforo-row.green  .semaforo-stage-card.front{border-color:rgba(34,197,94,.7); box-shadow:0 0 28px rgba(34,197,94,.22)}
 .semaforo-row.yellow .semaforo-stage-card.front{border-color:rgba(245,158,11,.7);box-shadow:0 0 28px rgba(245,158,11,.22)}
 .semaforo-row.red    .semaforo-stage-card.front{border-color:rgba(239,68,68,.7); box-shadow:0 0 28px rgba(239,68,68,.22)}
 
-/* background tint on front card */
-.semaforo-row.green  .semaforo-stage-card.front{background:linear-gradient(145deg,#d4edda,#e8f5e9)}
-.semaforo-row.yellow .semaforo-stage-card.front{background:linear-gradient(145deg,#fde8a0,#fef9ec)}
-.semaforo-row.red    .semaforo-stage-card.front{background:linear-gradient(145deg,#fecaca,#fef2f2)}
+/* background tint on ALL cards */
+.semaforo-row.green  .semaforo-stage-card{background:linear-gradient(145deg,#d4edda,#e8f5e9)}
+.semaforo-row.yellow .semaforo-stage-card{background:linear-gradient(145deg,#fde8a0,#fef9ec)}
+.semaforo-row.red    .semaforo-stage-card{background:linear-gradient(145deg,#fecaca,#fef2f2)}
 
 .semaforo-stage-card.back {transform:translate(46px,14px) rotate(6deg);opacity:.28;z-index:1}
 .semaforo-stage-card.mid  {transform:translate(24px,8px)  rotate(3deg);opacity:.52;z-index:2}
@@ -811,6 +805,11 @@ tr:hover{background:var(--surface2)}
   .semaforo-stage-card.mid  {transform:translate(calc(-50% + 12px),6px) rotate(3deg)}
   .semaforo-stage-card.front{transform:translate(-50%,0) rotate(0)}
   .semaforo-stage-card.front:hover{transform:translate(-50%,-3px) scale(1.02)}
+
+  @keyframes cardFlipOutMobile{from{opacity:1;transform:translate(-50%,0) rotate(0) scale(1)}to{opacity:0;transform:translate(calc(-50% - 18px),-8px) rotate(-4deg) scale(.94)}}
+  @keyframes cardFlipInMobile{from{opacity:0;transform:translate(calc(-50% + 18px),8px) rotate(4deg) scale(.94)}to{opacity:1;transform:translate(-50%,0) rotate(0) scale(1)}}
+  .semaforo-stage-card.flip-out{animation:cardFlipOutMobile .22s ease forwards}
+  .semaforo-stage-card.flip-in{animation:cardFlipInMobile .28s ease both}
   .semaforo-stage-title{font-size:18px;line-height:1.15}
   .semaforo-stage-chip{font-size:11px;padding:4px 10px}
   .semaforo-copy-actions{gap:12px}
@@ -837,8 +836,8 @@ tr:hover{background:var(--surface2)}
 }
 
 @media (max-width:640px){
-  .app{padding:0 10px 24px}
-  .header{padding:14px 0 12px;margin-bottom:14px}
+  .app{padding:0 16px 24px}
+  .header{padding:14px 0 12px;margin-bottom:20px}
   .logo{gap:8px}
   .logo-icon{width:36px;height:36px;font-size:14px;border-radius:10px}
   .logo-text h1{font-size:16px}
@@ -850,12 +849,14 @@ tr:hover{background:var(--surface2)}
   .kpi-value{font-size:24px;margin-bottom:8px}
   .kpi-label{font-size:10px;margin-bottom:5px}
   .kpi-tag{font-size:10px;padding:3px 8px}
-  .consenso-intro{font-size:clamp(15px,4.5vw,20px);padding:2px 4px 8px;margin-bottom:14px}
-  .semaforo-wrap{padding:10px}
-  .semaforo-stack{gap:12px}
+  .consenso-intro{font-size:clamp(15px,4.5vw,20px);padding:2px 4px 8px;margin-bottom:20px}
+  .semaforo-wrap{padding:14px}
+  .semaforo-stack{gap:16px}
   .semaforo-row{border-radius:14px}
   .semaforo-stage{min-height:190px;padding:12px 0 4px}
   .semaforo-stage-card{height:170px;width:min(88vw,280px);border-radius:14px;padding:12px 12px 10px}
+  .semaforo-stage-card.back {transform:translate(calc(-50% + 12px), 8px) rotate(3deg)}
+  .semaforo-stage-card.mid  {transform:translate(calc(-50% + 6px), 4px) rotate(1.5deg)}
   .semaforo-stage-kicker{font-size:8.5px}
   .semaforo-stage-title{font-size:15px;line-height:1.15}
   .semaforo-stage-chip{font-size:9px;padding:3px 8px}
@@ -884,8 +885,8 @@ tr:hover{background:var(--surface2)}
   .outside-cyt-note{margin:-6px 0 14px;padding:12px;font-size:12px;border-radius:10px;min-height:48px}
   .simple-table{font-size:11px}
   .simple-table thead th,.simple-table tbody td{padding:6px 8px}
-  .simple-table-wrap{padding:10px;border-radius:10px}
-  .card{padding:14px;border-radius:10px}
+  .simple-table-wrap{padding:12px;border-radius:10px}
+  .card{padding:16px;border-radius:10px}
   .card-title{font-size:15px}
   .card-subtitle{font-size:11px}
   .chart-wrapper{height:220px}
@@ -940,6 +941,8 @@ tr:hover{background:var(--surface2)}
   .consenso-intro{font-size:14px}
   .kpi-value{font-size:22px}
   .semaforo-stage-card{width:min(90vw,260px);height:156px}
+  .semaforo-stage-card.back {transform:translate(calc(-50% + 8px), 6px) rotate(2deg)}
+  .semaforo-stage-card.mid  {transform:translate(calc(-50% + 4px), 3px) rotate(1deg)}
   .semaforo-stage-title{font-size:14px}
   .semaforo-copy-title{font-size:20px}
   .semaforo-copy-quote{font-size:12px;line-height:1.45}
@@ -1022,7 +1025,7 @@ tr:hover{background:var(--surface2)}
 <!-- ════════════════════════════════════════════════════════
      KPI CARDS (4)
 ════════════════════════════════════════════════════════ -->
-<div class="kpi-grid anim d1" style="grid-template-columns:1fr;max-width:420px">
+<div class="kpi-grid anim d1" style="grid-template-columns:1fr;max-width:280px;margin:0 auto 28px;text-align:center">
   <div class="kpi-card">
     <div class="kpi-label">Proyectos Analizados</div>
     <div class="kpi-value" id="kpiTotal">0</div>

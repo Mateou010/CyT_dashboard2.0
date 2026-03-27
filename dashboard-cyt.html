@@ -51,8 +51,8 @@ button,a,.legend-item,.bloque-legend-item,.proj-pdf { touch-action:manipulation 
 /* ── LAYOUT ────────────────────────────── */
 .app { max-width:1200px; margin:0 auto; padding:0 24px 64px }
 @media(max-width:600px) {
-  .app { padding:0 12px 32px }
-  .header { padding:16px 0 12px; margin-bottom:16px }
+  .app { padding:0 16px 32px }
+  .header { padding:16px 0 12px; margin-bottom:20px }
   .header-top { gap:8px }
   .logo-icon { width:30px; height:30px; font-size:13px; border-radius:8px }
   .logo-text h1 { font-size:15px }
@@ -61,8 +61,8 @@ button,a,.legend-item,.bloque-legend-item,.proj-pdf { touch-action:manipulation 
   .intro-text { margin-bottom:16px; padding:0 4px; font-size:clamp(16px, 4.5vw, 22px); line-height:1.35 }
   .intro-stat-num { font-size:clamp(24px, 6vw, 32px) }
   .intro-stat-label { font-size:12px }
-  .intro-stats { gap:18px; margin-top:14px }
-  .donut-section { padding:16px 12px; margin-bottom:24px; border-radius:12px }
+  .intro-stats { gap:18px; margin-top:20px }
+  .donut-section { padding:16px 16px; margin-bottom:24px; border-radius:12px }
   .donut-section h2 { font-size:16px; margin-bottom:4px }
   .donut-section .subtitle { font-size:11px; padding:4px 10px 4px 8px; margin-bottom:18px }
   .donut-center-num { font-size:clamp(24px, 5vw, 36px) }
@@ -83,7 +83,7 @@ button,a,.legend-item,.bloque-legend-item,.proj-pdf { touch-action:manipulation 
   .modal-body { padding:12px 16px 18px; -webkit-overflow-scrolling:touch }
   .sub-name { font-size:13px }
   .sub-count { font-size:12px }
-  .proj-card { padding:12px 14px; border-radius:8px; margin-bottom:8px }
+  .proj-card { padding:14px 16px; border-radius:10px; margin-bottom:10px }
   .proj-exp { font-size:12px }
   .proj-desc { font-size:13px; margin-top:4px; line-height:1.5 }
   .proj-meta { font-size:12px }
@@ -153,7 +153,7 @@ button,a,.legend-item,.bloque-legend-item,.proj-pdf { touch-action:manipulation 
 }
 @media(max-width:900px) {
   .donut-layout { flex-direction:column; align-items:stretch }
-  .donut-canvas-wrap { width:100% !important; height:auto !important; aspect-ratio:1 }
+  .donut-canvas-wrap { width:100% !important; height:auto !important; aspect-ratio:1; max-width:280px; margin:0 auto }
 }
 .donut-canvas-wrap {
   flex-shrink:0; position:relative;
@@ -220,7 +220,7 @@ button,a,.legend-item,.bloque-legend-item,.proj-pdf { touch-action:manipulation 
 .subdonut-legend{flex:1;min-width:220px}
 @media(max-width:900px){
   .subdonut-layout{flex-direction:column;align-items:stretch}
-  .subdonut-canvas-wrap{width:100% !important;height:auto !important;aspect-ratio:1}
+  .subdonut-canvas-wrap{width:100% !important;height:auto !important;aspect-ratio:1; max-width:280px; margin:0 auto}
   .subdonut-head{flex-direction:column;align-items:stretch}
   .subdonut-back{width:100%;min-height:44px}
 }
@@ -350,7 +350,7 @@ button,a,.legend-item,.bloque-legend-item,.proj-pdf { touch-action:manipulation 
   font-size:12px; font-weight:700; color:var(--muted); flex-shrink:0; min-width:24px; text-align:right;
 }
 @media(max-width:600px) {
-  .analysis-card { padding:16px 14px }
+  .analysis-card { padding:18px 16px }
   .analysis-card h2 { font-size:16px }
   .analysis-card .subtitle { font-size:10px; padding:4px 8px; margin-bottom:14px }
   .bloque-donut-wrap { max-width:240px }
