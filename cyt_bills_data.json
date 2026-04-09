@@ -1,42 +1,54 @@
 {
   "metadata": {
-    "generado": "2026-03-26T03:00:08.709Z",
-    "total": 44,
+    "generado": "2026-04-09T03:11:47.708Z",
+    "total": 61,
     "fuente": "Comisión de Ciencia, Tecnología e Innovación Productiva — H. Cámara de Diputados",
     "periodo": "2025–2026",
-    "con_autor": 44,
-    "con_bloque": 44
+    "con_autor": 61,
+    "con_bloque": 61
   },
   "eje_stats": [
     {
       "eje": "Gobernanza e Institucionalidad CyT",
-      "total": 16,
+      "total": 20,
       "icon": "🏛️",
       "color": "#475569"
     },
     {
       "eje": "Inteligencia Artificial",
-      "total": 10,
+      "total": 13,
       "icon": "🤖",
       "color": "#2563eb"
     },
     {
       "eje": "I+D y Financiamiento",
-      "total": 6,
+      "total": 7,
       "icon": "💰",
       "color": "#ca8a04"
     },
     {
       "eje": "Educación y Formación CyT",
-      "total": 4,
+      "total": 6,
       "icon": "🎓",
       "color": "#ea580c"
     },
     {
       "eje": "Biotecnología",
-      "total": 2,
+      "total": 4,
       "icon": "🧬",
       "color": "#16a34a"
+    },
+    {
+      "eje": "Nuclear y Energía",
+      "total": 3,
+      "icon": "⚛️",
+      "color": "#dc2626"
+    },
+    {
+      "eje": "Datos y Digitalización",
+      "total": 2,
+      "icon": "🔐",
+      "color": "#4f46e5"
     },
     {
       "eje": "Espacio y Antártida",
@@ -45,22 +57,16 @@
       "color": "#0891b2"
     },
     {
-      "eje": "Datos y Digitalización",
-      "total": 1,
-      "icon": "🔐",
-      "color": "#4f46e5"
+      "eje": "Salud y Tecnología Médica",
+      "total": 2,
+      "icon": "🏥",
+      "color": "#e11d48"
     },
     {
       "eje": "Neuroderechos",
       "total": 1,
       "icon": "🧠",
       "color": "#a855f7"
-    },
-    {
-      "eje": "Nuclear y Energía",
-      "total": 1,
-      "icon": "⚛️",
-      "color": "#dc2626"
     },
     {
       "eje": "Tecnologías Cuánticas",
@@ -76,13 +82,13 @@
     },
     {
       "año": "2026",
-      "total": 12
+      "total": 29
     }
   ],
   "bloque_stats": [
     {
       "bloque": "COHERENCIA",
-      "total": 13,
+      "total": 30,
       "color": "#991b1b"
     },
     {
@@ -144,7 +150,7 @@
   "top_autores": [
     {
       "autor": "Marcela Marina Pagano",
-      "total": 13
+      "total": 30
     },
     {
       "autor": "Juan M. López y otros",
@@ -201,52 +207,104 @@
     {
       "autor": "José Pablo Carro",
       "total": 1
+    },
+    {
+      "autor": "Julian Pinciaroli",
+      "total": 1
+    },
+    {
+      "autor": "Julián Pinciaroli",
+      "total": 1
+    },
+    {
+      "autor": "MARZIOTTA, GISELA",
+      "total": 1
+    },
+    {
+      "autor": "Maria Gisela Marziotta",
+      "total": 1
+    },
+    {
+      "autor": "Martín Yeza",
+      "total": 1
+    },
+    {
+      "autor": "Maximiliano Ferraro",
+      "total": 1
+    },
+    {
+      "autor": "Mercedes de Mendieta",
+      "total": 1
+    },
+    {
+      "autor": "Mónica Macha",
+      "total": 1
+    },
+    {
+      "autor": "Natalia Sarapura",
+      "total": 1
+    },
+    {
+      "autor": "Oscar Agost Carreño",
+      "total": 1
+    },
+    {
+      "autor": "Pablo Outes",
+      "total": 1
+    },
+    {
+      "autor": "Romina Del Plá y otros",
+      "total": 1
+    },
+    {
+      "autor": "Silvana Giudici",
+      "total": 1
     }
   ],
   "year_tematica_matrix": {
     "2025": {
-      "Estrategia Tecnologica Nacional": 12,
       "IA": 13,
       "Innovación y Desarrollo Productivo": 3,
+      "Estrategia Tecnologica Nacional": 12,
       "Privacidad Digital / Derechos Digitales": 2,
       "Tecnologías Estratégicas": 2
     },
     "2026": {
-      "Estrategia Tecnologica Nacional": 2,
-      "IA": 4,
-      "Innovación y Desarrollo Productivo": 3,
-      "Tecnologías Estratégicas": 3
+      "IA": 7,
+      "Innovación y Desarrollo Productivo": 4,
+      "Tecnologías Estratégicas": 8,
+      "Estrategia Tecnologica Nacional": 10
     }
   },
   "tipo_stats": [
+    {
+      "tipo": "MARCO REGULATORIO",
+      "total": 16,
+      "color": "#64748b"
+    },
+    {
+      "tipo": "PROYECTO DE LEY",
+      "total": 16,
+      "color": "#64748b"
+    },
     {
       "tipo": "FINANCIAMIENTO",
       "total": 11,
       "color": "#64748b"
     },
     {
-      "tipo": "MARCO REGULATORIO",
-      "total": 10,
-      "color": "#64748b"
-    },
-    {
-      "tipo": "PROYECTO DE LEY",
+      "tipo": "CREA ÓRGANOS",
       "total": 8,
       "color": "#64748b"
     },
     {
-      "tipo": "CREA ÓRGANOS",
-      "total": 7,
-      "color": "#64748b"
-    },
-    {
       "tipo": "DECLARATIVA",
-      "total": 3,
+      "total": 4,
       "color": "#64748b"
     },
     {
       "tipo": "EDUCATIVA",
-      "total": 2,
+      "total": 3,
       "color": "#64748b"
     },
     {
@@ -262,23 +320,35 @@
   ],
   "subtema_stats": [
     {
-      "subtema": "Marco Regulatorio",
-      "total": 6
+      "subtema": "Estrategía Nacional de Ciencia y Tecnologia",
+      "total": 9
     },
     {
-      "subtema": "Estrategía Nacional de Ciencia y Tecnologia",
+      "subtema": "Marco Regulatorio",
+      "total": 8
+    },
+    {
+      "subtema": "Educación",
       "total": 5
+    },
+    {
+      "subtema": "Biotecnología",
+      "total": 4
     },
     {
       "subtema": "Deepfake y generación de contenido",
       "total": 4
     },
     {
-      "subtema": "Educación",
+      "subtema": "Implementación de la IA por parte de la Administración Publica",
+      "total": 4
+    },
+    {
+      "subtema": "Desarrollo Productivo",
       "total": 3
     },
     {
-      "subtema": "Implementación de la IA por parte de la Administración Publica",
+      "subtema": "Nuclear",
       "total": 3
     },
     {
@@ -290,15 +360,11 @@
       "total": 3
     },
     {
-      "subtema": "Biotecnología",
-      "total": 2
-    },
-    {
-      "subtema": "Desarrollo Productivo",
-      "total": 2
-    },
-    {
       "subtema": "Programas de innovación",
+      "total": 2
+    },
+    {
+      "subtema": "Salud",
       "total": 2
     },
     {
@@ -326,11 +392,11 @@
       "total": 1
     },
     {
-      "subtema": "Nuclear",
+      "subtema": "Politicas de Genero",
       "total": 1
     },
     {
-      "subtema": "Politicas de Genero",
+      "subtema": "Protección de datos biométricos",
       "total": 1
     },
     {
@@ -597,234 +663,6 @@
     }
   ],
   "bills": [
-    {
-      "id": "0004-D-2026",
-      "titulo": "“2026 - Año de la Grandeza Argentina”",
-      "autores": [
-        "Silvana Giudici"
-      ],
-      "autor_principal": "Silvana Giudici",
-      "bloque": "La Libertad Avanza",
-      "camara": "Diputados",
-      "año": 2026,
-      "eje": "Gobernanza e Institucionalidad CyT",
-      "eje_score": 10,
-      "tematica": "IA",
-      "subtematica": "Marco Regulatorio",
-      "resumen": "Objeto. La presente ley tiene por objeto promover el fomento, el desarrollo, la innovación e implementación de Sistemas de Inteligencia Artificial en la República Argentina en un marco de respeto de los derechos consagrados en la Constitución Nacional y los Tratados Internacionales sobre Derechos Hu...",
-      "tipo": "FINANCIAMIENTO",
-      "paginas": 10,
-      "pdf_path": "PDFs_Proyectos_Ley/2026/0004-D-2026.pdf"
-    },
-    {
-      "id": "0253-D-2026",
-      "titulo": "Congreso Sancionan Con Fuerza De Ley: Ley Nacional De Inteligencia Artificial Soberana Título I — Disposiciones Generales",
-      "autores": [
-        "Marcela Marina Pagano"
-      ],
-      "autor_principal": "Marcela Marina Pagano",
-      "bloque": "COHERENCIA",
-      "camara": "Diputados",
-      "año": 2026,
-      "eje": "Inteligencia Artificial",
-      "eje_score": 5,
-      "tematica": "IA",
-      "subtematica": "Deepfake y generación de contenido",
-      "resumen": "— Objeto. La presente ley establece el marco jurídico integral para el desarrollo, adopción, regulación y supervisión de sistemas de inteligencia artificial (IA) en la República Argentina, con el fin de: a) garantizar el respeto de los derechos fundamentales, la seguridad pública y el interés genera...",
-      "tipo": "PROYECTO DE LEY",
-      "paginas": 39,
-      "pdf_path": "PDFs_Proyectos_Ley/2026/0253-D-2026.pdf"
-    },
-    {
-      "id": "0664-D-2026",
-      "titulo": "Proyecto de Ley: Marco Regulatoria de la Inteligencia Artificial",
-      "autores": [
-        "Diego Giuliano"
-      ],
-      "autor_principal": "Diego Giuliano",
-      "bloque": "Unión por la Patria",
-      "camara": "Diputados",
-      "año": 2026,
-      "eje": "Inteligencia Artificial",
-      "eje_score": 9,
-      "tematica": "IA",
-      "subtematica": "Marco Regulatorio",
-      "resumen": "Objeto. La presente ley tiene por objeto definir el marco legal para el desarrollo, investigación y uso de inteligencia artificial dentro del territorio nacional con la finalidad de preservar la protección de los derechos humanos, la privacidad, la seguridad de los ciudadanos y el estado de derecho.",
-      "tipo": "MARCO REGULATORIO",
-      "paginas": 15,
-      "pdf_path": "PDFs_Proyectos_Ley/2026/0664-D-2026.pdf"
-    },
-    {
-      "id": "0478-D-2026",
-      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley De Regimen Juridico Para Startups Tecnologicas",
-      "autores": [
-        "Marcela Marina Pagano"
-      ],
-      "autor_principal": "Marcela Marina Pagano",
-      "bloque": "COHERENCIA",
-      "camara": "Diputados",
-      "año": 2026,
-      "eje": "Gobernanza e Institucionalidad CyT",
-      "eje_score": 10,
-      "tematica": "Innovación y Desarrollo Productivo",
-      "subtematica": "Ecosistema Startup",
-      "resumen": "Objeto. La presente ley tiene por objeto crear el Regimen Juridico para Startups Tecnologicas de la Republica Argentina, con la finalidad de: (a) establecer un registro nacional y una definicion legal de startup tecnologica; (b) simplificar la constitucion societaria; (c) crear un regimen especial d...",
-      "tipo": "PROYECTO DE LEY",
-      "paginas": 19,
-      "pdf_path": "PDFs_Proyectos_Ley/2026/0478-D-2026.pdf"
-    },
-    {
-      "id": "0511-D-2026",
-      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley Del Fondo Soberano De Inversión Tecnológica",
-      "autores": [
-        "Marcela Marina Pagano"
-      ],
-      "autor_principal": "Marcela Marina Pagano",
-      "bloque": "COHERENCIA",
-      "camara": "Diputados",
-      "año": 2026,
-      "eje": "I+D y Financiamiento",
-      "eje_score": 10,
-      "tematica": "Innovación y Desarrollo Productivo",
-      "subtematica": "Desarrollo Productivo",
-      "resumen": "Objeto. La presente ley tiene por objeto crear el Fondo Soberano de Inversión Tecnológica (FOSIT) como instrumento de capital paciente de largo plazo, complementario del FONETEC y del FONIT, destinado exclusivamente a: (a) inversiones de largo plazo (horizonte de diez a veinte años) en emprendimient...",
-      "tipo": "FINANCIAMIENTO",
-      "paginas": 9,
-      "pdf_path": "PDFs_Proyectos_Ley/2026/0511-D-2026.pdf"
-    },
-    {
-      "id": "0512-D-2026",
-      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley De Energía Nuclear Avanzada",
-      "autores": [
-        "Marcela Marina Pagano"
-      ],
-      "autor_principal": "Marcela Marina Pagano",
-      "bloque": "COHERENCIA",
-      "camara": "Diputados",
-      "año": 2026,
-      "eje": "Nuclear y Energía",
-      "eje_score": 10,
-      "tematica": "Tecnologías Estratégicas",
-      "subtematica": "Nuclear",
-      "resumen": "Objeto. La presente ley tiene por objeto crear el Régimen de Promoción del Desarrollo Nuclear Tecnológico (REDNUCLEART), con la finalidad de: (a) acelerar el desarrollo, licenciamiento y comercialización de reactores modulares pequeños (SMR) de diseño argentino; (b) fortalecer la cadena industrial d...",
-      "tipo": "MARCO REGULATORIO",
-      "paginas": 12,
-      "pdf_path": "PDFs_Proyectos_Ley/2026/0512-D-2026.pdf"
-    },
-    {
-      "id": "0513-D-2026",
-      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley De Estrategia Tecnológica Nacional 2040",
-      "autores": [
-        "Marcela Marina Pagano"
-      ],
-      "autor_principal": "Marcela Marina Pagano",
-      "bloque": "COHERENCIA",
-      "camara": "Diputados",
-      "año": 2026,
-      "eje": "Gobernanza e Institucionalidad CyT",
-      "eje_score": 12,
-      "tematica": "Estrategia Tecnologica Nacional",
-      "subtematica": "Estrategía Nacional de Ciencia y Tecnologia",
-      "resumen": "Objeto. La presente ley tiene por objeto crear el Sistema Nacional de Planificación y Ejecución Tecnológica Estratégica (SINPTE), destinado a orientar, coordinar y promover el desarrollo científico, tecnológico e industrial de la República Argentina con horizonte al año dos mil cuarenta.",
-      "tipo": "FINANCIAMIENTO",
-      "paginas": 20,
-      "pdf_path": "PDFs_Proyectos_Ley/2026/0513-D-2026.pdf"
-    },
-    {
-      "id": "0514-D-2026",
-      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley De Transferencia Científica Y Tecnológica",
-      "autores": [
-        "Marcela Marina Pagano"
-      ],
-      "autor_principal": "Marcela Marina Pagano",
-      "bloque": "COHERENCIA",
-      "camara": "Diputados",
-      "año": 2026,
-      "eje": "Gobernanza e Institucionalidad CyT",
-      "eje_score": 10,
-      "tematica": "Estrategia Tecnologica Nacional",
-      "subtematica": "Estrategía Nacional de Ciencia y Tecnologia",
-      "resumen": "Objeto. La presente ley tiene por objeto crear el Régimen Nacional de Promoción de la Transferencia de Conocimiento Científico y Tecnológico al Sector Productivo (RENTRANS), con la finalidad de: (a) operativizar el régimen de transferencia tecnológica y propiedad intelectual previsto en la Ley de Es...",
-      "tipo": "MARCO REGULATORIO",
-      "paginas": 19,
-      "pdf_path": "PDFs_Proyectos_Ley/2026/0514-D-2026.pdf"
-    },
-    {
-      "id": "0515-D-2026",
-      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley Espacial Argentina",
-      "autores": [
-        "Marcela Marina Pagano"
-      ],
-      "autor_principal": "Marcela Marina Pagano",
-      "bloque": "COHERENCIA",
-      "camara": "Diputados",
-      "año": 2026,
-      "eje": "Espacio y Antártida",
-      "eje_score": 10,
-      "tematica": "Tecnologías Estratégicas",
-      "subtematica": "Espcial",
-      "resumen": "Objeto. La presente ley tiene por objeto establecer el marco jurídico integral de las actividades espaciales en la República Argentina, con la finalidad de: (a) regular el licenciamiento, la supervisión y el control de las actividades espaciales públicas y privadas; (b) establecer un régimen de resp...",
-      "tipo": "FINANCIAMIENTO",
-      "paginas": 21,
-      "pdf_path": "PDFs_Proyectos_Ley/2026/0515-D-2026.pdf"
-    },
-    {
-      "id": "0518-D-2026",
-      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley De Biotecnología Avanzada",
-      "autores": [
-        "Marcela Marina Pagano"
-      ],
-      "autor_principal": "Marcela Marina Pagano",
-      "bloque": "COHERENCIA",
-      "camara": "Diputados",
-      "año": 2026,
-      "eje": "Biotecnología",
-      "eje_score": 10,
-      "tematica": "Tecnologías Estratégicas",
-      "subtematica": "Biotecnología",
-      "resumen": "Objeto. La presente ley tiene por objeto crear el Régimen Nacional de Promoción de la Biotecnología Avanzada y la Bioeconomía Estratégica (RENBIOTECH), con la finalidad de: (a) acelerar la aprobación de innovaciones biotecnológicas conforme a estándares internacionales de bioseguridad; (b) crear un ...",
-      "tipo": "FINANCIAMIENTO",
-      "paginas": 13,
-      "pdf_path": "PDFs_Proyectos_Ley/2026/0518-D-2026.pdf"
-    },
-    {
-      "id": "0519-D-2026",
-      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley De Inteligencia Artificial Productiva",
-      "autores": [
-        "Marcela Marina Pagano"
-      ],
-      "autor_principal": "Marcela Marina Pagano",
-      "bloque": "COHERENCIA",
-      "camara": "Diputados",
-      "año": 2026,
-      "eje": "Inteligencia Artificial",
-      "eje_score": 5,
-      "tematica": "IA",
-      "subtematica": "Implementación de la IA por parte de la Administración Publica",
-      "resumen": "Objeto. La presente ley tiene por objeto crear el Régimen Nacional de Promoción de la Inteligencia Artificial Aplicada a la Producción (RENIAPRO), con la finalidad de: (a) impulsar la adopción de IA en los sectores productivos estratégicos; (b) crear centros nacionales de IA aplicada; (c) establecer...",
-      "tipo": "MARCO REGULATORIO",
-      "paginas": 21,
-      "pdf_path": "PDFs_Proyectos_Ley/2026/0519-D-2026.pdf"
-    },
-    {
-      "id": "0520-D-2026",
-      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley Del Ecosistema Nacional De Financiamiento De La Innovación",
-      "autores": [
-        "Marcela Marina Pagano"
-      ],
-      "autor_principal": "Marcela Marina Pagano",
-      "bloque": "COHERENCIA",
-      "camara": "Diputados",
-      "año": 2026,
-      "eje": "I+D y Financiamiento",
-      "eje_score": 10,
-      "tematica": "Innovación y Desarrollo Productivo",
-      "subtematica": "Programas de innovación",
-      "resumen": "Objeto. La presente ley tiene por objeto crear el Ecosistema Nacional de Financiamiento de la Innovación (ENFI), con la finalidad de: (a) establecer un sistema integral de capital de riesgo tecnológico público-privado para emprendimientos de base científica y deep tech; (b) crear instrumentos de fin...",
-      "tipo": "FINANCIAMIENTO",
-      "paginas": 14,
-      "pdf_path": "PDFs_Proyectos_Ley/2026/0520-D-2026.pdf"
-    },
     {
       "id": "0345-D-2025",
       "titulo": "Consejo Federal de Inteligencia Artificial",
@@ -1437,6 +1275,557 @@
       "tipo": "FINANCIAMIENTO",
       "paginas": 3,
       "pdf_path": "PDFs_Proyectos_Ley/2025/7085-D-2025.pdf"
+    },
+    {
+      "id": "0004-D-2026",
+      "titulo": "“2026 - Año de la Grandeza Argentina”",
+      "autores": [
+        "Silvana Giudici"
+      ],
+      "autor_principal": "Silvana Giudici",
+      "bloque": "La Libertad Avanza",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Gobernanza e Institucionalidad CyT",
+      "eje_score": 10,
+      "tematica": "IA",
+      "subtematica": "Marco Regulatorio",
+      "resumen": "Objeto. La presente ley tiene por objeto promover el fomento, el desarrollo, la innovación e implementación de Sistemas de Inteligencia Artificial en la República Argentina en un marco de respeto de los derechos consagrados en la Constitución Nacional y los Tratados Internacionales sobre Derechos Hu...",
+      "tipo": "FINANCIAMIENTO",
+      "paginas": 10,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0004-D-2026.pdf"
+    },
+    {
+      "id": "0253-D-2026",
+      "titulo": "Congreso Sancionan Con Fuerza De Ley: Ley Nacional De Inteligencia Artificial Soberana Título I — Disposiciones Generales",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Inteligencia Artificial",
+      "eje_score": 5,
+      "tematica": "IA",
+      "subtematica": "Deepfake y generación de contenido",
+      "resumen": "— Objeto. La presente ley establece el marco jurídico integral para el desarrollo, adopción, regulación y supervisión de sistemas de inteligencia artificial (IA) en la República Argentina, con el fin de: a) garantizar el respeto de los derechos fundamentales, la seguridad pública y el interés genera...",
+      "tipo": "PROYECTO DE LEY",
+      "paginas": 39,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0253-D-2026.pdf"
+    },
+    {
+      "id": "0478-D-2026",
+      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley De Regimen Juridico Para Startups Tecnologicas",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Gobernanza e Institucionalidad CyT",
+      "eje_score": 10,
+      "tematica": "Innovación y Desarrollo Productivo",
+      "subtematica": "Ecosistema Startup",
+      "resumen": "Objeto. La presente ley tiene por objeto crear el Regimen Juridico para Startups Tecnologicas de la Republica Argentina, con la finalidad de: (a) establecer un registro nacional y una definicion legal de startup tecnologica; (b) simplificar la constitucion societaria; (c) crear un regimen especial d...",
+      "tipo": "PROYECTO DE LEY",
+      "paginas": 19,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0478-D-2026.pdf"
+    },
+    {
+      "id": "0511-D-2026",
+      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley Del Fondo Soberano De Inversión Tecnológica",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "I+D y Financiamiento",
+      "eje_score": 10,
+      "tematica": "Innovación y Desarrollo Productivo",
+      "subtematica": "Desarrollo Productivo",
+      "resumen": "Objeto. La presente ley tiene por objeto crear el Fondo Soberano de Inversión Tecnológica (FOSIT) como instrumento de capital paciente de largo plazo, complementario del FONETEC y del FONIT, destinado exclusivamente a: (a) inversiones de largo plazo (horizonte de diez a veinte años) en emprendimient...",
+      "tipo": "FINANCIAMIENTO",
+      "paginas": 9,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0511-D-2026.pdf"
+    },
+    {
+      "id": "0512-D-2026",
+      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley De Energía Nuclear Avanzada",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Nuclear y Energía",
+      "eje_score": 10,
+      "tematica": "Tecnologías Estratégicas",
+      "subtematica": "Nuclear",
+      "resumen": "Objeto. La presente ley tiene por objeto crear el Régimen de Promoción del Desarrollo Nuclear Tecnológico (REDNUCLEART), con la finalidad de: (a) acelerar el desarrollo, licenciamiento y comercialización de reactores modulares pequeños (SMR) de diseño argentino; (b) fortalecer la cadena industrial d...",
+      "tipo": "MARCO REGULATORIO",
+      "paginas": 12,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0512-D-2026.pdf"
+    },
+    {
+      "id": "0513-D-2026",
+      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley De Estrategia Tecnológica Nacional 2040",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Gobernanza e Institucionalidad CyT",
+      "eje_score": 12,
+      "tematica": "Estrategia Tecnologica Nacional",
+      "subtematica": "Estrategía Nacional de Ciencia y Tecnologia",
+      "resumen": "Objeto. La presente ley tiene por objeto crear el Sistema Nacional de Planificación y Ejecución Tecnológica Estratégica (SINPTE), destinado a orientar, coordinar y promover el desarrollo científico, tecnológico e industrial de la República Argentina con horizonte al año dos mil cuarenta.",
+      "tipo": "FINANCIAMIENTO",
+      "paginas": 20,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0513-D-2026.pdf"
+    },
+    {
+      "id": "0514-D-2026",
+      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley De Transferencia Científica Y Tecnológica",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Gobernanza e Institucionalidad CyT",
+      "eje_score": 10,
+      "tematica": "Estrategia Tecnologica Nacional",
+      "subtematica": "Estrategía Nacional de Ciencia y Tecnologia",
+      "resumen": "Objeto. La presente ley tiene por objeto crear el Régimen Nacional de Promoción de la Transferencia de Conocimiento Científico y Tecnológico al Sector Productivo (RENTRANS), con la finalidad de: (a) operativizar el régimen de transferencia tecnológica y propiedad intelectual previsto en la Ley de Es...",
+      "tipo": "MARCO REGULATORIO",
+      "paginas": 19,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0514-D-2026.pdf"
+    },
+    {
+      "id": "0515-D-2026",
+      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley Espacial Argentina",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Espacio y Antártida",
+      "eje_score": 10,
+      "tematica": "Tecnologías Estratégicas",
+      "subtematica": "Espcial",
+      "resumen": "Objeto. La presente ley tiene por objeto establecer el marco jurídico integral de las actividades espaciales en la República Argentina, con la finalidad de: (a) regular el licenciamiento, la supervisión y el control de las actividades espaciales públicas y privadas; (b) establecer un régimen de resp...",
+      "tipo": "FINANCIAMIENTO",
+      "paginas": 21,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0515-D-2026.pdf"
+    },
+    {
+      "id": "0518-D-2026",
+      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley De Biotecnología Avanzada",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Biotecnología",
+      "eje_score": 10,
+      "tematica": "Tecnologías Estratégicas",
+      "subtematica": "Biotecnología",
+      "resumen": "Objeto. La presente ley tiene por objeto crear el Régimen Nacional de Promoción de la Biotecnología Avanzada y la Bioeconomía Estratégica (RENBIOTECH), con la finalidad de: (a) acelerar la aprobación de innovaciones biotecnológicas conforme a estándares internacionales de bioseguridad; (b) crear un ...",
+      "tipo": "FINANCIAMIENTO",
+      "paginas": 13,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0518-D-2026.pdf"
+    },
+    {
+      "id": "0519-D-2026",
+      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley De Inteligencia Artificial Productiva",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Inteligencia Artificial",
+      "eje_score": 5,
+      "tematica": "IA",
+      "subtematica": "Implementación de la IA por parte de la Administración Publica",
+      "resumen": "Objeto. La presente ley tiene por objeto crear el Régimen Nacional de Promoción de la Inteligencia Artificial Aplicada a la Producción (RENIAPRO), con la finalidad de: (a) impulsar la adopción de IA en los sectores productivos estratégicos; (b) crear centros nacionales de IA aplicada; (c) establecer...",
+      "tipo": "MARCO REGULATORIO",
+      "paginas": 21,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0519-D-2026.pdf"
+    },
+    {
+      "id": "0520-D-2026",
+      "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley Del Ecosistema Nacional De Financiamiento De La Innovación",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "I+D y Financiamiento",
+      "eje_score": 10,
+      "tematica": "Innovación y Desarrollo Productivo",
+      "subtematica": "Programas de innovación",
+      "resumen": "Objeto. La presente ley tiene por objeto crear el Ecosistema Nacional de Financiamiento de la Innovación (ENFI), con la finalidad de: (a) establecer un sistema integral de capital de riesgo tecnológico público-privado para emprendimientos de base científica y deep tech; (b) crear instrumentos de fin...",
+      "tipo": "FINANCIAMIENTO",
+      "paginas": 14,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0520-D-2026.pdf"
+    },
+    {
+      "id": "0664-D-2026",
+      "titulo": "Proyecto de Ley: Marco Regulatoria de la Inteligencia Artificial",
+      "autores": [
+        "Diego Giuliano"
+      ],
+      "autor_principal": "Diego Giuliano",
+      "bloque": "Unión por la Patria",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Inteligencia Artificial",
+      "eje_score": 9,
+      "tematica": "IA",
+      "subtematica": "Marco Regulatorio",
+      "resumen": "Objeto. La presente ley tiene por objeto definir el marco legal para el desarrollo, investigación y uso de inteligencia artificial dentro del territorio nacional con la finalidad de preservar la protección de los derechos humanos, la privacidad, la seguridad de los ciudadanos y el estado de derecho.",
+      "tipo": "MARCO REGULATORIO",
+      "paginas": 15,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0664-D-2026.pdf"
+    },
+    {
+      "id": "0825-D-2026",
+      "titulo": "Ley de Neuroseguridad y Ciberseguridad de Dispositivos Médicos Conectados",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Biotecnología",
+      "eje_score": 10,
+      "tematica": "Tecnologías Estratégicas",
+      "subtematica": "Biotecnología",
+      "resumen": "Establece un régimen integral de neuroseguridad y ciberseguridad para dispositivos médicos conectados, con estándares de seguridad, evaluación de riesgos y protección de pacientes.",
+      "tipo": "PROYECTO DE LEY",
+      "paginas": 14,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0825-D-2026.pdf"
+    },
+    {
+      "id": "0826-D-2026",
+      "titulo": "Ley de Evaluación de Impacto Algorítmico",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Inteligencia Artificial",
+      "eje_score": 10,
+      "tematica": "IA",
+      "subtematica": "Marco Regulatorio",
+      "resumen": "Crea el régimen de evaluación de impacto algorítmico para sistemas de IA con efectos relevantes sobre derechos, con obligaciones de transparencia, trazabilidad y mitigación de riesgos.",
+      "tipo": "MARCO REGULATORIO",
+      "paginas": 14,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0826-D-2026.pdf"
+    },
+    {
+      "id": "0827-D-2026",
+      "titulo": "Ley de Reforma Integral del CONICET Productivo",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Gobernanza e Institucionalidad CyT",
+      "eje_score": 10,
+      "tematica": "Estrategia Tecnologica Nacional",
+      "subtematica": "Estrategía Nacional de Ciencia y Tecnologia",
+      "resumen": "Reforma integral del CONICET para fortalecer su articulación con el desarrollo productivo y la transferencia tecnológica, preservando capacidades científicas estratégicas.",
+      "tipo": "PROYECTO DE LEY",
+      "paginas": 21,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0827-D-2026.pdf"
+    },
+    {
+      "id": "0834-D-2026",
+      "titulo": "Ley de Responsabilidad Civil por Daños de Sistemas de Inteligencia Artificial",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Inteligencia Artificial",
+      "eje_score": 10,
+      "tematica": "IA",
+      "subtematica": "Marco Regulatorio",
+      "resumen": "Regula la responsabilidad civil por daños ocasionados por sistemas de IA, definiendo obligaciones de prevención, trazabilidad y reparación.",
+      "tipo": "MARCO REGULATORIO",
+      "paginas": 25,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0834-D-2026.pdf"
+    },
+    {
+      "id": "0837-D-2026",
+      "titulo": "Ley de Protección de Datos Biométricos y Regulación del Reconocimiento Facial",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Datos y Digitalización",
+      "eje_score": 10,
+      "tematica": "Tecnologías Estratégicas",
+      "subtematica": "Protección de datos biométricos",
+      "resumen": "Establece reglas para tratamiento de datos biométricos y uso de reconocimiento facial, con salvaguardas de privacidad, seguridad y control público.",
+      "tipo": "MARCO REGULATORIO",
+      "paginas": 23,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0837-D-2026.pdf"
+    },
+    {
+      "id": "0900-D-2026",
+      "titulo": "Régimen Nacional de Ciencia Abierta y Repositorios de Datos Científicos",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Gobernanza e Institucionalidad CyT",
+      "eje_score": 10,
+      "tematica": "Estrategia Tecnologica Nacional",
+      "subtematica": "Estrategía Nacional de Ciencia y Tecnologia",
+      "resumen": "Crea un régimen nacional de ciencia abierta y repositorios de datos científicos para mejorar acceso, interoperabilidad y reutilización del conocimiento.",
+      "tipo": "PROYECTO DE LEY",
+      "paginas": 24,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0900-D-2026.pdf"
+    },
+    {
+      "id": "0903-D-2026",
+      "titulo": "Régimen Nacional de Robótica, Manufactura Aditiva e Industria 4.0",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "I+D y Financiamiento",
+      "eje_score": 10,
+      "tematica": "Innovación y Desarrollo Productivo",
+      "subtematica": "Desarrollo Productivo",
+      "resumen": "Promueve robótica, manufactura aditiva e industria 4.0 con incentivos e instrumentos de coordinación para elevar productividad e innovación.",
+      "tipo": "PROYECTO DE LEY",
+      "paginas": 29,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0903-D-2026.pdf"
+    },
+    {
+      "id": "0913-D-2026",
+      "titulo": "Proyecto de Declaración de repudio al Decreto 312/2025",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Gobernanza e Institucionalidad CyT",
+      "eje_score": 10,
+      "tematica": "Estrategia Tecnologica Nacional",
+      "subtematica": "Estrategía Nacional de Ciencia y Tecnologia",
+      "resumen": "Expresa repudio al Decreto 312/2025 por su impacto sobre instrumentos de integración y desarrollo, solicitando revisión de la medida.",
+      "tipo": "DECLARATIVA",
+      "paginas": 5,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0913-D-2026.pdf"
+    },
+    {
+      "id": "0956-D-2026",
+      "titulo": "Régimen Federal de Telemedicina y Salud Digital",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Salud y Tecnología Médica",
+      "eje_score": 10,
+      "tematica": "Estrategia Tecnologica Nacional",
+      "subtematica": "Salud",
+      "resumen": "Establece un marco federal para telemedicina y salud digital con criterios de calidad, acceso, interoperabilidad y protección de datos de salud.",
+      "tipo": "MARCO REGULATORIO",
+      "paginas": 22,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0956-D-2026.pdf"
+    },
+    {
+      "id": "0957-D-2026",
+      "titulo": "Régimen Nacional de Gemelos Digitales para Infraestructura Pública",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Inteligencia Artificial",
+      "eje_score": 10,
+      "tematica": "IA",
+      "subtematica": "Implementación de la IA por parte de la Administración Publica",
+      "resumen": "Crea un régimen para uso de gemelos digitales en infraestructura pública con fines de planificación, monitoreo y gestión basada en datos.",
+      "tipo": "PROYECTO DE LEY",
+      "paginas": 16,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0957-D-2026.pdf"
+    },
+    {
+      "id": "0961-D-2026",
+      "titulo": "Sistema Nacional de Educación Inteligente, Productiva y Soberana (SNEIPS)",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Educación y Formación CyT",
+      "eje_score": 10,
+      "tematica": "Estrategia Tecnologica Nacional",
+      "subtematica": "Educación",
+      "resumen": "Crea el SNEIPS para incorporar capacidades científicas y tecnológicas al sistema educativo, con enfoque federal y productivo.",
+      "tipo": "EDUCATIVA",
+      "paginas": 32,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0961-D-2026.pdf"
+    },
+    {
+      "id": "1008-D-2026",
+      "titulo": "Ley Argentina de Innovación y Propiedad Intelectual (LAIPI)",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Gobernanza e Institucionalidad CyT",
+      "eje_score": 10,
+      "tematica": "Estrategia Tecnologica Nacional",
+      "subtematica": "Estrategía Nacional de Ciencia y Tecnologia",
+      "resumen": "Define lineamientos para promover innovación y propiedad intelectual, con incentivos a la transferencia tecnológica y protección de activos intangibles.",
+      "tipo": "PROYECTO DE LEY",
+      "paginas": 37,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/1008-D-2026.pdf"
+    },
+    {
+      "id": "1017-D-2026",
+      "titulo": "Régimen Nacional de Edición Genética Humana y Soberanía Genómica",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Educación y Formación CyT",
+      "eje_score": 10,
+      "tematica": "Estrategia Tecnologica Nacional",
+      "subtematica": "Educación",
+      "resumen": "Establece un régimen para edición genética humana y soberanía genómica, incluyendo estándares éticos, regulatorios y de investigación.",
+      "tipo": "MARCO REGULATORIO",
+      "paginas": 32,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/1017-D-2026.pdf"
+    },
+    {
+      "id": "1020-D-2026",
+      "titulo": "Programa Nacional de Inserción Estratégica en Fusión Nuclear y Tecnologías de Plasma (PRONIEF)",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Nuclear y Energía",
+      "eje_score": 10,
+      "tematica": "Tecnologías Estratégicas",
+      "subtematica": "Nuclear",
+      "resumen": "Crea el PRONIEF para impulsar capacidades nacionales en fusión nuclear y tecnologías de plasma mediante investigación, formación e infraestructura.",
+      "tipo": "PROYECTO DE LEY",
+      "paginas": 19,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/1020-D-2026.pdf"
+    },
+    {
+      "id": "1059-D-2026",
+      "titulo": "Régimen Integral de Protección Estratégica y Desarrollo del Sector Nuclear Argentino",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Nuclear y Energía",
+      "eje_score": 10,
+      "tematica": "Tecnologías Estratégicas",
+      "subtematica": "Nuclear",
+      "resumen": "Establece un régimen integral para protección y desarrollo del sector nuclear argentino como activo estratégico nacional.",
+      "tipo": "MARCO REGULATORIO",
+      "paginas": 32,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/1059-D-2026.pdf"
+    },
+    {
+      "id": "1060-D-2026",
+      "titulo": "Sistema Nacional de Terapias Oncológicas Avanzadas (SNTOA)",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Salud y Tecnología Médica",
+      "eje_score": 10,
+      "tematica": "Estrategia Tecnologica Nacional",
+      "subtematica": "Salud",
+      "resumen": "Crea el SNTOA para fortalecer investigación, acceso y coordinación federal en terapias oncológicas avanzadas.",
+      "tipo": "PROYECTO DE LEY",
+      "paginas": 19,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/1060-D-2026.pdf"
+    },
+    {
+      "id": "1062-D-2026",
+      "titulo": "Distrito Biomédico Extraterritorial Argentino (DBEA)",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Biotecnología",
+      "eje_score": 10,
+      "tematica": "Tecnologías Estratégicas",
+      "subtematica": "Biotecnología",
+      "resumen": "Crea el DBEA como zona científica especial para atraer inversión, investigación biomédica avanzada y desarrollo tecnológico.",
+      "tipo": "CREA ÓRGANOS",
+      "paginas": 28,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/1062-D-2026.pdf"
     }
   ]
 }

@@ -31,6 +31,7 @@ venv/
 
 # Raw source material / exports (not required for web deploy)
 *.pdf
+!PDFs_Proyectos_Ley/**/*.pdf
 Mateo proyectos/
 proyectoss_txt/
 Proyectos de IA.xlsx
