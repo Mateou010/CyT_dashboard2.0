@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generado": "2026-03-21T21:17:38.454Z",
-    "total": 35,
+    "generado": "2026-04-20T17:48:09.457Z",
+    "total": 36,
     "fuente": "PDFs locales del proyecto (raíz + Mateo proyectos)",
     "carpetas_fuente": [
       ".",
@@ -12,22 +12,22 @@
     {
       "bloque": "Unión por la Patria",
       "proyectos": 9,
-      "promedio_autores": 1
+      "promedio_autores": 1.0
     },
     {
       "bloque": "Innovación Federal",
-      "proyectos": 5,
-      "promedio_autores": 1
+      "proyectos": 6,
+      "promedio_autores": 1.0
     },
     {
       "bloque": "La Libertad Avanza",
       "proyectos": 4,
-      "promedio_autores": 1
+      "promedio_autores": 1.0
     },
     {
       "bloque": "PRO",
       "proyectos": 3,
-      "promedio_autores": 1
+      "promedio_autores": 1.0
     },
     {
       "bloque": "UCR",
@@ -37,7 +37,7 @@
     {
       "bloque": "COHERENCIA",
       "proyectos": 2,
-      "promedio_autores": 1
+      "promedio_autores": 1.0
     },
     {
       "bloque": "Encuentro Federal",
@@ -47,41 +47,41 @@
     {
       "bloque": "Frente de Todos",
       "proyectos": 2,
-      "promedio_autores": 1
+      "promedio_autores": 1.0
     },
     {
       "bloque": "Provincias Unidas",
       "proyectos": 2,
-      "promedio_autores": 1
+      "promedio_autores": 1.0
     },
     {
       "bloque": "Coalición Cívica",
       "proyectos": 1,
-      "promedio_autores": 1
+      "promedio_autores": 1.0
     },
     {
       "bloque": "Democracia para Siempre",
       "proyectos": 1,
-      "promedio_autores": 1
+      "promedio_autores": 1.0
     },
     {
       "bloque": "Futuro y Libertad",
       "proyectos": 1,
-      "promedio_autores": 1
+      "promedio_autores": 1.0
     }
   ],
   "top_destinatarios": [
     {
       "destinatario": "Empresas / Sector privado",
-      "total": 23
+      "total": 24
     },
     {
       "destinatario": "Ciudadanía general",
-      "total": 20
+      "total": 21
     },
     {
       "destinatario": "Estado / Organismo público",
-      "total": 20
+      "total": 21
     },
     {
       "destinatario": "Investigadores / Científicos",
@@ -107,7 +107,7 @@
   "top_topics": [
     {
       "tema": "Inteligencia Artificial",
-      "total": 34
+      "total": 35
     },
     {
       "tema": "Tecnología / IA",
@@ -556,6 +556,30 @@
       "pdf_path": "PDFs_Proyectos_Ley/2024/7045-D-2024.pdf"
     },
     {
+      "id": "0345-D-2025",
+      "titulo": "Creación del Consejo Federal de Inteligencia Artificial",
+      "autores": [
+        "CALLETTI, PAMELA"
+      ],
+      "autor_principal": "CALLETTI, PAMELA",
+      "total_autores": 1,
+      "bloque": "Innovación Federal",
+      "camara": "Diputados",
+      "año": 2025,
+      "mes": 3,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Investigadores / Científicos"
+      ],
+      "resumen": "Crea el Consejo Federal de Inteligencia Artificial (COFEIA) como organismo interjurisdiccional consultivo para promover investigación, transparencia, ética, formación y coordinación federal en políticas de IA.",
+      "expediente": "0345/2025",
+      "tipo": "CREA ORGANOS",
+      "dashboard": "SI",
+      "pdf_path": "PDFs_Proyectos_Ley/2025/0345-D-2025.pdf"
+    },
+    {
       "id": "1937-D-2025",
       "titulo": "Ley Nacional de Inteligencia Artificial",
       "autores": [
@@ -947,28 +971,29 @@
       "pdf_path": "PDFs_Proyectos_Ley/2026/0519-D-2026.pdf"
     },
     {
-      "id": "0345-D-2025",
-      "titulo": "Creación del Consejo Federal de Inteligencia Artificial",
+      "id": "1319-D-2026",
+      "titulo": "Regulación de la Manipulación de Imágenes Digitales y la Creación de Contenido por Inteligencia Artificial",
       "autores": [
-        "CALLETTI, PAMELA"
+        "VEGA, YOLANDA"
       ],
-      "autor_principal": "CALLETTI, PAMELA",
+      "autor_principal": "VEGA, YOLANDA",
       "total_autores": 1,
       "bloque": "Innovación Federal",
       "camara": "Diputados",
-      "año": 2025,
-      "mes": 3,
+      "año": 2026,
+      "mes": 4,
       "tema": "Inteligencia Artificial",
       "estado": "En Comisión",
       "destinatarios": [
-        "Estado / Organismo público",
-        "Investigadores / Científicos"
+        "Ciudadanía general",
+        "Empresas / Sector privado",
+        "Estado / Organismo público"
       ],
-      "resumen": "Crea el Consejo Federal de Inteligencia Artificial (COFEIA) como organismo interjurisdiccional consultivo para promover investigación, transparencia, ética, formación y coordinación federal en políticas de IA.",
-      "expediente": "0345/2025",
-      "tipo": "CREA ORGANOS",
-      "dashboard": "SI",
-      "pdf_path": "PDFs_Proyectos_Ley/2025/0345-D-2025.pdf"
+      "resumen": "Regula la manipulación de imágenes y contenido audiovisual generado o alterado con IA, incluyendo etiquetado y sanciones para prevenir engaño y desinformación.",
+      "expediente": "1319/2026",
+      "tipo": "DEEPFAKE Y SIMILARES",
+      "dashboard": "INDIRECTA",
+      "pdf_path": "PDFs_Proyectos_Ley/2026/1319-D-2026.pdf"
     }
   ]
 }

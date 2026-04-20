@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generado": "2026-04-09T03:11:47.708Z",
-    "total": 61,
+    "generado": "2026-04-20T17:48:09.454Z",
+    "total": 64,
     "fuente": "Comisión de Ciencia, Tecnología e Innovación Productiva — H. Cámara de Diputados",
     "periodo": "2025–2026",
-    "con_autor": 61,
-    "con_bloque": 61
+    "con_autor": 64,
+    "con_bloque": 64
   },
   "eje_stats": [
     {
@@ -16,13 +16,13 @@
     },
     {
       "eje": "Inteligencia Artificial",
-      "total": 13,
+      "total": 14,
       "icon": "🤖",
       "color": "#2563eb"
     },
     {
       "eje": "I+D y Financiamiento",
-      "total": 7,
+      "total": 8,
       "icon": "💰",
       "color": "#ca8a04"
     },
@@ -45,6 +45,12 @@
       "color": "#dc2626"
     },
     {
+      "eje": "Salud y Tecnología Médica",
+      "total": 3,
+      "icon": "🏥",
+      "color": "#e11d48"
+    },
+    {
       "eje": "Datos y Digitalización",
       "total": 2,
       "icon": "🔐",
@@ -55,12 +61,6 @@
       "total": 2,
       "icon": "🚀",
       "color": "#0891b2"
-    },
-    {
-      "eje": "Salud y Tecnología Médica",
-      "total": 2,
-      "icon": "🏥",
-      "color": "#e11d48"
     },
     {
       "eje": "Neuroderechos",
@@ -82,7 +82,7 @@
     },
     {
       "año": "2026",
-      "total": 29
+      "total": 32
     }
   ],
   "bloque_stats": [
@@ -93,8 +93,13 @@
     },
     {
       "bloque": "Unión por la Patria",
-      "total": 13,
+      "total": 14,
       "color": "#00AEEF"
+    },
+    {
+      "bloque": "Innovación Federal",
+      "total": 4,
+      "color": "#1e3a8a"
     },
     {
       "bloque": "Coalición Cívica",
@@ -110,11 +115,6 @@
       "bloque": "Democracia para Siempre",
       "total": 2,
       "color": "#9a3412"
-    },
-    {
-      "bloque": "Innovación Federal",
-      "total": 2,
-      "color": "#1e3a8a"
     },
     {
       "bloque": "La Libertad Avanza",
@@ -165,7 +165,15 @@
       "total": 2
     },
     {
+      "autor": "VEGA, YOLANDA",
+      "total": 2
+    },
+    {
       "autor": "AGUIRRE, MANUEL IGNACIO",
+      "total": 1
+    },
+    {
+      "autor": "ARAUJO HERNÁNDEZ, JORGE NERI",
       "total": 1
     },
     {
@@ -270,21 +278,21 @@
       "Tecnologías Estratégicas": 2
     },
     "2026": {
-      "IA": 7,
+      "IA": 8,
       "Innovación y Desarrollo Productivo": 4,
       "Tecnologías Estratégicas": 8,
-      "Estrategia Tecnologica Nacional": 10
+      "Estrategia Tecnologica Nacional": 12
     }
   },
   "tipo_stats": [
     {
-      "tipo": "MARCO REGULATORIO",
-      "total": 16,
+      "tipo": "PROYECTO DE LEY",
+      "total": 18,
       "color": "#64748b"
     },
     {
-      "tipo": "PROYECTO DE LEY",
-      "total": 16,
+      "tipo": "MARCO REGULATORIO",
+      "total": 17,
       "color": "#64748b"
     },
     {
@@ -328,15 +336,15 @@
       "total": 8
     },
     {
+      "subtema": "Deepfake y generación de contenido",
+      "total": 5
+    },
+    {
       "subtema": "Educación",
       "total": 5
     },
     {
       "subtema": "Biotecnología",
-      "total": 4
-    },
-    {
-      "subtema": "Deepfake y generación de contenido",
       "total": 4
     },
     {
@@ -352,6 +360,10 @@
       "total": 3
     },
     {
+      "subtema": "Salud",
+      "total": 3
+    },
+    {
       "subtema": "Sistema Nacional de Ciencía, Tecnología e Innovación (Sostenimiento y Financiación)",
       "total": 3
     },
@@ -364,15 +376,15 @@
       "total": 2
     },
     {
-      "subtema": "Salud",
-      "total": 2
-    },
-    {
       "subtema": "Brecha Digital",
       "total": 1
     },
     {
       "subtema": "Creación de Organismos especializados",
+      "total": 1
+    },
+    {
+      "subtema": "Desarrollo productivo",
       "total": 1
     },
     {
@@ -1826,6 +1838,63 @@
       "tipo": "CREA ÓRGANOS",
       "paginas": 28,
       "pdf_path": "PDFs_Proyectos_Ley/2026/1062-D-2026.pdf"
+    },
+    {
+      "id": "1276-D-2026",
+      "titulo": "Ley Nacional de Biología Molecular, Biotecnología Avanzada e Investigación Biomédica (LNBMBA)",
+      "autores": [
+        "VEGA, YOLANDA"
+      ],
+      "autor_principal": "VEGA, YOLANDA",
+      "bloque": "Innovación Federal",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Salud y Tecnología Médica",
+      "eje_score": 10,
+      "tematica": "Estrategia Tecnologica Nacional",
+      "subtematica": "Salud",
+      "resumen": "Establece un marco jurídico integral para investigación y desarrollo en biología molecular, biotecnología avanzada e investigación biomédica en Argentina.",
+      "tipo": "PROYECTO DE LEY",
+      "paginas": 36,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/1276-D-2026.pdf"
+    },
+    {
+      "id": "1294-D-2026",
+      "titulo": "Régimen de Fomento para la Reconversión Industrial, el Desarrollo Tecnológico y la Producción Estratégica en Tierra del Fuego (REGITEC-TDF 4.0)",
+      "autores": [
+        "ARAUJO HERNÁNDEZ, JORGE NERI"
+      ],
+      "autor_principal": "ARAUJO HERNÁNDEZ, JORGE NERI",
+      "bloque": "Unión por la Patria",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "I+D y Financiamiento",
+      "eje_score": 10,
+      "tematica": "Estrategia Tecnologica Nacional",
+      "subtematica": "Desarrollo productivo",
+      "resumen": "Crea un régimen de fomento para reconversión industrial y desarrollo tecnológico estratégico en Tierra del Fuego, complementario al régimen de la Ley 19.640.",
+      "tipo": "PROYECTO DE LEY",
+      "paginas": 12,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/1294-D-2026.pdf"
+    },
+    {
+      "id": "1319-D-2026",
+      "titulo": "Regulación de la Manipulación de Imágenes Digitales y la Creación de Contenido por Inteligencia Artificial",
+      "autores": [
+        "VEGA, YOLANDA"
+      ],
+      "autor_principal": "VEGA, YOLANDA",
+      "bloque": "Innovación Federal",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Inteligencia Artificial",
+      "eje_score": 10,
+      "tematica": "IA",
+      "subtematica": "Deepfake y generación de contenido",
+      "resumen": "Regula el uso de herramientas de edición digital e IA para manipulación de imágenes y clonación de voz, con foco en prevención de desinformación y protección de derechos.",
+      "tipo": "MARCO REGULATORIO",
+      "paginas": 5,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/1319-D-2026.pdf"
     }
   ]
 }
