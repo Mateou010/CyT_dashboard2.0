@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generado": "2026-04-20T17:48:09.454Z",
-    "total": 64,
+    "generado": "2026-04-30T16:57:52.716Z",
+    "total": 65,
     "fuente": "Comisión de Ciencia, Tecnología e Innovación Productiva — H. Cámara de Diputados",
     "periodo": "2025–2026",
-    "con_autor": 64,
-    "con_bloque": 64
+    "con_autor": 65,
+    "con_bloque": 65
   },
   "eje_stats": [
     {
@@ -16,7 +16,7 @@
     },
     {
       "eje": "Inteligencia Artificial",
-      "total": 14,
+      "total": 15,
       "icon": "🤖",
       "color": "#2563eb"
     },
@@ -82,7 +82,7 @@
     },
     {
       "año": "2026",
-      "total": 32
+      "total": 33
     }
   ],
   "bloque_stats": [
@@ -122,6 +122,11 @@
       "color": "#7B2D8E"
     },
     {
+      "bloque": "PRO",
+      "total": 2,
+      "color": "#facc15"
+    },
+    {
       "bloque": "UCR",
       "total": 2,
       "color": "#E30613"
@@ -135,11 +140,6 @@
       "bloque": "Futuro y Libertad",
       "total": 1,
       "color": "#0369a1"
-    },
-    {
-      "bloque": "PRO",
-      "total": 1,
-      "color": "#facc15"
     },
     {
       "bloque": "Provincias Unidas",
@@ -158,6 +158,10 @@
     },
     {
       "autor": "Gabriel Chumpitaz",
+      "total": 2
+    },
+    {
+      "autor": "Martín Yeza",
       "total": 2
     },
     {
@@ -233,10 +237,6 @@
       "total": 1
     },
     {
-      "autor": "Martín Yeza",
-      "total": 1
-    },
-    {
       "autor": "Maximiliano Ferraro",
       "total": 1
     },
@@ -278,7 +278,7 @@
       "Tecnologías Estratégicas": 2
     },
     "2026": {
-      "IA": 8,
+      "IA": 9,
       "Innovación y Desarrollo Productivo": 4,
       "Tecnologías Estratégicas": 8,
       "Estrategia Tecnologica Nacional": 12
@@ -286,13 +286,13 @@
   },
   "tipo_stats": [
     {
-      "tipo": "PROYECTO DE LEY",
+      "tipo": "MARCO REGULATORIO",
       "total": 18,
       "color": "#64748b"
     },
     {
-      "tipo": "MARCO REGULATORIO",
-      "total": 17,
+      "tipo": "PROYECTO DE LEY",
+      "total": 18,
       "color": "#64748b"
     },
     {
@@ -333,7 +333,7 @@
     },
     {
       "subtema": "Marco Regulatorio",
-      "total": 8
+      "total": 9
     },
     {
       "subtema": "Deepfake y generación de contenido",
@@ -1895,6 +1895,25 @@
       "tipo": "MARCO REGULATORIO",
       "paginas": 5,
       "pdf_path": "PDFs_Proyectos_Ley/2026/1319-D-2026.pdf"
+    },
+    {
+      "id": "1809-D-2026",
+      "titulo": "Sistema de Entornos Regulatorios Experimentales (SERE) “Sandbox Regulatorios”",
+      "autores": [
+        "Martín Yeza"
+      ],
+      "autor_principal": "Martín Yeza",
+      "bloque": "PRO",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Inteligencia Artificial",
+      "eje_score": 10,
+      "tematica": "IA",
+      "subtematica": "Marco Regulatorio",
+      "resumen": "Crea el sistema SERE de sandbox regulatorios para probar innovaciones basadas en IA y tecnologías emergentes bajo entornos controlados.",
+      "tipo": "MARCO REGULATORIO",
+      "paginas": 7,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/1809-D-2026.pdf"
     }
   ]
 }

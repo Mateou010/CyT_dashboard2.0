@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generado": "2026-04-20T17:48:09.457Z",
-    "total": 36,
+    "generado": "2026-04-30T16:57:52.717Z",
+    "total": 37,
     "fuente": "PDFs locales del proyecto (raíz + Mateo proyectos)",
     "carpetas_fuente": [
       ".",
@@ -26,7 +26,7 @@
     },
     {
       "bloque": "PRO",
-      "proyectos": 3,
+      "proyectos": 4,
       "promedio_autores": 1.0
     },
     {
@@ -73,15 +73,15 @@
   "top_destinatarios": [
     {
       "destinatario": "Empresas / Sector privado",
-      "total": 24
+      "total": 25
     },
     {
       "destinatario": "Ciudadanía general",
-      "total": 21
+      "total": 22
     },
     {
       "destinatario": "Estado / Organismo público",
-      "total": 21
+      "total": 22
     },
     {
       "destinatario": "Investigadores / Científicos",
@@ -107,7 +107,7 @@
   "top_topics": [
     {
       "tema": "Inteligencia Artificial",
-      "total": 35
+      "total": 36
     },
     {
       "tema": "Tecnología / IA",
@@ -994,6 +994,31 @@
       "tipo": "DEEPFAKE Y SIMILARES",
       "dashboard": "INDIRECTA",
       "pdf_path": "PDFs_Proyectos_Ley/2026/1319-D-2026.pdf"
+    },
+    {
+      "id": "1809-D-2026",
+      "titulo": "Sistema de Entornos Regulatorios Experimentales (SERE) “Sandbox Regulatorios”",
+      "autores": [
+        "Martín Yeza"
+      ],
+      "autor_principal": "Martín Yeza",
+      "total_autores": 1,
+      "bloque": "PRO",
+      "camara": "Diputados",
+      "año": 2026,
+      "mes": 4,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Empresas / Sector privado",
+        "Ciudadanía general"
+      ],
+      "resumen": "Crea el sistema de sandbox regulatorios para evaluar, en entornos controlados, modelos de negocio y tecnologías emergentes basadas en IA.",
+      "expediente": "1809/2026",
+      "tipo": "MARCO REGULATORIO",
+      "dashboard": "SI",
+      "pdf_path": "PDFs_Proyectos_Ley/2026/1809-D-2026.pdf"
     }
   ]
 }
