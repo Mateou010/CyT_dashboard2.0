@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generado": "2026-04-30T16:57:52.717Z",
-    "total": 37,
+    "generado": "2026-05-26T15:36:48.746Z",
+    "total": 38,
     "fuente": "PDFs locales del proyecto (raíz + Mateo proyectos)",
     "carpetas_fuente": [
       ".",
@@ -68,6 +68,11 @@
       "bloque": "Futuro y Libertad",
       "proyectos": 1,
       "promedio_autores": 1.0
+    },
+    {
+      "bloque": "Sin datos",
+      "proyectos": 1,
+      "promedio_autores": 1.0
     }
   ],
   "top_destinatarios": [
@@ -77,11 +82,11 @@
     },
     {
       "destinatario": "Ciudadanía general",
-      "total": 22
+      "total": 23
     },
     {
       "destinatario": "Estado / Organismo público",
-      "total": 22
+      "total": 23
     },
     {
       "destinatario": "Investigadores / Científicos",
@@ -107,7 +112,7 @@
   "top_topics": [
     {
       "tema": "Inteligencia Artificial",
-      "total": 36
+      "total": 37
     },
     {
       "tema": "Tecnología / IA",
@@ -1019,6 +1024,30 @@
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
       "pdf_path": "PDFs_Proyectos_Ley/2026/1809-D-2026.pdf"
+    },
+    {
+      "id": "2049-D-2026",
+      "titulo": "Proyecto de Ley sobre Inteligencia Artificial",
+      "autores": [
+        "No disponible"
+      ],
+      "autor_principal": "No disponible",
+      "total_autores": 1,
+      "bloque": "Sin datos",
+      "camara": "Diputados",
+      "año": 2026,
+      "mes": 5,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Estado / Organismo público",
+        "Ciudadanía general"
+      ],
+      "resumen": "Proyecto incorporado al dashboard IA. Ver texto completo en el PDF del expediente 2049-D-2026.",
+      "expediente": "2049/2026",
+      "tipo": "MARCO REGULATORIO",
+      "dashboard": "SI",
+      "pdf_path": "PDFs_Proyectos_Ley/2026/2049-D-2026.pdf"
     }
   ]
 }
