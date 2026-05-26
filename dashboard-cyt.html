@@ -1159,8 +1159,17 @@ async function sendChatMessage() {
     return;
   }
 
-  const bloqueStats = (jsonData.bloque_stats || []).filter(b => b.bloque !== 'Sin datos');
-  const autores = jsonData.top_autores || [];
+  const bloqueStats = (jsonData.bloque_stats || [])
+    .filter(b => b.bloque !== 'Sin datos')
+    .map((b, i) => ({
+      ...b,
+      total: Number(b.total ?? b.cantidad ?? 0),
+      color: b.color || COLORS[i % COLORS.length]
+    }));
+  const autores = (jsonData.top_autores || []).map(a => ({
+    ...a,
+    total: Number(a.total ?? a.cantidad ?? 0)
+  }));
   const allBills = jsonData.bills || [];
   const totalConBloque = bloqueStats.reduce((s,b) => s + b.total, 0);
 
