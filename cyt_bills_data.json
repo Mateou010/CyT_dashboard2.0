@@ -1,281 +1,200 @@
 {
   "metadata": {
-    "generado": "2026-05-26T15:36:48.744Z",
-    "total": 66,
+    "generado": "2026-05-26T15:49:09.613Z",
+    "total": 70,
     "fuente": "Comisión de Ciencia, Tecnología e Innovación Productiva — H. Cámara de Diputados",
     "periodo": "2025–2026",
-    "con_autor": 66,
-    "con_bloque": 66
+    "con_autor": 67,
+    "con_bloque": 67,
+    "generated_at": "2026-05-26T16:31:30.996Z",
+    "source": "manual_update"
   },
   "eje_stats": [
     {
       "eje": "Gobernanza e Institucionalidad CyT",
-      "total": 20,
-      "icon": "🏛️",
-      "color": "#475569"
+      "cantidad": 20,
+      "porcentaje": 29
     },
     {
       "eje": "Inteligencia Artificial",
-      "total": 16,
-      "icon": "🤖",
-      "color": "#2563eb"
+      "cantidad": 16,
+      "porcentaje": 23
     },
     {
       "eje": "I+D y Financiamiento",
-      "total": 8,
-      "icon": "💰",
-      "color": "#ca8a04"
+      "cantidad": 8,
+      "porcentaje": 11
     },
     {
       "eje": "Educación y Formación CyT",
-      "total": 6,
-      "icon": "🎓",
-      "color": "#ea580c"
+      "cantidad": 6,
+      "porcentaje": 9
     },
     {
       "eje": "Biotecnología",
-      "total": 4,
-      "icon": "🧬",
-      "color": "#16a34a"
-    },
-    {
-      "eje": "Nuclear y Energía",
-      "total": 3,
-      "icon": "⚛️",
-      "color": "#dc2626"
+      "cantidad": 4,
+      "porcentaje": 6
     },
     {
       "eje": "Salud y Tecnología Médica",
-      "total": 3,
-      "icon": "🏥",
-      "color": "#e11d48"
+      "cantidad": 4,
+      "porcentaje": 6
+    },
+    {
+      "eje": "Nuclear y Energía",
+      "cantidad": 3,
+      "porcentaje": 4
     },
     {
       "eje": "Datos y Digitalización",
-      "total": 2,
-      "icon": "🔐",
-      "color": "#4f46e5"
+      "cantidad": 2,
+      "porcentaje": 3
     },
     {
       "eje": "Espacio y Antártida",
-      "total": 2,
-      "icon": "🚀",
-      "color": "#0891b2"
+      "cantidad": 2,
+      "porcentaje": 3
+    },
+    {
+      "eje": "Estrategia Tecnologica Nacional",
+      "cantidad": 2,
+      "porcentaje": 3
     },
     {
       "eje": "Neuroderechos",
-      "total": 1,
-      "icon": "🧠",
-      "color": "#a855f7"
+      "cantidad": 1,
+      "porcentaje": 1
     },
     {
       "eje": "Tecnologías Cuánticas",
-      "total": 1,
-      "icon": "🔮",
-      "color": "#7c3aed"
+      "cantidad": 1,
+      "porcentaje": 1
+    },
+    {
+      "eje": "Tecnologías Estratégicas",
+      "cantidad": 1,
+      "porcentaje": 1
     }
   ],
   "year_stats": [
     {
-      "año": "2025",
-      "total": 32
+      "año": 2025,
+      "cantidad": 32,
+      "porcentaje": 46
     },
     {
-      "año": "2026",
-      "total": 34
+      "año": 2026,
+      "cantidad": 38,
+      "porcentaje": 54
     }
   ],
   "bloque_stats": [
     {
       "bloque": "COHERENCIA",
-      "total": 30,
-      "color": "#991b1b"
+      "cantidad": 34,
+      "porcentaje": 49
     },
     {
       "bloque": "Unión por la Patria",
-      "total": 14,
-      "color": "#00AEEF"
+      "cantidad": 14,
+      "porcentaje": 20
     },
     {
       "bloque": "Innovación Federal",
-      "total": 4,
-      "color": "#1e3a8a"
+      "cantidad": 4,
+      "porcentaje": 6
     },
     {
       "bloque": "Coalición Cívica",
-      "total": 3,
-      "color": "#0f766e"
+      "cantidad": 3,
+      "porcentaje": 4
     },
     {
       "bloque": "Frente de Izquierda",
-      "total": 3,
-      "color": "#be123c"
+      "cantidad": 3,
+      "porcentaje": 4
     },
     {
       "bloque": "Democracia para Siempre",
-      "total": 2,
-      "color": "#9a3412"
+      "cantidad": 2,
+      "porcentaje": 3
     },
     {
       "bloque": "La Libertad Avanza",
-      "total": 2,
-      "color": "#7B2D8E"
+      "cantidad": 2,
+      "porcentaje": 3
     },
     {
       "bloque": "PRO",
-      "total": 2,
-      "color": "#facc15"
+      "cantidad": 2,
+      "porcentaje": 3
     },
     {
       "bloque": "UCR",
-      "total": 2,
-      "color": "#E30613"
+      "cantidad": 2,
+      "porcentaje": 3
     },
     {
       "bloque": "Encuentro Federal",
-      "total": 1,
-      "color": "#FF9800"
+      "cantidad": 1,
+      "porcentaje": 1
     },
     {
       "bloque": "Futuro y Libertad",
-      "total": 1,
-      "color": "#0369a1"
+      "cantidad": 1,
+      "porcentaje": 1
     },
     {
       "bloque": "Provincias Unidas",
-      "total": 1,
-      "color": "#9a3412"
+      "cantidad": 1,
+      "porcentaje": 1
     },
     {
       "bloque": "Sin datos",
-      "total": 1,
-      "color": "#64748b"
+      "cantidad": 1,
+      "porcentaje": 1
     }
   ],
   "top_autores": [
     {
       "autor": "Marcela Marina Pagano",
-      "total": 30
+      "cantidad": 34
     },
     {
       "autor": "Juan M. López y otros",
-      "total": 3
+      "cantidad": 3
     },
     {
       "autor": "Gabriel Chumpitaz",
-      "total": 2
+      "cantidad": 2
     },
     {
       "autor": "Martín Yeza",
-      "total": 2
+      "cantidad": 2
     },
     {
       "autor": "Pamela Calletti",
-      "total": 2
+      "cantidad": 2
     },
     {
       "autor": "VEGA, YOLANDA",
-      "total": 2
+      "cantidad": 2
     },
     {
       "autor": "AGUIRRE, MANUEL IGNACIO",
-      "total": 1
-    },
-    {
-      "autor": "ARAUJO HERNÁNDEZ, JORGE NERI",
-      "total": 1
+      "cantidad": 1
     },
     {
       "autor": "Ana Carla Carrizo",
-      "total": 1
+      "cantidad": 1
+    },
+    {
+      "autor": "ARAUJO HERNÁNDEZ, JORGE NERI",
+      "cantidad": 1
     },
     {
       "autor": "Ariel Rauschenberger y otros",
-      "total": 1
-    },
-    {
-      "autor": "Carlos Daniel Castagneto y otros",
-      "total": 1
-    },
-    {
-      "autor": "Christian Castillo y otros",
-      "total": 1
-    },
-    {
-      "autor": "Daniel Gollan y otros",
-      "total": 1
-    },
-    {
-      "autor": "Danya Tavela",
-      "total": 1
-    },
-    {
-      "autor": "Diego Giuliano",
-      "total": 1
-    },
-    {
-      "autor": "Eduardo Toniolli",
-      "total": 1
-    },
-    {
-      "autor": "Esteban Paulón / M. Fein",
-      "total": 1
-    },
-    {
-      "autor": "José Pablo Carro",
-      "total": 1
-    },
-    {
-      "autor": "Julian Pinciaroli",
-      "total": 1
-    },
-    {
-      "autor": "Julián Pinciaroli",
-      "total": 1
-    },
-    {
-      "autor": "MARZIOTTA, GISELA",
-      "total": 1
-    },
-    {
-      "autor": "Maria Gisela Marziotta",
-      "total": 1
-    },
-    {
-      "autor": "Maximiliano Ferraro",
-      "total": 1
-    },
-    {
-      "autor": "Mercedes de Mendieta",
-      "total": 1
-    },
-    {
-      "autor": "Mónica Macha",
-      "total": 1
-    },
-    {
-      "autor": "Natalia Sarapura",
-      "total": 1
-    },
-    {
-      "autor": "No disponible",
-      "total": 1
-    },
-    {
-      "autor": "Oscar Agost Carreño",
-      "total": 1
-    },
-    {
-      "autor": "Pablo Outes",
-      "total": 1
-    },
-    {
-      "autor": "Romina Del Plá y otros",
-      "total": 1
-    },
-    {
-      "autor": "Silvana Giudici",
-      "total": 1
+      "cantidad": 1
     }
   ],
   "year_tematica_matrix": {
@@ -288,149 +207,193 @@
     },
     "2026": {
       "IA": 10,
+      "Tecnologías Estratégicas": 10,
       "Innovación y Desarrollo Productivo": 4,
-      "Tecnologías Estratégicas": 8,
-      "Estrategia Tecnologica Nacional": 12
+      "Estrategia Tecnologica Nacional": 14
     }
   },
   "tipo_stats": [
     {
       "tipo": "MARCO REGULATORIO",
-      "total": 19,
-      "color": "#64748b"
+      "cantidad": 19,
+      "porcentaje": 27
     },
     {
       "tipo": "PROYECTO DE LEY",
-      "total": 18,
-      "color": "#64748b"
+      "cantidad": 18,
+      "porcentaje": 26
     },
     {
       "tipo": "FINANCIAMIENTO",
-      "total": 11,
-      "color": "#64748b"
+      "cantidad": 11,
+      "porcentaje": 16
     },
     {
       "tipo": "CREA ÓRGANOS",
-      "total": 8,
-      "color": "#64748b"
+      "cantidad": 9,
+      "porcentaje": 13
     },
     {
       "tipo": "DECLARATIVA",
-      "total": 4,
-      "color": "#64748b"
+      "cantidad": 4,
+      "porcentaje": 6
     },
     {
       "tipo": "EDUCATIVA",
-      "total": 3,
-      "color": "#64748b"
+      "cantidad": 3,
+      "porcentaje": 4
+    },
+    {
+      "tipo": "OTROS",
+      "cantidad": 3,
+      "porcentaje": 4
     },
     {
       "tipo": "PENAL",
-      "total": 2,
-      "color": "#64748b"
+      "cantidad": 2,
+      "porcentaje": 3
     },
     {
       "tipo": "MODIFICA LEY",
-      "total": 1,
-      "color": "#64748b"
+      "cantidad": 1,
+      "porcentaje": 1
     }
   ],
   "subtema_stats": [
     {
       "subtema": "Marco Regulatorio",
-      "total": 10
+      "cantidad": 10,
+      "porcentaje": 14
     },
     {
       "subtema": "Estrategía Nacional de Ciencia y Tecnologia",
-      "total": 9
+      "cantidad": 9,
+      "porcentaje": 13
     },
     {
       "subtema": "Deepfake y generación de contenido",
-      "total": 5
+      "cantidad": 5,
+      "porcentaje": 7
     },
     {
       "subtema": "Educación",
-      "total": 5
+      "cantidad": 5,
+      "porcentaje": 7
     },
     {
       "subtema": "Biotecnología",
-      "total": 4
+      "cantidad": 4,
+      "porcentaje": 6
     },
     {
       "subtema": "Implementación de la IA por parte de la Administración Publica",
-      "total": 4
-    },
-    {
-      "subtema": "Desarrollo Productivo",
-      "total": 3
-    },
-    {
-      "subtema": "Nuclear",
-      "total": 3
+      "cantidad": 4,
+      "porcentaje": 6
     },
     {
       "subtema": "Salud",
-      "total": 3
+      "cantidad": 4,
+      "porcentaje": 6
+    },
+    {
+      "subtema": "Desarrollo Productivo",
+      "cantidad": 3,
+      "porcentaje": 4
+    },
+    {
+      "subtema": "Nuclear",
+      "cantidad": 3,
+      "porcentaje": 4
     },
     {
       "subtema": "Sistema Nacional de Ciencía, Tecnología e Innovación (Sostenimiento y Financiación)",
-      "total": 3
+      "cantidad": 3,
+      "porcentaje": 4
     },
     {
       "subtema": "Utilización de la IA en el Sistema Educativo",
-      "total": 3
+      "cantidad": 3,
+      "porcentaje": 4
     },
     {
       "subtema": "Programas de innovación",
-      "total": 2
+      "cantidad": 2,
+      "porcentaje": 3
     },
     {
       "subtema": "Brecha Digital",
-      "total": 1
+      "cantidad": 1,
+      "porcentaje": 1
     },
     {
       "subtema": "Creación de Organismos especializados",
-      "total": 1
+      "cantidad": 1,
+      "porcentaje": 1
+    },
+    {
+      "subtema": "Defensa",
+      "cantidad": 1,
+      "porcentaje": 1
     },
     {
       "subtema": "Desarrollo productivo",
-      "total": 1
+      "cantidad": 1,
+      "porcentaje": 1
     },
     {
       "subtema": "Ecosistema Startup",
-      "total": 1
+      "cantidad": 1,
+      "porcentaje": 1
     },
     {
       "subtema": "Espcial",
-      "total": 1
+      "cantidad": 1,
+      "porcentaje": 1
     },
     {
       "subtema": "I+D",
-      "total": 1
+      "cantidad": 1,
+      "porcentaje": 1
+    },
+    {
+      "subtema": "Infraestructura Científica",
+      "cantidad": 1,
+      "porcentaje": 1
     },
     {
       "subtema": "Neurederechos",
-      "total": 1
+      "cantidad": 1,
+      "porcentaje": 1
     },
     {
       "subtema": "Politicas de Genero",
-      "total": 1
+      "cantidad": 1,
+      "porcentaje": 1
+    },
+    {
+      "subtema": "Propiedad Intelectual",
+      "cantidad": 1,
+      "porcentaje": 1
     },
     {
       "subtema": "Protección de datos biométricos",
-      "total": 1
+      "cantidad": 1,
+      "porcentaje": 1
     },
     {
       "subtema": "Reconocimiento Facil",
-      "total": 1
+      "cantidad": 1,
+      "porcentaje": 1
     },
     {
       "subtema": "Sector Antartico",
-      "total": 1
+      "cantidad": 1,
+      "porcentaje": 1
     },
     {
       "subtema": "Tecnología Cuantica",
-      "total": 1
+      "cantidad": 1,
+      "porcentaje": 1
     }
   ],
   "tematica_colors": {
@@ -1336,6 +1299,25 @@
       "pdf_path": "PDFs_Proyectos_Ley/2026/0253-D-2026.pdf"
     },
     {
+      "id": "0439-D-2026",
+      "titulo": "Sistema Nacional de Acceso Acelerado a Terapias Génicas Individualizadas para Enfermedades Poco Frecuentes y Ultra-raras (SNATIGEP). Creación",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Salud y Tecnología Médica",
+      "eje_score": 10,
+      "tematica": "Tecnologías Estratégicas",
+      "subtematica": "Salud",
+      "resumen": "Crea el SNATIGEP para acceso acelerado a terapias génicas individualizadas para enfermedades poco frecuentes y ultra-raras.",
+      "tipo": "CREA ÓRGANOS",
+      "paginas": 15,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0439-D-2026.pdf"
+    },
+    {
       "id": "0478-D-2026",
       "titulo": "Reunidos En Congreso Sancionan Con Fuerza De Ley: Ley De Regimen Juridico Para Startups Tecnologicas",
       "autores": [
@@ -1942,6 +1924,51 @@
       "tipo": "MARCO REGULATORIO",
       "paginas": 80,
       "pdf_path": "PDFs_Proyectos_Ley/2026/2049-D-2026.pdf"
+    },
+    {
+      "id": "2297-D-2026",
+      "titulo": "Régimen del Sistema Nacional de Propiedad Intelectual Acelerada para Pymes (SINPIAP).",
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "año": 2026,
+      "tematica": "Estrategia Tecnologica Nacional",
+      "subtematica": "Propiedad Intelectual",
+      "eje": "Estrategia Tecnologica Nacional",
+      "tipo": "OTROS",
+      "estado_cyt": "CYT",
+      "paginas": 0,
+      "resumen": "Establece el SINPIAP para acelerar protección y gestión de propiedad intelectual en pymes.",
+      "pdf_path": "PDFs_Proyectos_Ley/2026/2297-D-2026.pdf"
+    },
+    {
+      "id": "2296-D-2026",
+      "titulo": "Régimen de Infraestructura Tecnológica Estratégica para la Defensa (LITED).",
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "año": 2026,
+      "tematica": "Tecnologías Estratégicas",
+      "subtematica": "Defensa",
+      "eje": "Tecnologías Estratégicas",
+      "tipo": "OTROS",
+      "estado_cyt": "CYT",
+      "paginas": 0,
+      "resumen": "Crea el LITED para infraestructura tecnológica estratégica aplicada a defensa.",
+      "pdf_path": "PDFs_Proyectos_Ley/2026/2296-D-2026.pdf"
+    },
+    {
+      "id": "2295-D-2026",
+      "titulo": "Régimen de Infraestructura Científica Compartida (LICIC).",
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "año": 2026,
+      "tematica": "Estrategia Tecnologica Nacional",
+      "subtematica": "Infraestructura Científica",
+      "eje": "Estrategia Tecnologica Nacional",
+      "tipo": "OTROS",
+      "estado_cyt": "CYT",
+      "paginas": 0,
+      "resumen": "Crea el LICIC para infraestructura científica compartida con acceso y coordinación federal.",
+      "pdf_path": "PDFs_Proyectos_Ley/2026/2295-D-2026.pdf"
     }
   ]
 }
