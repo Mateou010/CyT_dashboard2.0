@@ -1,19 +1,19 @@
 {
   "metadata": {
     "generado": "2026-05-26T15:49:09.613Z",
-    "total": 70,
+    "total": 71,
     "fuente": "Comisión de Ciencia, Tecnología e Innovación Productiva — H. Cámara de Diputados",
     "periodo": "2025–2026",
     "con_autor": 67,
     "con_bloque": 67,
-    "generated_at": "2026-05-26T16:31:30.996Z",
+    "generated_at": "2026-06-02T18:09:37.458Z",
     "source": "manual_update"
   },
   "eje_stats": [
     {
       "eje": "Gobernanza e Institucionalidad CyT",
       "cantidad": 20,
-      "porcentaje": 29
+      "porcentaje": 28
     },
     {
       "eje": "Inteligencia Artificial",
@@ -28,7 +28,7 @@
     {
       "eje": "Educación y Formación CyT",
       "cantidad": 6,
-      "porcentaje": 9
+      "porcentaje": 8
     },
     {
       "eje": "Biotecnología",
@@ -61,6 +61,11 @@
       "porcentaje": 3
     },
     {
+      "eje": "Innovación y Desarrollo Productivo",
+      "cantidad": 1,
+      "porcentaje": 1
+    },
+    {
       "eje": "Neuroderechos",
       "cantidad": 1,
       "porcentaje": 1
@@ -80,19 +85,19 @@
     {
       "año": 2025,
       "cantidad": 32,
-      "porcentaje": 46
+      "porcentaje": 45
     },
     {
       "año": 2026,
-      "cantidad": 38,
-      "porcentaje": 54
+      "cantidad": 39,
+      "porcentaje": 55
     }
   ],
   "bloque_stats": [
     {
       "bloque": "COHERENCIA",
       "cantidad": 34,
-      "porcentaje": 49
+      "porcentaje": 48
     },
     {
       "bloque": "Unión por la Patria",
@@ -115,12 +120,12 @@
       "porcentaje": 4
     },
     {
-      "bloque": "Democracia para Siempre",
-      "cantidad": 2,
-      "porcentaje": 3
+      "bloque": "La Libertad Avanza",
+      "cantidad": 3,
+      "porcentaje": 4
     },
     {
-      "bloque": "La Libertad Avanza",
+      "bloque": "Democracia para Siempre",
       "cantidad": 2,
       "porcentaje": 3
     },
@@ -208,7 +213,7 @@
     "2026": {
       "IA": 10,
       "Tecnologías Estratégicas": 10,
-      "Innovación y Desarrollo Productivo": 4,
+      "Innovación y Desarrollo Productivo": 5,
       "Estrategia Tecnologica Nacional": 14
     }
   },
@@ -220,13 +225,13 @@
     },
     {
       "tipo": "PROYECTO DE LEY",
-      "cantidad": 18,
-      "porcentaje": 26
+      "cantidad": 19,
+      "porcentaje": 27
     },
     {
       "tipo": "FINANCIAMIENTO",
       "cantidad": 11,
-      "porcentaje": 16
+      "porcentaje": 15
     },
     {
       "tipo": "CREA ÓRGANOS",
@@ -286,6 +291,11 @@
       "porcentaje": 6
     },
     {
+      "subtema": "Desarrollo Productivo",
+      "cantidad": 4,
+      "porcentaje": 6
+    },
+    {
       "subtema": "Implementación de la IA por parte de la Administración Publica",
       "cantidad": 4,
       "porcentaje": 6
@@ -294,11 +304,6 @@
       "subtema": "Salud",
       "cantidad": 4,
       "porcentaje": 6
-    },
-    {
-      "subtema": "Desarrollo Productivo",
-      "cantidad": 3,
-      "porcentaje": 4
     },
     {
       "subtema": "Nuclear",
@@ -1969,6 +1974,21 @@
       "paginas": 0,
       "resumen": "Crea el LICIC para infraestructura científica compartida con acceso y coordinación federal.",
       "pdf_path": "PDFs_Proyectos_Ley/2026/2295-D-2026.pdf"
+    },
+    {
+      "id": "0005-PE-2026",
+      "titulo": "Régimen de Incentivo para Grandes Inversiones en Nuevas Industrias (Súper RIGI)",
+      "autor_principal": "Ejecutivo",
+      "bloque": "La Libertad Avanza",
+      "año": 2026,
+      "tematica": "Innovación y Desarrollo Productivo",
+      "subtematica": "Desarrollo Productivo",
+      "eje": "Innovación y Desarrollo Productivo",
+      "tipo": "PROYECTO DE LEY",
+      "estado_cyt": "CYT",
+      "paginas": 20,
+      "resumen": "Establece un régimen de incentivo para grandes inversiones en nuevas industrias, orientado a promover sectores productivos estratégicos y proyectos de gran escala.",
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0005-PE-2026.pdf"
     }
   ]
 }
