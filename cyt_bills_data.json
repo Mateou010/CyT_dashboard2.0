@@ -1,12 +1,12 @@
 {
   "metadata": {
     "generado": "2026-05-26T15:49:09.613Z",
-    "total": 71,
+    "total": 72,
     "fuente": "Comisión de Ciencia, Tecnología e Innovación Productiva — H. Cámara de Diputados",
     "periodo": "2025–2026",
     "con_autor": 67,
     "con_bloque": 67,
-    "generated_at": "2026-06-02T18:09:37.458Z",
+    "generated_at": "2026-06-09T19:48:30.578Z",
     "source": "manual_update"
   },
   "eje_stats": [
@@ -18,7 +18,7 @@
     {
       "eje": "Inteligencia Artificial",
       "cantidad": 16,
-      "porcentaje": 23
+      "porcentaje": 22
     },
     {
       "eje": "I+D y Financiamiento",
@@ -62,8 +62,8 @@
     },
     {
       "eje": "Innovación y Desarrollo Productivo",
-      "cantidad": 1,
-      "porcentaje": 1
+      "cantidad": 2,
+      "porcentaje": 3
     },
     {
       "eje": "Neuroderechos",
@@ -85,24 +85,24 @@
     {
       "año": 2025,
       "cantidad": 32,
-      "porcentaje": 45
+      "porcentaje": 44
     },
     {
       "año": 2026,
-      "cantidad": 39,
-      "porcentaje": 55
+      "cantidad": 40,
+      "porcentaje": 56
     }
   ],
   "bloque_stats": [
     {
       "bloque": "COHERENCIA",
-      "cantidad": 34,
-      "porcentaje": 48
+      "cantidad": 35,
+      "porcentaje": 49
     },
     {
       "bloque": "Unión por la Patria",
       "cantidad": 14,
-      "porcentaje": 20
+      "porcentaje": 19
     },
     {
       "bloque": "Innovación Federal",
@@ -163,7 +163,7 @@
   "top_autores": [
     {
       "autor": "Marcela Marina Pagano",
-      "cantidad": 34
+      "cantidad": 35
     },
     {
       "autor": "Juan M. López y otros",
@@ -213,20 +213,20 @@
     "2026": {
       "IA": 10,
       "Tecnologías Estratégicas": 10,
-      "Innovación y Desarrollo Productivo": 5,
+      "Innovación y Desarrollo Productivo": 6,
       "Estrategia Tecnologica Nacional": 14
     }
   },
   "tipo_stats": [
     {
-      "tipo": "MARCO REGULATORIO",
-      "cantidad": 19,
-      "porcentaje": 27
+      "tipo": "PROYECTO DE LEY",
+      "cantidad": 20,
+      "porcentaje": 28
     },
     {
-      "tipo": "PROYECTO DE LEY",
+      "tipo": "MARCO REGULATORIO",
       "cantidad": 19,
-      "porcentaje": 27
+      "porcentaje": 26
     },
     {
       "tipo": "FINANCIAMIENTO",
@@ -321,6 +321,11 @@
       "porcentaje": 4
     },
     {
+      "subtema": "Ecosistema Startup",
+      "cantidad": 2,
+      "porcentaje": 3
+    },
+    {
       "subtema": "Programas de innovación",
       "cantidad": 2,
       "porcentaje": 3
@@ -342,11 +347,6 @@
     },
     {
       "subtema": "Desarrollo productivo",
-      "cantidad": 1,
-      "porcentaje": 1
-    },
-    {
-      "subtema": "Ecosistema Startup",
       "cantidad": 1,
       "porcentaje": 1
     },
@@ -1989,6 +1989,21 @@
       "paginas": 20,
       "resumen": "Establece un régimen de incentivo para grandes inversiones en nuevas industrias, orientado a promover sectores productivos estratégicos y proyectos de gran escala.",
       "pdf_path": "PDFs_Proyectos_Ley/2026/0005-PE-2026.pdf"
+    },
+    {
+      "id": "2665-D-2026",
+      "titulo": "Régimen de Modernización Societaria, Jurisdicción Ágil y Responsabilidad Humana (SIMOSO)",
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "año": 2026,
+      "tematica": "Innovación y Desarrollo Productivo",
+      "subtematica": "Ecosistema Startup",
+      "eje": "Innovación y Desarrollo Productivo",
+      "tipo": "PROYECTO DE LEY",
+      "estado_cyt": "CYT",
+      "paginas": 15,
+      "resumen": "Moderniza el régimen societario mediante digitalización plena, inscripción ágil, red federal de registros, sociedades automatizadas, tokenización de participaciones, financiamiento emprendedor y estructuras simplificadas para MiPyMEs.",
+      "pdf_path": "PDFs_Proyectos_Ley/2026/2665-D-2026.pdf"
     }
   ]
 }
