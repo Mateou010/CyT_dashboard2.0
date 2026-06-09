@@ -713,7 +713,7 @@ tr:hover{background:var(--surface2)}
   position:fixed;right:30px;bottom:28px;z-index:1400;
   width:82px;height:82px;border-radius:50%;border:1px solid rgba(170,255,0,.45);
   background:linear-gradient(140deg,rgba(170,255,0,.18),rgba(0,212,255,.16));
-  color:var(--text);font-size:34px;display:flex;align-items:center;justify-content:center;
+  color:var(--text);font-size:34px;display:none;align-items:center;justify-content:center;
   box-shadow:0 14px 34px rgba(0,0,0,.52);transition:all .2s;
 }
 .chatbot-fab:hover{transform:translateY(-3px) scale(1.04);border-color:var(--lime);color:var(--lime)}
@@ -722,7 +722,7 @@ tr:hover{background:var(--surface2)}
   background:var(--surface);border:1px solid var(--border);border-radius:14px;
   display:none;flex-direction:column;overflow:hidden;box-shadow:0 16px 44px rgba(0,0,0,.55);
 }
-.chatbot-panel.active{display:flex}
+.chatbot-panel.active{display:none}
 .chatbot-head{
   display:flex;align-items:center;justify-content:space-between;gap:8px;
   padding:12px 14px;border-bottom:1px solid var(--border);background:rgba(170,255,0,.06);
