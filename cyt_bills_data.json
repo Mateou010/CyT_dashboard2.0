@@ -1,29 +1,29 @@
 {
   "metadata": {
     "generado": "2026-05-26T15:49:09.613Z",
-    "total": 72,
+    "total": 76,
     "fuente": "Comisión de Ciencia, Tecnología e Innovación Productiva — H. Cámara de Diputados",
     "periodo": "2025–2026",
-    "con_autor": 67,
-    "con_bloque": 67,
-    "generated_at": "2026-06-09T19:48:30.578Z",
+    "con_autor": 75,
+    "con_bloque": 75,
+    "generated_at": "2026-07-01T15:53:58.717Z",
     "source": "manual_update"
   },
   "eje_stats": [
     {
       "eje": "Gobernanza e Institucionalidad CyT",
-      "cantidad": 20,
+      "cantidad": 21,
       "porcentaje": 28
     },
     {
       "eje": "Inteligencia Artificial",
-      "cantidad": 16,
-      "porcentaje": 22
+      "cantidad": 18,
+      "porcentaje": 24
     },
     {
       "eje": "I+D y Financiamiento",
-      "cantidad": 8,
-      "porcentaje": 11
+      "cantidad": 9,
+      "porcentaje": 12
     },
     {
       "eje": "Educación y Formación CyT",
@@ -33,12 +33,12 @@
     {
       "eje": "Biotecnología",
       "cantidad": 4,
-      "porcentaje": 6
+      "porcentaje": 5
     },
     {
       "eje": "Salud y Tecnología Médica",
       "cantidad": 4,
-      "porcentaje": 6
+      "porcentaje": 5
     },
     {
       "eje": "Nuclear y Energía",
@@ -85,29 +85,29 @@
     {
       "año": 2025,
       "cantidad": 32,
-      "porcentaje": 44
+      "porcentaje": 42
     },
     {
       "año": 2026,
-      "cantidad": 40,
-      "porcentaje": 56
+      "cantidad": 44,
+      "porcentaje": 58
     }
   ],
   "bloque_stats": [
     {
       "bloque": "COHERENCIA",
-      "cantidad": 35,
-      "porcentaje": 49
+      "cantidad": 36,
+      "porcentaje": 47
     },
     {
       "bloque": "Unión por la Patria",
-      "cantidad": 14,
-      "porcentaje": 19
+      "cantidad": 16,
+      "porcentaje": 21
     },
     {
       "bloque": "Innovación Federal",
       "cantidad": 4,
-      "porcentaje": 6
+      "porcentaje": 5
     },
     {
       "bloque": "Coalición Cívica",
@@ -150,6 +150,11 @@
       "porcentaje": 1
     },
     {
+      "bloque": "Produccion y Trabajo",
+      "cantidad": 1,
+      "porcentaje": 1
+    },
+    {
       "bloque": "Provincias Unidas",
       "cantidad": 1,
       "porcentaje": 1
@@ -163,7 +168,7 @@
   "top_autores": [
     {
       "autor": "Marcela Marina Pagano",
-      "cantidad": 35
+      "cantidad": 36
     },
     {
       "autor": "Juan M. López y otros",
@@ -186,6 +191,10 @@
       "cantidad": 2
     },
     {
+      "autor": "Adriana Cristina Serquis",
+      "cantidad": 1
+    },
+    {
       "autor": "AGUIRRE, MANUEL IGNACIO",
       "cantidad": 1
     },
@@ -196,52 +205,48 @@
     {
       "autor": "ARAUJO HERNÁNDEZ, JORGE NERI",
       "cantidad": 1
-    },
-    {
-      "autor": "Ariel Rauschenberger y otros",
-      "cantidad": 1
     }
   ],
   "year_tematica_matrix": {
     "2025": {
+      "Estrategia Tecnologica Nacional": 12,
       "IA": 13,
       "Innovación y Desarrollo Productivo": 3,
-      "Estrategia Tecnologica Nacional": 12,
       "Privacidad Digital / Derechos Digitales": 2,
       "Tecnologías Estratégicas": 2
     },
     "2026": {
-      "IA": 10,
-      "Tecnologías Estratégicas": 10,
+      "Estrategia Tecnologica Nacional": 16,
+      "IA": 12,
       "Innovación y Desarrollo Productivo": 6,
-      "Estrategia Tecnologica Nacional": 14
+      "Tecnologías Estratégicas": 10
     }
   },
   "tipo_stats": [
     {
-      "tipo": "PROYECTO DE LEY",
+      "tipo": "MARCO REGULATORIO",
       "cantidad": 20,
-      "porcentaje": 28
+      "porcentaje": 26
     },
     {
-      "tipo": "MARCO REGULATORIO",
-      "cantidad": 19,
+      "tipo": "PROYECTO DE LEY",
+      "cantidad": 20,
       "porcentaje": 26
     },
     {
       "tipo": "FINANCIAMIENTO",
-      "cantidad": 11,
-      "porcentaje": 15
+      "cantidad": 12,
+      "porcentaje": 16
     },
     {
       "tipo": "CREA ÓRGANOS",
-      "cantidad": 9,
-      "porcentaje": 13
+      "cantidad": 11,
+      "porcentaje": 14
     },
     {
       "tipo": "DECLARATIVA",
       "cantidad": 4,
-      "porcentaje": 6
+      "porcentaje": 5
     },
     {
       "tipo": "EDUCATIVA",
@@ -266,14 +271,19 @@
   ],
   "subtema_stats": [
     {
-      "subtema": "Marco Regulatorio",
+      "subtema": "Estrategía Nacional de Ciencia y Tecnologia",
       "cantidad": 10,
-      "porcentaje": 14
+      "porcentaje": 13
     },
     {
-      "subtema": "Estrategía Nacional de Ciencia y Tecnologia",
-      "cantidad": 9,
+      "subtema": "Marco Regulatorio",
+      "cantidad": 10,
       "porcentaje": 13
+    },
+    {
+      "subtema": "Implementación de la IA por parte de la Administración Publica",
+      "cantidad": 6,
+      "porcentaje": 8
     },
     {
       "subtema": "Deepfake y generación de contenido",
@@ -288,30 +298,25 @@
     {
       "subtema": "Biotecnología",
       "cantidad": 4,
-      "porcentaje": 6
+      "porcentaje": 5
     },
     {
       "subtema": "Desarrollo Productivo",
       "cantidad": 4,
-      "porcentaje": 6
-    },
-    {
-      "subtema": "Implementación de la IA por parte de la Administración Publica",
-      "cantidad": 4,
-      "porcentaje": 6
+      "porcentaje": 5
     },
     {
       "subtema": "Salud",
       "cantidad": 4,
-      "porcentaje": 6
-    },
-    {
-      "subtema": "Nuclear",
-      "cantidad": 3,
-      "porcentaje": 4
+      "porcentaje": 5
     },
     {
       "subtema": "Sistema Nacional de Ciencía, Tecnología e Innovación (Sostenimiento y Financiación)",
+      "cantidad": 4,
+      "porcentaje": 5
+    },
+    {
+      "subtema": "Nuclear",
       "cantidad": 3,
       "porcentaje": 4
     },
@@ -1285,6 +1290,21 @@
       "pdf_path": "PDFs_Proyectos_Ley/2026/0004-D-2026.pdf"
     },
     {
+      "id": "0005-PE-2026",
+      "titulo": "Régimen de Incentivo para Grandes Inversiones en Nuevas Industrias (Súper RIGI)",
+      "autor_principal": "Ejecutivo",
+      "bloque": "La Libertad Avanza",
+      "año": 2026,
+      "tematica": "Innovación y Desarrollo Productivo",
+      "subtematica": "Desarrollo Productivo",
+      "eje": "Innovación y Desarrollo Productivo",
+      "tipo": "PROYECTO DE LEY",
+      "estado_cyt": "CYT",
+      "paginas": 20,
+      "resumen": "Establece un régimen de incentivo para grandes inversiones en nuevas industrias, orientado a promover sectores productivos estratégicos y proyectos de gran escala.",
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0005-PE-2026.pdf"
+    },
+    {
       "id": "0253-D-2026",
       "titulo": "Congreso Sancionan Con Fuerza De Ley: Ley Nacional De Inteligencia Artificial Soberana Título I — Disposiciones Generales",
       "autores": [
@@ -1931,19 +1951,19 @@
       "pdf_path": "PDFs_Proyectos_Ley/2026/2049-D-2026.pdf"
     },
     {
-      "id": "2297-D-2026",
-      "titulo": "Régimen del Sistema Nacional de Propiedad Intelectual Acelerada para Pymes (SINPIAP).",
+      "id": "2295-D-2026",
+      "titulo": "Régimen de Infraestructura Científica Compartida (LICIC).",
       "autor_principal": "Marcela Marina Pagano",
       "bloque": "COHERENCIA",
       "año": 2026,
       "tematica": "Estrategia Tecnologica Nacional",
-      "subtematica": "Propiedad Intelectual",
+      "subtematica": "Infraestructura Científica",
       "eje": "Estrategia Tecnologica Nacional",
       "tipo": "OTROS",
       "estado_cyt": "CYT",
       "paginas": 0,
-      "resumen": "Establece el SINPIAP para acelerar protección y gestión de propiedad intelectual en pymes.",
-      "pdf_path": "PDFs_Proyectos_Ley/2026/2297-D-2026.pdf"
+      "resumen": "Crea el LICIC para infraestructura científica compartida con acceso y coordinación federal.",
+      "pdf_path": "PDFs_Proyectos_Ley/2026/2295-D-2026.pdf"
     },
     {
       "id": "2296-D-2026",
@@ -1961,34 +1981,19 @@
       "pdf_path": "PDFs_Proyectos_Ley/2026/2296-D-2026.pdf"
     },
     {
-      "id": "2295-D-2026",
-      "titulo": "Régimen de Infraestructura Científica Compartida (LICIC).",
+      "id": "2297-D-2026",
+      "titulo": "Régimen del Sistema Nacional de Propiedad Intelectual Acelerada para Pymes (SINPIAP).",
       "autor_principal": "Marcela Marina Pagano",
       "bloque": "COHERENCIA",
       "año": 2026,
       "tematica": "Estrategia Tecnologica Nacional",
-      "subtematica": "Infraestructura Científica",
+      "subtematica": "Propiedad Intelectual",
       "eje": "Estrategia Tecnologica Nacional",
       "tipo": "OTROS",
       "estado_cyt": "CYT",
       "paginas": 0,
-      "resumen": "Crea el LICIC para infraestructura científica compartida con acceso y coordinación federal.",
-      "pdf_path": "PDFs_Proyectos_Ley/2026/2295-D-2026.pdf"
-    },
-    {
-      "id": "0005-PE-2026",
-      "titulo": "Régimen de Incentivo para Grandes Inversiones en Nuevas Industrias (Súper RIGI)",
-      "autor_principal": "Ejecutivo",
-      "bloque": "La Libertad Avanza",
-      "año": 2026,
-      "tematica": "Innovación y Desarrollo Productivo",
-      "subtematica": "Desarrollo Productivo",
-      "eje": "Innovación y Desarrollo Productivo",
-      "tipo": "PROYECTO DE LEY",
-      "estado_cyt": "CYT",
-      "paginas": 20,
-      "resumen": "Establece un régimen de incentivo para grandes inversiones en nuevas industrias, orientado a promover sectores productivos estratégicos y proyectos de gran escala.",
-      "pdf_path": "PDFs_Proyectos_Ley/2026/0005-PE-2026.pdf"
+      "resumen": "Establece el SINPIAP para acelerar protección y gestión de propiedad intelectual en pymes.",
+      "pdf_path": "PDFs_Proyectos_Ley/2026/2297-D-2026.pdf"
     },
     {
       "id": "2665-D-2026",
@@ -2004,6 +2009,86 @@
       "paginas": 15,
       "resumen": "Moderniza el régimen societario mediante digitalización plena, inscripción ágil, red federal de registros, sociedades automatizadas, tokenización de participaciones, financiamiento emprendedor y estructuras simplificadas para MiPyMEs.",
       "pdf_path": "PDFs_Proyectos_Ley/2026/2665-D-2026.pdf"
+    },
+    {
+      "id": "2912-D-2026",
+      "titulo": "Ley Nacional de Inteligencia Artificial, Transparencia Algorítmica y Protección de Datos Personales en el Sector Público",
+      "autores": [
+        "Cristian Felipe Andino"
+      ],
+      "autor_principal": "Cristian Felipe Andino",
+      "bloque": "Unión por la Patria",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Inteligencia Artificial",
+      "eje_score": 10,
+      "tematica": "IA",
+      "subtematica": "Implementación de la IA por parte de la Administración Publica",
+      "resumen": "Establece principios, garantías y mecanismos de control para el diseño, adquisición, implementación y uso de sistemas de inteligencia artificial por parte del Estado Nacional, protegiendo derechos fundamentales, transparencia algorítmica, datos personales y supervisión humana.",
+      "tipo": "MARCO REGULATORIO",
+      "estado_cyt": "CYT",
+      "paginas": 8,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/2912-D-2026.pdf"
+    },
+    {
+      "id": "2988-D-2026",
+      "titulo": "Condiciones Base para la Sostenibilidad y Protección del Sistema Nacional de Ciencia, Tecnología e Innovación",
+      "autores": [
+        "Adriana Cristina Serquis"
+      ],
+      "autor_principal": "Adriana Cristina Serquis",
+      "bloque": "Unión por la Patria",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "I+D y Financiamiento",
+      "eje_score": 8,
+      "tematica": "Estrategia Tecnologica Nacional",
+      "subtematica": "Sistema Nacional de Ciencía, Tecnología e Innovación (Sostenimiento y Financiación)",
+      "resumen": "Define condiciones base para la sostenibilidad y protección del Sistema Nacional de Ciencia, Tecnología e Innovación, incluyendo responsabilidades institucionales, funcionamiento del sistema y criterios de resguardo presupuestario.",
+      "tipo": "FINANCIAMIENTO",
+      "estado_cyt": "CYT",
+      "paginas": 27,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/2988-D-2026.pdf"
+    },
+    {
+      "id": "3032-D-2026",
+      "titulo": "Creación del Sistema Nacional de Gemelos Digitales para la Planificación Estratégica y el Desarrollo Territorial",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Inteligencia Artificial",
+      "eje_score": 9,
+      "tematica": "IA",
+      "subtematica": "Implementación de la IA por parte de la Administración Publica",
+      "resumen": "Crea un sistema nacional de gemelos digitales para la planificación estratégica y el desarrollo territorial, con herramientas de simulación, análisis prospectivo y gestión pública basada en datos.",
+      "tipo": "CREA ÓRGANOS",
+      "estado_cyt": "CYT",
+      "paginas": 18,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/3032-D-2026.pdf"
+    },
+    {
+      "id": "3060-D-2026",
+      "titulo": "Ley de Creación del Ministerio de Ciencia, Tecnología y Universidades",
+      "autores": [
+        "Carlos Gustavo Jaime Quiroga"
+      ],
+      "autor_principal": "Carlos Gustavo Jaime Quiroga",
+      "bloque": "Produccion y Trabajo",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Gobernanza e Institucionalidad CyT",
+      "eje_score": 9,
+      "tematica": "Estrategia Tecnologica Nacional",
+      "subtematica": "Estrategía Nacional de Ciencia y Tecnologia",
+      "resumen": "Crea el Ministerio de Ciencia, Tecnología y Universidades como órgano rector del sistema universitario, del Sistema Nacional de Ciencia, Tecnología e Innovación y de la transferencia tecnológica.",
+      "tipo": "CREA ÓRGANOS",
+      "estado_cyt": "CYT",
+      "paginas": 8,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/3060-D-2026.pdf"
     }
   ]
 }
