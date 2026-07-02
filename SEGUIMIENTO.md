@@ -60,7 +60,7 @@ salida de `openssl rand -hex 32`).
 ### 4. Variables de entorno
 ```
 RESEND_API_KEY=...
-RESEND_AUDIENCE_ID=...
+RESEND_AUDIENCE_ID=...             (opcional; si no está, usa Contacts globales)
 EMAIL_FROM=Seguimiento <seguimiento@tu-dominio.com>
 SITE_URL=https://tu-sitio.vercel.app
 SUBSCRIBE_SECRET=...            (cadena larga y secreta)
@@ -68,7 +68,7 @@ OPENAI_API_KEY=...             (opcional)
 OPENAI_MODEL=gpt-4o-mini       (opcional)
 ```
 - En **Vercel** (para el formulario): Settings → Environment Variables.
-  Alcanza con: RESEND_API_KEY, RESEND_AUDIENCE_ID, EMAIL_FROM, SITE_URL, SUBSCRIBE_SECRET.
+  Alcanza con: RESEND_API_KEY, RESEND_AUDIENCE_ID (opcional), EMAIL_FROM, SITE_URL, SUBSCRIBE_SECRET.
 - En **GitHub** (para el cron): Settings → Secrets and variables → Actions.
   Todas las de arriba (el scraper usa RESEND_* , EMAIL_FROM, SITE_URL, SUBSCRIBE_SECRET, OPENAI_*).
 
