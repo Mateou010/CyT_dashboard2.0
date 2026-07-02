@@ -7,6 +7,7 @@
     "dev:static": "python3 -m http.server 8000",
     "seguimiento": "node run.js",
     "seguimiento:solo-nuevos": "node run.js --solo-nuevos",
+    "seguimiento:ultimo": "node run.js --ultimo",
     "broadcast": "node broadcast.js"
   },
   "engines": {

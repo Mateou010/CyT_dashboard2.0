@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: '20'
       - run: npm install
-      - run: node run.js
+      - run: node run.js --ultimo
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           RESEND_AUDIENCE_ID: ${{ secrets.RESEND_AUDIENCE_ID }}

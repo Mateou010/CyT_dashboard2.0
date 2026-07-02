@@ -9,6 +9,7 @@
 //
 // Uso:  node run.js               (nuevos + cambios de trámite)
 //       node run.js --solo-nuevos (solo carga nuevos, sin revisar trámites)
+//       node run.js --ultimo      (solo revisa el último proyecto del listado)
 // ============================================================
 import fs from 'node:fs';
 import path from 'node:path';
@@ -32,6 +33,7 @@ function guardarEstado(lista) {
 
 async function main() {
   const soloNuevos = process.argv.includes('--solo-nuevos');
+  const soloUltimo = process.argv.includes('--ultimo');
   const estado = leerEstado();
   const primeraCarga = estado.length === 0 && process.env.SEGUIMIENTO_NOTIFY_INITIAL !== 'true';
   const porExp = new Map(estado.map(p => [p.expediente, p]));
@@ -43,7 +45,8 @@ async function main() {
   const contactos = await listarConfirmados().catch(e => { console.error('No pude leer suscriptores:', e.message); return []; });
   console.log(`Suscriptores confirmados: ${contactos.length}`);
 
-  const proyectos = await listarProyectosLey();
+  const listado = await listarProyectosLey();
+  const proyectos = soloUltimo ? listado.slice(0, 1) : listado;
   console.log(`Proyectos de LEY en el listado: ${proyectos.length}`);
 
   let nuevos = 0, cambios = 0;
@@ -77,7 +80,7 @@ async function main() {
           console.log(`  Avisado a ${n} suscriptor(es).`);
         }
         nuevos++;
-      } else if (!soloNuevos) {
+      } else if (!soloNuevos && !soloUltimo) {
         // YA CONOCIDO: ¿cambió el trámite?
         const det = await getDetalle(item.expediente);
         const nuevoHash = hash(det.tramite);
@@ -96,7 +99,7 @@ async function main() {
         }
       }
     } catch (e) { console.error('Error con', item.expediente, e.message); }
-    await sleep(800); // cortesía con el servidor de Diputados
+    if (!soloUltimo) await sleep(800); // cortesía con el servidor de Diputados
   }
 
   guardarEstado([...porExp.values()]);
