@@ -4,12 +4,18 @@
   "type": "module",
   "scripts": {
     "dev": "npx vercel dev --listen 3000",
-    "dev:static": "python3 -m http.server 8000"
+    "dev:static": "python3 -m http.server 8000",
+    "seguimiento": "node run.js",
+    "seguimiento:solo-nuevos": "node run.js --solo-nuevos",
+    "broadcast": "node broadcast.js"
   },
   "engines": {
     "node": ">=18"
   },
   "dependencies": {
-    "@google/generative-ai": "^0.24.1"
+    "@google/generative-ai": "^0.24.1",
+    "cheerio": "^1.0.0",
+    "pdf-parse": "^1.1.1",
+    "resend": "^6.9.0"
   }
 }

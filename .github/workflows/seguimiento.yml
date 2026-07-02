@@ -1,0 +1,37 @@
+# Corre el seguimiento y commitea el estado actualizado al repo.
+name: Seguimiento de proyectos de ley
+
+on:
+  schedule:
+    # Cada 2 horas de 10 a 18 hs de Argentina (UTC-3), solo Lun-Vie.
+    # 10,12,14,16,18 ART = 13,15,17,19,21 UTC. GitHub Actions usa UTC.
+    - cron: '0 13,15,17,19,21 * * 1-5'
+  workflow_dispatch: {}       # botón para correrlo a mano desde GitHub
+
+permissions:
+  contents: write             # necesario para commitear el estado
+
+jobs:
+  seguimiento:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - run: node run.js
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_AUDIENCE_ID: ${{ secrets.RESEND_AUDIENCE_ID }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          SITE_URL: ${{ secrets.SITE_URL }}
+          SUBSCRIBE_SECRET: ${{ secrets.SUBSCRIBE_SECRET }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      - name: Commitear estado si cambió
+        run: |
+          git config user.name "seguimiento-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/proyectos-seguimiento.json
+          git diff --staged --quiet || git commit -m "Actualiza estado de seguimiento [skip ci]"
+          git push
