@@ -803,9 +803,14 @@
 
             form.addEventListener('submit', async (event) => {
                 event.preventDefault();
-                const email = form.email.value.trim();
+                const email = form.elements.email.value.trim();
+                const button = form.querySelector('button[type="submit"]');
                 msg.className = 'subscribe-message';
                 msg.textContent = 'Guardando tu suscripción...';
+                if (button) {
+                    button.disabled = true;
+                    button.textContent = 'Guardando...';
+                }
 
                 try {
                     const response = await fetch('/api/subscribe', {
@@ -821,6 +826,11 @@
                 } catch (error) {
                     msg.className = 'subscribe-message error';
                     msg.textContent = error.message || 'No se pudo conectar. Probá de nuevo.';
+                } finally {
+                    if (button) {
+                        button.disabled = false;
+                        button.textContent = 'Recibir alertas';
+                    }
                 }
             });
         }
@@ -897,6 +907,7 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
+            setupSubscribeForm();
             init().then(() => {
                 animateNumbers();
             });
