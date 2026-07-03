@@ -88,29 +88,7 @@ def normalize(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
-def score_axis(lines, axis):
-    pos = 0
-    neg = 0
-    evidence = []
-
-    for idx, raw in enumerate(lines, start=1):
-        line = raw.lower()
-        if not line:
-            continue
-
-        pos_hits = [k for k in axis["positive"] if k in line]
-        neg_hits = [k for k in axis["negative"] if k in line]
-
-        if pos_hits:
-            pos += len(pos_hits)
-        if neg_hits:
-            neg += len(neg_hits)
-
-        if pos_hits or neg_hits:
-            snippet = normalize(raw)
-            strength = abs(len(pos_hits) - len(neg_hits)) + len(pos_hits) + len(neg_hits)
-            evidence.append((strength, idx, snippet, pos_hits, neg_hits))
-
+def _finalize_axis(pos, neg, evidence, axis):
     total = pos + neg
     if total == 0:
         score = 5.0
@@ -140,6 +118,68 @@ def score_axis(lines, axis):
         top = [f"Sin evidencia textual fuerte para {axis['title']}."]
 
     return score, top
+
+
+def score_axis(lines, axis):
+    pos = 0
+    neg = 0
+    evidence = []
+
+    for idx, raw in enumerate(lines, start=1):
+        line = raw.lower()
+        if not line:
+            continue
+
+        pos_hits = [k for k in axis["positive"] if k in line]
+        neg_hits = [k for k in axis["negative"] if k in line]
+
+        if pos_hits:
+            pos += len(pos_hits)
+        if neg_hits:
+            neg += len(neg_hits)
+
+        if pos_hits or neg_hits:
+            snippet = normalize(raw)
+            strength = abs(len(pos_hits) - len(neg_hits)) + len(pos_hits) + len(neg_hits)
+            evidence.append((strength, idx, snippet, pos_hits, neg_hits))
+
+    return _finalize_axis(pos, neg, evidence, axis)
+
+
+def score_all_axes(lines, axes):
+    """Puntua todos los ejes en UNA sola pasada sobre las lineas.
+
+    Equivalente exacto a llamar score_axis(lines, axis) por cada eje,
+    pero recorriendo `lines` una unica vez.
+    """
+    acc = {a["key"]: {"pos": 0, "neg": 0, "evidence": []} for a in axes}
+
+    for idx, raw in enumerate(lines, start=1):
+        line = raw.lower()
+        if not line:
+            continue
+
+        snippet = None
+        for axis in axes:
+            pos_hits = [k for k in axis["positive"] if k in line]
+            neg_hits = [k for k in axis["negative"] if k in line]
+            if not pos_hits and not neg_hits:
+                continue
+
+            a = acc[axis["key"]]
+            a["pos"] += len(pos_hits)
+            a["neg"] += len(neg_hits)
+            if snippet is None:
+                snippet = normalize(raw)
+            strength = abs(len(pos_hits) - len(neg_hits)) + len(pos_hits) + len(neg_hits)
+            a["evidence"].append((strength, idx, snippet, pos_hits, neg_hits))
+
+    return {
+        axis["key"]: _finalize_axis(acc[axis["key"]]["pos"],
+                                    acc[axis["key"]]["neg"],
+                                    acc[axis["key"]]["evidence"], axis)
+        for axis in axes
+    }
 
 
 def compute_quality(full_text: str):
@@ -222,8 +262,9 @@ def main():
         evidence_map = {}
         evidence_lines = []
 
+        axis_results = score_all_axes(lines, AXES)
         for axis in AXES:
-            score, evidence = score_axis(lines, axis)
+            score, evidence = axis_results[axis["key"]]
             scores[axis["key"]] = score
             evidence_map[axis["key"]] = evidence
             evidence_lines.append(evidence[0] if evidence else f"Sin evidencia para {axis['title']}.")

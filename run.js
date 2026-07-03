@@ -19,6 +19,7 @@ import { listarProyectosLey, getDetalle, getPdfUrl, descargarPdf } from './lib/s
 import { extraerTextoPdf, resumir } from './lib/summarize.js';
 import { listarConfirmados } from './lib/subscribers.js';
 import { enviarATodos, htmlNuevoProyecto, htmlActualizacion } from './lib/mailer.js';
+import { seleccionarVentana, tramiteCambio } from './lib/seguimiento-utils.js';
 
 const ESTADO_PATH = process.env.ESTADO_PATH || path.join(process.cwd(), 'data', 'proyectos-seguimiento.json');
 const hash = (s) => crypto.createHash('sha1').update(s || '').digest('hex');
@@ -55,7 +56,8 @@ async function main() {
   console.log(`Suscriptores confirmados: ${contactos.length}`);
 
   const listado = await listarProyectosLey();
-  const proyectos = cantidadRecientes ? listado.slice(0, cantidadRecientes) : listado;
+  // Ventana = los N MÁS NUEVOS por fecha (no las primeras N filas del scrape).
+  const proyectos = seleccionarVentana(listado, cantidadRecientes);
   console.log(`Proyectos de LEY revisados: ${proyectos.length}`);
 
   let nuevos = 0, cambios = 0;
@@ -89,11 +91,11 @@ async function main() {
           console.log(`  Avisado a ${n} suscriptor(es).`);
         }
         nuevos++;
-      } else if (!soloNuevos && !cantidadRecientes) {
-        // YA CONOCIDO: ¿cambió el trámite?
+      } else if (!soloNuevos) {
+        // YA CONOCIDO: ¿cambió el trámite? (también en la ventana --recientes)
         const det = await getDetalle(item.expediente);
         const nuevoHash = hash(det.tramite);
-        if (nuevoHash !== guardado.tramite_hash && !(guardado.updates || []).includes(nuevoHash)) {
+        if (tramiteCambio(nuevoHash, guardado)) {
           console.log('→ Cambio de trámite en:', item.expediente);
           guardado.tramite_hash = nuevoHash;
           guardado.giro = det.giro;
@@ -108,7 +110,7 @@ async function main() {
         }
       }
     } catch (e) { console.error('Error con', item.expediente, e.message); }
-    if (!cantidadRecientes) await sleep(800); // cortesía con el servidor de Diputados
+    await sleep(800); // cortesía con el servidor de Diputados (ahora también en --recientes)
   }
 
   guardarEstado([...porExp.values()]);

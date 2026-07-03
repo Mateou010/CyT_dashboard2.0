@@ -514,11 +514,16 @@ def merge_with_existing(parsed_bill: dict, existing_bill: dict, rel_pdf_path: st
 def parse_pdf(filepath: str) -> dict:
     """Extrae datos estructurados de un PDF."""
     filename = os.path.basename(filepath)
-    # Parse filename: XXXX-C-YYYY.pdf
-    parts = filename.replace('.pdf', '').split('-')
-    bill_num = parts[0] if parts else "0000"
-    camara_code = parts[1] if len(parts) > 1 else "D"
-    year = int(parts[2]) if len(parts) > 2 else 2025
+    # Parse filename esperado: NNNN-X-YYYY.pdf
+    stem = filename[:-4] if filename.lower().endswith('.pdf') else filename
+    m = re.match(r'^(\d{3,4})-([A-Za-z]{1,3})-(\d{4})$', stem.strip())
+    if not m:
+        print(f"  ⚠️ Nombre de PDF no matchea formato NNNN-X-YYYY, se saltea: {filename}")
+        return None
+    bill_num, camara_code, year_str = m.groups()
+    camara_code = camara_code.upper()
+    year = int(year_str)
+    bill_id = normalize_bill_id(stem) or stem
 
     camara = "Diputados" if camara_code == "D" else "Senado"
 
@@ -556,7 +561,7 @@ def parse_pdf(filepath: str) -> dict:
     destinatarios = infer_destinatarios(all_text)
 
     return {
-        "id": filename.replace('.pdf', ''),
+        "id": bill_id,
         "titulo": title,
         "autores": authors,
         "autor_principal": authors[0] if authors else "Desconocido",
@@ -571,157 +576,6 @@ def parse_pdf(filepath: str) -> dict:
         "resumen": resumen,
         "expediente": f"{bill_num}/{year}",
     }
-
-
-# ─── DATOS HISTÓRICOS SIMULADOS (2015–2024) ──────────────────────────────────
-
-LEGISLADORES_SIMULADOS = [
-    "Mario Negri", "Elisa Carrió", "Sergio Massa", "Axel Kicillof",
-    "Martín Lousteau", "Graciela Camaño", "Victoria Villarruel",
-    "Luis Petri", "Emilio Monzó", "Paula Oliveto Lago",
-    "Juan Manuel López", "Marcela Campagnoli", "Maximiliano Ferraro",
-    "Esteban Paulón", "Mónica Fein", "Pamela Calletti", "Diego Bossio",
-    "Cristian Ritondo", "Waldo Wolff", "Silvia Lospennato",
-    "Fernando Iglesias", "Pablo Tonelli", "Rogelio Frigerio",
-    "Alfredo Cornejo", "Eduardo Bucca", "Graciela Ocaña",
-]
-
-TITULOS_SIMULADOS = {
-    "Tecnología / IA": [
-        "Régimen de Promoción de la Economía del Conocimiento",
-        "Marco Regulatorio de Inteligencia Artificial",
-        "Ley de Gobierno Digital y Servicios Electrónicos",
-        "Programa Nacional de Ciberseguridad",
-        "Regulación del Trabajo en Plataformas Digitales",
-    ],
-    "Educación": [
-        "Ley de Financiamiento Educativo",
-        "Creación del Programa Nacional de Alfabetización Digital",
-        "Modificación de la Ley de Educación Superior",
-        "Fondo de Becas para Estudiantes de Bajos Recursos",
-        "Régimen de la Educación Técnico Profesional",
-    ],
-    "Salud": [
-        "Ley de Acceso a Medicamentos Genéricos",
-        "Creación del Sistema Nacional de Salud Mental",
-        "Regulación de la Telemedicina",
-        "Ley de Trasplante de Órganos — Donación Presunta",
-        "Programa de Prevención de Enfermedades Crónicas",
-    ],
-    "Economía / Finanzas": [
-        "Reforma del Sistema Tributario Nacional",
-        "Ley de Inversiones Extranjeras Directas",
-        "Creación del Fondo Soberano de Estabilización",
-        "Régimen de Deuda Pública y Transparencia Fiscal",
-        "Ley de PyMEs y Emprendedores",
-    ],
-    "Ambiente": [
-        "Ley de Presupuestos Mínimos para el Cambio Climático",
-        "Régimen de Energías Renovables",
-        "Protección de Glaciares y Periglacial",
-        "Gestión Integral de Residuos Sólidos Urbanos",
-        "Ley de Humedales",
-    ],
-    "Género / Diversidad": [
-        "Ley Micaela — Capacitación en Género",
-        "Cupo Laboral Travesti-Trans",
-        "Ampliación de la Ley de Paridad de Género",
-        "Violencia Económica y Patrimonial",
-        "Plan Nacional de Prevención del Femicidio",
-    ],
-    "Seguridad / Justicia": [
-        "Reforma del Código Procesal Penal",
-        "Creación de la Unidad Fiscal de Crimen Organizado",
-        "Ley de Narcomenudeo y Prevención",
-        "Regulación del Sistema Penitenciario Federal",
-        "Modificación del Régimen de Menores en Conflicto con la Ley",
-    ],
-    "Trabajo / Social": [
-        "Ley de Teletrabajo — Actualización",
-        "Creación del Seguro de Desempleo Universal",
-        "Reforma del Sistema Jubilatorio",
-        "Ley de Economía Social y Solidaria",
-        "Programa Nacional de Vivienda Popular",
-    ],
-    "Infraestructura": [
-        "Plan Nacional de Obras Hidráulicas",
-        "Concesión de Autopistas y Rutas Nacionales",
-        "Modernización del Ferrocarril Belgrano Cargas",
-        "Ley de Obras Públicas — Transparencia y Control",
-        "Proyecto de Ampliación Aeropuerto Internacional Ezeiza",
-    ],
-    "Soberanía / Defensa": [
-        "Ley de Defensa Nacional — Actualización",
-        "Régimen de Activos Estratégicos Nacionales",
-        "Proyecto de Modernización de las Fuerzas Armadas",
-        "Soberanía Tecnológica — Protección de Infraestructura Crítica",
-        "Ley de Inteligencia Nacional",
-    ],
-    "Otros": [
-        "Modificación de Diversas Normas Legales",
-        "Creación de Comisión Bicameral de Seguimiento",
-        "Declaración de Interés Nacional",
-        "Restitución de Vigencia de Artículos Derogados",
-        "Fondo Especial para Zonas de Emergencia",
-    ],
-}
-
-YEARS_COUNTS = {
-    2015: 7842, 2016: 8123, 2017: 8567, 2018: 7934, 2019: 8901,
-    2020: 5234, 2021: 7123, 2022: 8456, 2023: 9012, 2024: 8234,
-}
-
-ESTADOS_DIST = {
-    "En Comisión": 0.62,
-    "Aprobado": 0.24,
-    "Archivado": 0.14,
-}
-
-MONTHLY_WEIGHTS = [0.06, 0.07, 0.09, 0.09, 0.10, 0.09, 0.08, 0.07, 0.10, 0.10, 0.09, 0.06]
-
-
-def generate_historical_data() -> list:
-    """Genera datos históricos simulados para 2015–2024."""
-    random.seed(42)
-    bills = []
-    bill_id_counter = 1
-
-    topics_list = list(TOPICS.keys()) + ["Otros"]
-    topic_weights = [0.18, 0.15, 0.10, 0.12, 0.08, 0.07, 0.07, 0.08, 0.06, 0.05, 0.04]
-
-    for year, total in YEARS_COUNTS.items():
-        # Generar una muestra representativa (no todos los proyectos, sino ~200/año para el demo)
-        sample_size = 200
-        for _ in range(sample_size):
-            topic = random.choices(topics_list, weights=topic_weights)[0]
-            titulo_list = TITULOS_SIMULADOS.get(topic, TITULOS_SIMULADOS["Otros"])
-            titulo = random.choice(titulo_list)
-            autor = random.choice(LEGISLADORES_SIMULADOS)
-            camara = random.choices(CAMARAS, weights=[0.6, 0.4])[0]
-            month = random.choices(range(1, 13), weights=MONTHLY_WEIGHTS)[0]
-            # Estado ponderado
-            estado = random.choices(
-                list(ESTADOS_DIST.keys()),
-                weights=list(ESTADOS_DIST.values())
-            )[0]
-
-            bills.append({
-                "id": f"{bill_id_counter:04d}-{'D' if camara == 'Diputados' else 'S'}-{year}",
-                "titulo": titulo,
-                "autores": [autor],
-                "autor_principal": autor,
-                "camara": camara,
-                "año": year,
-                "mes": month,
-                "tema": topic,
-                "estado": estado,
-                "resumen": f"Proyecto presentado en {year} sobre {topic.lower()}.",
-                "expediente": f"{bill_id_counter:04d}/{year}",
-                "simulado": True,
-            })
-            bill_id_counter += 1
-
-    return bills
 
 
 def main():
@@ -742,10 +596,11 @@ def main():
         filepath = os.path.join(script_dir, rel_path)
         print(f"  Procesando {rel_path}...", end=" ")
         parsed_bill = parse_pdf(filepath)
-        existing_bill = existing_by_id.get(bill_id)
+        norm_id = normalize_bill_id(bill_id) or bill_id
+        existing_bill = existing_by_id.get(norm_id) or existing_by_id.get(bill_id)
 
         if parsed_bill:
-            bill = merge_with_existing(parsed_bill, existing_bill, rel_path, curated_by_id.get(bill_id))
+            bill = merge_with_existing(parsed_bill, existing_bill, rel_path, curated_by_id.get(norm_id))
             bills.append(bill)
             print(f"✓ '{bill['titulo'][:45]}' | {bill['tema']} | {bill['bloque']}")
         elif existing_bill:

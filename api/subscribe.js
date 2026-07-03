@@ -1,5 +1,9 @@
 // POST /api/subscribe body: { email }
-import { agregarContacto, missingSubscribeConfig } from '../lib/subscribers.js';
+// Doble opt-in: NO da de alta directo. Envía un email de confirmación con un
+// token firmado; el alta real la hace /api/confirm cuando el dueño del email
+// hace clic. Esto evita suscribir a terceros sin su consentimiento.
+import { mailConfirmacion } from '../lib/mailer.js';
+import { missingSubscribeConfig } from '../lib/subscribers.js';
 
 const isEmail = (value) => typeof value === 'string' && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 
@@ -16,13 +20,13 @@ export default async function handler(req, res) {
   if (!isEmail(email)) return res.status(400).json({ error: 'Email inválido' });
 
   try {
-    await agregarContacto(email);
+    await mailConfirmacion(email);
     return res.status(200).json({
       ok: true,
-      message: 'Gracias por suscribirte. Pronto vas a recibir los nuevos proyectos de ley en tiempo real, ya resumidos.',
+      message: 'Te enviamos un email para confirmar tu suscripción. Revisá tu casilla (y el spam) y hacé clic en el enlace.',
     });
   } catch (error) {
     console.error(error);
-    return res.status(500).json({ error: 'No se pudo completar la suscripción.' });
+    return res.status(500).json({ error: 'No se pudo enviar el email de confirmación. Probá de nuevo.' });
   }
 }

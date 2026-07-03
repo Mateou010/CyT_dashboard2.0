@@ -25,6 +25,7 @@ def validate(data_path: Path) -> int:
         return 1
 
     data = json.loads(data_path.read_text(encoding="utf-8"))
+    base_dir = data_path.resolve().parent
     bills = data.get("bills", [])
     metadata_total = data.get("metadata", {}).get("total")
     errors = []
@@ -48,7 +49,10 @@ def validate(data_path: Path) -> int:
         pdf_path = bill.get("pdf_path", "")
         if pdf_path:
             rel = pdf_path[2:] if pdf_path.startswith("./") else pdf_path
-            if not Path(rel).exists():
+            candidate = Path(rel)
+            if not candidate.is_absolute():
+                candidate = base_dir / rel
+            if not candidate.exists():
                 errors.append(f"{bid}: ruta PDF inexistente '{pdf_path}'")
 
     if errors:
