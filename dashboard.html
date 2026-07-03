@@ -1657,12 +1657,12 @@ function renderTable() {
     const tr = document.createElement('tr');
     const dest = (b.destinatarios||['Desconocido'])[0];
     tr.innerHTML = `
-      <td style="color:var(--lime);font-weight:600">${b.id}</td>
-      <td><strong>${b.titulo}</strong></td>
-      <td>${b.autor_principal || 'Desconocido'}</td>
-      <td><span class="badge-bloque" style="background:rgba(170,255,0,0.1);color:var(--lime)">${b.bloque}</span></td>
-      <td><span style="font-size:11px;font-weight:600;color:${TIPO_COLORS[b.tipo]||'var(--muted)'}">${b.tipo||''}</span></td>
-      <td><button class="btn-reset" style="padding:4px 12px;font-size:11px" onclick="openBillModal('${b.id}')">Ver</button></td>
+      <td style="color:var(--lime);font-weight:600">${escHtml(b.id)}</td>
+      <td><strong>${escHtml(b.titulo)}</strong></td>
+      <td>${escHtml(b.autor_principal || 'Desconocido')}</td>
+      <td><span class="badge-bloque" style="background:rgba(170,255,0,0.1);color:var(--lime)">${escHtml(b.bloque)}</span></td>
+      <td><span style="font-size:11px;font-weight:600;color:${TIPO_COLORS[b.tipo]||'var(--muted)'}">${escHtml(b.tipo||'')}</span></td>
+      <td><button class="btn-reset" style="padding:4px 12px;font-size:11px" onclick="openBillModal('${escHtml(b.id)}')">Ver</button></td>
     `;
     tbody.appendChild(tr);
   });
@@ -1992,10 +1992,10 @@ function openSemaforoGroup(bucketName, groupKey, silent=false) {
     <div class="semaforo-detail-sub">${group.summary}</div>
     <div class="semaforo-bills">
       ${bills.length ? bills.map(b => `
-        <div class="semaforo-bill" onclick="openBillModal('${b.id}')">
-          <div class="semaforo-bill-id">${b.id}</div>
-          <div class="semaforo-bill-title">${b.titulo}</div>
-          <div class="semaforo-bill-meta">${b.autor_principal || 'Desconocido'} · ${b.bloque || 'Sin datos'}</div>
+        <div class="semaforo-bill" onclick="openBillModal('${escHtml(b.id)}')">
+          <div class="semaforo-bill-id">${escHtml(b.id)}</div>
+          <div class="semaforo-bill-title">${escHtml(b.titulo)}</div>
+          <div class="semaforo-bill-meta">${escHtml(b.autor_principal || 'Desconocido')} · ${escHtml(b.bloque || 'Sin datos')}</div>
         </div>
       `).join('') : '<div style="color:var(--muted);font-size:12px">Sin proyectos cargados todavía en este grupo. Cuando me pases el mapeo final, lo completamos.</div>'}
     </div>`;
@@ -2078,11 +2078,11 @@ function showProjectsByYear(year) {
     <div style="margin-top:20px">
       ${bills.map(b => `
         <div style="background:var(--surface2);padding:12px 14px;border-radius:8px;margin-bottom:10px;cursor:pointer;border:1px solid var(--border);transition:all .2s"
-             onclick="closeInsightModal();openBillModal('${b.id}')"
+             onclick="closeInsightModal();openBillModal('${escHtml(b.id)}')"
              onmouseover="this.style.borderColor='var(--blue)'"
              onmouseout="this.style.borderColor='var(--border)'">
-          <div style="font-weight:600;margin-bottom:4px;font-size:13px">${b.titulo}</div>
-          <div style="font-size:11px;color:var(--muted)">${b.autor_principal || 'Desconocido'} · ${b.bloque || 'Sin datos'}</div>
+          <div style="font-weight:600;margin-bottom:4px;font-size:13px">${escHtml(b.titulo)}</div>
+          <div style="font-size:11px;color:var(--muted)">${escHtml(b.autor_principal || 'Desconocido')} · ${escHtml(b.bloque || 'Sin datos')}</div>
         </div>`).join('')}
     </div>`;
   document.getElementById('insightModalBody').innerHTML = html;
@@ -2101,11 +2101,11 @@ function showProjectsByTipoPie(label) {
     <div style="margin-top:20px">
       ${bills.length ? bills.map(b => `
         <div style="background:var(--surface2);padding:12px 14px;border-radius:8px;margin-bottom:10px;cursor:pointer;border:1px solid var(--border);transition:all .2s"
-             onclick="closeInsightModal();openBillModal('${b.id}')"
+             onclick="closeInsightModal();openBillModal('${escHtml(b.id)}')"
              onmouseover="this.style.borderColor='var(--lime)'"
              onmouseout="this.style.borderColor='var(--border)'">
-          <div style="font-weight:600;margin-bottom:4px;font-size:13px">${b.titulo}</div>
-          <div style="font-size:11px;color:var(--muted)">${b.autor_principal || 'Desconocido'} · ${b.bloque || 'Sin datos'}</div>
+          <div style="font-weight:600;margin-bottom:4px;font-size:13px">${escHtml(b.titulo)}</div>
+          <div style="font-size:11px;color:var(--muted)">${escHtml(b.autor_principal || 'Desconocido')} · ${escHtml(b.bloque || 'Sin datos')}</div>
         </div>`).join('') : '<div style="font-size:12px;color:var(--muted)">No hay coincidencias automáticas para esta categoría.</div>'}
     </div>`;
   document.getElementById('insightModalBody').innerHTML = html;
@@ -2420,11 +2420,11 @@ function openSectorModal(idx) {
     <div style="margin-top:20px">
       ${s.bills.map(b => `
         <div style="background:var(--surface2);padding:12px 14px;border-radius:8px;margin-bottom:10px;cursor:pointer;border:1px solid var(--border);transition:all 0.2s"
-             onclick="closeInsightModal();openBillModal('${b.id}')"
+             onclick="closeInsightModal();openBillModal('${escHtml(b.id)}')"
              onmouseover="this.style.borderColor='${s.color}';this.style.background='rgba(255,255,255,0.04)'"
              onmouseout="this.style.borderColor='var(--border)';this.style.background='var(--surface2)'">
-          <div style="font-weight:600;margin-bottom:4px;font-size:13px">${b.titulo}</div>
-          <div style="font-size:11px;color:var(--muted)">${b.autor_principal || 'Desconocido'} &nbsp;·&nbsp; <span style="color:${s.color}">${b.bloque}</span></div>
+          <div style="font-weight:600;margin-bottom:4px;font-size:13px">${escHtml(b.titulo)}</div>
+          <div style="font-size:11px;color:var(--muted)">${escHtml(b.autor_principal || 'Desconocido')} &nbsp;·&nbsp; <span style="color:${s.color}">${escHtml(b.bloque)}</span></div>
         </div>
       `).join('')}
     </div>
@@ -2551,11 +2551,11 @@ function renderTipoGrid() {
     const color = TIPO_COLORS[tipo] || '#6b7280';
     return `
       <div class="tipo-legend-item" id="legItem_${CSS.escape(tipo)}"
-           onclick="openTipoModal('${tipo}')"
-           onmouseenter="hoverTipoSlice('${tipo}', true)"
-           onmouseleave="hoverTipoSlice('${tipo}', false)">
+           onclick="openTipoModal('${escHtml(tipo)}')"
+           onmouseenter="hoverTipoSlice('${escHtml(tipo)}', true)"
+           onmouseleave="hoverTipoSlice('${escHtml(tipo)}', false)">
         <div class="tipo-legend-dot" style="background:${color}"></div>
-        <div class="tipo-legend-name">${tipo}</div>
+        <div class="tipo-legend-name">${escHtml(tipo)}</div>
         <div class="tipo-legend-right">
           <div class="tipo-legend-count" style="color:${color}">${data.total}</div>
           <div class="tipo-legend-badges">
@@ -2703,19 +2703,19 @@ function openTipoModal(tipo) {
   const color = TIPO_COLORS[tipo] || '#6b7280';
 
   const html = `
-    <div class="modal-title" style="color:${color}">${tipo}</div>
+    <div class="modal-title" style="color:${color}">${escHtml(tipo)}</div>
     <div class="modal-subtitle">${bills.length} proyecto${bills.length !== 1 ? 's' : ''} de este tipo</div>
     <div style="margin-top:20px">
       ${bills.map(b => `
         <div style="background:var(--surface2);padding:12px 14px;border-radius:8px;margin-bottom:10px;cursor:pointer;border:1px solid var(--border);transition:all 0.2s"
-             onclick="closeInsightModal();openBillModal('${b.id}')"
+             onclick="closeInsightModal();openBillModal('${escHtml(b.id)}')"
              onmouseover="this.style.borderColor='${color}'"
              onmouseout="this.style.borderColor='var(--border)'">
-          <div style="font-weight:600;margin-bottom:4px;font-size:13px">${b.titulo}</div>
+          <div style="font-weight:600;margin-bottom:4px;font-size:13px">${escHtml(b.titulo)}</div>
           <div style="font-size:11px;color:var(--muted)">
-            ${b.autor_principal || 'Desconocido'} · ${b.bloque}
+            ${escHtml(b.autor_principal || 'Desconocido')} · ${escHtml(b.bloque)}
             <span style="margin-left:8px;padding:2px 6px;border-radius:6px;font-size:10px;font-weight:600;background:${b.dashboard==='SI'?'rgba(170,255,0,.1)':'rgba(0,212,255,.1)'};color:${b.dashboard==='SI'?'var(--lime)':'var(--blue)'}">
-              ${b.dashboard}
+              ${escHtml(b.dashboard)}
             </span>
           </div>
         </div>
@@ -3045,15 +3045,15 @@ function renderBlocHeatmap(container, blocData) {
 
   blocData.forEach(bloc => {
     const isMixedCargos = bloc.cargos > 0 && bloc.cargos < bloc.count;
-    html += `<tr class="heatmap-row" onclick="toggleBlocExpand('${bloc.name}')">
-      <td>${bloc.name} <span style="color:var(--muted);font-weight:400;font-size:11px">(${bloc.count})</span></td>
+    html += `<tr class="heatmap-row" onclick="toggleBlocExpand('${escHtml(bloc.name)}')">
+      <td>${escHtml(bloc.name)} <span style="color:var(--muted);font-weight:400;font-size:11px">(${bloc.count})</span></td>
       ${bloc.avgs.map((v,i) => {
         const hasRange = bloc.count > 1 && bloc.ranges[i].min !== bloc.ranges[i].max;
         const rangeHtml = hasRange
           ? `<span style="display:block;font-size:9px;color:rgba(255,255,255,0.45);font-weight:400;line-height:1">${bloc.ranges[i].min}–${bloc.ranges[i].max}</span>`
           : '';
         return `<td><span class="heatmap-cell" style="background:${ejeCellColor(v)};color:${ejeCellText(v)};cursor:pointer;flex-direction:column;height:auto;min-height:28px;padding:4px 6px;gap:1px"
-          onclick="event.stopPropagation();showBlocEvidenceTooltip(event,'${bloc.name}',${i})"
+          onclick="event.stopPropagation();showBlocEvidenceTooltip(event,'${escHtml(bloc.name)}',${i})"
           title="Clic para ver respaldo técnico">
           <span style="font-size:13px;font-weight:700;font-family:'Source Serif 4',serif">${v}</span>
           ${rangeHtml}
@@ -3076,10 +3076,10 @@ function renderBlocHeatmap(container, blocData) {
           </div>
           ${bloc.bills.map(b => {
             const dna = getBillDNA(b.id);
-            return `<div class="bloc-bill-row" onclick="openBillModal('${b.id}')">
-              <div class="bloc-bill-title" title="${b.titulo}">${b.titulo}</div>
+            return `<div class="bloc-bill-row" onclick="openBillModal('${escHtml(b.id)}')">
+              <div class="bloc-bill-title" title="${escHtml(b.titulo)}">${escHtml(b.titulo)}</div>
               ${dna.ejes.map((v,i) => `<div style="text-align:center"><span class="heatmap-cell" style="background:${ejeCellColor(v)};color:${ejeCellText(v)};width:32px;height:24px;font-size:11px;cursor:pointer"
-                onclick="event.stopPropagation();showBillEvidenceTooltip(event,'${b.id}',${i})">${v}</span></div>`).join('')}
+                onclick="event.stopPropagation();showBillEvidenceTooltip(event,'${escHtml(b.id)}',${i})">${v}</span></div>`).join('')}
               <div style="text-align:center;font-size:11px;color:${dna.cargos?'var(--orange)':'var(--muted)'}">${dna.cargos?'SÍ':'NO'}</div>
               <div style="text-align:center;font-size:11px;color:${dna.impuestos?'var(--pink)':'var(--muted)'}">${dna.impuestos?'SÍ':'NO'}</div>
             </div>`;
@@ -3105,10 +3105,10 @@ function renderBillHeatmap(container) {
   FILTERED.forEach(b => {
     const dna = getBillDNA(b.id);
     const shortTitle = b.titulo.length > 40 ? b.titulo.slice(0,40)+'…' : b.titulo;
-    html += `<tr class="heatmap-row" onclick="openBillModal('${b.id}')" title="${b.titulo}">
-      <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis">${shortTitle}<br><span style="font-size:10px;color:var(--muted);font-weight:400">${b.bloque}</span></td>
+    html += `<tr class="heatmap-row" onclick="openBillModal('${escHtml(b.id)}')" title="${escHtml(b.titulo)}">
+      <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis">${escHtml(shortTitle)}<br><span style="font-size:10px;color:var(--muted);font-weight:400">${escHtml(b.bloque)}</span></td>
       ${dna.ejes.map((v,i) => `<td><span class="heatmap-cell" style="background:${ejeCellColor(v)};color:${ejeCellText(v)};cursor:pointer"
-        onclick="event.stopPropagation();showBillEvidenceTooltip(event,'${b.id}',${i})"
+        onclick="event.stopPropagation();showBillEvidenceTooltip(event,'${escHtml(b.id)}',${i})"
         title="Clic para ver respaldo técnico">${v}</span></td>`).join('')}
       <td><span class="heatmap-bool" style="color:${dna.cargos?'var(--orange)':'var(--muted)'}">${dna.cargos?'SÍ':'NO'}</span></td>
       <td><span class="heatmap-bool" style="color:${dna.impuestos?'var(--pink)':'var(--muted)'}">${dna.impuestos?'SÍ':'NO'}</span></td>
@@ -3144,9 +3144,9 @@ function renderScatterPlot(container) {
     dots += `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="7"
       fill="${col}" fill-opacity="0.82" stroke="rgba(0,0,0,0.5)" stroke-width="1.5"
       style="cursor:pointer;transition:r 0.1s"
-      onmouseover="this.setAttribute('r','10');showScatterTip(event,'${safeTitle}','${b.autor_principal.replace(/'/g,"&#39;")}','${b.bloque}',${dna.ejes[0]},${dna.ejes[4]})"
+      onmouseover="this.setAttribute('r','10');showScatterTip(event,'${safeTitle}','${b.autor_principal.replace(/'/g,"&#39;")}','${escHtml(b.bloque)}',${dna.ejes[0]},${dna.ejes[4]})"
       onmouseout="this.setAttribute('r','7');hideScatterTip()"
-      onclick="openBillModal('${b.id}')">
+      onclick="openBillModal('${escHtml(b.id)}')">
       <title>${safeTitle}</title>
     </circle>`;
   });
@@ -3156,7 +3156,7 @@ function renderScatterPlot(container) {
   const legendItems = blocs.map(bl => `
     <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted)">
       <div style="width:10px;height:10px;border-radius:50%;background:${BLOQUE_COLOR[bl]||'#6b7280'};flex-shrink:0"></div>
-      <span>${bl}</span>
+      <span>${escHtml(bl)}</span>
     </div>`).join('');
 
   container.innerHTML = `
@@ -3198,8 +3198,8 @@ function renderScatterPlot(container) {
 function showScatterTip(event, title, autor, bloque, ejX, ejY) {
   const tip = document.getElementById('scatterTip');
   if(!tip) return;
-  tip.innerHTML = `<div style="font-weight:600;margin-bottom:4px;font-size:12px">${title}</div>
-    <div style="color:var(--muted);font-size:11px">${autor} · <span style="color:${BLOQUE_COLOR[bloque]||'#999'}">${bloque}</span></div>
+  tip.innerHTML = `<div style="font-weight:600;margin-bottom:4px;font-size:12px">${escHtml(title)}</div>
+    <div style="color:var(--muted);font-size:11px">${escHtml(autor)} · <span style="color:${BLOQUE_COLOR[bloque]||'#999'}">${escHtml(bloque)}</span></div>
     <div style="margin-top:6px;font-size:11px;display:flex;gap:16px">
       <span>Intervención: <strong style="color:rgba(99,102,241,0.9)">${ejX}</strong></span>
       <span>Sujeto: <strong style="color:rgba(99,102,241,0.9)">${ejY}</strong></span>
@@ -3238,8 +3238,8 @@ function showBlocEvidenceTooltip(event, blocName, axisIdx) {
     const dna = getBillDNA(b.id);
     const ev = getBillEvidence(b.id)[axisIdx] || '';
     return `<div style="margin-top:6px;padding:6px;background:rgba(255,255,255,0.04);border-radius:4px">
-      <div style="font-weight:600;font-size:10.5px">${dna.ejes[axisIdx]}/10 · ${b.titulo.slice(0,38)}…</div>
-      ${ev ? `<div style="color:rgba(255,255,255,0.5);font-size:10px;margin-top:2px">${ev}</div>` : ''}
+      <div style="font-weight:600;font-size:10.5px">${dna.ejes[axisIdx]}/10 · ${escHtml(b.titulo.slice(0,38))}…</div>
+      ${ev ? `<div style="color:rgba(255,255,255,0.5);font-size:10px;margin-top:2px">${escHtml(ev)}</div>` : ''}
     </div>`;
   }).join('');
   const rangeText = hasRange ? ` (rango: ${range.min}–${range.max})` : '';
@@ -3254,8 +3254,8 @@ function showEvidenceTip(event, title, body, isHtml=false) {
     tip.style.cssText = 'position:fixed;z-index:9999;background:#1a1a2e;border:1px solid rgba(99,102,241,0.5);border-radius:10px;padding:12px 14px;max-width:300px;font-size:12px;line-height:1.5;color:#f0f0f0;box-shadow:0 12px 40px rgba(0,0,0,0.6);pointer-events:none;display:none;max-height:320px;overflow-y:auto';
     document.body.appendChild(tip);
   }
-  tip.innerHTML = `<div style="font-weight:700;color:rgba(139,145,255,0.95);font-size:11px;text-transform:uppercase;letter-spacing:.4px;margin-bottom:6px">${title}</div>
-    ${isHtml ? body : `<div style="color:rgba(255,255,255,0.8)">${body}</div>`}`;
+  tip.innerHTML = `<div style="font-weight:700;color:rgba(139,145,255,0.95);font-size:11px;text-transform:uppercase;letter-spacing:.4px;margin-bottom:6px">${escHtml(title)}</div>
+    ${isHtml ? body : `<div style="color:rgba(255,255,255,0.8)">${escHtml(body)}</div>`}`;
   tip.style.display = 'block';
   const x = Math.min(event.clientX + 14, window.innerWidth - 320);
   const y = Math.min(event.clientY - 10, window.innerHeight - 200);
@@ -3320,13 +3320,13 @@ function renderConvergenceAnalysis(blocData) {
     if(top && topProb >= 60) {
       html += `<div class="puente-badge" style="border-color:rgba(0,212,255,.2)">
         <div class="puente-badge-title">🌉 Par Técnico Más Cercano</div>
-        <div class="puente-badge-body"><strong style="color:var(--blue)">${top.pair[0]}</strong> ↔ <strong style="color:var(--blue)">${top.pair[1]}</strong></div>
+        <div class="puente-badge-body"><strong style="color:var(--blue)">${escHtml(top.pair[0])}</strong> ↔ <strong style="color:var(--blue)">${escHtml(top.pair[1])}</strong></div>
         <div style="font-size:11px;color:var(--muted);margin-top:2px">Estabilidad bootstrap: <strong>${topProb}%</strong> (umbral concluyente: 60%)</div>
       </div>`;
     } else {
-      const firstLabel = top ? `${top.pair[0]} ↔ ${top.pair[1]}` : `${closestPair[0]} ↔ ${closestPair[1]}`;
+      const firstLabel = top ? `${escHtml(top.pair[0])} ↔ ${escHtml(top.pair[1])}` : `${escHtml(closestPair[0])} ↔ ${escHtml(closestPair[1])}`;
       const firstProb = top ? `${Math.round(top.prob * 100)}%` : 'n/d';
-      const secondLabel = second ? `${second.pair[0]} ↔ ${second.pair[1]}` : 'Sin segundo par dominante';
+      const secondLabel = second ? `${escHtml(second.pair[0])} ↔ ${escHtml(second.pair[1])}` : 'Sin segundo par dominante';
       const secondProb = second ? `${Math.round(second.prob * 100)}%` : 'n/d';
 
       html += `<div class="puente-badge" style="border-color:rgba(0,212,255,.2)">
@@ -3391,9 +3391,9 @@ function renderDestGrid() {
   const grid = document.getElementById('destGrid');
 
   grid.innerHTML = sorted.map(([name, count]) => `
-    <div class="dest-item" onclick="applyDestFilter('${name}')">
+    <div class="dest-item" onclick="applyDestFilter('${escHtml(name)}')">
       <div class="dest-icon">${DEST_ICON[name] || '📋'}</div>
-      <div class="dest-name">${name}</div>
+      <div class="dest-name">${escHtml(name)}</div>
       <div class="dest-count">${count}</div>
     </div>
   `).join('');
@@ -3418,12 +3418,12 @@ function renderRecentBills() {
 
   el.innerHTML = recent.map(b => {
     return `
-      <div class="bill-card" onclick="openBillModal('${b.id}')">
-        <div class="bill-num">${b.id}</div>
-        <div class="bill-title">${b.titulo}</div>
-        <div class="bill-author">${b.autor_principal || 'Desconocido'}</div>
-        <div class="bill-bloque" style="background:rgba(170,255,0,0.1);color:var(--lime)">${b.bloque}</div>
-        <div style="margin-top:4px;font-size:10px;color:${TIPO_COLORS[b.tipo]||'var(--muted)'};font-weight:600">${b.tipo||''}</div>
+      <div class="bill-card" onclick="openBillModal('${escHtml(b.id)}')">
+        <div class="bill-num">${escHtml(b.id)}</div>
+        <div class="bill-title">${escHtml(b.titulo)}</div>
+        <div class="bill-author">${escHtml(b.autor_principal || 'Desconocido')}</div>
+        <div class="bill-bloque" style="background:rgba(170,255,0,0.1);color:var(--lime)">${escHtml(b.bloque)}</div>
+        <div style="margin-top:4px;font-size:10px;color:${TIPO_COLORS[b.tipo]||'var(--muted)'};font-weight:600">${escHtml(b.tipo||'')}</div>
       </div>
     `;
   }).join('');
@@ -3440,27 +3440,27 @@ function openBillModal(id) {
   const mesName = bill.mes ? ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'][bill.mes-1] : 'Sin dato';
 
   const html = `
-    <div class="modal-title">${bill.titulo}</div>
-    <div class="modal-subtitle">Proyecto de Ley ${bill.id}</div>
+    <div class="modal-title">${escHtml(bill.titulo)}</div>
+    <div class="modal-subtitle">Proyecto de Ley ${escHtml(bill.id)}</div>
 
     <div class="modal-field">
       <div class="modal-label">Número</div>
-      <div class="modal-value">${bill.id}</div>
+      <div class="modal-value">${escHtml(bill.id)}</div>
     </div>
 
     <div class="modal-field">
       <div class="modal-label">Autor(a)</div>
-      <div class="modal-value">${bill.autor_principal || 'Desconocido'}</div>
+      <div class="modal-value">${escHtml(bill.autor_principal || 'Desconocido')}</div>
     </div>
 
     <div class="modal-field">
       <div class="modal-label">Bloque Político</div>
-      <div class="modal-value">${bill.bloque}</div>
+      <div class="modal-value">${escHtml(bill.bloque)}</div>
     </div>
 
     <div class="modal-field">
       <div class="modal-label">Tipo</div>
-      <div class="modal-value" style="color:${TIPO_COLORS[bill.tipo]||'var(--text)'};font-weight:600">${bill.tipo || 'Sin clasificar'}</div>
+      <div class="modal-value" style="color:${TIPO_COLORS[bill.tipo]||'var(--text)'};font-weight:600">${escHtml(bill.tipo || 'Sin clasificar')}</div>
     </div>
 
     <div class="modal-field">
@@ -3475,20 +3475,20 @@ function openBillModal(id) {
 
     <div class="modal-field">
       <div class="modal-label">Tema</div>
-      <div class="modal-value">${bill.tema}</div>
+      <div class="modal-value">${escHtml(bill.tema)}</div>
     </div>
 
     <div class="modal-field">
       <div class="modal-label">Destinatarios</div>
       <div class="modal-tags">
-        ${(bill.destinatarios || []).map(d => `<div class="modal-tag">${d}</div>`).join('')}
+        ${(bill.destinatarios || []).map(d => `<div class="modal-tag">${escHtml(d)}</div>`).join('')}
       </div>
     </div>
 
     ${bill.resumen ? `
     <div class="modal-field">
       <div class="modal-label">Descripción</div>
-      <div class="modal-value">${bill.resumen}</div>
+      <div class="modal-value">${escHtml(bill.resumen)}</div>
     </div>
     ` : ''}
 
@@ -3520,9 +3520,9 @@ function openInsightModal(idx) {
 
     <div style="margin-top:20px">
       ${item.bills.map(b => `
-        <div style="background:var(--surface2);padding:12px;border-radius:8px;margin-bottom:10px;cursor:pointer;transition:all 0.2s" onclick="closeInsightModal();openBillModal('${b.id}')" onmouseover="this.style.borderColor='var(--lime)'" onmouseout="this.style.borderColor='var(--border)'" style="border:1px solid var(--border)">
-          <div style="font-weight:600;margin-bottom:4px">${b.titulo}</div>
-          <div style="font-size:11px;color:var(--muted)">${b.autor_principal || 'Desconocido'} • ${b.bloque}</div>
+        <div style="background:var(--surface2);padding:12px;border-radius:8px;margin-bottom:10px;cursor:pointer;transition:all 0.2s" onclick="closeInsightModal();openBillModal('${escHtml(b.id)}')" onmouseover="this.style.borderColor='var(--lime)'" onmouseout="this.style.borderColor='var(--border)'" style="border:1px solid var(--border)">
+          <div style="font-weight:600;margin-bottom:4px">${escHtml(b.titulo)}</div>
+          <div style="font-size:11px;color:var(--muted)">${escHtml(b.autor_principal || 'Desconocido')} • ${escHtml(b.bloque)}</div>
         </div>
       `).join('')}
     </div>

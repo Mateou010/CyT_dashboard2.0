@@ -937,6 +937,11 @@ subCanvas.addEventListener('touchstart', e => {
   if (idx >= 0) openModal(selectedGroupIdx, idx);
 }, { passive: false });
 
+/* Escapa texto para interpolar seguro en innerHTML (datos de proyectos/autores). */
+function escHtml(v = '') {
+  return String(v).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
 /* ── Modal ── */
 function openModal(idx, subIdx = null) {
   const group = CYT_DATA[idx];
@@ -957,14 +962,14 @@ function openModal(idx, subIdx = null) {
       </div>`;
     sub.projects.forEach(p => {
       const pdfBtn = p.pdf
-        ? `<a class="proj-pdf" href="${p.pdf}" target="_blank">📄 Ver PDF</a>`
+        ? `<a class="proj-pdf" href="${escHtml(p.pdf)}" target="_blank">📄 Ver PDF</a>`
         : '';
       html += `<div class="proj-card">
         <div class="proj-top">
           <div>
-            <div class="proj-exp">${p.exp}</div>
-            <div class="proj-desc">${p.desc}</div>
-            <div class="proj-meta">${p.autor}${p.bloque ? ' · ' + p.bloque : ''} · ${p.año}</div>
+            <div class="proj-exp">${escHtml(p.exp)}</div>
+            <div class="proj-desc">${escHtml(p.desc)}</div>
+            <div class="proj-meta">${escHtml(p.autor)}${p.bloque ? ' · ' + escHtml(p.bloque) : ''} · ${escHtml(p.año)}</div>
           </div>
           ${pdfBtn}
         </div>
@@ -1397,7 +1402,7 @@ async function sendChatMessage() {
       <div class="autor-bar-row">
         <div class="autor-rank">${i+1}</div>
         <div class="autor-bar-main">
-          <span class="autor-bar-name">${a.autor}</span>
+          <span class="autor-bar-name">${escHtml(a.autor)}</span>
           <div class="autor-bar-outer">
             <div class="autor-bar-fill" style="width:${pct}%"></div>
           </div>

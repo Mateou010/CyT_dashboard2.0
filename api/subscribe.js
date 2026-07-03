@@ -4,11 +4,17 @@
 // hace clic. Esto evita suscribir a terceros sin su consentimiento.
 import { mailConfirmacion } from '../lib/mailer.js';
 import { missingSubscribeConfig } from '../lib/subscribers.js';
+import { rateLimit, clientIp } from '../lib/rate-limit.js';
 
 const isEmail = (value) => typeof value === 'string' && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Método no permitido' });
+
+  // Rate-limit por IP (best-effort) para frenar flood de suscripciones.
+  if (!rateLimit(`subscribe:${clientIp(req)}`, { limit: 5, windowMs: 60_000 }).ok) {
+    return res.status(429).json({ error: 'Demasiados intentos. Esperá un momento.' });
+  }
 
   const missing = missingSubscribeConfig();
   if (missing.length) {

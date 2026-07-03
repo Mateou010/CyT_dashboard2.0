@@ -1,8 +1,44 @@
 import fs from "fs";
 import path from "path";
+import { rateLimit, clientIp } from "../lib/rate-limit.js";
 
 const MODEL_CANDIDATES = ["gemini-2.5-pro"];
 const MAX_CONTEXT_ITEMS = 120;
+// Límites de entrada (evitan amplificación de costo del LLM con inputs enormes).
+const MAX_QUERY_CHARS = 4000;
+const MAX_PROMPT_CHARS = 200_000;
+const MAX_HISTORY_MSG_CHARS = 2000;
+
+// Cache del dataset a nivel módulo: en Vercel el estado persiste entre
+// invocaciones "warm", así que no se re-lee ni re-parsea leyes.json por request.
+let DATASET_CACHE = null;
+function loadDataset() {
+  if (DATASET_CACHE) return DATASET_CACHE;
+  try {
+    const parsed = JSON.parse(fs.readFileSync(path.join(process.cwd(), "api", "leyes.json"), "utf8"));
+    DATASET_CACHE = Array.isArray(parsed?.proyectos) ? parsed.proyectos
+      : Array.isArray(parsed?.bills) ? parsed.bills : [];
+  } catch (_) {
+    DATASET_CACHE = [];
+  }
+  return DATASET_CACHE;
+}
+
+// Aligera el contexto para el prompt: saca el texto_completo (el peso muerto que
+// no se usa para rankear) y corta el total para no inflar los tokens de entrada.
+function slimContext(items) {
+  const out = [];
+  let total = 0;
+  for (const it of items || []) {
+    const src = it && typeof it === "object" ? it : {};
+    const { texto_completo, textoCompleto, ...meta } = src;
+    const s = JSON.stringify(meta);
+    if (total + s.length > MAX_PROMPT_CHARS) break;
+    total += s.length;
+    out.push(meta);
+  }
+  return out;
+}
 const MAX_GEMINI_ATTEMPTS = 2;
 const AUTHOR_TOKEN_STOPWORDS = new Set([
   "otros",
@@ -528,7 +564,8 @@ function isClarificationFollowUpQuestion(consulta) {
 function buildHistoryForPrompt(historial) {
   const msgs = extractHistoryMessages(historial).slice(-8);
   if (!msgs.length) return "";
-  return msgs.map((t, i) => `${i + 1}. ${t}`).join("\n");
+  // Cap por mensaje: evita que un historial enorme infle los tokens de entrada.
+  return msgs.map((t, i) => `${i + 1}. ${t.slice(0, MAX_HISTORY_MSG_CHARS)}`).join("\n");
 }
 
 function getKnownProjectIds(items) {
@@ -1170,9 +1207,14 @@ function isTotalProjectsQuestion(consulta) {
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).send("Solo POST");
 
+  // Rate-limit por IP (best-effort; el modelo Gemini es caro). Ver lib/rate-limit.js.
+  if (!rateLimit(`chat:${clientIp(req)}`, { limit: 20, windowMs: 60_000 }).ok) {
+    return res.status(429).json({ error: "Demasiadas consultas seguidas. Esperá un momento y probá de nuevo." });
+  }
+
   try {
     const { pregunta, mensajeUsuario, contexto, scope, historial, history } = req.body || {};
-    const consulta = (pregunta || mensajeUsuario || "").toString().trim();
+    const consulta = (pregunta || mensajeUsuario || "").toString().trim().slice(0, MAX_QUERY_CHARS);
     const historyItems = Array.isArray(historial) ? historial : Array.isArray(history) ? history : [];
 
     if (!consulta) {
@@ -1184,13 +1226,7 @@ export default async function handler(req, res) {
     if (contexto && (Array.isArray(contexto) || typeof contexto === "object")) {
       if (Array.isArray(contexto)) contextoArray = contexto;
     } else {
-      const rutaArchivo = path.join(process.cwd(), "api", "leyes.json");
-      datosLeyes = fs.readFileSync(rutaArchivo, "utf8");
-      try {
-        const parsed = JSON.parse(datosLeyes);
-        if (Array.isArray(parsed?.proyectos)) contextoArray = parsed.proyectos;
-        else if (Array.isArray(parsed?.bills)) contextoArray = parsed.bills;
-      } catch (_) {}
+      contextoArray = loadDataset(); // cacheado a nivel módulo (no re-lee/parsea por request)
     }
 
     const alcance = scope === "cyt"
@@ -1356,7 +1392,8 @@ export default async function handler(req, res) {
 
     const contextoRelevante = pickRelevantContext(consulta, contextoArray, MAX_CONTEXT_ITEMS);
     if (contextoRelevante.length) {
-      datosLeyes = JSON.stringify(contextoRelevante);
+      // Sin texto_completo y con tope de tamaño: ahorra ~700KB/~175k tokens por request.
+      datosLeyes = JSON.stringify(slimContext(contextoRelevante));
     }
     const historialPrompt = buildHistoryForPrompt(historyItems);
 
@@ -1454,17 +1491,19 @@ Reglas:
       }
     }
 
+    if (lastError) console.error("/api/chat fallback:", lastError?.message);
     return res.status(200).json({
       texto: fallbackFromContext(consulta, contextoRelevante.length ? contextoRelevante : contextoArray, historyItems),
       model: "fallback-local",
-      note: lastError?.message || "Sin modelo Gemini disponible",
+      // Mensaje genérico: no exponemos el error del upstream al cliente.
+      note: "Respondido con el modo local (sin modelo Gemini disponible).",
       context_items: (contextoRelevante.length ? contextoRelevante : contextoArray || []).length,
     });
   } catch (error) {
     console.error("/api/chat error:", error);
+    // No exponemos error.message al cliente (info disclosure); queda en el log.
     return res.status(500).json({
       error: "Hubo un problema al procesar las leyes.",
-      detalle: error?.message || "Error desconocido",
     });
   }
 }
