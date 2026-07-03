@@ -1,0 +1,68 @@
+# CI de validación — corre en cada push/PR ANTES de que Vercel deploye.
+# No deploya (eso lo hace Vercel automáticamente); solo evita romper prod con
+# un error de sintaxis o un JSON corrupto.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  node-checks:
+    name: Sintaxis JS + JSON válido
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Chequear sintaxis de JS (api/, lib/, raíz)
+        run: |
+          set -e
+          shopt -s nullglob
+          for f in api/*.js lib/*.js *.js; do
+            echo "node --check $f"
+            node --check "$f"
+          done
+
+      - name: Validar que los JSON de datos parseen
+        run: |
+          set -e
+          for f in bills_data.json cyt_bills_data.json leyes.json api/leyes.json \
+                   bridge_analysis.json data/proyectos-seguimiento.json \
+                   package.json vercel.json; do
+            [ -f "$f" ] || continue
+            echo "validando $f"
+            node -e "JSON.parse(require('fs').readFileSync('$f','utf8'))"
+          done
+
+  python-checks:
+    name: Sintaxis Python + validación de bills
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Chequear sintaxis de los scripts Python
+        run: |
+          set -e
+          for f in *.py; do
+            echo "py_compile $f"
+            python -m py_compile "$f"
+          done
+
+      - name: Validar bills_data.json (informativo; puede fallar si faltan PDFs en CI)
+        continue-on-error: true
+        run: python validate_bills_data.py --input bills_data.json
