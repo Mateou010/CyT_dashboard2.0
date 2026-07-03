@@ -701,7 +701,7 @@
                     🤖 Dashboard IA
                 </a>
                 <a href="#seguimiento" class="btn-secondary">
-                    Suscribirse
+                    Recibir alertas
                 </a>
             </div>
         </div>
@@ -760,15 +760,15 @@
         <div class="subscribe-panel reveal">
             <div>
                 <div class="subscribe-kicker">Seguimiento legislativo</div>
-                <h2>Recibí novedades de proyectos de ley</h2>
-                <p>Suscribite para recibir avisos por email cuando aparezcan nuevos proyectos de ley en la Comisión de Ciencia y Tecnología o cuando haya movimientos relevantes en su trámite.</p>
+                <h2>¿Querés recibir un mail cada vez que se presente un proyecto de ley?</h2>
+                <p>Dejá tu email y recibí alertas en tiempo real cuando ingresen nuevos proyectos en la Comisión de Ciencia y Tecnología, con un resumen claro para entender rápido de qué tratan.</p>
             </div>
             <form class="subscribe-form" id="subscribeForm">
                 <div class="subscribe-fields">
                     <input type="email" name="email" autocomplete="email" required placeholder="tu@email.com" aria-label="Email para suscripción">
-                    <button class="btn-primary" type="submit">Suscribirse</button>
+                    <button class="btn-primary" type="submit">Recibir alertas</button>
                 </div>
-                <div class="subscribe-message" id="subscribeMessage" aria-live="polite">Te vamos a pedir confirmación por email.</div>
+                <div class="subscribe-message" id="subscribeMessage" aria-live="polite">Sin spam: solo avisos cuando haya novedades legislativas.</div>
             </form>
         </div>
     </section>
@@ -805,7 +805,7 @@
                 event.preventDefault();
                 const email = form.email.value.trim();
                 msg.className = 'subscribe-message';
-                msg.textContent = 'Enviando confirmación...';
+                msg.textContent = 'Guardando tu suscripción...';
 
                 try {
                     const response = await fetch('/api/subscribe', {
@@ -816,7 +816,7 @@
                     const data = await response.json().catch(() => ({}));
                     if (!response.ok) throw new Error(data.error || 'No se pudo completar la suscripción.');
                     msg.className = 'subscribe-message ok';
-                    msg.textContent = data.message || 'Revisá tu email para confirmar la suscripción.';
+                    msg.textContent = data.message || 'Gracias por suscribirte. Pronto vas a recibir los proyectos en tiempo real, ya resumidos.';
                     form.reset();
                 } catch (error) {
                     msg.className = 'subscribe-message error';

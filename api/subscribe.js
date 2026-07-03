@@ -1,6 +1,5 @@
 // POST /api/subscribe body: { email }
-import { mailConfirmacion } from '../lib/mailer.js';
-import { missingSubscribeConfig } from '../lib/subscribers.js';
+import { agregarContacto, missingSubscribeConfig } from '../lib/subscribers.js';
 
 const isEmail = (value) => typeof value === 'string' && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 
@@ -17,10 +16,13 @@ export default async function handler(req, res) {
   if (!isEmail(email)) return res.status(400).json({ error: 'Email inválido' });
 
   try {
-    await mailConfirmacion(email);
-    return res.status(200).json({ ok: true, message: 'Te enviamos un email para confirmar la suscripción.' });
+    await agregarContacto(email);
+    return res.status(200).json({
+      ok: true,
+      message: 'Gracias por suscribirte. Pronto vas a recibir los nuevos proyectos de ley en tiempo real, ya resumidos.',
+    });
   } catch (error) {
     console.error(error);
-    return res.status(500).json({ error: 'No se pudo enviar la confirmación.' });
+    return res.status(500).json({ error: 'No se pudo completar la suscripción.' });
   }
 }
