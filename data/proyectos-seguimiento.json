@@ -1,1 +1,367 @@
-[]
+[
+  {
+    "expediente": "3060-D-2026",
+    "tipo": "LEY",
+    "sumario": "CREACION DEL SISTEMA NACIONAL DE GEMELOS DIGITALES PARA LA PLANIFICACION ESTRATEGICA Y EL DESARROLLO TERRITORIAL.",
+    "fecha": "24/06/2026",
+    "autores": [
+      {
+        "nombre": "JAIME QUIROGA, CARLOS GUSTAVO",
+        "distrito": "SAN JUAN",
+        "bloque": "PRODUCCION Y TRABAJO"
+      },
+      {
+        "nombre": "PICON MARTINEZ, NANCY VIVIANA",
+        "distrito": "SAN JUAN",
+        "bloque": "PRODUCCION Y TRABAJO"
+      }
+    ],
+    "giro": [
+      "CIENCIA, TECNOLOGIA E INNOVACION PRODUCTIVA (Primera Competencia)",
+      "PRESUPUESTO Y HACIENDA"
+    ],
+    "pdf_url": "https://rest.hcdn.gob.ar/web/proyectos/292776/adjuntos/106416",
+    "resumen": "CREACION DEL SISTEMA NACIONAL DE GEMELOS DIGITALES PARA LA PLANIFICACION ESTRATEGICA Y EL DESARROLLO TERRITORIAL.",
+    "url": "https://www.diputados.gov.ar/comisiones/permanentes/ccytecnologia/proyecto.html?exp=3060-D-2026",
+    "tramite_hash": "7e3eab8485da084742c4fcd63c21149834b5c164",
+    "updates": []
+  },
+  {
+    "expediente": "3032-D-2026",
+    "tipo": "LEY",
+    "sumario": "CREACION DEL MINISTERIO DE CIENCIA, TECNOLOGIA Y UNIVERSIDADES. MODIFICACION DE LA LEY 22520, DE MINISTERIOS.",
+    "fecha": "23/06/2026",
+    "autores": [
+      {
+        "nombre": "PAGANO, MARCELA MARINA",
+        "distrito": "BUENOS AIRES",
+        "bloque": "COHERENCIA"
+      }
+    ],
+    "giro": [
+      "ASUNTOS CONSTITUCIONALES (Primera Competencia)",
+      "CIENCIA, TECNOLOGIA E INNOVACION PRODUCTIVA",
+      "EDUCACION",
+      "PRESUPUESTO Y HACIENDA"
+    ],
+    "pdf_url": "https://rest.hcdn.gob.ar/web/proyectos/292748/adjuntos/106402",
+    "resumen": "CREACION DEL MINISTERIO DE CIENCIA, TECNOLOGIA Y UNIVERSIDADES. MODIFICACION DE LA LEY 22520, DE MINISTERIOS.",
+    "url": "https://www.diputados.gov.ar/comisiones/permanentes/ccytecnologia/proyecto.html?exp=3032-D-2026",
+    "tramite_hash": "678fa9f6301fa51790df73f3a1ace2a8a42ff832",
+    "updates": []
+  },
+  {
+    "expediente": "2988-D-2026",
+    "tipo": "LEY",
+    "sumario": "CONDICIONES BASE PARA LA SOSTENIBILIDAD Y PROTECCION DEL SISTEMA NACIONAL DE CIENCIA, TECNOLOGIA E INNOVACION (SNCTI).",
+    "fecha": "22/06/2026",
+    "autores": [
+      {
+        "nombre": "SERQUIS, ADRIANA CRISTINA",
+        "distrito": "RIO NEGRO",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "VOLNOVICH, LUANA",
+        "distrito": "BUENOS AIRES",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "CASTAGNETO, CARLOS DANIEL",
+        "distrito": "BUENOS AIRES",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "FERRARO, MAXIMILIANO",
+        "distrito": "CIUDAD DE BUENOS AIRES",
+        "bloque": "COALICION CIVICA"
+      },
+      {
+        "nombre": "PICHETTO, MIGUEL ANGEL",
+        "distrito": "BUENOS AIRES",
+        "bloque": "ENCUENTRO FEDERAL"
+      },
+      {
+        "nombre": "COLETTA, MARIELA",
+        "distrito": "CIUDAD DE BUENOS AIRES",
+        "bloque": "PROVINCIAS UNIDAS"
+      },
+      {
+        "nombre": "PAULON, ESTEBAN",
+        "distrito": "SANTA FE",
+        "bloque": "PROVINCIAS UNIDAS"
+      },
+      {
+        "nombre": "STRADA, JULIA",
+        "distrito": "BUENOS AIRES",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "TAIANA, JORGE",
+        "distrito": "BUENOS AIRES",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "OLMOS, KELLY",
+        "distrito": "CIUDAD DE BUENOS AIRES",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "DE LA ROSA, MARIA GRACIELA",
+        "distrito": "FORMOSA",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "YEDLIN, PABLO RAUL",
+        "distrito": "TUCUMAN",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "PALLADINO, CLAUDIA MARIA",
+        "distrito": "CATAMARCA",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "RAUSCHENBERGER, ARIEL",
+        "distrito": "LA PAMPA",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "SELVA, SABRINA",
+        "distrito": "BUENOS AIRES",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "MARTINEZ, GERMAN PEDRO",
+        "distrito": "SANTA FE",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "AGUIRRE, HILDA",
+        "distrito": "LA RIOJA",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "ARAUJO HERNANDEZ, JORGE NERI",
+        "distrito": "TIERRA DEL FUEGO",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "FERRAN, ABELARDO",
+        "distrito": "LA PAMPA",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "GLINSKI, JOSE",
+        "distrito": "CHUBUT",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "HAGMAN, ITAI",
+        "distrito": "CIUDAD DE BUENOS AIRES",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "IANNI, ANA MARIA",
+        "distrito": "SANTA CRUZ",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "LANESAN SANCHO, MOIRA",
+        "distrito": "SANTA CRUZ",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "MANGO, MARCELO",
+        "distrito": "RIO NEGRO",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "MIÑO, FERNANDA",
+        "distrito": "BUENOS AIRES",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "MOLINA, JUAN CARLOS",
+        "distrito": "SANTA CRUZ",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "POKOIK, LORENA",
+        "distrito": "CIUDAD DE BUENOS AIRES",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "ROSSI, AGUSTIN OSCAR",
+        "distrito": "SANTA FE",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "TITA, PAULO AGUSTIN",
+        "distrito": "TIERRA DEL FUEGO",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "TODERO, PABLO",
+        "distrito": "NEUQUEN",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "YASKY, HUGO",
+        "distrito": "BUENOS AIRES",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "ZARACHO, NATALIA",
+        "distrito": "BUENOS AIRES",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "GRABOIS, JUAN",
+        "distrito": "BUENOS AIRES",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "CHICA, JORGE",
+        "distrito": "SAN JUAN",
+        "bloque": "UNIÓN POR LA PATRIA"
+      }
+    ],
+    "giro": [
+      "CIENCIA, TECNOLOGIA E INNOVACION PRODUCTIVA (Primera Competencia)",
+      "PRESUPUESTO Y HACIENDA"
+    ],
+    "pdf_url": "https://rest.hcdn.gob.ar/web/proyectos/292716/adjuntos/106366",
+    "resumen": "CONDICIONES BASE PARA LA SOSTENIBILIDAD Y PROTECCION DEL SISTEMA NACIONAL DE CIENCIA, TECNOLOGIA E INNOVACION (SNCTI).",
+    "url": "https://www.diputados.gov.ar/comisiones/permanentes/ccytecnologia/proyecto.html?exp=2988-D-2026",
+    "tramite_hash": "d6bdb6d9fd1d87ba23e303fa842c867adbf337d7",
+    "updates": []
+  },
+  {
+    "expediente": "2912-D-2026",
+    "tipo": "LEY",
+    "sumario": "REGIMEN NACIONAL DE INTELIGENCIA ARTIFICIAL, TRANSPARENCIA ALGORITMICA Y PROTECCION DE DATOS PERSONALES EN EL SECTOR PUBLICO.",
+    "fecha": "18/06/2026",
+    "autores": [
+      {
+        "nombre": "ANDINO, CRISTIAN",
+        "distrito": "SAN JUAN",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "MONZON, ROXANA",
+        "distrito": "BUENOS AIRES",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "IANNI, ANA MARIA",
+        "distrito": "SANTA CRUZ",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "PEDRALI, GABRIELA",
+        "distrito": "LA RIOJA",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "AGUIRRE, HILDA",
+        "distrito": "LA RIOJA",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "VALDES, EDUARDO FELIX",
+        "distrito": "CIUDAD DE BUENOS AIRES",
+        "bloque": "UNIÓN POR LA PATRIA"
+      }
+    ],
+    "giro": [
+      "CIENCIA, TECNOLOGIA E INNOVACION PRODUCTIVA (Primera Competencia)",
+      "DERECHOS HUMANOS Y GARANTIAS",
+      "PRESUPUESTO Y HACIENDA"
+    ],
+    "pdf_url": "https://rest.hcdn.gob.ar/web/proyectos/292618/adjuntos/106288",
+    "resumen": "REGIMEN NACIONAL DE INTELIGENCIA ARTIFICIAL, TRANSPARENCIA ALGORITMICA Y PROTECCION DE DATOS PERSONALES EN EL SECTOR PUBLICO.",
+    "url": "https://www.diputados.gov.ar/comisiones/permanentes/ccytecnologia/proyecto.html?exp=2912-D-2026",
+    "tramite_hash": "6b25b20ca121d5c09f1dac0b2540bbfbb9c236a5",
+    "updates": []
+  },
+  {
+    "expediente": "2665-D-2026",
+    "tipo": "LEY",
+    "sumario": "REGIMEN DE MODERNIZACION SOCIETARIA, JURISDICCION AGIL Y RESPONSABILIDAD HUMANA (SIMOSO).",
+    "fecha": "05/06/2026",
+    "autores": [
+      {
+        "nombre": "PAGANO, MARCELA MARINA",
+        "distrito": "BUENOS AIRES",
+        "bloque": "COHERENCIA"
+      }
+    ],
+    "giro": [
+      "LEGISLACION GENERAL (Primera Competencia)",
+      "CIENCIA, TECNOLOGIA E INNOVACION PRODUCTIVA",
+      "JUSTICIA"
+    ],
+    "pdf_url": "https://rest.hcdn.gob.ar/web/proyectos/292434/adjuntos/106143",
+    "resumen": "REGIMEN DE MODERNIZACION SOCIETARIA, JURISDICCION AGIL Y RESPONSABILIDAD HUMANA (SIMOSO).",
+    "url": "https://www.diputados.gov.ar/comisiones/permanentes/ccytecnologia/proyecto.html?exp=2665-D-2026",
+    "tramite_hash": "d595e5b40b95a15400b69d41d99104ae2cca230c",
+    "updates": []
+  },
+  {
+    "expediente": "2516-D-2026",
+    "tipo": "LEY",
+    "sumario": "EDUCACION NACIONAL - LEY 26206 - MODIFICACIONES SOBRE INCORPORACION DE CONTENIDOS DE INTELIGENCIA ARTIFICIAL COMO CONTENIDO CURRICULAR.",
+    "fecha": "01/06/2026",
+    "autores": [
+      {
+        "nombre": "NOBLEGA, SEBASTIAN",
+        "distrito": "CATAMARCA",
+        "bloque": "ELIJO CATAMARCA"
+      }
+    ],
+    "giro": [
+      "EDUCACION (Primera Competencia)",
+      "CIENCIA, TECNOLOGIA E INNOVACION PRODUCTIVA",
+      "PRESUPUESTO Y HACIENDA"
+    ],
+    "pdf_url": "https://rest.hcdn.gob.ar/web/proyectos/292340/adjuntos/106039",
+    "resumen": "EDUCACION NACIONAL - LEY 26206 - MODIFICACIONES SOBRE INCORPORACION DE CONTENIDOS DE INTELIGENCIA ARTIFICIAL COMO CONTENIDO CURRICULAR.",
+    "url": "https://www.diputados.gov.ar/comisiones/permanentes/ccytecnologia/proyecto.html?exp=2516-D-2026",
+    "tramite_hash": "b2fab968494f084effb0d9eb69b47c7b57665201",
+    "updates": []
+  },
+  {
+    "expediente": "0005-PE-2026",
+    "tipo": "MENSAJE NRO: 0181/26 Y PROYECTO DE LEY",
+    "sumario": "REGIMEN DE INCENTIVO PARA GRANDES INVERSIONES EN NUEVAS INDUSTRIAS (\"SUPER RIGI\").",
+    "fecha": "26/05/2026",
+    "autores": [
+      {
+        "nombre": "MILEI, JAVIER GERARDO",
+        "distrito": "",
+        "bloque": "PODER EJECUTIVO"
+      },
+      {
+        "nombre": "ADORNI, MANUEL",
+        "distrito": "",
+        "bloque": "PODER EJECUTIVO"
+      },
+      {
+        "nombre": "CAPUTO, LUIS ANDRES",
+        "distrito": "",
+        "bloque": "PODER EJECUTIVO"
+      }
+    ],
+    "giro": [
+      "PRESUPUESTO Y HACIENDA (Primera Competencia)",
+      "INDUSTRIA",
+      "CIENCIA, TECNOLOGIA E INNOVACION PRODUCTIVA"
+    ],
+    "pdf_url": "https://rest.hcdn.gob.ar/web/proyectos/292180/adjuntos/105926",
+    "resumen": "REGIMEN DE INCENTIVO PARA GRANDES INVERSIONES EN NUEVAS INDUSTRIAS (\"SUPER RIGI\").",
+    "url": "https://www.diputados.gov.ar/comisiones/permanentes/ccytecnologia/proyecto.html?exp=0005-PE-2026",
+    "tramite_hash": "39894ed014d074b77ff660808048773fef01e1c2",
+    "updates": []
+  }
+]
