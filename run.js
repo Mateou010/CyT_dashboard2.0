@@ -10,6 +10,7 @@
 // Uso:  node run.js               (nuevos + cambios de trámite)
 //       node run.js --solo-nuevos (solo carga nuevos, sin revisar trámites)
 //       node run.js --ultimo      (solo revisa el último proyecto del listado)
+//       node run.js --recientes=7 (revisa una ventana de últimos proyectos)
 // ============================================================
 import fs from 'node:fs';
 import path from 'node:path';
@@ -23,6 +24,13 @@ const ESTADO_PATH = process.env.ESTADO_PATH || path.join(process.cwd(), 'data', 
 const hash = (s) => crypto.createHash('sha1').update(s || '').digest('hex');
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
+function leerCantidadRecientes() {
+  const arg = process.argv.find((x) => x.startsWith('--recientes='));
+  if (!arg) return 0;
+  const n = Number(arg.split('=')[1]);
+  return Number.isFinite(n) && n > 0 ? Math.floor(n) : 0;
+}
+
 function leerEstado() {
   try { return JSON.parse(fs.readFileSync(ESTADO_PATH, 'utf8')); } catch { return []; }
 }
@@ -34,6 +42,7 @@ function guardarEstado(lista) {
 async function main() {
   const soloNuevos = process.argv.includes('--solo-nuevos');
   const soloUltimo = process.argv.includes('--ultimo');
+  const cantidadRecientes = soloUltimo ? 1 : leerCantidadRecientes();
   const estado = leerEstado();
   const primeraCarga = estado.length === 0 && process.env.SEGUIMIENTO_NOTIFY_INITIAL !== 'true';
   const porExp = new Map(estado.map(p => [p.expediente, p]));
@@ -46,8 +55,8 @@ async function main() {
   console.log(`Suscriptores confirmados: ${contactos.length}`);
 
   const listado = await listarProyectosLey();
-  const proyectos = soloUltimo ? listado.slice(0, 1) : listado;
-  console.log(`Proyectos de LEY en el listado: ${proyectos.length}`);
+  const proyectos = cantidadRecientes ? listado.slice(0, cantidadRecientes) : listado;
+  console.log(`Proyectos de LEY revisados: ${proyectos.length}`);
 
   let nuevos = 0, cambios = 0;
 
@@ -80,7 +89,7 @@ async function main() {
           console.log(`  Avisado a ${n} suscriptor(es).`);
         }
         nuevos++;
-      } else if (!soloNuevos && !soloUltimo) {
+      } else if (!soloNuevos && !cantidadRecientes) {
         // YA CONOCIDO: ¿cambió el trámite?
         const det = await getDetalle(item.expediente);
         const nuevoHash = hash(det.tramite);
@@ -99,7 +108,7 @@ async function main() {
         }
       }
     } catch (e) { console.error('Error con', item.expediente, e.message); }
-    if (!soloUltimo) await sleep(800); // cortesía con el servidor de Diputados
+    if (!cantidadRecientes) await sleep(800); // cortesía con el servidor de Diputados
   }
 
   guardarEstado([...porExp.values()]);

@@ -8,6 +8,7 @@
     "seguimiento": "node run.js",
     "seguimiento:solo-nuevos": "node run.js --solo-nuevos",
     "seguimiento:ultimo": "node run.js --ultimo",
+    "seguimiento:recientes": "node run.js --recientes=7",
     "broadcast": "node broadcast.js"
   },
   "engines": {
