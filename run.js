@@ -52,13 +52,20 @@ async function main() {
     console.log('Primera carga detectada: se guardará el estado inicial sin enviar emails masivos.');
   }
 
-  const contactos = await listarConfirmados().catch(e => { console.error('No pude leer suscriptores:', e.message); return []; });
-  console.log(`Suscriptores confirmados: ${contactos.length}`);
+  let listado;
+  try {
+    listado = await listarProyectosLey();
+  } catch (e) {
+    console.warn('No pude consultar Diputados después de varios intentos. Se termina sin cambios y sin enviar emails:', e.message);
+    return;
+  }
 
-  const listado = await listarProyectosLey();
   // Ventana = los N MÁS NUEVOS por fecha (no las primeras N filas del scrape).
   const proyectos = seleccionarVentana(listado, cantidadRecientes);
   console.log(`Proyectos de LEY revisados: ${proyectos.length}`);
+
+  const contactos = await listarConfirmados().catch(e => { console.error('No pude leer suscriptores:', e.message); return []; });
+  console.log(`Suscriptores confirmados: ${contactos.length}`);
 
   let nuevos = 0, cambios = 0;
 
