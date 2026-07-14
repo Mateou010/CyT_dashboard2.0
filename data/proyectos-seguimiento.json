@@ -358,12 +358,17 @@
     "giro": [
       "PRESUPUESTO Y HACIENDA (Primera Competencia)",
       "INDUSTRIA",
-      "CIENCIA, TECNOLOGIA E INNOVACION PRODUCTIVA"
+      "CIENCIA, TECNOLOGIA E INNOVACION PRODUCTIVA",
+      "PRESUPUESTO Y HACIENDA",
+      "ECONOMIA NACIONAL E INVERSION",
+      "LEGISLACION GENERAL"
     ],
     "pdf_url": "https://rest.hcdn.gob.ar/web/proyectos/292180/adjuntos/105926",
     "resumen": "REGIMEN DE INCENTIVO PARA GRANDES INVERSIONES EN NUEVAS INDUSTRIAS (\"SUPER RIGI\").",
     "url": "https://www.diputados.gov.ar/comisiones/permanentes/ccytecnologia/proyecto.html?exp=0005-PE-2026",
-    "tramite_hash": "39894ed014d074b77ff660808048773fef01e1c2",
-    "updates": []
+    "tramite_hash": "312ed18c19b051f1e46a7cf1c831e8a22267e180",
+    "updates": [
+      "312ed18c19b051f1e46a7cf1c831e8a22267e180"
+    ]
   }
 ]
