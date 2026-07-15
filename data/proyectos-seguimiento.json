@@ -371,5 +371,28 @@
     "updates": [
       "312ed18c19b051f1e46a7cf1c831e8a22267e180"
     ]
+  },
+  {
+    "expediente": "3330-D-2026",
+    "tipo": "LEY",
+    "sumario": "REGIMEN LEGAL APLICABLE PARA EL USO RESPONSABLE DE LA INTELIGENCIA ARTIFICIAL (I.A.) EN EL TERRITORIO DE LA REPUBLICA ARGENTINA.\n.",
+    "fecha": "13/07/2026",
+    "autores": [
+      {
+        "nombre": "BRÜGGE, JUAN FERNANDO",
+        "distrito": "CORDOBA",
+        "bloque": "PROVINCIAS UNIDAS"
+      }
+    ],
+    "giro": [
+      "CIENCIA, TECNOLOGIA E INNOVACION PRODUCTIVA (Primera Competencia)",
+      "LEGISLACION GENERAL",
+      "DERECHOS HUMANOS Y GARANTIAS"
+    ],
+    "pdf_url": "https://rest.hcdn.gob.ar/web/proyectos/293175/adjuntos/106622",
+    "resumen": "REGIMEN LEGAL APLICABLE PARA EL USO RESPONSABLE DE LA INTELIGENCIA ARTIFICIAL (I.A.) EN EL TERRITORIO DE LA REPUBLICA ARGENTINA.\n.",
+    "url": "https://www.diputados.gov.ar/comisiones/permanentes/ccytecnologia/proyecto.html?exp=3330-D-2026",
+    "tramite_hash": "46a89b18944aea232c45b147e54fe05f5afe8a59",
+    "updates": []
   }
 ]
