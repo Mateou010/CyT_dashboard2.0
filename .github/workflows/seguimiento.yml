@@ -28,6 +28,7 @@ jobs:
           SITE_URL: ${{ secrets.SITE_URL }}
           SUBSCRIBE_SECRET: ${{ secrets.SUBSCRIBE_SECRET }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          NODE_EXTRA_CA_CERTS: certs/SectigoPublicServerAuthenticationCADVR36.pem
       - name: Commitear estado si cambió
         run: |
           git config user.name "seguimiento-bot"
