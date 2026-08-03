@@ -394,5 +394,42 @@
     "url": "https://www.diputados.gov.ar/comisiones/permanentes/ccytecnologia/proyecto.html?exp=3330-D-2026",
     "tramite_hash": "46a89b18944aea232c45b147e54fe05f5afe8a59",
     "updates": []
+  },
+  {
+    "expediente": "3579-D-2026",
+    "tipo": "LEY",
+    "sumario": "PRORROGUENSE LAS BECAS INTERNAS POSDOCTORALES OTORGADAS POR EL CONSEJO NACIONAL DE INVESTIGACIONES CIENTIFICAS Y TECNICAS (CONICET).",
+    "fecha": "29/07/2026",
+    "autores": [
+      {
+        "nombre": "PITROLA, NESTOR",
+        "distrito": "BUENOS AIRES",
+        "bloque": "PARTIDO OBRERO EN EL FRENTE DE IZQUIERDA Y DE TRABAJADORES-U"
+      },
+      {
+        "nombre": "DEL PLA, ROMINA",
+        "distrito": "BUENOS AIRES",
+        "bloque": "PARTIDO OBRERO EN EL FRENTE DE IZQUIERDA Y DE TRABAJADORES-U"
+      },
+      {
+        "nombre": "BREGMAN, MYRIAM",
+        "distrito": "CIUDAD DE BUENOS AIRES",
+        "bloque": "PTS-FRENTE DE IZQUIERDA Y DE TRABAJADORES UNIDAD"
+      },
+      {
+        "nombre": "DEL CAÑO, NICOLAS",
+        "distrito": "BUENOS AIRES",
+        "bloque": "PTS-FRENTE DE IZQUIERDA Y DE TRABAJADORES UNIDAD"
+      }
+    ],
+    "giro": [
+      "CIENCIA, TECNOLOGIA E INNOVACION PRODUCTIVA (Primera Competencia)",
+      "PRESUPUESTO Y HACIENDA"
+    ],
+    "pdf_url": "https://rest.hcdn.gob.ar/web/proyectos/293406/adjuntos/106863",
+    "resumen": "PRORROGUENSE LAS BECAS INTERNAS POSDOCTORALES OTORGADAS POR EL CONSEJO NACIONAL DE INVESTIGACIONES CIENTIFICAS Y TECNICAS (CONICET).",
+    "url": "https://www.diputados.gov.ar/comisiones/permanentes/ccytecnologia/proyecto.html?exp=3579-D-2026",
+    "tramite_hash": "939301b66efeeabe0c98f2545b8956c4ee339173",
+    "updates": []
   }
 ]
