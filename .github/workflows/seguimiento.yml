@@ -4,8 +4,9 @@ name: Seguimiento de proyectos de ley
 on:
   schedule:
     # Cada 2 horas de 10 a 18 hs de Argentina (UTC-3), solo Lun-Vie.
-    # 10,12,14,16,18 ART = 13,15,17,19,21 UTC. GitHub Actions usa UTC.
-    - cron: '0 13,15,17,19,21 * * 1-5'
+    # 10:17,12:17,14:17,16:17,18:17 ART = 13:17,15:17,17:17,19:17,21:17 UTC.
+    # Evitamos el minuto 0 porque GitHub Actions suele demorar/cancelar schedules en hora pico.
+    - cron: '17 13,15,17,19,21 * * 1-5'
   workflow_dispatch: {}       # botón para correrlo a mano desde GitHub
 
 permissions:
