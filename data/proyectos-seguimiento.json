@@ -453,5 +453,29 @@
     "url": "https://www.diputados.gov.ar/comisiones/permanentes/ccytecnologia/proyecto.html?exp=4327-D-2026",
     "tramite_hash": "0a72c24d3c487a04d45fa3047cbc51aa1f226917",
     "updates": []
+  },
+  {
+    "expediente": "4484-D-2026",
+    "tipo": "LEY",
+    "sumario": "REGIMEN DE PROTECCION DE LA BASE INDUSTRIAL Y TECNOLOGICA PARA LA DEFENSA Y DEL COMPLEJO CIENTIFICO - TECNOLOGICO ESTATAL. DEROGACION DEL DECRETO 117/2025 Y LAS DISPOSICIONES DE LA LEY 27742.",
+    "fecha": "03/09/2026",
+    "autores": [
+      {
+        "nombre": "PAGANO, MARCELA MARINA",
+        "distrito": "BUENOS AIRES",
+        "bloque": "COHERENCIA"
+      }
+    ],
+    "giro": [
+      "DEFENSA NACIONAL (Primera Competencia)",
+      "CIENCIA, TECNOLOGIA E INNOVACION PRODUCTIVA",
+      "LEGISLACION GENERAL",
+      "ASUNTOS CONSTITUCIONALES"
+    ],
+    "pdf_url": "https://rest.hcdn.gob.ar/web/proyectos/294323/adjuntos/107614",
+    "resumen": "REGIMEN DE PROTECCION DE LA BASE INDUSTRIAL Y TECNOLOGICA PARA LA DEFENSA Y DEL COMPLEJO CIENTIFICO - TECNOLOGICO ESTATAL. DEROGACION DEL DECRETO 117/2025 Y LAS DISPOSICIONES DE LA LEY 27742.",
+    "url": "https://www.diputados.gov.ar/comisiones/permanentes/ccytecnologia/proyecto.html?exp=4484-D-2026",
+    "tramite_hash": "b06f752b49511e785c6075d0c1e19b9985a60571",
+    "updates": []
   }
 ]
