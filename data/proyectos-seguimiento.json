@@ -477,5 +477,42 @@
     "url": "https://www.diputados.gov.ar/comisiones/permanentes/ccytecnologia/proyecto.html?exp=4484-D-2026",
     "tramite_hash": "b06f752b49511e785c6075d0c1e19b9985a60571",
     "updates": []
+  },
+  {
+    "expediente": "4508-D-2026",
+    "tipo": "LEY",
+    "sumario": "DECLARESE CAPITAL NACIONAL DE LA CIENCIA, LA INVESTIGACION Y EL DESARROLLO DE ALTAS TECNOLOGIAS, A LA LOCALIDAD DE SAN CARLOS DE BARILOCHE, PROVINCIA DE RIO NEGRO.",
+    "fecha": "04/09/2026",
+    "autores": [
+      {
+        "nombre": "SERQUIS, ADRIANA CRISTINA",
+        "distrito": "RIO NEGRO",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "MANGO, MARCELO",
+        "distrito": "RIO NEGRO",
+        "bloque": "UNIÓN POR LA PATRIA"
+      },
+      {
+        "nombre": "TORTORIELLO, ANIBAL",
+        "distrito": "RIO NEGRO",
+        "bloque": "LA LIBERTAD AVANZA"
+      },
+      {
+        "nombre": "CAPOZZI, SERGIO EDUARDO",
+        "distrito": "RIO NEGRO",
+        "bloque": "PROVINCIAS UNIDAS"
+      }
+    ],
+    "giro": [
+      "LEGISLACION GENERAL (Primera Competencia)",
+      "CIENCIA, TECNOLOGIA E INNOVACION PRODUCTIVA"
+    ],
+    "pdf_url": "https://rest.hcdn.gob.ar/web/proyectos/294368/adjuntos/107640",
+    "resumen": "DECLARESE CAPITAL NACIONAL DE LA CIENCIA, LA INVESTIGACION Y EL DESARROLLO DE ALTAS TECNOLOGIAS, A LA LOCALIDAD DE SAN CARLOS DE BARILOCHE, PROVINCIA DE RIO NEGRO.",
+    "url": "https://www.diputados.gov.ar/comisiones/permanentes/ccytecnologia/proyecto.html?exp=4508-D-2026",
+    "tramite_hash": "b596c20cfa0fe367f4f039d79f6af9557eb5cb39",
+    "updates": []
   }
 ]
