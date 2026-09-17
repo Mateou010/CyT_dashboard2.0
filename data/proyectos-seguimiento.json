@@ -514,5 +514,28 @@
     "url": "https://www.diputados.gov.ar/comisiones/permanentes/ccytecnologia/proyecto.html?exp=4508-D-2026",
     "tramite_hash": "b596c20cfa0fe367f4f039d79f6af9557eb5cb39",
     "updates": []
+  },
+  {
+    "expediente": "4761-D-2026",
+    "tipo": "LEY",
+    "sumario": "REGIMEN DE SEGURIDAD Y TRANSPARENCIA DE LA INTELIGENCIA ARTIFICIAL DE FRONTERA Y DE LA INFRAESTRUCTURA DE COMPUTO DE GRAN ESCALA (LESIAF).",
+    "fecha": "15/09/2026",
+    "autores": [
+      {
+        "nombre": "PAGANO, MARCELA MARINA",
+        "distrito": "BUENOS AIRES",
+        "bloque": "COHERENCIA"
+      }
+    ],
+    "giro": [
+      "CIENCIA, TECNOLOGIA E INNOVACION PRODUCTIVA (Primera Competencia)",
+      "SEGURIDAD INTERIOR",
+      "RELACIONES EXTERIORES Y CULTO"
+    ],
+    "pdf_url": "https://rest.hcdn.gob.ar/web/proyectos/294699/adjuntos/107832",
+    "resumen": "REGIMEN DE SEGURIDAD Y TRANSPARENCIA DE LA INTELIGENCIA ARTIFICIAL DE FRONTERA Y DE LA INFRAESTRUCTURA DE COMPUTO DE GRAN ESCALA (LESIAF).",
+    "url": "https://www.diputados.gov.ar/comisiones/permanentes/ccytecnologia/proyecto.html?exp=4761-D-2026",
+    "tramite_hash": "20f3363b67567b8c410d1eefd9ea925a82d8be3a",
+    "updates": []
   }
 ]
