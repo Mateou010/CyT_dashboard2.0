@@ -1,34 +1,34 @@
 {
   "metadata": {
-    "generado": "2026-05-26T15:49:09.613Z",
-    "total": 76,
+    "generado": "2026-10-06T03:40:07.646Z",
+    "total": 84,
     "fuente": "Comisión de Ciencia, Tecnología e Innovación Productiva — H. Cámara de Diputados",
     "periodo": "2025–2026",
-    "con_autor": 75,
-    "con_bloque": 75,
-    "generated_at": "2026-07-01T15:53:58.717Z",
-    "source": "manual_update"
+    "con_autor": 84,
+    "con_bloque": 84,
+    "generated_at": "2026-10-06T03:40:07.646Z",
+    "source": "manual_update_verified_against_hcdn"
   },
   "eje_stats": [
     {
       "eje": "Gobernanza e Institucionalidad CyT",
-      "cantidad": 21,
-      "porcentaje": 28
+      "cantidad": 23,
+      "porcentaje": 27
     },
     {
       "eje": "Inteligencia Artificial",
-      "cantidad": 18,
+      "cantidad": 20,
       "porcentaje": 24
     },
     {
       "eje": "I+D y Financiamiento",
       "cantidad": 9,
-      "porcentaje": 12
+      "porcentaje": 11
     },
     {
       "eje": "Educación y Formación CyT",
-      "cantidad": 6,
-      "porcentaje": 8
+      "cantidad": 8,
+      "porcentaje": 10
     },
     {
       "eje": "Biotecnología",
@@ -46,24 +46,29 @@
       "porcentaje": 4
     },
     {
+      "eje": "Tecnologías Estratégicas",
+      "cantidad": 3,
+      "porcentaje": 4
+    },
+    {
       "eje": "Datos y Digitalización",
       "cantidad": 2,
-      "porcentaje": 3
+      "porcentaje": 2
     },
     {
       "eje": "Espacio y Antártida",
       "cantidad": 2,
-      "porcentaje": 3
+      "porcentaje": 2
     },
     {
       "eje": "Estrategia Tecnologica Nacional",
       "cantidad": 2,
-      "porcentaje": 3
+      "porcentaje": 2
     },
     {
       "eje": "Innovación y Desarrollo Productivo",
       "cantidad": 2,
-      "porcentaje": 3
+      "porcentaje": 2
     },
     {
       "eje": "Neuroderechos",
@@ -74,35 +79,35 @@
       "eje": "Tecnologías Cuánticas",
       "cantidad": 1,
       "porcentaje": 1
-    },
-    {
-      "eje": "Tecnologías Estratégicas",
-      "cantidad": 1,
-      "porcentaje": 1
     }
   ],
   "year_stats": [
     {
       "año": 2025,
       "cantidad": 32,
-      "porcentaje": 42
+      "porcentaje": 38
     },
     {
       "año": 2026,
-      "cantidad": 44,
-      "porcentaje": 58
+      "cantidad": 52,
+      "porcentaje": 62
     }
   ],
   "bloque_stats": [
     {
       "bloque": "COHERENCIA",
-      "cantidad": 36,
-      "porcentaje": 47
+      "cantidad": 39,
+      "porcentaje": 46
     },
     {
       "bloque": "Unión por la Patria",
-      "cantidad": 16,
-      "porcentaje": 21
+      "cantidad": 17,
+      "porcentaje": 20
+    },
+    {
+      "bloque": "Frente de Izquierda",
+      "cantidad": 4,
+      "porcentaje": 5
     },
     {
       "bloque": "Innovación Federal",
@@ -115,29 +120,39 @@
       "porcentaje": 4
     },
     {
-      "bloque": "Frente de Izquierda",
+      "bloque": "La Libertad Avanza",
       "cantidad": 3,
       "porcentaje": 4
     },
     {
-      "bloque": "La Libertad Avanza",
+      "bloque": "Provincias Unidas",
       "cantidad": 3,
       "porcentaje": 4
     },
     {
       "bloque": "Democracia para Siempre",
       "cantidad": 2,
-      "porcentaje": 3
+      "porcentaje": 2
     },
     {
       "bloque": "PRO",
       "cantidad": 2,
-      "porcentaje": 3
+      "porcentaje": 2
+    },
+    {
+      "bloque": "Producción y Trabajo",
+      "cantidad": 2,
+      "porcentaje": 2
     },
     {
       "bloque": "UCR",
       "cantidad": 2,
-      "porcentaje": 3
+      "porcentaje": 2
+    },
+    {
+      "bloque": "Elijo Catamarca",
+      "cantidad": 1,
+      "porcentaje": 1
     },
     {
       "bloque": "Encuentro Federal",
@@ -148,34 +163,27 @@
       "bloque": "Futuro y Libertad",
       "cantidad": 1,
       "porcentaje": 1
-    },
-    {
-      "bloque": "Produccion y Trabajo",
-      "cantidad": 1,
-      "porcentaje": 1
-    },
-    {
-      "bloque": "Provincias Unidas",
-      "cantidad": 1,
-      "porcentaje": 1
-    },
-    {
-      "bloque": "Sin datos",
-      "cantidad": 1,
-      "porcentaje": 1
     }
   ],
   "top_autores": [
     {
       "autor": "Marcela Marina Pagano",
-      "cantidad": 36
+      "cantidad": 39
     },
     {
       "autor": "Juan M. López y otros",
       "cantidad": 3
     },
     {
+      "autor": "Adriana Cristina Serquis",
+      "cantidad": 2
+    },
+    {
       "autor": "Gabriel Chumpitaz",
+      "cantidad": 2
+    },
+    {
+      "autor": "Juan Fernando Brügge",
       "cantidad": 2
     },
     {
@@ -191,67 +199,59 @@
       "cantidad": 2
     },
     {
-      "autor": "Adriana Cristina Serquis",
-      "cantidad": 1
-    },
-    {
       "autor": "AGUIRRE, MANUEL IGNACIO",
       "cantidad": 1
     },
     {
       "autor": "Ana Carla Carrizo",
       "cantidad": 1
-    },
-    {
-      "autor": "ARAUJO HERNÁNDEZ, JORGE NERI",
-      "cantidad": 1
     }
   ],
   "year_tematica_matrix": {
     "2025": {
-      "Estrategia Tecnologica Nacional": 12,
       "IA": 13,
       "Innovación y Desarrollo Productivo": 3,
+      "Estrategia Tecnologica Nacional": 12,
       "Privacidad Digital / Derechos Digitales": 2,
       "Tecnologías Estratégicas": 2
     },
     "2026": {
-      "Estrategia Tecnologica Nacional": 16,
-      "IA": 12,
+      "IA": 15,
       "Innovación y Desarrollo Productivo": 6,
-      "Tecnologías Estratégicas": 10
+      "Tecnologías Estratégicas": 13,
+      "Estrategia Tecnologica Nacional": 18
     }
   },
   "tipo_stats": [
     {
       "tipo": "MARCO REGULATORIO",
-      "cantidad": 20,
-      "porcentaje": 26
+      "cantidad": 23,
+      "porcentaje": 27
     },
     {
       "tipo": "PROYECTO DE LEY",
       "cantidad": 20,
-      "porcentaje": 26
+      "porcentaje": 24
     },
     {
       "tipo": "FINANCIAMIENTO",
-      "cantidad": 12,
-      "porcentaje": 16
+      "cantidad": 13,
+      "porcentaje": 15
     },
     {
       "tipo": "CREA ÓRGANOS",
       "cantidad": 11,
-      "porcentaje": 14
+      "porcentaje": 13
     },
     {
       "tipo": "DECLARATIVA",
-      "cantidad": 4,
-      "porcentaje": 5
+      "cantidad": 6,
+      "porcentaje": 7
     },
     {
       "tipo": "EDUCATIVA",
-      "cantidad": 3,
-      "porcentaje": 4
+      "cantidad": 4,
+      "porcentaje": 5
     },
     {
       "tipo": "OTROS",
@@ -260,8 +260,8 @@
     },
     {
       "tipo": "PENAL",
-      "cantidad": 2,
-      "porcentaje": 3
+      "cantidad": 3,
+      "porcentaje": 4
     },
     {
       "tipo": "MODIFICA LEY",
@@ -272,27 +272,27 @@
   "subtema_stats": [
     {
       "subtema": "Estrategía Nacional de Ciencia y Tecnologia",
-      "cantidad": 10,
+      "cantidad": 11,
       "porcentaje": 13
     },
     {
       "subtema": "Marco Regulatorio",
-      "cantidad": 10,
+      "cantidad": 11,
       "porcentaje": 13
     },
     {
-      "subtema": "Implementación de la IA por parte de la Administración Publica",
-      "cantidad": 6,
-      "porcentaje": 8
-    },
-    {
       "subtema": "Deepfake y generación de contenido",
-      "cantidad": 5,
+      "cantidad": 6,
       "porcentaje": 7
     },
     {
       "subtema": "Educación",
-      "cantidad": 5,
+      "cantidad": 6,
+      "porcentaje": 7
+    },
+    {
+      "subtema": "Implementación de la IA por parte de la Administración Publica",
+      "cantidad": 6,
       "porcentaje": 7
     },
     {
@@ -316,24 +316,34 @@
       "porcentaje": 5
     },
     {
+      "subtema": "Utilización de la IA en el Sistema Educativo",
+      "cantidad": 4,
+      "porcentaje": 5
+    },
+    {
       "subtema": "Nuclear",
       "cantidad": 3,
       "porcentaje": 4
     },
     {
-      "subtema": "Utilización de la IA en el Sistema Educativo",
-      "cantidad": 3,
-      "porcentaje": 4
+      "subtema": "Defensa",
+      "cantidad": 2,
+      "porcentaje": 2
     },
     {
       "subtema": "Ecosistema Startup",
       "cantidad": 2,
-      "porcentaje": 3
+      "porcentaje": 2
+    },
+    {
+      "subtema": "Geociencias",
+      "cantidad": 2,
+      "porcentaje": 2
     },
     {
       "subtema": "Programas de innovación",
       "cantidad": 2,
-      "porcentaje": 3
+      "porcentaje": 2
     },
     {
       "subtema": "Brecha Digital",
@@ -342,11 +352,6 @@
     },
     {
       "subtema": "Creación de Organismos especializados",
-      "cantidad": 1,
-      "porcentaje": 1
-    },
-    {
-      "subtema": "Defensa",
       "cantidad": 1,
       "porcentaje": 1
     },
@@ -1933,20 +1938,21 @@
     },
     {
       "id": "2049-D-2026",
-      "titulo": "Proyecto de Ley sobre Inteligencia Artificial",
+      "titulo": "Ley Orgánica del Sistema Nacional de Meteorología y Climatología",
       "autores": [
-        "No disponible"
+        "Marcela Marina Pagano"
       ],
-      "autor_principal": "No disponible",
-      "bloque": "Sin datos",
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
       "camara": "Diputados",
       "año": 2026,
-      "eje": "Inteligencia Artificial",
+      "eje": "Tecnologías Estratégicas",
       "eje_score": 10,
-      "tematica": "IA",
-      "subtematica": "Marco Regulatorio",
-      "resumen": "Proyecto incorporado al dashboard. Ver texto completo en el PDF del expediente 2049-D-2026.",
+      "tematica": "Tecnologías Estratégicas",
+      "subtematica": "Geociencias",
+      "resumen": "Establece el marco jurídico integral del Sistema Nacional de Meteorología y Climatología y jerarquiza al Servicio Meteorológico Nacional como organismo científico-técnico autárquico, con continuidad operativa, protección de datos climáticos, alertas tempranas y una comisión bicameral de seguimiento.",
       "tipo": "MARCO REGULATORIO",
+      "estado_cyt": "CYT",
       "paginas": 80,
       "pdf_path": "PDFs_Proyectos_Ley/2026/2049-D-2026.pdf"
     },
@@ -1994,6 +2000,26 @@
       "paginas": 0,
       "resumen": "Establece el SINPIAP para acelerar protección y gestión de propiedad intelectual en pymes.",
       "pdf_path": "PDFs_Proyectos_Ley/2026/2297-D-2026.pdf"
+    },
+    {
+      "id": "2516-D-2026",
+      "titulo": "Incorporación de Contenidos de Inteligencia Artificial como Contenido Curricular",
+      "autores": [
+        "Sebastián Nóblega"
+      ],
+      "autor_principal": "Sebastián Nóblega",
+      "bloque": "Elijo Catamarca",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Educación y Formación CyT",
+      "eje_score": 10,
+      "tematica": "IA",
+      "subtematica": "Utilización de la IA en el Sistema Educativo",
+      "resumen": "Modifica la Ley de Educación Nacional para incorporar de manera progresiva contenidos de inteligencia artificial, pensamiento computacional, ciudadanía digital, protección de datos y uso ético de tecnologías emergentes, junto con capacitación docente.",
+      "tipo": "EDUCATIVA",
+      "estado_cyt": "CYT",
+      "paginas": 6,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/2516-D-2026.pdf"
     },
     {
       "id": "2665-D-2026",
@@ -2052,32 +2078,12 @@
     },
     {
       "id": "3032-D-2026",
-      "titulo": "Creación del Sistema Nacional de Gemelos Digitales para la Planificación Estratégica y el Desarrollo Territorial",
+      "titulo": "Ley de Creación del Ministerio de Ciencia, Tecnología y Universidades",
       "autores": [
         "Marcela Marina Pagano"
       ],
       "autor_principal": "Marcela Marina Pagano",
       "bloque": "COHERENCIA",
-      "camara": "Diputados",
-      "año": 2026,
-      "eje": "Inteligencia Artificial",
-      "eje_score": 9,
-      "tematica": "IA",
-      "subtematica": "Implementación de la IA por parte de la Administración Publica",
-      "resumen": "Crea un sistema nacional de gemelos digitales para la planificación estratégica y el desarrollo territorial, con herramientas de simulación, análisis prospectivo y gestión pública basada en datos.",
-      "tipo": "CREA ÓRGANOS",
-      "estado_cyt": "CYT",
-      "paginas": 18,
-      "pdf_path": "PDFs_Proyectos_Ley/2026/3032-D-2026.pdf"
-    },
-    {
-      "id": "3060-D-2026",
-      "titulo": "Ley de Creación del Ministerio de Ciencia, Tecnología y Universidades",
-      "autores": [
-        "Carlos Gustavo Jaime Quiroga"
-      ],
-      "autor_principal": "Carlos Gustavo Jaime Quiroga",
-      "bloque": "Produccion y Trabajo",
       "camara": "Diputados",
       "año": 2026,
       "eje": "Gobernanza e Institucionalidad CyT",
@@ -2087,8 +2093,176 @@
       "resumen": "Crea el Ministerio de Ciencia, Tecnología y Universidades como órgano rector del sistema universitario, del Sistema Nacional de Ciencia, Tecnología e Innovación y de la transferencia tecnológica.",
       "tipo": "CREA ÓRGANOS",
       "estado_cyt": "CYT",
+      "paginas": 18,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/3032-D-2026.pdf"
+    },
+    {
+      "id": "3060-D-2026",
+      "titulo": "Creación del Sistema Nacional de Gemelos Digitales para la Planificación Estratégica y el Desarrollo Territorial",
+      "autores": [
+        "Carlos Gustavo Jaime Quiroga",
+        "Nancy Viviana Picón Martínez"
+      ],
+      "autor_principal": "Carlos Gustavo Jaime Quiroga",
+      "bloque": "Producción y Trabajo",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Inteligencia Artificial",
+      "eje_score": 9,
+      "tematica": "IA",
+      "subtematica": "Implementación de la IA por parte de la Administración Publica",
+      "resumen": "Crea un sistema nacional de gemelos digitales para la planificación estratégica y el desarrollo territorial, con herramientas de simulación, análisis prospectivo y gestión pública basada en datos.",
+      "tipo": "CREA ÓRGANOS",
+      "estado_cyt": "CYT",
       "paginas": 8,
       "pdf_path": "PDFs_Proyectos_Ley/2026/3060-D-2026.pdf"
+    },
+    {
+      "id": "3330-D-2026",
+      "titulo": "Régimen Jurídico Aplicable para el Uso Responsable de la Inteligencia Artificial en la República Argentina",
+      "autores": [
+        "Juan Fernando Brügge"
+      ],
+      "autor_principal": "Juan Fernando Brügge",
+      "bloque": "Provincias Unidas",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Inteligencia Artificial",
+      "eje_score": 10,
+      "tematica": "IA",
+      "subtematica": "Marco Regulatorio",
+      "resumen": "Establece un régimen nacional para el uso responsable de la inteligencia artificial, con principios de transparencia, supervisión humana y protección de derechos, obligaciones para proveedores y usuarios, evaluación de impacto, sistemas de alto riesgo, sandboxes regulatorios y promoción de IA abierta.",
+      "tipo": "MARCO REGULATORIO",
+      "estado_cyt": "CYT",
+      "paginas": 35,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/3330-D-2026.pdf"
+    },
+    {
+      "id": "3579-D-2026",
+      "titulo": "Prórroga de las Becas Internas Posdoctorales del CONICET",
+      "autores": [
+        "Néstor Pitrola",
+        "Romina Del Plá",
+        "Myriam Bregman",
+        "Nicolás Del Caño"
+      ],
+      "autor_principal": "Néstor Pitrola",
+      "bloque": "Frente de Izquierda",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Educación y Formación CyT",
+      "eje_score": 10,
+      "tematica": "Estrategia Tecnologica Nacional",
+      "subtematica": "Educación",
+      "resumen": "Prorroga las becas posdoctorales del CONICET que vencían el 31 de julio de 2026 para postulantes a la Carrera del Investigador, garantizando estipendio, cobertura de salud y continuidad hasta la publicación de resultados o el alta efectiva.",
+      "tipo": "FINANCIAMIENTO",
+      "estado_cyt": "CYT",
+      "paginas": 7,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/3579-D-2026.pdf"
+    },
+    {
+      "id": "4327-D-2026",
+      "titulo": "Modificación del Código Penal sobre Contenidos Audiovisuales Manipulados con Inteligencia Artificial",
+      "autores": [
+        "Juan Fernando Brügge"
+      ],
+      "autor_principal": "Juan Fernando Brügge",
+      "bloque": "Provincias Unidas",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Inteligencia Artificial",
+      "eje_score": 10,
+      "tematica": "IA",
+      "subtematica": "Deepfake y generación de contenido",
+      "resumen": "Incorpora delitos específicos al Código Penal para sancionar la creación y difusión no consentida de deepfakes que dañen la imagen o reputación, manipulen procesos electorales o simulen contenido sexual íntimo, y penaliza la eliminación de avisos que identifican contenido generado con IA.",
+      "tipo": "PENAL",
+      "estado_cyt": "CYT",
+      "paginas": 6,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/4327-D-2026.pdf"
+    },
+    {
+      "id": "4484-D-2026",
+      "titulo": "Régimen de Protección de la Base Industrial y Tecnológica para la Defensa y del Complejo Científico-Tecnológico Estatal",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Tecnologías Estratégicas",
+      "eje_score": 10,
+      "tematica": "Tecnologías Estratégicas",
+      "subtematica": "Defensa",
+      "resumen": "Protege la titularidad estatal y la continuidad operativa de empresas y organismos estratégicos de defensa, ciencia, tecnología, energía nuclear, espacio y telecomunicaciones; limita privatizaciones y fija condiciones para asociaciones, transferencia tecnológica y propiedad intelectual.",
+      "tipo": "MARCO REGULATORIO",
+      "estado_cyt": "CYT",
+      "paginas": 16,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/4484-D-2026.pdf"
+    },
+    {
+      "id": "4508-D-2026",
+      "titulo": "Bariloche Capital Nacional de la Ciencia, la Investigación y el Desarrollo de Altas Tecnologías",
+      "autores": [
+        "Adriana Cristina Serquis",
+        "Marcelo Mango",
+        "Aníbal Tortoriello",
+        "Sergio Eduardo Capozzi"
+      ],
+      "autor_principal": "Adriana Cristina Serquis",
+      "bloque": "Unión por la Patria",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Gobernanza e Institucionalidad CyT",
+      "eje_score": 9,
+      "tematica": "Estrategia Tecnologica Nacional",
+      "subtematica": "Estrategía Nacional de Ciencia y Tecnologia",
+      "resumen": "Declara a San Carlos de Bariloche Capital Nacional de la Ciencia, la Investigación y el Desarrollo de Altas Tecnologías, reconociendo su concentración de instituciones, capacidades y empresas científicas, nucleares, espaciales y tecnológicas.",
+      "tipo": "DECLARATIVA",
+      "estado_cyt": "CYT",
+      "paginas": 4,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/4508-D-2026.pdf"
+    },
+    {
+      "id": "4761-D-2026",
+      "titulo": "Régimen de Seguridad y Transparencia de la Inteligencia Artificial de Frontera y de la Infraestructura de Cómputo de Gran Escala",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Inteligencia Artificial",
+      "eje_score": 10,
+      "tematica": "IA",
+      "subtematica": "Marco Regulatorio",
+      "resumen": "Regula los modelos de IA de frontera y la infraestructura de cómputo de gran escala mediante obligaciones de registro, transparencia, evaluación y reporte de riesgos; exige control humano significativo para usos estatales críticos y protege a quienes informen incumplimientos.",
+      "tipo": "MARCO REGULATORIO",
+      "estado_cyt": "CYT",
+      "paginas": 25,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/4761-D-2026.pdf"
+    },
+    {
+      "id": "4847-D-2026",
+      "titulo": "Día del Geofísico Argentino",
+      "autores": [
+        "Nancy Viviana Picón Martínez",
+        "Carlos Gustavo Jaime Quiroga"
+      ],
+      "autor_principal": "Nancy Viviana Picón Martínez",
+      "bloque": "Producción y Trabajo",
+      "camara": "Diputados",
+      "año": 2026,
+      "eje": "Gobernanza e Institucionalidad CyT",
+      "eje_score": 8,
+      "tematica": "Tecnologías Estratégicas",
+      "subtematica": "Geociencias",
+      "resumen": "Declara el 7 de noviembre como Día del Geofísico Argentino para reconocer el aporte de la geofísica a la prevención sísmica, la planificación territorial, la infraestructura, la exploración responsable de recursos y el desarrollo científico y tecnológico.",
+      "tipo": "DECLARATIVA",
+      "estado_cyt": "CYT",
+      "paginas": 5,
+      "pdf_path": "PDFs_Proyectos_Ley/2026/4847-D-2026.pdf"
     }
   ]
 }

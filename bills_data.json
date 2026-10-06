@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generado": "2026-07-01T15:53:58.720Z",
-    "total": 40,
+    "generado": "2026-10-06T03:40:07.646Z",
+    "total": 43,
     "fuente": "PDFs locales del proyecto (raíz + Mateo proyectos)",
     "carpetas_fuente": [
       ".",
@@ -30,6 +30,11 @@
       "promedio_autores": 1
     },
     {
+      "bloque": "Provincias Unidas",
+      "proyectos": 4,
+      "promedio_autores": 1
+    },
+    {
       "bloque": "COHERENCIA",
       "proyectos": 3,
       "promedio_autores": 1
@@ -50,11 +55,6 @@
       "promedio_autores": 1
     },
     {
-      "bloque": "Provincias Unidas",
-      "proyectos": 2,
-      "promedio_autores": 1
-    },
-    {
       "bloque": "Coalición Cívica",
       "proyectos": 1,
       "promedio_autores": 1
@@ -65,40 +65,45 @@
       "promedio_autores": 1
     },
     {
+      "bloque": "Elijo Catamarca",
+      "proyectos": 1,
+      "promedio_autores": 1
+    },
+    {
       "bloque": "Futuro y Libertad",
       "proyectos": 1,
       "promedio_autores": 1
     },
     {
-      "bloque": "Sin datos",
+      "bloque": "Producción y Trabajo",
       "proyectos": 1,
-      "promedio_autores": 1
+      "promedio_autores": 2
     }
   ],
   "top_destinatarios": [
     {
       "destinatario": "Empresas / Sector privado",
-      "total": 25
+      "total": 28
     },
     {
       "destinatario": "Estado / Organismo público",
-      "total": 25
+      "total": 28
     },
     {
       "destinatario": "Ciudadanía general",
-      "total": 24
+      "total": 25
     },
     {
       "destinatario": "Investigadores / Científicos",
-      "total": 11
+      "total": 12
     },
     {
       "destinatario": "Jóvenes / Estudiantes",
-      "total": 5
+      "total": 6
     },
     {
       "destinatario": "Sector educativo",
-      "total": 5
+      "total": 6
     },
     {
       "destinatario": "Organismos de control",
@@ -120,7 +125,7 @@
   "top_topics": [
     {
       "tema": "Inteligencia Artificial",
-      "total": 39
+      "total": 42
     },
     {
       "tema": "Tecnología / IA",
@@ -590,7 +595,9 @@
       "expediente": "0345/2025",
       "tipo": "CREA ORGANOS",
       "dashboard": "SI",
-      "pdf_path": "PDFs_Proyectos_Ley/2025/0345-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/0345-D-2025.pdf",
+      "grupo": "IA",
+      "subtematica": "Creación de Organismos especializados"
     },
     {
       "id": "1937-D-2025",
@@ -615,7 +622,9 @@
       "expediente": "1937/2025",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "PDFs_Proyectos_Ley/2025/1937-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/1937-D-2025.pdf",
+      "grupo": "IA",
+      "subtematica": "Marco Regulatorio"
     },
     {
       "id": "2130-D-2025",
@@ -640,7 +649,9 @@
       "expediente": "2130/2025",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "PDFs_Proyectos_Ley/2025/2130-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/2130-D-2025.pdf",
+      "grupo": "IA",
+      "subtematica": "Marco Regulatorio"
     },
     {
       "id": "2300-D-2025",
@@ -664,7 +675,9 @@
       "expediente": "2300/2025",
       "tipo": "DEEPFAKE Y SIMILARES",
       "dashboard": "INDIRECTA",
-      "pdf_path": "PDFs_Proyectos_Ley/2025/2300-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/2300-D-2025.pdf",
+      "grupo": "IA",
+      "subtematica": "Deepfake y generación de contenido"
     },
     {
       "id": "2903-D-2025",
@@ -688,7 +701,9 @@
       "expediente": "2903/2025",
       "tipo": "ADMINISTRACIÓN PUBLICA",
       "dashboard": "INDIRECTA",
-      "pdf_path": "PDFs_Proyectos_Ley/2025/2903-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/2903-D-2025.pdf",
+      "grupo": "IA",
+      "subtematica": "Implementación de la IA por parte de la Administración Publica"
     },
     {
       "id": "3558-D-2025",
@@ -712,7 +727,9 @@
       "expediente": "3558/2025",
       "tipo": "PRODUCCIÓN AUDIOVISUAL",
       "dashboard": "INDIRECTA",
-      "pdf_path": "PDFs_Proyectos_Ley/2025/3558-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/3558-D-2025.pdf",
+      "grupo": "IA",
+      "subtematica": "Deepfake y generación de contenido"
     },
     {
       "id": "4094-D-2025",
@@ -736,7 +753,9 @@
       "expediente": "4094/2025",
       "tipo": "DEEPFAKE Y SIMILARES",
       "dashboard": "INDIRECTA",
-      "pdf_path": "PDFs_Proyectos_Ley/2025/4094-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/4094-D-2025.pdf",
+      "grupo": "IA",
+      "subtematica": "Deepfake y generación de contenido"
     },
     {
       "id": "4145-D-2025",
@@ -760,7 +779,9 @@
       "expediente": "4145/2025",
       "tipo": "EDUCATIVA",
       "dashboard": "INDIRECTA",
-      "pdf_path": "PDFs_Proyectos_Ley/2025/4145-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/4145-D-2025.pdf",
+      "grupo": "IA",
+      "subtematica": "Utilización de la IA en el Sistema Educativo"
     },
     {
       "id": "4219-D-2025",
@@ -784,7 +805,9 @@
       "expediente": "4219/2025",
       "tipo": "ADMINISTRACIÓN PUBLICA",
       "dashboard": "INDIRECTA",
-      "pdf_path": "PDFs_Proyectos_Ley/2025/4219-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/4219-D-2025.pdf",
+      "grupo": "IA",
+      "subtematica": "Implementación de la IA por parte de la Administración Publica"
     },
     {
       "id": "4243-D-2025",
@@ -808,7 +831,9 @@
       "expediente": "4243/2025",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "PDFs_Proyectos_Ley/2025/4243-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/4243-D-2025.pdf",
+      "grupo": "IA",
+      "subtematica": "Marco Regulatorio"
     },
     {
       "id": "6189-D-2025",
@@ -833,7 +858,9 @@
       "expediente": "6189/2025",
       "tipo": "EDUCATIVA",
       "dashboard": "INDIRECTA",
-      "pdf_path": "PDFs_Proyectos_Ley/2025/6189-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/6189-D-2025.pdf",
+      "grupo": "IA",
+      "subtematica": "Utilización de la IA en el Sistema Educativo"
     },
     {
       "id": "6655-D-2025",
@@ -858,7 +885,9 @@
       "expediente": "6655/2025",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "PDFs_Proyectos_Ley/2025/6655-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/6655-D-2025.pdf",
+      "grupo": "IA",
+      "subtematica": "Marco Regulatorio"
     },
     {
       "id": "6656-D-2025",
@@ -882,7 +911,9 @@
       "expediente": "6656/2025",
       "tipo": "EDUCATIVA",
       "dashboard": "INDIRECTA",
-      "pdf_path": "PDFs_Proyectos_Ley/2025/6656-D-2025.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2025/6656-D-2025.pdf",
+      "grupo": "IA",
+      "subtematica": "Utilización de la IA en el Sistema Educativo"
     },
     {
       "id": "0004-D-2026",
@@ -907,7 +938,9 @@
       "expediente": "0004/2026",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "PDFs_Proyectos_Ley/2026/0004-D-2026.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0004-D-2026.pdf",
+      "grupo": "IA",
+      "subtematica": "Marco Regulatorio"
     },
     {
       "id": "0005-D-2026",
@@ -956,7 +989,9 @@
       "expediente": "0253/2026",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "PDFs_Proyectos_Ley/2026/0253-D-2026.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0253-D-2026.pdf",
+      "grupo": "IA",
+      "subtematica": "Deepfake y generación de contenido"
     },
     {
       "id": "0519-D-2026",
@@ -981,7 +1016,9 @@
       "expediente": "0519/2026",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "PDFs_Proyectos_Ley/2026/0519-D-2026.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2026/0519-D-2026.pdf",
+      "grupo": "IA",
+      "subtematica": "Implementación de la IA por parte de la Administración Publica"
     },
     {
       "id": "1319-D-2026",
@@ -1006,7 +1043,9 @@
       "expediente": "1319/2026",
       "tipo": "DEEPFAKE Y SIMILARES",
       "dashboard": "INDIRECTA",
-      "pdf_path": "PDFs_Proyectos_Ley/2026/1319-D-2026.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2026/1319-D-2026.pdf",
+      "grupo": "IA",
+      "subtematica": "Deepfake y generación de contenido"
     },
     {
       "id": "1809-D-2026",
@@ -1031,31 +1070,36 @@
       "expediente": "1809/2026",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "PDFs_Proyectos_Ley/2026/1809-D-2026.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2026/1809-D-2026.pdf",
+      "grupo": "IA",
+      "subtematica": "Marco Regulatorio"
     },
     {
-      "id": "2049-D-2026",
-      "titulo": "Proyecto de Ley sobre Inteligencia Artificial",
+      "id": "2516-D-2026",
+      "titulo": "Incorporación de Contenidos de Inteligencia Artificial como Contenido Curricular",
       "autores": [
-        "No disponible"
+        "Sebastián Nóblega"
       ],
-      "autor_principal": "No disponible",
+      "autor_principal": "Sebastián Nóblega",
       "total_autores": 1,
-      "bloque": "Sin datos",
+      "bloque": "Elijo Catamarca",
       "camara": "Diputados",
       "año": 2026,
-      "mes": 5,
+      "mes": 6,
       "tema": "Inteligencia Artificial",
       "estado": "En Comisión",
       "destinatarios": [
-        "Estado / Organismo público",
-        "Ciudadanía general"
+        "Sector educativo",
+        "Jóvenes / Estudiantes",
+        "Estado / Organismo público"
       ],
-      "resumen": "Proyecto incorporado al dashboard IA. Ver texto completo en el PDF del expediente 2049-D-2026.",
-      "expediente": "2049/2026",
-      "tipo": "MARCO REGULATORIO",
+      "resumen": "Modifica la Ley de Educación Nacional para incorporar de manera progresiva contenidos de inteligencia artificial, pensamiento computacional, ciudadanía digital, protección de datos y uso ético de tecnologías emergentes, junto con capacitación docente.",
+      "expediente": "2516/2026",
+      "tipo": "EDUCATIVA",
       "dashboard": "SI",
-      "pdf_path": "PDFs_Proyectos_Ley/2026/2049-D-2026.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2026/2516-D-2026.pdf",
+      "grupo": "IA",
+      "subtematica": "Utilización de la IA en el Sistema Educativo"
     },
     {
       "id": "2912-D-2026",
@@ -1080,20 +1124,23 @@
       "expediente": "2912/2026",
       "tipo": "MARCO REGULATORIO",
       "dashboard": "SI",
-      "pdf_path": "PDFs_Proyectos_Ley/2026/2912-D-2026.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2026/2912-D-2026.pdf",
+      "grupo": "IA",
+      "subtematica": "Implementación de la IA por parte de la Administración Publica"
     },
     {
-      "id": "3032-D-2026",
+      "id": "3060-D-2026",
       "titulo": "Creación del Sistema Nacional de Gemelos Digitales para la Planificación Estratégica y el Desarrollo Territorial",
       "autores": [
-        "Marcela Marina Pagano"
+        "Carlos Gustavo Jaime Quiroga",
+        "Nancy Viviana Picón Martínez"
       ],
-      "autor_principal": "Marcela Marina Pagano",
-      "total_autores": 1,
-      "bloque": "COHERENCIA",
+      "autor_principal": "Carlos Gustavo Jaime Quiroga",
+      "total_autores": 2,
+      "bloque": "Producción y Trabajo",
       "camara": "Diputados",
       "año": 2026,
-      "mes": 7,
+      "mes": 6,
       "tema": "Inteligencia Artificial",
       "estado": "En Comisión",
       "destinatarios": [
@@ -1102,10 +1149,93 @@
         "Investigadores / Científicos"
       ],
       "resumen": "Crea un sistema nacional de gemelos digitales orientado a la planificación estratégica, el desarrollo territorial y la evaluación de políticas públicas mediante simulación, modelos predictivos y datos actualizados.",
-      "expediente": "3032/2026",
+      "expediente": "3060/2026",
       "tipo": "CREA ORGANOS",
       "dashboard": "SI",
-      "pdf_path": "PDFs_Proyectos_Ley/2026/3032-D-2026.pdf"
+      "pdf_path": "PDFs_Proyectos_Ley/2026/3060-D-2026.pdf",
+      "grupo": "IA",
+      "subtematica": "Implementación de la IA por parte de la Administración Publica"
+    },
+    {
+      "id": "3330-D-2026",
+      "titulo": "Régimen Jurídico Aplicable para el Uso Responsable de la Inteligencia Artificial en la República Argentina",
+      "autores": [
+        "Juan Fernando Brügge"
+      ],
+      "autor_principal": "Juan Fernando Brügge",
+      "total_autores": 1,
+      "bloque": "Provincias Unidas",
+      "camara": "Diputados",
+      "año": 2026,
+      "mes": 7,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Ciudadanía general",
+        "Empresas / Sector privado",
+        "Estado / Organismo público"
+      ],
+      "resumen": "Establece un régimen nacional para el uso responsable de la inteligencia artificial, con principios de transparencia, supervisión humana y protección de derechos, obligaciones para proveedores y usuarios, evaluación de impacto, sistemas de alto riesgo, sandboxes regulatorios y promoción de IA abierta.",
+      "expediente": "3330/2026",
+      "tipo": "MARCO REGULATORIO",
+      "dashboard": "SI",
+      "pdf_path": "PDFs_Proyectos_Ley/2026/3330-D-2026.pdf",
+      "grupo": "IA",
+      "subtematica": "Marco Regulatorio"
+    },
+    {
+      "id": "4327-D-2026",
+      "titulo": "Modificación del Código Penal sobre Contenidos Audiovisuales Manipulados con Inteligencia Artificial",
+      "autores": [
+        "Juan Fernando Brügge"
+      ],
+      "autor_principal": "Juan Fernando Brügge",
+      "total_autores": 1,
+      "bloque": "Provincias Unidas",
+      "camara": "Diputados",
+      "año": 2026,
+      "mes": 8,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Ciudadanía general",
+        "Estado / Organismo público",
+        "Empresas / Sector privado"
+      ],
+      "resumen": "Incorpora delitos específicos al Código Penal para sancionar la creación y difusión no consentida de deepfakes que dañen la imagen o reputación, manipulen procesos electorales o simulen contenido sexual íntimo, y penaliza la eliminación de avisos que identifican contenido generado con IA.",
+      "expediente": "4327/2026",
+      "tipo": "DEEPFAKE Y SIMILARES",
+      "dashboard": "SI",
+      "pdf_path": "PDFs_Proyectos_Ley/2026/4327-D-2026.pdf",
+      "grupo": "IA",
+      "subtematica": "Deepfake y generación de contenido"
+    },
+    {
+      "id": "4761-D-2026",
+      "titulo": "Régimen de Seguridad y Transparencia de la Inteligencia Artificial de Frontera y de la Infraestructura de Cómputo de Gran Escala",
+      "autores": [
+        "Marcela Marina Pagano"
+      ],
+      "autor_principal": "Marcela Marina Pagano",
+      "total_autores": 1,
+      "bloque": "COHERENCIA",
+      "camara": "Diputados",
+      "año": 2026,
+      "mes": 9,
+      "tema": "Inteligencia Artificial",
+      "estado": "En Comisión",
+      "destinatarios": [
+        "Empresas / Sector privado",
+        "Estado / Organismo público",
+        "Investigadores / Científicos"
+      ],
+      "resumen": "Regula los modelos de IA de frontera y la infraestructura de cómputo de gran escala mediante obligaciones de registro, transparencia, evaluación y reporte de riesgos; exige control humano significativo para usos estatales críticos y protege a quienes informen incumplimientos.",
+      "expediente": "4761/2026",
+      "tipo": "MARCO REGULATORIO",
+      "dashboard": "SI",
+      "pdf_path": "PDFs_Proyectos_Ley/2026/4761-D-2026.pdf",
+      "grupo": "IA",
+      "subtematica": "Marco Regulatorio"
     }
   ]
 }

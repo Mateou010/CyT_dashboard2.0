@@ -9,8 +9,9 @@
     "seguimiento:solo-nuevos": "node run.js --solo-nuevos",
     "seguimiento:ultimo": "node run.js --ultimo",
     "seguimiento:recientes": "node run.js --recientes=7",
+    "sync:dashboard-data": "node scripts/sync-dashboard-data.mjs",
     "broadcast": "node broadcast.js",
-    "test": "node --test tests/",
+    "test": "node --test tests/*.test.js",
     "test:py": "python3 -m unittest discover -s tests"
   },
   "engines": {

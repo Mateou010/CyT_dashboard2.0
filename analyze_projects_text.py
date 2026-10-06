@@ -6,6 +6,7 @@ Genera bridge_analysis.json con puntajes por eje + evidencia + calidad normativa
 
 import json
 import re
+import pdfplumber
 from datetime import datetime
 from pathlib import Path
 
@@ -255,8 +256,20 @@ def main():
             raw = txt_file.read_text(encoding="utf-8", errors="ignore")
             lines = [ln.rstrip() for ln in raw.splitlines()]
         else:
-            raw = ""
-            lines = []
+            pdf_path = base / str(bill.get("pdf_path", "")).removeprefix("./")
+            if pdf_path.exists():
+                try:
+                    with pdfplumber.open(pdf_path) as pdf:
+                        raw = "\n".join((page.extract_text() or "") for page in pdf.pages)
+                    lines = [ln.rstrip() for ln in raw.splitlines()]
+                    with_txt += 1
+                except Exception as exc:
+                    print(f"Aviso: no se pudo leer {pdf_path.name}: {exc}")
+                    raw = ""
+                    lines = []
+            else:
+                raw = ""
+                lines = []
 
         scores = {}
         evidence_map = {}
@@ -276,7 +289,9 @@ def main():
             "evidence": evidence_map,
             "evidence_lines": evidence_lines,
             "quality": quality,
-            "fuente_texto": str(txt_file.name) if txt_file.exists() else "sin_txt",
+            "fuente_texto": str(txt_file.name) if txt_file.exists() else (
+                str(bill.get("pdf_path")) if raw else "sin_txt"
+            ),
         }
 
     out_path.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")

@@ -1073,7 +1073,7 @@ tr:hover{background:var(--surface2)}
 
 <div class="outside-cyt-note anim d3" onclick="openOutsideCytModal()" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openOutsideCytModal();}">
   <strong>Hay 7 proyectos de Ley relativos a la temática pero que no se encuentran en la Comisión de Ciencia y Tecnología.</strong>
-  Hacé clic para ver el detalle y abrir el PDF de cada uno (estos proyectos no se incluyen en el conteo de 33).
+  Hacé clic para ver el detalle y abrir el PDF de cada uno (estos proyectos no se incluyen en el conteo principal).
   <div style="margin-top:6px;font-size:12px;font-weight:700;color:var(--lime);text-decoration:underline">Ver los 7 proyectos</div>
 </div>
 
@@ -1740,7 +1740,7 @@ const SEMAFORO_BASE = {
       title: 'Grado significativo de convergencia',
       summary: 'Actualmente, la Argentina no cuenta con una normativa específica en la materia y existe una multiplicidad de proyectos que abordan esta problemática de manera autónoma. La diversidad de origen partidario de estas iniciativas evidencia que se trata de una preocupación que trasciende las diferencias ideológicas. Asimismo, muchos de los proyectos de marco regulatorio general incluyen apartados específicos sobre este tema, lo que refuerza su centralidad. A ello se suma una demanda social creciente, asociada a casos concretos que hoy carecen de respuesta normativa.',
       reasons: [],
-      projectIds: [],
+      projectIds: ['4327-D-2026'],
       keywords: ['deepfake','clonacion de rostro','rostro y voz','suplantacion de identidad','imagen sintetica']
     },
     {
@@ -1749,7 +1749,7 @@ const SEMAFORO_BASE = {
       title: 'Definición de una serie de presupuestos mínimos',
       summary: 'Existen algunos proyectos autónomos (como, por ejemplo, el de la diputada Giudici), que proponen la definición de una serie de presupuestos mínimos que funcionen con un estándar a la hora del desarrollo y la implementación de Sistemas de Inteligencia Artificial. Si bien resulta discutible el alcance y la conveniencia de fijar estos estándares, lo cierto es que pareciera existir un punto de convergencia en torno a la posibilidad de establecer un conjunto de principios mínimos comunes, vinculados a cuestiones de transparencia, criterios éticos y protección de derechos humanos, sobre los cuales podría alcanzarse un acuerdo.',
       reasons: [],
-      projectIds: [],
+      projectIds: ['3330-D-2026', '4761-D-2026'],
       keywords: ['transparencia','etica','derechos humanos','auditoria','sesgo','responsabilidad algorítmica']
     },
     {
@@ -1758,7 +1758,7 @@ const SEMAFORO_BASE = {
       title: 'Inteligencia artificial de alto riesgo',
       summary: 'Se pueden observar principios comunes en la prohibición de determinados usos de la inteligencia artificial considerados de alto riesgo o incompatibles con el orden democrático, tales como los sistemas de vigilancia masiva o los esquemas de puntuación social. Si bien pueden existir diferencias en la técnica normativa para instrumentar estas prohibiciones, el consenso respecto de su inadmisibilidad es claro.',
       reasons: [],
-      projectIds: ['3955-D-2024', '4898-D-2024', '6156-D-2024', '2300-D-2025', '4243-D-2025'],
+      projectIds: ['3955-D-2024', '4898-D-2024', '6156-D-2024', '2300-D-2025', '4243-D-2025', '4761-D-2026'],
       keywords: ['vigilancia', 'social scoring', 'garantias constitucionales', 'puntuacion social', 'reconocimiento facial']
     },
     {
@@ -1767,7 +1767,7 @@ const SEMAFORO_BASE = {
       title: 'Sistema educativo',
       summary: 'También se identifican coincidencias relevantes en torno a la necesidad de adaptación del sistema educativo frente a la irrupción de la inteligencia artificial. En este punto contamos con una serie de proyectos autónomos que buscan discutir la adaptación del sistema a esta nueva tecnología. Es importante hacer mención en este apartado de que esta cuestión ya está siendo aplicada actualmente por varias provincias de distintos gobiernos.',
       reasons: [],
-      projectIds: [],
+      projectIds: ['2516-D-2026'],
       keywords: ['educacion','curricula','escolar','formacion docente','fluidez digital','desercion','robotica']
     }
   ],
@@ -1778,7 +1778,7 @@ const SEMAFORO_BASE = {
       title: 'Clasificación de riesgos y tipologías de sistemas de inteligencia artificial',
       summary: 'Si bien hay acuerdo en que ciertos usos deben ser restringidos o prohibidos, persisten diferencias respecto de cómo estructurar los distintos niveles de riesgo, qué actividades deben ser alcanzadas por cada categoría y cuáles son los requisitos que deben exigirse en cada caso.',
       reasons: [],
-      projectIds: [],
+      projectIds: ['3330-D-2026', '4761-D-2026'],
       keywords: ['clasificación de riesgos','tipologías','sistemas de inteligencia artificial','prohibiciones','categorías de riesgo']
     },
     {
@@ -1787,7 +1787,7 @@ const SEMAFORO_BASE = {
       title: 'Mecanismos registrales y de seguimiento',
       summary: 'Algunos proyectos proponen la creación de registros obligatorios amplios para sistemas o desarrollos de inteligencia artificial, mientras que otros plantean esquemas más acotados, limitados a determinadas actividades o niveles de riesgo. También existen enfoques alternativos que priorizan mecanismos de certificación por sobre los registros (0805-D-2024, diputado Ferraro), así como posiciones que relativizan la necesidad de estos instrumentos. Se trata, en consecuencia, de un eje con margen de convergencia, pero que requiere definición técnica.',
       reasons: [],
-      projectIds: [],
+      projectIds: ['4761-D-2026'],
       keywords: ['registro','registros obligatorios','seguimiento','certificación','0805-D-2024','ferraro']
     }
   ],
@@ -1798,7 +1798,7 @@ const SEMAFORO_BASE = {
       title: 'Enfoque regulatorio general',
       summary: 'Mientras algunos proyectos promueven un rol estatal más activo y prescriptivo, con regulaciones detalladas y mecanismos de control más intensivos, otros proponen esquemas más flexibles, orientados a principios generales y con menor intervención directa. Estas diferencias impactan de manera transversal en el diseño de los proyectos —incluyendo la intensidad regulatoria, los instrumentos de control y los sujetos alcanzados— y configuran uno de los principales ejes de discusión a futuro.',
       reasons: [],
-      projectIds: ['2505-D-2023', '4329-D-2023', '1013-D-2024', '3003-D-2024', '1937-D-2025', '2130-D-2025', '6655-D-2025', '0004-D-2026', '0253-D-2026', '0519-D-2026'],
+      projectIds: ['2505-D-2023', '4329-D-2023', '1013-D-2024', '3003-D-2024', '1937-D-2025', '2130-D-2025', '6655-D-2025', '0004-D-2026', '0253-D-2026', '0519-D-2026', '3330-D-2026', '4761-D-2026'],
       keywords: ['enfoque regulatorio', 'intervención estatal', 'intensidad regulatoria', 'principios generales', 'control']
     },
     {
@@ -3618,6 +3618,8 @@ function getIAChatContext() {
     resumen: b.resumen,
     tema: b.tema,
     tipo: b.tipo,
+    grupo: b.grupo || b.tema,
+    subtematica: b.subtematica || b.tipo,
     dashboard: b.dashboard,
     autor_principal: b.autor_principal,
     bloque: b.bloque,
