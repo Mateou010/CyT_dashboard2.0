@@ -1,6 +1,6 @@
 # CyT Dashboard
 
-Seguimiento y visualización de **proyectos de ley de Ciencia y Tecnología** (y de IA) de la Cámara de Diputados de Argentina: dashboards, un chatbot sobre los proyectos, y un sistema de aviso por email cuando aparecen proyectos nuevos o cambia su trámite.
+Seguimiento y visualización de **proyectos de ley de Ciencia y Tecnología** (y de IA) de la Cámara de Diputados de Argentina, con un sistema de aviso por email cuando aparecen proyectos nuevos o cambia su trámite.
 
 ## Arquitectura (resumen)
 
@@ -8,7 +8,7 @@ Sitio **estático + funciones serverless** desplegado en **Vercel**. No tiene ba
 
 ```
 Frontend estático        api/ (serverless, Vercel)     lib/ (lógica)
-  index.html               chat.js    → chatbot           scraper.js   (Diputados)
+  index.html                                      scraper.js   (Diputados)
   dashboard-cyt.html       subscribe  → alta (opt-in)     mailer.js    (Resend)
   dashboard.html (IA)      confirm    → confirma alta     summarize.js (OpenAI)
                            unsubscribe→ baja              subscribers.js (Resend)
@@ -27,7 +27,6 @@ Pipeline de datos (Python)          Seguimiento automático (GitHub Action)
 |---|---|---|
 | `bills_data.json` | `extract_bills.py` (desde PDFs) | `dashboard.html` (vista IA) |
 | `bridge_analysis.json` | `analyze_projects_text.py` | `dashboard.html` |
-| `api/leyes.json` | pipeline IA | `api/chat.js` (contexto del chat) |
 | `cyt_bills_data.json` | pipeline CyT | `dashboard-cyt.html` |
 | `data/proyectos-seguimiento.json` | `run.js` (GitHub Action) | subsistema de emails |
 
@@ -41,7 +40,6 @@ Pipeline de datos (Python)          Seguimiento automático (GitHub Action)
 
 Copiá `.env.example` a `.env` y completá. Resumen:
 
-- `GEMINI_API_KEY` — chatbot (`api/chat.js`).
 - `OPENAI_API_KEY` (+ `OPENAI_MODEL`) — resúmenes del email de seguimiento.
 - `RESEND_API_KEY`, `RESEND_AUDIENCE_ID`, `EMAIL_FROM` — envío de emails y suscriptores.
 - `SUBSCRIBE_SECRET` — firma de los tokens de confirmación/baja (≥24 chars).

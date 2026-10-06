@@ -28,8 +28,8 @@ para verificar que los arreglos no rompieran nada) y se aplicaron los fixes con
 en emails y dashboards (había un XSS real en un tooltip de `dashboard.html`),
 allowlist de hosts en el scraper, sin fugas de mensajes de error al cliente.
 
-**Performance:** el chat ya no manda el texto completo de todos los proyectos a
-Gemini (eran ~175k tokens por pregunta) ni re-lee el JSON grande en cada request.
+**Asistente IA:** fue retirado por decisión de producto. Ya no se publica
+`/api/chat`, no se carga Gemini y los dashboards no muestran ningún acceso al chat.
 
 **Python:** `extract_bills.py` ya no crashea con nombres de PDF raros, ids
 normalizados, y se borró código muerto.
@@ -46,18 +46,12 @@ normalizados, y se borró código muerto.
    es plano — hay que escribir una función chica que reagrupe el JSON en esa misma
    estructura. Probalo en el navegador antes de dar por hecho que quedó igual.
 
-2. **Unificar los JSON de IA que quedaron desincronizados.**
-   `bills_data.json` (40), `api/leyes.json` (35) y `bridge_analysis.json` (39)
-   describen lo mismo pero con totales distintos (se regeneraron en momentos
-   distintos). Corré `./update_all.sh` y confirmá que los tres queden con el mismo
-   total. (Requiere acceso a internet: scrapea Diputados.)
-
 ### 🕒 Si tenés tiempo
 
-3. Sacar los literales de datos grandes de `dashboard.html`
+2. Sacar los literales de datos grandes de `dashboard.html`
    (`INSIGHT_DEFS`, `OUTSIDE_CYT_BILLS`, etc.) a un JSON que se descargue, para
    achicar ese archivo (~3700 líneas) sin agregar build step.
-4. Agregar **Prettier** (`npm i -D prettier` + un script `format`) para formato
+3. Agregar **Prettier** (`npm i -D prettier` + un script `format`) para formato
    consistente. No hace falta ESLint pesado.
 
 ### 🚫 No te compliques (sería sobre-ingeniería)
@@ -66,8 +60,6 @@ normalizados, y se borró código muerto.
 - No unifiques Python y JS: cada uno hace bien su parte (PDFs vs seguimiento).
 - No fusiones los dos dashboards en uno configurable: son dos productos distintos.
 - No cambies el rate-limit en memoria por una DB/KV salvo que tengas abuso real.
-- No refactorices `api/chat.js` (1500 líneas de NLP a mano) de una: anda y tiene
-  fallback local. Tocalo solo cuando necesites cambiarlo.
 
 ## Decisiones que quedaron a propósito (no son bugs)
 
@@ -76,13 +68,6 @@ normalizados, y se borró código muerto.
   alcanza.
 - **`unsubscribe` no revela si el email existía**: es intencional (anti-enumeración
   de emails). No lo "arregles" para que avise.
-- **El guardrail de prompt-injection del chat** es best-effort (un regex), no un
-  control de seguridad fuerte. El riesgo real es acotado (afecta la sesión del
-  propio usuario, no expone secretos).
-- **El chat acepta `contexto` del cliente** como fuente de datos: sirve para el
-  dashboard, pero un usuario podría inyectar "proyectos" falsos en su propia
-  sesión. Si querés endurecerlo, ignorá el `contexto` del cliente y usá siempre
-  `loadDataset()`.
 
 ## Cómo laburar el proyecto
 

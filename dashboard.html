@@ -707,56 +707,6 @@ tr:hover{background:var(--surface2)}
 .source-link:hover{color:var(--lime)}
 
 /* ═══════════════════════════════════════════════════
-   LEYESBOT CHAT WIDGET
-═══════════════════════════════════════════════════ */
-.chatbot-fab{
-  position:fixed;right:30px;bottom:28px;z-index:1400;
-  width:82px;height:82px;border-radius:50%;border:1px solid rgba(170,255,0,.45);
-  background:linear-gradient(140deg,rgba(170,255,0,.18),rgba(0,212,255,.16));
-  color:var(--text);font-size:34px;display:none;align-items:center;justify-content:center;
-  box-shadow:0 14px 34px rgba(0,0,0,.52);transition:all .2s;
-}
-.chatbot-fab:hover{transform:translateY(-3px) scale(1.04);border-color:var(--lime);color:var(--lime)}
-.chatbot-panel{
-  position:fixed;right:20px;bottom:106px;z-index:1400;width:360px;max-width:calc(100vw - 24px);
-  background:var(--surface);border:1px solid var(--border);border-radius:14px;
-  display:none;flex-direction:column;overflow:hidden;box-shadow:0 16px 44px rgba(0,0,0,.55);
-}
-.chatbot-panel.active{display:none}
-.chatbot-head{
-  display:flex;align-items:center;justify-content:space-between;gap:8px;
-  padding:12px 14px;border-bottom:1px solid var(--border);background:rgba(170,255,0,.06);
-}
-.chatbot-title{font-size:13px;font-weight:700;font-family:'Source Serif 4',serif;color:var(--lime)}
-.chatbot-sub{font-size:10px;color:var(--muted);margin-top:1px}
-.chatbot-close{background:transparent;border:1px solid var(--border);color:var(--muted);width:28px;height:28px;border-radius:8px}
-.chatbot-close:hover{border-color:var(--lime);color:var(--lime)}
-.chatbot-messages{max-height:380px;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:10px;background:var(--surface)}
-.chat-msg{padding:9px 11px;border-radius:10px;font-size:12px;line-height:1.5;white-space:pre-wrap}
-.chat-msg.user{align-self:flex-end;background:rgba(0,212,255,.14);border:1px solid rgba(0,212,255,.24)}
-.chat-msg.bot{align-self:flex-start;background:var(--surface2);border:1px solid var(--border)}
-.chatbot-status{min-height:18px;padding:0 12px 8px;color:var(--muted);font-size:10px}
-.chatbot-input{
-  display:flex;gap:8px;padding:10px;border-top:1px solid var(--border);background:rgba(0,0,0,.03)
-}
-.chatbot-text{
-  flex:1;resize:none;height:40px;max-height:110px;background:var(--surface2);border:1px solid var(--border);
-  border-radius:10px;color:var(--text);font-size:12px;padding:10px 12px;outline:none
-}
-.chatbot-text:focus{border-color:rgba(170,255,0,.45)}
-.chatbot-send{
-  border:1px solid rgba(170,255,0,.38);background:rgba(170,255,0,.12);color:var(--lime);
-  padding:0 14px;border-radius:10px;font-size:12px;font-weight:700
-}
-.chatbot-send:hover:not(:disabled){background:rgba(170,255,0,.2)}
-.chatbot-send:disabled{opacity:.5;cursor:not-allowed}
-@media (max-width:640px){
-  .chatbot-fab{right:18px;bottom:18px;width:70px;height:70px;font-size:28px}
-  .chatbot-panel{right:12px;bottom:94px;left:12px;width:auto;max-width:none}
-  .chatbot-messages{max-height:52vh}
-}
-
-/* ═══════════════════════════════════════════════════
    OVERLAY (loading)
 ═══════════════════════════════════════════════════ */
 .overlay{
@@ -920,12 +870,6 @@ tr:hover{background:var(--surface2)}
   .modal-title{font-size:18px;padding:16px 16px 0}
   .modal-subtitle{font-size:12px;margin-bottom:14px;padding:0 16px}
   .modal-close{width:48px;height:48px;font-size:18px;top:8px;right:8px;border-radius:10px}
-  .chatbot-fab{right:12px;bottom:calc(12px + env(safe-area-inset-bottom));width:52px;height:52px;font-size:22px}
-  .chatbot-panel{left:6px;right:6px;bottom:calc(70px + env(safe-area-inset-bottom));width:auto;max-width:none;border-radius:10px;max-height:70vh;overscroll-behavior:contain}
-  .chatbot-messages{max-height:44vh;padding:8px;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
-  .chatbot-input{padding:6px;padding-bottom:calc(6px + env(safe-area-inset-bottom))}
-  .chatbot-text{height:36px;font-size:16px;padding:8px 10px}
-  .chatbot-send{padding:0 12px;font-size:12px;min-height:44px}
   table{font-size:11px}
   th,td{padding:7px}
   .pagination{gap:6px;margin:16px 0}
@@ -1234,27 +1178,6 @@ tr:hover{background:var(--surface2)}
 </div>
 
 </div>
-</div>
-
-<!-- ════════════════════════════════════════════════════════
-     LEYESBOT CHAT
-════════════════════════════════════════════════════════ -->
-<button id="chatbotFab" class="chatbot-fab" onclick="toggleChatbot()" title="Abrir LeyesBot">🧠</button>
-
-<div id="chatbotPanel" class="chatbot-panel" aria-live="polite">
-  <div class="chatbot-head">
-    <div>
-      <div class="chatbot-title">LeyesBot</div>
-      <div class="chatbot-sub">Consultá los proyectos de ley desde la página</div>
-    </div>
-    <button class="chatbot-close" onclick="toggleChatbot(false)" title="Cerrar">✕</button>
-  </div>
-  <div id="chatbotMessages" class="chatbot-messages"></div>
-  <div id="chatbotStatus" class="chatbot-status"></div>
-  <div class="chatbot-input">
-    <textarea id="chatbotInput" class="chatbot-text" placeholder="Escribí tu pregunta legal..." onkeydown="onChatInputKeydown(event)"></textarea>
-    <button id="chatbotSend" class="chatbot-send" onclick="sendChatMessage()">Enviar</button>
-  </div>
 </div>
 
 <!-- ════════════════════════════════════════════════════════
@@ -3569,125 +3492,6 @@ function closeJustificationModal() {
 }
 
 /* ════════════════════════════════════════════════════════
-   LEYESBOT CHAT
-════════════════════════════════════════════════════════ */
-let chatbotInitialized = false;
-let chatbotLoading = false;
-let chatbotHistory = [];
-
-function toggleChatbot(forceState = null) {
-  const panel = document.getElementById('chatbotPanel');
-  if(!panel) return;
-  const open = forceState === null ? !panel.classList.contains('active') : !!forceState;
-  panel.classList.toggle('active', open);
-  if(open) {
-    initChatbotIfNeeded();
-    document.getElementById('chatbotInput')?.focus();
-  }
-}
-
-function initChatbotIfNeeded() {
-  if(chatbotInitialized) return;
-  chatbotInitialized = true;
-  appendChatMessage('bot', 'Hola, soy LeyesBot. Preguntame sobre los proyectos cargados en el dashboard.');
-}
-
-function appendChatMessage(role, text) {
-  const box = document.getElementById('chatbotMessages');
-  if(!box) return;
-  const el = document.createElement('div');
-  el.className = `chat-msg ${role}`;
-  el.textContent = text;
-  box.appendChild(el);
-  box.scrollTop = box.scrollHeight;
-  chatbotHistory.push({ role, text });
-  if(chatbotHistory.length > 24) chatbotHistory = chatbotHistory.slice(-24);
-}
-
-function setChatStatus(text='') {
-  const st = document.getElementById('chatbotStatus');
-  if(st) st.textContent = text;
-}
-
-function getIAChatContext() {
-  return (BILLS || []).map(b => ({
-    id: b.id,
-    expediente: b.expediente,
-    año: b.año,
-    titulo: b.titulo,
-    resumen: b.resumen,
-    tema: b.tema,
-    tipo: b.tipo,
-    grupo: b.grupo || b.tema,
-    subtematica: b.subtematica || b.tipo,
-    dashboard: b.dashboard,
-    autor_principal: b.autor_principal,
-    bloque: b.bloque,
-    destinatarios: b.destinatarios || [],
-  }));
-}
-
-function onChatInputKeydown(event) {
-  if(event.key === 'Enter' && !event.shiftKey) {
-    event.preventDefault();
-    sendChatMessage();
-  }
-}
-
-async function sendChatMessage() {
-  if(chatbotLoading) return;
-  const input = document.getElementById('chatbotInput');
-  const sendBtn = document.getElementById('chatbotSend');
-  const question = (input?.value || '').trim();
-  if(!question) return;
-
-  appendChatMessage('user', question);
-  input.value = '';
-  chatbotLoading = true;
-  if(sendBtn) sendBtn.disabled = true;
-  setChatStatus('LeyesBot está pensando...');
-
-  try {
-    const resp = await fetch('/api/chat', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        pregunta: question,
-        scope: 'ia',
-        contexto: getIAChatContext(),
-        historial: chatbotHistory.slice(-12),
-      }),
-    });
-
-    const data = await resp.json().catch(() => ({}));
-    if(!resp.ok) {
-      const err = data?.error || 'No se pudo obtener respuesta del servidor.';
-      appendChatMessage('bot', `Error: ${err}`);
-      setChatStatus('Error en la respuesta del servidor.');
-    } else {
-      const answer = data?.texto || data?.respuesta || 'Sin respuesta del modelo.';
-      appendChatMessage('bot', answer);
-      if (data?.model === 'fallback-local') {
-        if (data?.note) {
-          setChatStatus('Gemini no respondió en esta consulta. Se aplicó modo local de respaldo.');
-        } else {
-          setChatStatus('Modo local rápido activo. Configurá GEMINI_API_KEY para respuestas más profundas.');
-        }
-      } else {
-        const ctx = data?.context_items ? ` · contexto: ${data.context_items}` : '';
-        setChatStatus(`Modelo: ${data?.model || 'desconocido'}${ctx}`);
-      }
-    }
-  } catch (err) {
-    appendChatMessage('bot', 'Error de conexión con el endpoint /api/chat.');
-    setChatStatus('Error de conexión con /api/chat.');
-  } finally {
-    chatbotLoading = false;
-    if(sendBtn) sendBtn.disabled = false;
-  }
-}
-
-/* ════════════════════════════════════════════════════════
    RENDER ALL
 ════════════════════════════════════════════════════════ */
 function renderAll() {
@@ -3708,7 +3512,6 @@ document.addEventListener('keydown', (e) => {
     closeJustificationModal();
     hideEvidenceTip();
     hideScatterTip();
-    toggleChatbot(false);
   }
 });
 

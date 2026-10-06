@@ -1,12 +1,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import pdfParse from 'pdf-parse';
 
 const root = process.cwd();
 const cytPath = path.join(root, 'cyt_bills_data.json');
 const iaPath = path.join(root, 'bills_data.json');
 const cytDashboardPath = path.join(root, 'dashboard-cyt.html');
-const chatDatasetPath = path.join(root, 'api', 'leyes.json');
 
 const readJson = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
 const percent = (count, total) => total ? Math.round((count / total) * 100) : 0;
@@ -91,59 +89,6 @@ function syncIaStats(data, cytBills, now) {
     .map(([tema, total]) => ({ tema, total }));
 }
 
-async function syncChatDataset(cyt, ia, now) {
-  const existing = readJson(chatDatasetPath);
-  const previousById = new Map((existing.proyectos || []).map((project) => [project.id, project]));
-  const cytById = new Map(cyt.bills.map((bill) => [bill.id, bill]));
-  const iaById = new Map(ia.bills.map((bill) => [bill.id, bill]));
-  const ids = [...new Set([...cytById.keys(), ...iaById.keys()])]
-    .sort((a, b) => billSort(
-      cytById.get(a) || iaById.get(a),
-      cytById.get(b) || iaById.get(b),
-    ));
-
-  const proyectos = [];
-  for (const id of ids) {
-    const cytBill = cytById.get(id);
-    const iaBill = iaById.get(id);
-    const source = cytBill || iaBill;
-    const pdfPath = source.pdf_path?.replace(/^\.\//, '') || iaBill?.pdf_path?.replace(/^\.\//, '');
-    let textoCompleto = previousById.get(id)?.texto_completo || '';
-    if (pdfPath && fs.existsSync(path.join(root, pdfPath))) {
-      try {
-        textoCompleto = (await pdfParse(fs.readFileSync(path.join(root, pdfPath)))).text.trim();
-      } catch (error) {
-        console.warn(`No se pudo extraer texto de ${id}: ${error.message}`);
-      }
-    }
-    proyectos.push({
-      id,
-      titulo: source.titulo,
-      autor_principal: source.autor_principal,
-      bloque: source.bloque,
-      tipo: iaBill?.tipo || source.tipo,
-      dashboard: iaBill?.dashboard || 'CYT',
-      anio: source.año,
-      resumen: source.resumen,
-      grupo: cytBill?.tematica || iaBill?.grupo || iaBill?.tema || '',
-      subtematica: cytBill?.subtematica || iaBill?.subtematica || iaBill?.tipo || '',
-      texto_completo: textoCompleto,
-      fuente_pdf: pdfPath || '',
-    });
-  }
-
-  const output = {
-    metadata: {
-      generado: now,
-      total_proyectos: proyectos.length,
-      proyectos_con_texto_completo: proyectos.filter((project) => project.texto_completo).length,
-      fuente: 'cyt_bills_data.json + bills_data.json + PDFs oficiales locales',
-    },
-    proyectos,
-  };
-  fs.writeFileSync(chatDatasetPath, `${JSON.stringify(output, null, 2)}\n`);
-}
-
 function syncCytEmbeddedData(data) {
   const html = fs.readFileSync(cytDashboardPath, 'utf8');
   const match = html.match(/const CYT_DATA = (\[[\s\S]*?\]);\n\nconst COLORS/);
@@ -213,6 +158,5 @@ syncIaStats(ia, cyt.bills, now);
 fs.writeFileSync(cytPath, `${JSON.stringify(cyt, null, 2)}\n`);
 fs.writeFileSync(iaPath, `${JSON.stringify(ia, null, 2)}\n`);
 syncCytEmbeddedData(cyt);
-await syncChatDataset(cyt, ia, now);
 
-console.log(`Datos sincronizados: CyT ${cyt.bills.length}, IA ${ia.bills.length}, chat ${new Set([...cyt.bills, ...ia.bills].map((bill) => bill.id)).size}.`);
+console.log(`Datos sincronizados: CyT ${cyt.bills.length}, IA ${ia.bills.length}.`);
