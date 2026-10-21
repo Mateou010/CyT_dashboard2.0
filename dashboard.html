@@ -7,27 +7,9 @@
 <meta name="description" content="Dashboard de proyectos de ley sobre IA — Comisión de Ciencia, Tecnología e Innovación Productiva, H. Cámara de Diputados">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
-/* ── NECO FONT ───────────────────────────── */
-@font-face {
-  font-family: 'Neco';
-  src: url('fonts/Neco-Variable.woff2') format('woff2'),
-       url('fonts/Neco-Variable.woff') format('woff');
-  font-weight: 400 900;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Neco';
-  src: url('fonts/Neco-VariableItalic.woff2') format('woff2'),
-       url('fonts/Neco-VariableItalic.woff') format('woff');
-  font-weight: 400 900;
-  font-display: swap;
-  font-style: italic;
-}
-
 /* ═══════════════════════════════════════════════════
    DESIGN TOKENS
 ═══════════════════════════════════════════════════ */
@@ -902,8 +884,10 @@ tr:hover{background:var(--surface2)}
 }
 </style>
 
+<link rel="stylesheet" href="visual-refresh.css">
+<script src="remove-emoji.js" defer></script>
 </head>
-<body>
+<body class="page-dashboard page-ia">
 
 <div id="overlay" class="overlay">
   <div class="spinner"></div>
@@ -918,7 +902,7 @@ tr:hover{background:var(--surface2)}
 <div class="header">
   <div class="header-top">
     <a href="index.html" class="logo" style="text-decoration:none;color:inherit" title="Ir a la landing">
-      <div class="logo-icon">🤖</div>
+      <div class="logo-icon">IA</div>
       <div class="logo-text">
         <h1>Comisión de CyT · IA</h1>
         <p>H. Cámara de Diputados de la Nación Argentina</p>

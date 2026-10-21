@@ -7,7 +7,7 @@
 <meta name="description" content="Análisis legislativo de la Comisión de Ciencia, Tecnología e Innovación Productiva de la H. Cámara de Diputados de la Nación Argentina">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
     :root {
         --navy-900: #0c1b33;
@@ -237,7 +237,7 @@
     /* ─── DASHBOARD CARDS ─────────────────────────── */
     .dashboard-cards {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 24px;
         margin-bottom: 32px;
     }
@@ -271,6 +271,7 @@
 
     .dashboard-card.cyt::before { background: linear-gradient(90deg, var(--navy-600), var(--navy-400)); }
     .dashboard-card.ia::before { background: linear-gradient(90deg, var(--gold-500), var(--gold-300)); }
+    .dashboard-card.budget::before { background: linear-gradient(90deg, var(--navy-700), var(--gold-400)); }
 
     .dashboard-card-icon {
         font-size: 48px;
@@ -335,6 +336,16 @@
     .dashboard-card.ia:hover .dashboard-card-btn {
         background: var(--gold-400);
         color: var(--navy-900);
+    }
+
+    .dashboard-card.budget .dashboard-card-btn {
+        background: rgba(30,65,117,0.08);
+        color: var(--navy-700);
+        border: 1px solid rgba(30,65,117,0.2);
+    }
+    .dashboard-card.budget:hover .dashboard-card-btn {
+        background: var(--navy-800);
+        color: var(--gold-300);
     }
 
     /* ─── EJE CARDS ───────────────────────────────── */
@@ -674,8 +685,10 @@
         .cta-banner h2 { font-size: 18px; }
     }
 </style>
+<link rel="stylesheet" href="visual-refresh.css">
+<script src="remove-emoji.js" defer></script>
 </head>
-<body>
+<body class="page-home">
 
     <!-- HERO -->
     <section class="hero">
@@ -699,6 +712,9 @@
                 </a>
                 <a href="dashboard.html" class="btn-secondary">
                     🤖 Dashboard IA
+                </a>
+                <a href="presupuesto-2026.html" class="btn-secondary">
+                    Presupuesto
                 </a>
                 <a href="#seguimiento" class="btn-secondary">
                     Recibir alertas
@@ -733,11 +749,11 @@
     <div class="section">
         <div class="section-header reveal">
             <h2>Dashboards</h2>
-            <p>Dos visiones complementarias de la agenda legislativa en ciencia y tecnología</p>
+            <p>Proyectos legislativos y presupuesto público de ciencia, tecnología e innovación</p>
         </div>
         <div class="dashboard-cards">
             <a href="dashboard-cyt.html" class="dashboard-card cyt reveal">
-                <div class="dashboard-card-icon">🔬</div>
+                <div class="dashboard-card-icon">CyT</div>
                 <div class="dashboard-card-title">Ciencia y Tecnología</div>
                 <div class="dashboard-card-desc">Todos los proyectos presentados ante la comisión, organizados por eje temático, bloque y año.</div>
                 <div class="dashboard-card-stat" id="card-cyt-total">—</div>
@@ -745,12 +761,20 @@
                 <div class="dashboard-card-btn">Explorar CyT →</div>
             </a>
             <a href="dashboard.html" class="dashboard-card ia reveal">
-                <div class="dashboard-card-icon">🤖</div>
+                <div class="dashboard-card-icon">IA</div>
                 <div class="dashboard-card-title">Inteligencia Artificial</div>
                 <div class="dashboard-card-desc">Subconjunto de proyectos vinculados a IA: análisis por sector, destinatarios y coincidencias.</div>
                 <div class="dashboard-card-stat" id="card-ia-total">—</div>
                 <div class="dashboard-card-stat-label">proyectos IA</div>
                 <div class="dashboard-card-btn">Explorar IA →</div>
+            </a>
+            <a href="presupuesto-2026.html" class="dashboard-card budget reveal">
+                <div class="dashboard-card-icon">$</div>
+                <div class="dashboard-card-title">Presupuesto por organismo</div>
+                <div class="dashboard-card-desc">Ejecución 2026 de CONICET, CONAE, Ciberseguridad y otros organismos. Crédito inicial, vigente, programas y partidas.</div>
+                <div class="dashboard-card-stat">6</div>
+                <div class="dashboard-card-stat-label">organismos · ejecución y destino de los recursos</div>
+                <div class="dashboard-card-btn">Explorar presupuesto →</div>
             </a>
         </div>
     </div>
@@ -790,6 +814,7 @@
             <div class="footer-links">
                 <a href="dashboard-cyt.html">Dashboard CyT</a>
                 <a href="dashboard.html">Dashboard IA</a>
+                <a href="presupuesto-2026.html">Presupuesto</a>
                 <a href="/">Inicio</a>
             </div>
         </div>
