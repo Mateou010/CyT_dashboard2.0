@@ -1,0 +1,572 @@
+{
+  "generado": "2026-10-21T20:24:30.217Z",
+  "fuente": "https://www.hcdn.gob.ar/comisiones/permanentes/ccytecnologia/reuniones/",
+  "dia_habitual": "Martes 15:00",
+  "proxima": null,
+  "proximas": [],
+  "reuniones": [
+    {
+      "fecha": "2026-06-30",
+      "hora": "14:00",
+      "sala": "Sala 4 - Anexo \"A\"",
+      "tipos": [
+        "temas-varios"
+      ],
+      "conjunta_con": [],
+      "rotulo": "TEMAS VARIOS.",
+      "temario": "Establecer agenda de trabajo. Proyectos de resolución y declaración.",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/1254/archivo/526BJSAZBZBXMHJP.pdf",
+      "ampliaciones": [
+        "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/1254/archivo/ZG517EHKCZ3W0Z39.pdf"
+      ],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/7498",
+      "suspendida": false,
+      "reunion_id": "1254"
+    },
+    {
+      "fecha": "2026-06-17",
+      "hora": "15:00",
+      "sala": "Anexo \"C\" - 2° piso",
+      "tipos": [
+        "conjunta"
+      ],
+      "conjunta_con": [
+        "Presupuesto y Hacienda",
+        "Industria"
+      ],
+      "rotulo": "",
+      "temario": "Mensaje nro: 181/2026 y proyecto de ley por el cual se establece un régimen de incentivo para grandes inversiones en nuevas industrias (\"SÚPER RIGI\").",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/1242/archivo/W9R0M07Q1Z3A22M1.pdf",
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/7398",
+      "suspendida": false,
+      "reunion_id": "1242"
+    },
+    {
+      "fecha": "2026-06-10",
+      "hora": "11:00",
+      "sala": "Anexo \"C\" - 2° piso",
+      "tipos": [
+        "conjunta",
+        "informativa",
+        "invitados"
+      ],
+      "conjunta_con": [
+        "Presupuesto y Hacienda",
+        "Industria"
+      ],
+      "rotulo": "INVITADOS.",
+      "temario": "Mensaje nro: 181/2026 y proyecto de ley por el cual se establece un régimen de incentivo para grandes inversiones en nuevas industrias (\"SÚPER RIGI\"). Recibirán invitados, quienes expondrán sobre la temática.",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/1234/archivo/NHYC36V4F7X1NFE5.pdf",
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/7361",
+      "suspendida": false,
+      "reunion_id": "1234"
+    },
+    {
+      "fecha": "2026-06-03",
+      "hora": "15:00",
+      "sala": "Anexo \"C\" - 2° piso",
+      "tipos": [
+        "conjunta",
+        "informativa"
+      ],
+      "conjunta_con": [
+        "Presupuesto y Hacienda",
+        "Industria"
+      ],
+      "rotulo": "",
+      "temario": "Mensaje nro: 181/2026 y proyecto de ley por el cual se establece un régimen de incentivo para grandes inversiones en nuevas industrias (\"SÚPER RIGI\")",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/1219/archivo/SXDQ9KZANPP5QTHY.pdf",
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/7307",
+      "suspendida": false,
+      "reunion_id": "1219"
+    },
+    {
+      "fecha": "2026-03-26",
+      "hora": "09:45",
+      "sala": "Sala 1 - Anexo \"A\"",
+      "tipos": [
+        "constitutiva"
+      ],
+      "conjunta_con": [],
+      "rotulo": "REUNIÓN CONSTITUTIVA.",
+      "temario": "Designación de autoridades. Establecer día y hora de reunión.",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/1126/archivo/0VVBV9NAWZ8W4FRJ.pdf",
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/6872",
+      "suspendida": false,
+      "reunion_id": "1126"
+    },
+    {
+      "fecha": "2025-11-27",
+      "hora": "14:00",
+      "sala": "Sala 1 - Anexo \"A\"",
+      "tipos": [
+        "conjunta",
+        "informativa",
+        "invitados"
+      ],
+      "conjunta_con": [
+        "Accion Social y Salud Publica"
+      ],
+      "rotulo": "INVITADOS.",
+      "temario": "Fueron invitados especialistas, a fin de abordar la temática sobre “Políticas públicas basadas en evidencia para proteger la salud: el valor de las vacunas frente a la desinformación”.",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/1085/archivo/GTW9Q0V1P35PDHVB.pdf",
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/6602",
+      "suspendida": false,
+      "reunion_id": "1085"
+    },
+    {
+      "fecha": "2025-11-11",
+      "hora": "14:00",
+      "sala": "Sala 4 - Anexo \"A\"",
+      "tipos": [],
+      "conjunta_con": [],
+      "rotulo": "",
+      "temario": "Códigos Civil y Comercial y Penal de la Nación, modificaciones sobre marco legal para el desarrollo, implementación y uso responsable de sistemas de Inteligencia Artificial (IA) en Argentina. Proyectos de resolución.",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/1064/archivo/54T6PWGEAKQ8PQGX.pdf",
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/6565",
+      "suspendida": false,
+      "reunion_id": "1064"
+    },
+    {
+      "fecha": "2025-10-02",
+      "hora": "14:00",
+      "sala": "Sala 1 - Anexo \"A\"",
+      "tipos": [
+        "informativa",
+        "invitados"
+      ],
+      "conjunta_con": [],
+      "rotulo": "INVITADOS.",
+      "temario": "Fueron invitados referentes y representantes de los sectores afectados por las medidas anunciadas sobre el Plan Nuclear Argentino y la posible privatización de la empresa Nucleoeléctrica Argentina S.A.",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/1002/archivo/V6EREXTCS5NE3A1E.pdf",
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/6455",
+      "suspendida": false,
+      "reunion_id": "1002"
+    },
+    {
+      "fecha": "2025-09-16",
+      "hora": "14:00",
+      "sala": "Sala 5. Anexo \"A\"",
+      "tipos": [],
+      "conjunta_con": [],
+      "rotulo": "",
+      "temario": "Proyectos de Resolución y Declaración.",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/971/archivo/0B9PYDXBC7B6K0RA.pdf",
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/6392",
+      "suspendida": false,
+      "reunion_id": "971"
+    },
+    {
+      "fecha": "2025-08-13",
+      "hora": "14:00",
+      "sala": "Anexo \"C\" - 2° piso",
+      "tipos": [
+        "conjunta",
+        "emplazamiento"
+      ],
+      "conjunta_con": [
+        "Presupuesto y Hacienda"
+      ],
+      "rotulo": "EMPLAZAMIENTO.",
+      "temario": "En cumplimiento con el emplazamiento realizado por el pleno de la H. Cámara de Diputados de la Nación en la sesión especial el día 06 de agosto de 2025, a fin de considerar el expediente 2435-D-2024 del Sistema nacional de Ciencia, Tecnología e Innovación durante el vigente ejercicio fiscal.",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/935/archivo/HJSK0206SPDTTECZ.pdf",
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/6303",
+      "suspendida": false,
+      "reunion_id": "935"
+    },
+    {
+      "fecha": "2025-08-07",
+      "hora": "14:00",
+      "sala": "Sala 1 - Anexo \"A\"",
+      "tipos": [
+        "informativa",
+        "invitados"
+      ],
+      "conjunta_con": [],
+      "rotulo": "INVITADOS",
+      "temario": "Fueron invitados referentes de los organismos de ciencia y tecnología, quienes abordarán la situación actual del Sistema Nacional Científico-Tecnológico",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/930/archivo/A870YT3B8XTM2411.pdf",
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/6271",
+      "suspendida": false,
+      "reunion_id": "930"
+    },
+    {
+      "fecha": "2025-07-17",
+      "hora": "14:00",
+      "sala": "Sala 1. Anexo \"A\"",
+      "tipos": [
+        "informativa",
+        "invitados"
+      ],
+      "conjunta_con": [],
+      "rotulo": "INVITADOS",
+      "temario": "Fueron invitados especialistas en el área de la ciencia y la tecnología para abordar la situación actual del sistema científico - tecnológico nacional.",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/918/archivo/69FP8GAXJ0XVSCVW.pdf",
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/6128",
+      "suspendida": false,
+      "reunion_id": "918"
+    },
+    {
+      "fecha": "2025-06-26",
+      "hora": "11:00",
+      "sala": "Sala 5. Anexo \"A\"",
+      "tipos": [
+        "temas-varios"
+      ],
+      "conjunta_con": [],
+      "rotulo": "TEMAS VARIOS",
+      "temario": "Proyectos de resolución y declaración.",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/901/archivo/GHMQMYW9V8S1KB6G.pdf",
+      "ampliaciones": [
+        "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/901/archivo/FTQ3MS7CSZXWHYPW.pdf"
+      ],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/5971",
+      "suspendida": false,
+      "reunion_id": "901"
+    },
+    {
+      "fecha": "2025-06-17",
+      "hora": "14:00",
+      "sala": null,
+      "tipos": [
+        "temas-varios"
+      ],
+      "conjunta_con": [],
+      "rotulo": "TEMAS VARIOS.",
+      "temario": "Proyectos de resolución y declaración.",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/898/archivo/PXH7PQFW8JG8T4GS.pdf",
+      "ampliaciones": [],
+      "video_url": null,
+      "suspendida": false,
+      "reunion_id": "898"
+    },
+    {
+      "fecha": "2025-04-15",
+      "hora": "14:00",
+      "sala": "Sala 1. Piso 2. Anexo \"A\"",
+      "tipos": [
+        "informativa"
+      ],
+      "conjunta_con": [],
+      "rotulo": "REUNIÓN INFORMATIVA",
+      "temario": "Expondrán referentes de diversas organizaciones vinculadas a la ciencia y a la tecnología en la Argentina.",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/813/archivo/SEQCF3SM0SPNRASR.pdf",
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/1877",
+      "suspendida": false,
+      "reunion_id": "813"
+    },
+    {
+      "fecha": "2024-12-17",
+      "hora": "14:00",
+      "sala": "Sala 6",
+      "tipos": [],
+      "conjunta_con": [],
+      "rotulo": "",
+      "temario": "Se abordará el nuevo plan nuclear anunciando por Poder Ejecutivo Nacional.",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/732/archivo/5WRF6AM506M34DP5.pdf",
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/5235",
+      "suspendida": false,
+      "reunion_id": "732"
+    },
+    {
+      "fecha": "2024-11-12",
+      "hora": "14:00",
+      "sala": "Sala 7. 3er piso. Anexo \"A\"",
+      "tipos": [
+        "temas-varios"
+      ],
+      "conjunta_con": [],
+      "rotulo": "TEMAS VARIOS",
+      "temario": "Proyectos de resolución y declaración.",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/695/archivo/4H3AEQFDE5K8WX0C.pdf",
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/4980",
+      "suspendida": false,
+      "reunion_id": "695"
+    },
+    {
+      "fecha": "2024-10-30",
+      "hora": "14:00",
+      "sala": "Salón Delia Parodi - Palacio Legislativo",
+      "tipos": [
+        "invitados"
+      ],
+      "conjunta_con": [],
+      "rotulo": "INVITADOS",
+      "temario": "Fueron invitados los integrantes del Directorio del CONICET, para que expongan sobre la situación actual del organismo.",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/670/archivo/HWMKM5WZH7PF2EYQ.pdf",
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/4882",
+      "suspendida": false,
+      "reunion_id": "670"
+    },
+    {
+      "fecha": "2024-10-15",
+      "hora": "10:00",
+      "sala": "Sala 7",
+      "tipos": [
+        "invitados"
+      ],
+      "conjunta_con": [],
+      "rotulo": "INVITADOS.",
+      "temario": "Fueron invitados representantes provinciales del Consejo Federal de Ciencia y Tecnología –COFECYT–, el secretario de Innovación, Ciencia y Tecnología de la Nación, con el fin de abordar la situación actual del sistema de Ciencia y Tecnología en sus diversas jurisdicciones.",
+      "citacion_url": null,
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/4802",
+      "suspendida": false,
+      "reunion_id": null
+    },
+    {
+      "fecha": "2024-10-08",
+      "hora": "14:00",
+      "sala": "Sala 4",
+      "tipos": [],
+      "conjunta_con": [],
+      "rotulo": "",
+      "temario": "Fueron invitados especialistas, quienes expondrán sobre Inteligencia Artificial.",
+      "citacion_url": null,
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/4780",
+      "suspendida": false,
+      "reunion_id": null
+    },
+    {
+      "fecha": "2024-09-17",
+      "hora": "14:00",
+      "sala": "Sala 7",
+      "tipos": [
+        "invitados"
+      ],
+      "conjunta_con": [],
+      "rotulo": "INVITADOS.",
+      "temario": "Fueron invitados especialistas, quienes expondrán sobre Inteligencia Artificial.",
+      "citacion_url": null,
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/4617",
+      "suspendida": false,
+      "reunion_id": null
+    },
+    {
+      "fecha": "2024-09-03",
+      "hora": "14:00",
+      "sala": "Sala 4",
+      "tipos": [
+        "invitados"
+      ],
+      "conjunta_con": [],
+      "rotulo": "INVITADOS.",
+      "temario": "Fueron invitados especialistas sobre Inteligencia Artificial.",
+      "citacion_url": null,
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/4593",
+      "suspendida": false,
+      "reunion_id": null
+    },
+    {
+      "fecha": "2024-08-20",
+      "hora": "16:30",
+      "sala": "Sala 7",
+      "tipos": [
+        "invitados"
+      ],
+      "conjunta_con": [],
+      "rotulo": "INVITADOS.",
+      "temario": "Fueron invitados especialistas, quienes expondrán sobre Inteligencia Artificial.",
+      "citacion_url": null,
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/4534",
+      "suspendida": false,
+      "reunion_id": null
+    },
+    {
+      "fecha": "2024-08-06",
+      "hora": "14:30",
+      "sala": "Sala 4",
+      "tipos": [
+        "invitados"
+      ],
+      "conjunta_con": [],
+      "rotulo": "INVITADOS. INTELIGENCIA ARTIFICIAL.",
+      "temario": "Fueron invitados especialistas relacionados a la temática. Régimen de investigación, desarrollo y uso de la inteligencia artificial. Ciencia, Tecnología e Innovación - Ley 25467- modificaciones sobre inteligencia artificial. Readecuación del Sistema legal argentino por el impacto de la Inteligencia Artificial. Código Civil y Comercial de la Nación, Propiedad Intelectual –Ley 11.723–; Código Penal de la Nación, Datos Personales –Ley 25.326– modificaciones.",
+      "citacion_url": null,
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/4460",
+      "suspendida": false,
+      "reunion_id": null
+    },
+    {
+      "fecha": "2024-06-25",
+      "hora": "15:00",
+      "sala": "Sala 4",
+      "tipos": [
+        "temas-varios"
+      ],
+      "conjunta_con": [],
+      "rotulo": "TEMAS VARIOS.",
+      "temario": "Designación de autoridad. Garantícese el financiamiento del Sistema nacional de Ciencia, Tecnología e Innovación. Declarar la emergencia del Sistema nacional de Ciencia, Tecnología e Innovación durante el vigente período fiscal. Proyectos de resolución y declaración.",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/408/archivo/X18V9AHZ486FFM4V.pdf",
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/4214",
+      "suspendida": false,
+      "reunion_id": "408"
+    },
+    {
+      "fecha": "2024-06-13",
+      "hora": "15:00",
+      "sala": null,
+      "tipos": [
+        "temas-varios"
+      ],
+      "conjunta_con": [],
+      "rotulo": "TEMAS VARIOS.",
+      "temario": "Designación de autoridades. Garantícese el financiamiento del Sistema nacional de Ciencia, Tecnología e Innovación. Declarar la emergencia del Sistema nacional de Ciencia, Tecnología e Innovación durante el vigente período fiscal. Proyectos de resolución y declaración.",
+      "citacion_url": "https://parlamentaria.hcdn.gob.ar/comisiones/reuniones/402/archivo/KYMAARK15CFRYE5N.pdf",
+      "ampliaciones": [],
+      "video_url": null,
+      "suspendida": false,
+      "reunion_id": "402"
+    },
+    {
+      "fecha": "2024-05-29",
+      "hora": "15:00",
+      "sala": "Anexo \"C\" - 2° piso",
+      "tipos": [
+        "invitados"
+      ],
+      "conjunta_con": [],
+      "rotulo": "INVITADOS.",
+      "temario": "Fueron invitadas autoridades de organismos provinciales de Ciencia, Tecnología e Innovación, quienes expondrán sobre la situación del Sistema nacional de Ciencia y Tecnología.",
+      "citacion_url": null,
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/4154",
+      "suspendida": false,
+      "reunion_id": null
+    },
+    {
+      "fecha": "2024-05-21",
+      "hora": "15:00",
+      "sala": null,
+      "tipos": [
+        "invitados"
+      ],
+      "conjunta_con": [],
+      "rotulo": "INVITADOS. SISTEMA NACIONAL DE CIENCIA Y TECNOLOGÍA.",
+      "temario": "Participaran autoridades de organismos provinciales de Ciencia, Tecnología e Innovacion.",
+      "citacion_url": null,
+      "ampliaciones": [],
+      "video_url": null,
+      "suspendida": false,
+      "reunion_id": null
+    },
+    {
+      "fecha": "2024-05-07",
+      "hora": "10:00",
+      "sala": "Sala 4 (327)",
+      "tipos": [
+        "temas-varios"
+      ],
+      "conjunta_con": [],
+      "rotulo": "TEMAS VARIOS.",
+      "temario": "Elección de autoridades. Aprobación del Acuerdo de cooperación técnica con la República de Filipinas, celebrado en Buenos Aires el 24 de agosto de 2011.",
+      "citacion_url": null,
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/4094",
+      "suspendida": false,
+      "reunion_id": null
+    },
+    {
+      "fecha": "2024-05-02",
+      "hora": "09:30",
+      "sala": "Sala 4 (327)",
+      "tipos": [
+        "temas-varios",
+        "suspendida"
+      ],
+      "conjunta_con": [],
+      "rotulo": "TEMAS VARIOS.",
+      "temario": "Elección de autoridades. Aprobación del Acuerdo de cooperación técnica con la República de Filipinas, celebrado en Buenos Aires el 24 de agosto de 2011.",
+      "citacion_url": "https://www4.hcdn.gob.ar/archivos/dcomisiones-citaciones/cyt-02-05-2024.pdf",
+      "ampliaciones": [],
+      "video_url": null,
+      "suspendida": true,
+      "reunion_id": null
+    },
+    {
+      "fecha": "2024-04-17",
+      "hora": "09:30",
+      "sala": "Sala 7 (344)",
+      "tipos": [
+        "constitutiva"
+      ],
+      "conjunta_con": [],
+      "rotulo": "REUNIÓN CONSTITUTIVA.",
+      "temario": "Reunión constitutiva.",
+      "citacion_url": null,
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/4008",
+      "suspendida": false,
+      "reunion_id": null
+    },
+    {
+      "fecha": "2023-09-05",
+      "hora": "15:00",
+      "sala": "Sala 3 (244)",
+      "tipos": [
+        "temas-varios"
+      ],
+      "conjunta_con": [],
+      "rotulo": "TEMAS VARIOS.",
+      "temario": "Proyecto en revisión por el cual se aprueba el Plan Nacional de Ciencia, Tecnología e Innovación 2030. Institúyase el 10 de abril de cada año como Día nacional de la Investigadora y el Investigador Científicos. Proyecto de resolución y declaración.",
+      "citacion_url": "https://www4.hcdn.gob.ar/archivos/dcomisiones-citaciones/cyt-05-09-2023.pdf",
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/3413",
+      "suspendida": false,
+      "reunion_id": null
+    },
+    {
+      "fecha": "2023-06-01",
+      "hora": "17:30",
+      "sala": "Sala 2 (223)",
+      "tipos": [
+        "invitados"
+      ],
+      "conjunta_con": [],
+      "rotulo": "INVITADOS.",
+      "temario": "“Plan nacional de Ciencia, Tecnología e Innovación 2030”, fueron invitados expertos en la temática.",
+      "citacion_url": null,
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/3095",
+      "suspendida": false,
+      "reunion_id": null
+    },
+    {
+      "fecha": "2023-03-21",
+      "hora": "15:00",
+      "sala": "Anexo \"C\" - 2° piso",
+      "tipos": [
+        "invitados"
+      ],
+      "conjunta_con": [],
+      "rotulo": "INVITADOS.",
+      "temario": "Plan nacional de Ciencia, Tecnología e Innovación 2030. Fueron invitados expertos en la temática.",
+      "citacion_url": null,
+      "ampliaciones": [],
+      "video_url": "https://videos.hcdn.gob.ar/video/evento/e/2924",
+      "suspendida": false,
+      "reunion_id": null
+    }
+  ]
+}

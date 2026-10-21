@@ -3,8 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comisión de CyT — Dashboard Inteligencia Artificial</title>
-<meta name="description" content="Dashboard de proyectos de ley sobre IA — Comisión de Ciencia, Tecnología e Innovación Productiva, H. Cámara de Diputados">
+<title>Dashboard Inteligencia Artificial — Monitor CyT</title>
+<meta name="description" content="Proyectos de ley sobre inteligencia artificial en Diputados y un semáforo de consensos: dónde coinciden los bloques y dónde no.">
+<link rel="canonical" href="https://cyt.openarg.org/dashboard.html">
+<meta name="theme-color" content="#102238">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Monitor CyT · H. Cámara de Diputados">
+<meta property="og:locale" content="es_AR">
+<meta property="og:url" content="https://cyt.openarg.org/dashboard.html">
+<meta property="og:title" content="Inteligencia Artificial: el semáforo de consensos del Congreso">
+<meta property="og:description" content="Proyectos de ley sobre IA y en qué temas coinciden, coinciden a medias o chocan los bloques.">
+<meta property="og:image" content="https://cyt.openarg.org/img/og-cyt.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Monitor de Ciencia y Tecnología del Congreso, sobre una foto del recinto de la Cámara de Diputados">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cyt.openarg.org/img/og-cyt.jpg">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -885,45 +899,97 @@ tr:hover{background:var(--surface2)}
 </style>
 
 <link rel="stylesheet" href="visual-refresh.css">
+<link rel="stylesheet" href="site.css">
 <script src="remove-emoji.js" defer></script>
+<style>
+/* Semáforo de consensos: un semáforo de verdad, con luces que se encienden */
+.tl { display: flex; flex-wrap: wrap; gap: 40px; padding: clamp(20px, 3vw, 40px); border-radius: 28px; background: #fff; border: 1px solid #dde4ec; margin-bottom: 40px; }
+.tl__signal { flex: 0 0 auto; display: flex; gap: 20px; align-items: flex-start; }
+.tl__post { display: flex; flex-direction: column; align-items: center; }
+.tl__housing { display: flex; flex-direction: column; gap: 18px; padding: 22px; border-radius: 48px; background: #151d29; box-shadow: inset 0 0 0 3px #263244, 0 18px 40px rgba(16,34,56,.18); }
+.tl__pole { width: 22px; height: 64px; background: #263244; }
+.tl__base { width: 96px; height: 10px; border-radius: 5px; background: #263244; }
+.tl__lamp { position: relative; width: 112px; height: 112px; border-radius: 50%; border: 0; padding: 0; cursor: pointer; display: grid; place-items: center; background: var(--off); box-shadow: inset 0 4px 12px rgba(0,0,0,.45); color: var(--dim); transition: background-color .25s ease, box-shadow .25s ease, color .25s ease; }
+.tl__lamp::before { content: ''; position: absolute; top: 0; left: 8px; right: 8px; height: 22px; border-radius: 56px 56px 0 0; background: #0e141d; opacity: .55; }
+.tl__lamp[aria-pressed="true"] { background: var(--on); color: #fff; box-shadow: 0 0 0 4px var(--ring), 0 0 36px 6px var(--glow); }
+.tl__lamp-num { position: relative; display: flex; flex-direction: column; align-items: center; }
+.tl__lamp-num strong { font-family: 'IBM Plex Serif', Georgia, serif; font-size: 40px; font-weight: 500; line-height: 1; }
+.tl__lamp-num span { font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+.tl__labels { display: flex; flex-direction: column; gap: 18px; padding-top: 22px; }
+.tl__label { height: 112px; width: clamp(124px, 22vw, 210px); display: flex; flex-direction: column; justify-content: center; gap: 4px; padding: 0 16px; border-radius: 16px; border: 1px solid #e3e9ef; background: #fff; text-align: left; cursor: pointer; font: inherit; color: inherit; }
+.tl__label[aria-pressed="true"] { background: var(--soft); border-color: var(--line); }
+.tl__label strong { display: inline-flex; align-items: center; gap: 8px; font-size: 16px; color: var(--dark); }
+.tl__label span { font-size: 13px; line-height: 1.45; color: #4f5e70; }
+.tl [data-level="rojo"] { --on: #d64545; --off: #3b2224; --dim: rgba(214,69,69,.55); --ring: rgba(243,211,212,.25); --glow: rgba(214,69,69,.6); --soft: #fbefef; --line: #e0bfc1; --dark: #7e2e32; }
+.tl [data-level="amarillo"] { --on: #e6a817; --off: #3a3121; --dim: rgba(230,168,23,.55); --ring: rgba(245,227,181,.25); --glow: rgba(230,168,23,.6); --soft: #fcf6e9; --line: #e1d1ad; --dark: #6b4a12; }
+.tl [data-level="verde"] { --on: #2fa35f; --off: #1f3326; --dim: rgba(47,163,95,.55); --ring: rgba(207,232,216,.25); --glow: rgba(47,163,95,.6); --soft: #edf6ef; --line: #b9d3c1; --dark: #1d4d35; }
+.tl__panel { flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 20px; }
+.tl__head { display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 20px; background: var(--soft); border: 1px solid var(--line); }
+.tl__head-kicker { display: flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--dark); }
+.tl__head-kicker i { width: 14px; height: 14px; border-radius: 50%; background: var(--on); box-shadow: 0 0 0 4px var(--line); }
+.tl__head h3 { margin: 0; font-family: 'IBM Plex Serif', Georgia, serif; font-size: 30px; font-weight: 500; line-height: 1.15; letter-spacing: -.02em; color: #102238; }
+.tl__head p { margin: 0; font-size: 15px; line-height: 1.65; color: #3f5268; }
+.tl__topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+.tl__topic { display: flex; flex-direction: column; gap: 10px; padding: 22px; border-radius: 18px; background: #fff; border: 1px solid #dde4ec; border-top: 4px solid var(--on); }
+.tl__topic h4 { margin: 0; font-family: 'IBM Plex Serif', Georgia, serif; font-size: 20px; font-weight: 500; line-height: 1.25; color: #102238; }
+.tl__topic em { font-size: 13px; color: #596779; }
+.tl__topic p { margin: 0; font-size: 14px; line-height: 1.6; color: #3f5268; }
+.tl__chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 12px; border-top: 1px solid #edf1f5; }
+.tl__chip { padding: 5px 9px; border-radius: 6px; border: 0; background: var(--soft); color: var(--dark); font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 500; cursor: pointer; }
+.tl__chip:hover { outline: 1px solid var(--line); }
+.tl__none { font-size: 12px; font-weight: 600; color: var(--dark); }
+@media (max-width: 600px) {
+  .tl { gap: 28px; }
+  .tl__signal { width: 100%; justify-content: center; }
+  .tl__housing { padding: 16px; gap: 14px; }
+  .tl__lamp { width: 88px; height: 88px; }
+  .tl__lamp-num strong { font-size: 32px; }
+  .tl__signal { gap: 14px; }
+  .tl__labels { flex: 1 1 auto; min-width: 0; gap: 14px; padding-top: 16px; }
+  .tl__label { width: 100%; height: 88px; padding: 0 12px; }
+  .tl__label strong { font-size: 15px; }
+}
+</style>
 </head>
-<body class="page-dashboard page-ia">
+<body class="page-dashboard page-ia site">
+
+<header class="site-hero">
+  <img class="site-hero__img" src="img/datacenter.jpg" alt="" style="object-position: center 40%">
+  <div class="site-hero__shade"></div>
+  <nav class="site-nav site-wrap" aria-label="Principal">
+    <a class="site-brand" href="/">
+      <span class="site-brand__mark">CyT</span>
+      <span class="site-brand__text"><strong>Monitor Legislativo CyT</strong><span>H. Cámara de Diputados</span></span>
+    </a>
+    <div class="site-links">
+      <a href="dashboard-cyt.html">Ciencia y Tecnología</a>
+      <a href="dashboard.html" aria-current="page">Inteligencia Artificial</a>
+      <a href="comision.html">La comisión</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="presupuesto-2026.html">Presupuesto 2026</a>
+    </div>
+  </nav>
+  <div class="site-hero__body site-wrap">
+    <div class="site-hero__text">
+      <span class="site-kicker" id="headerBadge">Dashboard · Proyectos de IA</span>
+      <h1>Inteligencia Artificial</h1>
+      <p class="site-hero__lead">¿Dónde coinciden los bloques al legislar sobre IA y dónde no? Agrupamos los proyectos según el grado de consenso en cada tema.</p>
+    </div>
+    <div class="site-hero__stats">
+      <div class="site-hero__stat"><strong id="heroIaTotal">—</strong><span>proyectos de IA</span></div>
+      <div class="site-hero__stat"><strong id="heroIaTemas">9</strong><span>temas analizados</span></div>
+    </div>
+  </div>
+</header>
 
 <div id="overlay" class="overlay">
   <div class="spinner"></div>
 </div>
 
 <div id="app" style="display:none">
-<div class="app">
+<div class="app" style="padding-top: 56px">
 
-<!-- ════════════════════════════════════════════════════════
-     HEADER
-════════════════════════════════════════════════════════ -->
-<div class="header">
-  <div class="header-top">
-    <a href="index.html" class="logo" style="text-decoration:none;color:inherit" title="Ir a la landing">
-      <div class="logo-icon">IA</div>
-      <div class="logo-text">
-        <h1>Comisión de CyT · IA</h1>
-        <p>H. Cámara de Diputados de la Nación Argentina</p>
-      </div>
-    </a>
-    <div class="header-actions" style="display:flex;align-items:center;gap:12px">
-      <a href="index.html" style="
-        font-size:12px;color:#6b7280;text-decoration:none;
-        border:1px solid rgba(0,0,0,0.12);border-radius:8px;
-        padding:5px 12px;transition:all .2s;white-space:nowrap;
-        font-family:'Inter',sans-serif;
-      " onmouseover="this.style.color='#1e4175';this.style.borderColor='rgba(30,65,117,.4)'"
-         onmouseout="this.style.color='#6b7280';this.style.borderColor='rgba(12,27,51,0.12)'">  
-        ← Inicio
-      </a>
-      <div class="header-badge">
-        <div class="dot"></div>
-        <span id="headerBadge">Proyectos IA</span>
-      </div>
-    </div>
-  </div>
+<div class="header" style="display:none">
   <div class="filters-bar" style="display:none">
     <div class="filter-group">
       <label>Filtros:</label>
@@ -965,19 +1031,17 @@ tr:hover{background:var(--surface2)}
   Para identificar niveles de consenso entre las iniciativas analizadas, ordenamos los proyectos en un <strong>semáforo de coincidencias</strong> (verde, amarillo y rojo), destacando con claridad los puntos de convergencia y divergencia en la regulación de la inteligencia artificial.
 </div>
 
-<div class="semaforo-wrap anim d2" id="semaforoSection">
-  <div class="semaforo-stack">
-    <div class="semaforo-row green"  id="rowVerde">  <div class="semaforo-stripe"></div></div>
-    <div class="semaforo-row yellow" id="rowAmarillo"><div class="semaforo-stripe"></div></div>
-    <div class="semaforo-row red"    id="rowRojo">   <div class="semaforo-stripe"></div></div>
+<section class="tl anim d2" id="semaforoSection" aria-label="Semáforo de consensos">
+  <div class="tl__signal">
+    <div class="tl__post">
+      <div class="tl__housing" id="tlLamps"></div>
+      <span class="tl__pole" aria-hidden="true"></span>
+      <span class="tl__base" aria-hidden="true"></span>
+    </div>
+    <div class="tl__labels" id="tlLabels"></div>
   </div>
-
-  <div class="semaforo-detail" id="semaforoDetail" style="display:none">
-    <div class="semaforo-detail-title">Selecciona un grupo del semáforo</div>
-    <div class="semaforo-detail-sub">Acá vamos a mostrar los proyectos similares del grupo elegido.</div>
-    <div class="semaforo-bills"></div>
-  </div>
-</div>
+  <div class="tl__panel" id="tlPanel" aria-live="polite"></div>
+</section>
 
 <div class="pies-grid anim d3">
   <div class="year-pie-wrap" id="yearPieSection">
@@ -1156,12 +1220,24 @@ tr:hover{background:var(--surface2)}
 <!-- ════════════════════════════════════════════════════════
      FOOTER
 ════════════════════════════════════════════════════════ -->
-<div style="text-align:center;padding:40px 0;border-top:1px solid var(--border);margin-top:48px;color:var(--muted);font-size:12px">
-  <p>Comisión de CyT · H. Cámara de Diputados de la Nación Argentina · 2019-2026</p>
-  <p style="margin-top:8px;font-size:11px">Información actualizada — Todos los proyectos sobre Inteligencia Artificial</p>
 </div>
 
-</div>
+<footer class="site-footer">
+  <div class="site-footer__inner site-wrap">
+    <div class="site-footer__about">
+      <strong>Monitor Legislativo CyT</strong>
+      <span>Análisis de la Comisión de Ciencia, Tecnología e Innovación Productiva de la H. Cámara de Diputados de la Nación. Datos abiertos, código abierto.</span>
+    </div>
+    <div class="site-footer__links">
+      <a href="/">Inicio</a>
+      <a href="dashboard-cyt.html">Ciencia y Tecnología</a>
+      <a href="comision.html">La comisión</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="presupuesto-2026.html">Presupuesto 2026</a>
+    </div>
+  </div>
+  <div class="site-footer__credits site-wrap">Foto: «BalticServers data center», BalticServers.com (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>), vía Wikimedia Commons.</div>
+</footer>
 </div>
 
 <!-- ════════════════════════════════════════════════════════
@@ -1614,6 +1690,10 @@ function updateKPIs() {
   const b = FILTERED;
   const totalEl = document.getElementById('kpiTotal');
   if(totalEl) totalEl.textContent = b.length;
+  const heroTotalEl = document.getElementById('heroIaTotal');
+  if(heroTotalEl) heroTotalEl.textContent = b.length;
+  const heroTemasEl = document.getElementById('heroIaTemas');
+  if(heroTemasEl) heroTemasEl.textContent = SEMAFORO_ORDER.reduce((n, level) => n + SEMAFORO_BASE[level].length, 0);
 
   const uniqueAuthors = [...new Set(b.map(x => x.autor_principal).filter(a => a && a !== 'Desconocido'))];
   const autoresEl = document.getElementById('kpiAutores');
@@ -1729,7 +1809,6 @@ const SEMAFORO_BASE = {
   ]
 };
 
-let activeSemaforoKey = null;
 
 function resolveSemaforoProjects(group) {
   const idSet = new Set(group.projectIds || []);
@@ -1744,170 +1823,84 @@ function resolveSemaforoProjects(group) {
   return [...base, ...extra];
 }
 
-const semaforoSlideIndex = { verde:0, amarillo:0, rojo:0 };
+/* Semáforo: rojo arriba, amarillo al medio y verde abajo, como uno de verdad.
+   La luz encendida muestra sus temas; los expedientes abren la ficha del proyecto. */
+const SEMAFORO_LEVELS = {
+  rojo: {
+    name: 'Divergencia', light: 'roja', short: 'Modelos regulatorios opuestos',
+    desc: 'Los proyectos proponen modelos opuestos: un Estado activo y prescriptivo frente a esquemas flexibles basados en principios. Estas diferencias atraviesan todo el diseño de una futura ley.',
+    icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M7 7l10 10"/><path d="M17 7L7 17"/></svg>',
+  },
+  amarillo: {
+    name: 'Acuerdo parcial', light: 'amarilla', short: 'Coinciden en el qué, no en el cómo',
+    desc: 'Hay acuerdo en el objetivo, pero no en cómo instrumentarlo: cuántos niveles de riesgo, qué registrar y qué exigir en cada caso.',
+    icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 12h12"/></svg>',
+  },
+  verde: {
+    name: 'Convergencia', light: 'verde', short: 'Hay acuerdo entre bloques',
+    desc: 'Temas en los que proyectos de distintos bloques proponen soluciones parecidas: son la base más probable de un consenso legislativo.',
+    icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg>',
+  },
+};
+const SEMAFORO_ORDER = ['rojo', 'amarillo', 'verde'];
+const SEMAFORO_MAX_CHIPS = 6;
+let semaforoLevel = 'verde';
 
-function buildSemaforoSlides(bucketName, groups) {
-  const slides = [];
-  groups.forEach(group => {
-    const bills = resolveSemaforoProjects(group);
-    slides.push({
-      groupKey: group.key,
-      title: group.title,
-      cardTitle: group.cardTitle || group.title,
-      quote: group.summary,
-      projects: bills.length,
-      bucketName,
-    });
-    (group.reasons || []).forEach((reason, idx) => {
-      slides.push({
-        groupKey: group.key,
-        title: group.title,
-        cardTitle: group.cardTitle || group.title,
-        quote: reason,
-        projects: bills.length,
-        bucketName,
-      });
-    });
-  });
-  return slides;
-}
-
-function renderSemaforoBucket(bucketName, rowId, groups, label, animate) {
-  const row = document.getElementById(rowId);
-  if(!row) return;
-
-  const slides = buildSemaforoSlides(bucketName, groups);
-  if(!slides.length) {
-    row.insertAdjacentHTML('beforeend','<div style="padding:16px;font-size:12px;color:var(--muted)">Sin datos cargados.</div>');
-    return;
-  }
-
-  if(semaforoSlideIndex[bucketName] >= slides.length) semaforoSlideIndex[bucketName] = 0;
-  if(semaforoSlideIndex[bucketName] < 0) semaforoSlideIndex[bucketName] = slides.length - 1;
-
-  const idx     = semaforoSlideIndex[bucketName];
-  const current = slides[idx];
-  const next    = slides[(idx + 1) % slides.length];
-  const next2   = slides[(idx + 2) % slides.length];
-
-  /* Keep existing stripe, replace only the panel */
-  const existingPanel  = row.querySelector('.semaforo-row-panel');
-  const existingDetail = row.querySelector('.semaforo-detail');
-
-  const panelHTML = `
-    <div class="semaforo-row-panel">
-      <!-- LEFT stacked cards -->
-      <div class="semaforo-stage">
-        <div class="semaforo-stage-card back">
-          ${label ? `<div class="semaforo-stage-kicker">${label}</div>` : ''}
-          <div class="semaforo-stage-title">${next2.cardTitle || next2.title}</div>
-        </div>
-        <div class="semaforo-stage-card mid">
-          ${label ? `<div class="semaforo-stage-kicker">${label}</div>` : ''}
-          <div class="semaforo-stage-title">${next.cardTitle || next.title}</div>
-        </div>
-        <button class="semaforo-stage-card front" type="button" aria-label="Grupo del semáforo">
-          ${label ? `<div class="semaforo-stage-kicker">${label}</div>` : ''}
-          <div class="semaforo-stage-title">${current.cardTitle || current.title}</div>
-          <span class="semaforo-stage-chip">${current.projects} proyecto${current.projects !== 1 ? 's' : ''}</span>
-        </button>
-      </div>
-
-      <!-- RIGHT content -->
-      <div class="semaforo-copy${animate ? ' animating' : ''}">
-        ${label ? `<div class="semaforo-copy-kicker">${label}</div>` : ''}
-        <div class="semaforo-copy-title">${current.title}</div>
-        <div class="semaforo-copy-quote">${current.quote}</div>
-        <div class="semaforo-copy-actions">
-          <button class="semaforo-nav-btn"
-            onclick="stepSemaforoSlide('${bucketName}',-1)"
-            ${slides.length <= 1 ? 'disabled' : ''}>←</button>
-          <button class="semaforo-nav-btn"
-            onclick="stepSemaforoSlide('${bucketName}',1)"
-            ${slides.length <= 1 ? 'disabled' : ''}>→</button>
-          <span class="semaforo-page">${idx + 1}/${slides.length}</span>
-        </div>
-      </div>
-    </div>`;
-
-  if(existingPanel) {
-    existingPanel.outerHTML = panelHTML;
-  } else {
-    row.insertAdjacentHTML('beforeend', panelHTML);
-  }
-
-  /* Re-attach detail if it was open */
-  if(existingDetail) row.appendChild(existingDetail);
-}
-
-function stepSemaforoSlide(bucketName, dir) {
-  const map = {
-    verde:    { id:'rowVerde',    groups:SEMAFORO_BASE.verde,    label:'' },
-    amarillo: { id:'rowAmarillo', groups:SEMAFORO_BASE.amarillo, label:'' },
-    rojo:     { id:'rowRojo',     groups:SEMAFORO_BASE.rojo,     label:'' },
-  };
-  const m = map[bucketName];
-  if(!m) return;
-
-  /* 1 — animate front card out */
-  const frontCard = document.querySelector(`#${m.id} .semaforo-stage-card.front`);
-  if(frontCard) {
-    frontCard.classList.add('flip-out');
-  }
-
-  /* 2 — after animation ends, update index and re-render with flip-in */
-  setTimeout(() => {
-    semaforoSlideIndex[bucketName] = semaforoSlideIndex[bucketName] + dir;
-    renderSemaforoBucket(bucketName, m.id, m.groups, m.label, true);
-    /* add flip-in class to new front card */
-    const newFront = document.querySelector(`#${m.id} .semaforo-stage-card.front`);
-    if(newFront) {
-      newFront.classList.add('flip-in');
-    }
-  }, 200);
+function pickSemaforoLevel(level) {
+  if(!SEMAFORO_LEVELS[level]) return;
+  semaforoLevel = level;
+  renderSemaforo();
 }
 
 function renderSemaforo() {
-  renderSemaforoBucket('verde',    'rowVerde',    SEMAFORO_BASE.verde,    '',    false);
-  renderSemaforoBucket('amarillo', 'rowAmarillo', SEMAFORO_BASE.amarillo, '', false);
-  renderSemaforoBucket('rojo',     'rowRojo',     SEMAFORO_BASE.rojo,     '',     false);
-}
+  const lamps = document.getElementById('tlLamps');
+  const labels = document.getElementById('tlLabels');
+  const panel = document.getElementById('tlPanel');
+  if(!lamps || !labels || !panel) return;
 
-function openSemaforoGroup(bucketName, groupKey, silent=false) {
-  const all = [...SEMAFORO_BASE.verde, ...SEMAFORO_BASE.amarillo, ...SEMAFORO_BASE.rojo];
-  const group = all.find(g => g.key === groupKey);
-  const detail = document.getElementById('semaforoDetail');
-  if(!group || !detail) return;
+  lamps.innerHTML = SEMAFORO_ORDER.map(level => {
+    const lv = SEMAFORO_LEVELS[level];
+    const n = SEMAFORO_BASE[level].length;
+    const on = level === semaforoLevel;
+    return `<button type="button" class="tl__lamp" data-level="${level}" aria-pressed="${on}"
+      aria-label="Luz ${lv.light}: ${lv.name}, ${n} temas" onclick="pickSemaforoLevel('${level}')">
+      <span class="tl__lamp-num"><strong>${n}</strong><span>temas</span></span>
+    </button>`;
+  }).join('');
 
-  // Toggle: click same group to collapse detail panel
-  if(activeSemaforoKey === group.key) {
-    activeSemaforoKey = null;
-    detail.style.display = 'none';
-    detail.innerHTML = `
-      <div class="semaforo-detail-title">Selecciona un grupo del semáforo</div>
-      <div class="semaforo-detail-sub">Acá vamos a mostrar los proyectos similares del grupo elegido.</div>
-      <div class="semaforo-bills"></div>`;
-    if(!silent) renderSemaforo();
-    return;
-  }
+  labels.innerHTML = SEMAFORO_ORDER.map(level => {
+    const lv = SEMAFORO_LEVELS[level];
+    const on = level === semaforoLevel;
+    return `<button type="button" class="tl__label" data-level="${level}" aria-pressed="${on}" onclick="pickSemaforoLevel('${level}')">
+      <strong>${lv.icon}${lv.name}</strong><span>${lv.short}</span>
+    </button>`;
+  }).join('');
 
-  activeSemaforoKey = group.key;
-  const bills = resolveSemaforoProjects(group);
-  detail.style.display = 'block';
-  detail.innerHTML = `
-    <div class="semaforo-detail-title">${group.title}</div>
-    <div class="semaforo-detail-sub">${group.summary}</div>
-    <div class="semaforo-bills">
-      ${bills.length ? bills.map(b => `
-        <div class="semaforo-bill" onclick="openBillModal('${escHtml(b.id)}')">
-          <div class="semaforo-bill-id">${escHtml(b.id)}</div>
-          <div class="semaforo-bill-title">${escHtml(b.titulo)}</div>
-          <div class="semaforo-bill-meta">${escHtml(b.autor_principal || 'Desconocido')} · ${escHtml(b.bloque || 'Sin datos')}</div>
-        </div>
-      `).join('') : '<div style="color:var(--muted);font-size:12px">Sin proyectos cargados todavía en este grupo. Cuando me pases el mapeo final, lo completamos.</div>'}
-    </div>`;
+  const lv = SEMAFORO_LEVELS[semaforoLevel];
+  const topics = SEMAFORO_BASE[semaforoLevel].map(group => {
+    const bills = resolveSemaforoProjects(group);
+    const shown = bills.slice(0, SEMAFORO_MAX_CHIPS);
+    const extra = bills.length - shown.length;
+    const chips = bills.length
+      ? shown.map(b => `<button type="button" class="tl__chip" onclick="openBillModal('${escHtml(b.id)}')" title="${escHtml(b.titulo || '')}">${escHtml(b.id)}</button>`).join('')
+        + (extra > 0 ? `<span class="tl__none">+${extra} más</span>` : '')
+      : '<span class="tl__none">Debate transversal a todos los proyectos</span>';
+    return `<article class="tl__topic">
+      <h4>${escHtml(group.cardTitle || group.title)}</h4>
+      <em>${escHtml(group.title)}</em>
+      <p>${escHtml(group.summary)}</p>
+      <div class="tl__chips">${chips}</div>
+    </article>`;
+  }).join('');
 
-  if(!silent) renderSemaforo();
+  panel.dataset.level = semaforoLevel;
+  panel.innerHTML = `
+    <div class="tl__head">
+      <span class="tl__head-kicker"><i></i>Luz ${lv.light}</span>
+      <h3>${lv.name}</h3>
+      <p>${lv.desc}</p>
+    </div>
+    <div class="tl__topics">${topics}</div>`;
 }
 
 const YEAR_PIE_COLORS = ['#2d6a2d','#1a4a8a','#6d28d9','#c45a00','#0f766e','#be123c','#1e40af','#92400e'];

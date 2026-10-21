@@ -10,6 +10,8 @@
     "seguimiento:ultimo": "node run.js --ultimo",
     "seguimiento:recientes": "node run.js --recientes=7",
     "sync:dashboard-data": "node scripts/sync-dashboard-data.mjs",
+    "sync:hcdn": "node scripts/sync-hcdn.mjs",
+    "sync:agenda": "node scripts/sync-agenda.mjs",
     "broadcast": "node broadcast.js",
     "test": "node --test tests/*.test.js",
     "test:py": "python3 -m unittest discover -s tests"

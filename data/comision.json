@@ -1,0 +1,442 @@
+{
+  "generado": "2026-10-21T20:20:59.641Z",
+  "fuente": "datos.hcdn.gob.ar",
+  "fuente_actualizada": "2026-10-07",
+  "comision": {
+    "id": "HCDN00185",
+    "nombre": "CIENCIA, TECNOLOGIA E INNOVACION PRODUCTIVA",
+    "desde": "2014-07-02"
+  },
+  "integrantes": [
+    {
+      "nombre": "YEZA, Martín",
+      "nombre_display": "Martín Yeza",
+      "bloque": "PRO",
+      "distrito": "BUENOS AIRES",
+      "genero": "M",
+      "cargo": "Presidente"
+    },
+    {
+      "nombre": "LLANO, Mercedes",
+      "nombre_display": "Mercedes Llano",
+      "bloque": "LLA",
+      "distrito": "MENDOZA",
+      "genero": "F",
+      "cargo": "Vice Presidente 1"
+    },
+    {
+      "nombre": "VILLAVERDE, Lorena",
+      "nombre_display": "Lorena Villaverde",
+      "bloque": "LLA",
+      "distrito": "RÍO NEGRO",
+      "genero": "F",
+      "cargo": "Secretario"
+    },
+    {
+      "nombre": "METRAL ASENSIO, Julieta",
+      "nombre_display": "Julieta Metral Asensio",
+      "bloque": "LLA",
+      "distrito": "MENDOZA",
+      "genero": "F",
+      "cargo": "Secretario"
+    },
+    {
+      "nombre": "AGÜERO, Guillermo César",
+      "nombre_display": "Guillermo César Agüero",
+      "bloque": "UCR",
+      "distrito": "CHACO",
+      "genero": "M",
+      "cargo": null
+    },
+    {
+      "nombre": "AJMECHET, Sabrina",
+      "nombre_display": "Sabrina Ajmechet",
+      "bloque": "LLA",
+      "distrito": "CABA",
+      "genero": "F",
+      "cargo": null
+    },
+    {
+      "nombre": "ALMENA, Carlos Alberto",
+      "nombre_display": "Carlos Alberto Almena",
+      "bloque": "LLA",
+      "distrito": "SAN LUIS",
+      "genero": "M",
+      "cargo": null
+    },
+    {
+      "nombre": "ARABIA, Damián",
+      "nombre_display": "Damián Arabia",
+      "bloque": "LLA",
+      "distrito": "CABA",
+      "genero": "M",
+      "cargo": null
+    },
+    {
+      "nombre": "AVICO, Belén",
+      "nombre_display": "Belén Avico",
+      "bloque": "LLA",
+      "distrito": "CÓRDOBA",
+      "genero": "F",
+      "cargo": null
+    },
+    {
+      "nombre": "CAPOZZI, Sergio Eduardo",
+      "nombre_display": "Sergio Eduardo Capozzi",
+      "bloque": "Provincias Unidas",
+      "distrito": "RÍO NEGRO",
+      "genero": "M",
+      "cargo": null
+    },
+    {
+      "nombre": "COLETTA, Mariela",
+      "nombre_display": "Mariela Coletta",
+      "bloque": "Provincias Unidas",
+      "distrito": "CABA",
+      "genero": "F",
+      "cargo": null
+    },
+    {
+      "nombre": "FERNÁNDEZ MOLERO, Daiana",
+      "nombre_display": "Daiana Fernández Molero",
+      "bloque": "PRO",
+      "distrito": "CABA",
+      "genero": "F",
+      "cargo": null
+    },
+    {
+      "nombre": "FIGLIUOLO, Sergio",
+      "nombre_display": "Sergio Figliuolo",
+      "bloque": "LLA",
+      "distrito": "BUENOS AIRES",
+      "genero": "M",
+      "cargo": null
+    },
+    {
+      "nombre": "FREITES, Andrea",
+      "nombre_display": "Andrea Freites",
+      "bloque": "UXP",
+      "distrito": "TIERRA DEL FUEGO",
+      "genero": "F",
+      "cargo": null
+    },
+    {
+      "nombre": "GARCÍA, Álvaro",
+      "nombre_display": "Álvaro García",
+      "bloque": "LLA",
+      "distrito": "BUENOS AIRES",
+      "genero": "M",
+      "cargo": null
+    },
+    {
+      "nombre": "GONZÁLEZ, Gerardo Gustavo",
+      "nombre_display": "Gerardo Gustavo González",
+      "bloque": "Innovación Fed.",
+      "distrito": "FORMOSA",
+      "genero": "M",
+      "cargo": null
+    },
+    {
+      "nombre": "IANNI, Ana María",
+      "nombre_display": "Ana María Ianni",
+      "bloque": "UXP",
+      "distrito": "SANTA CRUZ",
+      "genero": "F",
+      "cargo": null
+    },
+    {
+      "nombre": "LEMOINE, Lilia",
+      "nombre_display": "Lilia Lemoine",
+      "bloque": "LLA",
+      "distrito": "BUENOS AIRES",
+      "genero": "F",
+      "cargo": null
+    },
+    {
+      "nombre": "LLUCH, Enrique",
+      "nombre_display": "Enrique Lluch",
+      "bloque": "LLA",
+      "distrito": "CÓRDOBA",
+      "genero": "M",
+      "cargo": null
+    },
+    {
+      "nombre": "MANRIQUE, Mario",
+      "nombre_display": "Mario Manrique",
+      "bloque": "UXP",
+      "distrito": "BUENOS AIRES",
+      "genero": "M",
+      "cargo": null
+    },
+    {
+      "nombre": "OLMOS, Kelly",
+      "nombre_display": "Kelly Olmos",
+      "bloque": "UXP",
+      "distrito": "CABA",
+      "genero": "F",
+      "cargo": null
+    },
+    {
+      "nombre": "POTENZA, Luciana",
+      "nombre_display": "Luciana Potenza",
+      "bloque": "UXP",
+      "distrito": "BUENOS AIRES",
+      "genero": "F",
+      "cargo": null
+    },
+    {
+      "nombre": "SANTURIO, Santiago",
+      "nombre_display": "Santiago Santurio",
+      "bloque": "LLA",
+      "distrito": "BUENOS AIRES",
+      "genero": "M",
+      "cargo": null
+    },
+    {
+      "nombre": "SELVA, Sabrina",
+      "nombre_display": "Sabrina Selva",
+      "bloque": "UXP",
+      "distrito": "BUENOS AIRES",
+      "genero": "F",
+      "cargo": null
+    },
+    {
+      "nombre": "SERQUIS, Adriana Cristina",
+      "nombre_display": "Adriana Cristina Serquis",
+      "bloque": "UXP",
+      "distrito": "RÍO NEGRO",
+      "genero": "F",
+      "cargo": null
+    },
+    {
+      "nombre": "STRADA, Julia",
+      "nombre_display": "Julia Strada",
+      "bloque": "UXP",
+      "distrito": "BUENOS AIRES",
+      "genero": "F",
+      "cargo": null
+    },
+    {
+      "nombre": "TAIANA, Jorge",
+      "nombre_display": "Jorge Taiana",
+      "bloque": "UXP",
+      "distrito": "BUENOS AIRES",
+      "genero": "M",
+      "cargo": null
+    },
+    {
+      "nombre": "TORRES, Alejandra",
+      "nombre_display": "Alejandra Torres",
+      "bloque": "Provincias Unidas",
+      "distrito": "CÓRDOBA",
+      "genero": "F",
+      "cargo": null
+    },
+    {
+      "nombre": "TREFFINGER, César",
+      "nombre_display": "César Treffinger",
+      "bloque": "LLA",
+      "distrito": "CHUBUT",
+      "genero": "M",
+      "cargo": null
+    },
+    {
+      "nombre": "VOLNOVICH, Luana",
+      "nombre_display": "Luana Volnovich",
+      "bloque": "UXP",
+      "distrito": "BUENOS AIRES",
+      "genero": "F",
+      "cargo": null
+    },
+    {
+      "nombre": "YEDLIN, Pablo Raúl",
+      "nombre_display": "Pablo Raúl Yedlin",
+      "bloque": "UXP",
+      "distrito": "TUCUMÁN",
+      "genero": "M",
+      "cargo": null
+    }
+  ],
+  "resumen_integrantes": {
+    "total": 31,
+    "mujeres": 17,
+    "varones": 14,
+    "distritos": 12,
+    "por_bloque": [
+      {
+        "bloque": "LLA",
+        "n": 13
+      },
+      {
+        "bloque": "UXP",
+        "n": 11
+      },
+      {
+        "bloque": "Provincias Unidas",
+        "n": 3
+      },
+      {
+        "bloque": "PRO",
+        "n": 2
+      },
+      {
+        "bloque": "Innovación Fed.",
+        "n": 1
+      },
+      {
+        "bloque": "UCR",
+        "n": 1
+      }
+    ]
+  },
+  "recorrido": {
+    "desde": 2014,
+    "ley": {
+      "girados": 308,
+      "con_dictamen": 26,
+      "media_sancion": 10,
+      "sancionados": 13,
+      "mediana_dias_dictamen": 259
+    },
+    "otros": {
+      "girados": 715,
+      "con_dictamen": 304,
+      "aprobados": 290
+    },
+    "total_girados": 1023
+  },
+  "destacados": [
+    {
+      "expediente": "0005-PE-2026",
+      "anio": 2026,
+      "fecha": "2026-05-26",
+      "titulo": "REGIMEN DE INCENTIVO PARA GRANDES INVERSIONES EN NUEVAS INDUSTRIAS (\"SUPER RIGI\").",
+      "resultado": "MEDIA SANCION"
+    },
+    {
+      "expediente": "2435-D-2024",
+      "anio": 2024,
+      "fecha": "2024-05-21",
+      "titulo": "DECLARAR LA EMERGENCIA DEL SISTEMA NACIONAL DE CIENCIA, TECNOLOGIA E INNOVACION DURANTE EL VIGENTE EJERCICIO FISCAL.",
+      "resultado": "MEDIA SANCION"
+    },
+    {
+      "expediente": "0057-S-2022",
+      "anio": 2022,
+      "fecha": "2022-09-08",
+      "titulo": "APROBACION DEL \"PLAN NACIONAL DE CIENCIA, TECNOLOGIA E INNOVACION 2030\".",
+      "resultado": "SANCIONADO"
+    },
+    {
+      "expediente": "0011-PE-2022",
+      "anio": 2022,
+      "fecha": "2022-06-30",
+      "titulo": "MODIFICACIONES A LA LEY 23877, DE PROMOCION Y FOMENTO DE LA INNOVACION TECNOLOGICA.",
+      "resultado": "MEDIA SANCION"
+    },
+    {
+      "expediente": "0006-PE-2022",
+      "anio": 2022,
+      "fecha": "2022-04-07",
+      "titulo": "PRORROGAR LA VIGENCIA DE LA LEY 26270 HASTA EL 31 DE DICIEMBRE DE 2037 Y SE SUSTITUIR SU DENOMINACION POR LA DE \"LEY DE PROMOCION DEL DESARROLLO Y PRODUCCION DE LA BIOTECNOLOGIA MODERNA Y LA NANOTECNOLOGIA\".",
+      "resultado": "MEDIA SANCION"
+    }
+  ],
+  "historia": [
+    {
+      "anio": 2008,
+      "ley": 19,
+      "otros": 52
+    },
+    {
+      "anio": 2009,
+      "ley": 18,
+      "otros": 44
+    },
+    {
+      "anio": 2010,
+      "ley": 20,
+      "otros": 69
+    },
+    {
+      "anio": 2011,
+      "ley": 20,
+      "otros": 52
+    },
+    {
+      "anio": 2012,
+      "ley": 19,
+      "otros": 57
+    },
+    {
+      "anio": 2013,
+      "ley": 17,
+      "otros": 59
+    },
+    {
+      "anio": 2014,
+      "ley": 20,
+      "otros": 99
+    },
+    {
+      "anio": 2015,
+      "ley": 28,
+      "otros": 59
+    },
+    {
+      "anio": 2016,
+      "ley": 25,
+      "otros": 71
+    },
+    {
+      "anio": 2017,
+      "ley": 19,
+      "otros": 57
+    },
+    {
+      "anio": 2018,
+      "ley": 19,
+      "otros": 60
+    },
+    {
+      "anio": 2019,
+      "ley": 19,
+      "otros": 61
+    },
+    {
+      "anio": 2020,
+      "ley": 15,
+      "otros": 60
+    },
+    {
+      "anio": 2021,
+      "ley": 7,
+      "otros": 31
+    },
+    {
+      "anio": 2022,
+      "ley": 16,
+      "otros": 26
+    },
+    {
+      "anio": 2023,
+      "ley": 15,
+      "otros": 41
+    },
+    {
+      "anio": 2024,
+      "ley": 31,
+      "otros": 58
+    },
+    {
+      "anio": 2025,
+      "ley": 31,
+      "otros": 74
+    },
+    {
+      "anio": 2026,
+      "ley": 51,
+      "otros": 38
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La comisión — Monitor CyT</title>
+<meta name="description" content="Quiénes integran la Comisión de Ciencia, Tecnología e Innovación Productiva de Diputados, qué pasa con los proyectos que recibe y cómo cambió su agenda desde 2008.">
+<link rel="canonical" href="https://cyt.openarg.org/comision.html">
+<meta name="theme-color" content="#102238">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Monitor CyT · H. Cámara de Diputados">
+<meta property="og:locale" content="es_AR">
+<meta property="og:url" content="https://cyt.openarg.org/comision.html">
+<meta property="og:title" content="La comisión de Ciencia y Tecnología de Diputados, en datos">
+<meta property="og:description" content="Integrantes, recorrido de los proyectos e historia de la comisión, con datos abiertos de la Cámara.">
+<meta property="og:image" content="https://cyt.openarg.org/img/og-cyt.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Monitor de Ciencia y Tecnología del Congreso, sobre una foto del recinto de la Cámara de Diputados">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cyt.openarg.org/img/og-cyt.jpg">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<style>
+  .split { display: flex; flex-wrap: wrap; gap: 20px; }
+  .split > :first-child { flex: 3 1 560px; min-width: 0; }
+  .split > :last-child { flex: 2 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 20px; }
+
+  /* Embudo */
+  .funnel { display: flex; flex-direction: column; gap: 22px; }
+  .funnel__row { display: flex; flex-direction: column; gap: 8px; }
+  .funnel__label { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 15px; font-weight: 600; }
+  .funnel__label small { font-weight: 400; color: var(--site-subtle); font-size: 15px; }
+  .funnel__label strong { font-family: var(--site-serif); font-size: 30px; font-weight: 500; color: var(--site-navy-900); font-variant-numeric: tabular-nums; }
+  .funnel__track { height: 44px; border-radius: 10px; background: var(--site-line-soft); overflow: hidden; display: flex; }
+  .funnel__bar { height: 44px; min-width: 14px; border-radius: 10px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--site-muted); }
+  .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+  .big-num { font-family: var(--site-serif); font-size: 56px; font-weight: 500; line-height: 1; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+  .mini { display: flex; flex-direction: column; gap: 10px; padding: 20px; border-radius: 16px; background: #fff; border: 1px solid var(--site-line); }
+  .mini__top { display: flex; justify-content: space-between; gap: 8px; font-family: var(--site-mono); font-size: 12px; color: var(--site-subtle); }
+  .mini__title { font-size: 15px; font-weight: 600; line-height: 1.45; color: var(--site-navy-900); }
+
+  /* Integrantes */
+  .authorities { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .person { display: flex; align-items: center; gap: 14px; padding: 20px; border-radius: 18px; background: #fff; border: 1px solid var(--site-line); }
+  .person--lead { background: var(--site-navy-900); border-color: var(--site-navy-900); color: #fff; }
+  .avatar { width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; font-family: var(--site-serif); font-size: 18px; font-weight: 600; flex-shrink: 0; background: #e7edf3; color: var(--site-navy-800); }
+  .person--lead .avatar { background: var(--site-gold-400); color: var(--site-navy-900); }
+  .person__text { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+  .person__role { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--site-gold-700); }
+  .person--lead .person__role { color: var(--site-gold-400); }
+  .person__name { font-size: 17px; font-weight: 600; }
+  .person__meta { font-size: 13px; color: var(--site-subtle); }
+  .person--lead .person__meta { color: var(--site-on-dark-muted); }
+  .stack { display: flex; height: 52px; border-radius: 12px; overflow: hidden; gap: 2px; }
+  .stack span { display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; }
+  .bloc-legend { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px 20px; font-size: 14px; }
+  .bloc-legend div { display: flex; align-items: center; gap: 10px; }
+  .bloc-legend i { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+  .bloc-legend span { flex-grow: 1; }
+  .bloc-legend b { font-family: var(--site-mono); font-weight: 500; }
+  .facts { display: flex; flex-wrap: wrap; gap: 28px; padding-top: 18px; border-top: 1px solid var(--site-line-soft); }
+  .facts div { display: flex; flex-direction: column; gap: 2px; }
+  .facts strong { font-family: var(--site-serif); font-size: 30px; font-weight: 500; color: var(--site-navy-900); }
+  .facts span { font-size: 13px; color: var(--site-subtle); }
+  .members { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+  .member { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 14px; background: #fff; border: 1px solid var(--site-line); }
+  .member .avatar { width: 40px; height: 40px; font-family: var(--site-sans); font-size: 13px; }
+  .member strong { display: block; font-size: 14px; color: var(--site-navy-900); }
+  .member span { font-size: 12px; color: var(--site-subtle); }
+
+  /* Historia */
+  .chart-scroll { overflow-x: auto; }
+  .chart { min-width: 720px; display: grid; gap: 10px; align-items: end; height: 330px; padding-top: 10px; border-bottom: 1px solid #c9d3de; }
+  .chart__col { display: flex; flex-direction: column; justify-content: flex-end; gap: 2px; height: 100%; }
+  .chart__total { text-align: center; font-family: var(--site-mono); font-size: 11px; color: var(--site-subtle); padding-bottom: 4px; }
+  .chart__otros { border-radius: 6px 6px 0 0; background: #b9c8d7; }
+  .chart__ley { background: var(--site-navy-800); }
+  .chart__col--now .chart__ley { background: #b58a2c; }
+  .chart__col--now .chart__total { color: var(--site-navy-900); font-weight: 600; }
+  .chart__years { min-width: 720px; display: grid; gap: 10px; padding-top: 10px; font-family: var(--site-mono); font-size: 12px; color: var(--site-subtle); text-align: center; }
+  .notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; padding-top: 18px; border-top: 1px solid var(--site-line-soft); }
+  .notes strong { display: block; font-size: 15px; color: var(--site-navy-900); margin-bottom: 4px; }
+  .notes span { font-size: 14px; line-height: 1.6; color: var(--site-muted); }
+</style>
+</head>
+<body class="site">
+
+  <header class="site-hero">
+    <img class="site-hero__img" src="img/recinto.jpg" alt="" style="object-position: center 55%">
+    <div class="site-hero__shade"></div>
+    <nav class="site-nav site-wrap" aria-label="Principal">
+      <a class="site-brand" href="/">
+        <span class="site-brand__mark">CyT</span>
+        <span class="site-brand__text"><strong>Monitor Legislativo CyT</strong><span>H. Cámara de Diputados</span></span>
+      </a>
+      <div class="site-links">
+        <a href="dashboard-cyt.html">Ciencia y Tecnología</a>
+        <a href="dashboard.html">Inteligencia Artificial</a>
+        <a href="comision.html" aria-current="page">La comisión</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="presupuesto-2026.html">Presupuesto 2026</a>
+      </div>
+    </nav>
+    <div class="site-hero__body site-wrap">
+      <div class="site-hero__text">
+        <span class="site-kicker" id="hero-kicker">Comisión permanente</span>
+        <h1>La comisión</h1>
+        <p class="site-hero__lead">Quiénes la integran, qué pasa con los proyectos que recibe y cómo cambió su agenda desde 2008. Con datos abiertos de la Cámara de Diputados.</p>
+      </div>
+      <div class="site-hero__stats">
+        <div class="site-hero__stat"><strong id="hero-integrantes">—</strong><span>integrantes</span></div>
+        <div class="site-hero__stat"><strong id="hero-girados">—</strong><span id="hero-girados-label">proyectos recibidos</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-wrap" id="contenido">
+
+    <!-- 01 RECORRIDO -->
+    <section class="site-section" id="recorrido">
+      <div class="site-section__head">
+        <div>
+          <span class="site-kicker">01 · Recorrido de los proyectos</span>
+          <h2 id="recorrido-titulo">¿Qué pasa con los proyectos de ley?</h2>
+        </div>
+        <p id="recorrido-intro">Proyectos de ley girados a la comisión, según su avance en el Congreso.</p>
+      </div>
+      <div class="split">
+        <div class="site-card site-card--pad funnel" id="funnel"></div>
+        <div>
+          <div class="site-card site-card--pad site-card--navy" style="display: flex; flex-direction: column; gap: 8px">
+            <span class="big-num" id="mediana">—</span>
+            <span style="font-size: 15px; line-height: 1.6; color: var(--site-on-dark-muted)">es la mediana entre que se presenta un proyecto de ley y su dictamen en la comisión.</span>
+          </div>
+          <div class="site-card site-card--pad" style="display: flex; flex-direction: column; gap: 8px">
+            <span style="font-size: 13px; font-weight: 600; color: var(--site-subtle)">Resoluciones y declaraciones</span>
+            <span class="big-num" style="font-size: 40px; color: var(--site-navy-900)" id="otros-num">—</span>
+            <span style="font-size: 14px; line-height: 1.6; color: var(--site-muted)" id="otros-text"></span>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h3 style="margin: 0; font-size: 16px; color: var(--site-navy-900)">Los que llegaron más lejos</h3>
+        <div class="card-grid" id="destacados"></div>
+      </div>
+    </section>
+
+    <!-- 02 INTEGRANTES -->
+    <section class="site-section" id="integrantes">
+      <div class="site-section__head">
+        <div>
+          <span class="site-kicker">02 · Integrantes</span>
+          <h2 id="integrantes-titulo">Quiénes la integran</h2>
+        </div>
+        <p>Composición actual de la comisión, por bloque, género y distrito.</p>
+      </div>
+      <div class="authorities" id="autoridades"></div>
+      <div class="site-card site-card--pad" style="display: flex; flex-direction: column; gap: 22px">
+        <h3 style="margin: 0; font-family: var(--site-serif); font-size: 24px; font-weight: 500; color: var(--site-navy-900)">Por bloque</h3>
+        <div class="stack" id="stack"></div>
+        <div class="bloc-legend" id="bloc-legend"></div>
+        <div class="facts" id="facts"></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h3 style="margin: 0; font-size: 16px; color: var(--site-navy-900)">Integrantes</h3>
+        <div class="members" id="members"></div>
+      </div>
+    </section>
+
+    <!-- 03 HISTORIA -->
+    <section class="site-section" id="historia">
+      <div class="site-section__head">
+        <div>
+          <span class="site-kicker">03 · Historia</span>
+          <h2 id="historia-titulo">Proyectos recibidos por año</h2>
+        </div>
+        <p>Proyectos girados por año. Hasta 2014 la comisión se llamaba «Ciencia y Tecnología».</p>
+      </div>
+      <div class="site-card site-card--pad" style="display: flex; flex-direction: column; gap: 20px">
+        <div class="legend"><span><i style="background: var(--site-navy-800)"></i>Proyectos de ley</span><span><i style="background: #b9c8d7"></i>Resoluciones y declaraciones</span></div>
+        <div class="chart-scroll">
+          <div class="chart" id="chart"></div>
+          <div class="chart__years" id="chart-years"></div>
+        </div>
+        <div class="notes" id="notes"></div>
+      </div>
+      <p class="site-note" id="fuente"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner site-wrap">
+      <div class="site-footer__about">
+        <strong>Monitor Legislativo CyT</strong>
+        <span>Análisis de la Comisión de Ciencia, Tecnología e Innovación Productiva de la H. Cámara de Diputados de la Nación. Datos abiertos, código abierto.</span>
+      </div>
+      <div class="site-footer__links">
+        <a href="/">Inicio</a>
+        <a href="dashboard-cyt.html">Ciencia y Tecnología</a>
+        <a href="dashboard.html">Inteligencia Artificial</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="presupuesto-2026.html">Presupuesto 2026</a>
+      </div>
+    </div>
+    <div class="site-footer__credits site-wrap">Foto: «Recinto de la Cámara de Diputados de la Nación», H. Cámara de Diputados (dominio público), vía Wikimedia Commons. Datos: <a href="https://datos.hcdn.gob.ar/">datos.hcdn.gob.ar</a>.</div>
+  </footer>
+
+<script src="site.js"></script>
+<script>
+  const BLOC_COLORS = ['#19334e', '#4f7aa3', '#9fb4c9', '#b58a2c', '#d9c08a', '#c9d3de', '#6f859c', '#e2bf70'];
+  const DARK_TEXT = new Set(['#9fb4c9', '#d9c08a', '#c9d3de', '#e2bf70']);
+  const BLOQUE_NOMBRE = { LLA: 'La Libertad Avanza', UXP: 'Unión por la Patria', 'Innovación Fed.': 'Innovación Federal' };
+  const bloque = (b) => BLOQUE_NOMBRE[b] || b;
+  const pct = (a, b) => b ? Math.round((a / b) * 100) : 0;
+  const iniciales = (nombre) => nombre.split(' ').filter((w) => w.length > 2).slice(0, 2).map((w) => w[0]).join('') || nombre[0];
+  const E = CyT.escapeHtml;
+
+  function renderRecorrido(r) {
+    const ley = r.ley;
+    const avanzados = ley.media_sancion + ley.sancionados;
+    const pDict = pct(ley.con_dictamen, ley.girados);
+    document.getElementById('recorrido-titulo').textContent = `De cada 100 proyectos de ley, ${pDict} consiguen dictamen`;
+    document.getElementById('recorrido-intro').textContent = `Proyectos de ley girados a la comisión desde ${r.desde}, según su avance en el Congreso.`;
+    const w = (n) => Math.max(0.5, (n / ley.girados) * 100).toFixed(1) + '%';
+    document.getElementById('funnel').innerHTML = `
+      <div class="funnel__row"><span class="funnel__label"><span>Girados a la comisión</span><strong>${ley.girados}</strong></span>
+        <span class="funnel__track"><span class="funnel__bar" style="width: 100%; background: var(--site-navy-800)"></span></span></div>
+      <div class="funnel__row"><span class="funnel__label"><span>Con dictamen de la comisión <small>· ${pDict}%</small></span><strong>${ley.con_dictamen}</strong></span>
+        <span class="funnel__track"><span class="funnel__bar" style="width: ${w(ley.con_dictamen)}; background: var(--site-blue-500)"></span></span></div>
+      <div class="funnel__row"><span class="funnel__label"><span>Con media sanción o sancionados <small>· ${pct(avanzados, ley.girados)}%</small></span><strong>${avanzados}</strong></span>
+        <span class="funnel__track"><span class="funnel__bar" style="width: ${w(ley.sancionados)}; background: #b58a2c; border-radius: 10px 0 0 10px"></span><span class="funnel__bar" style="width: ${w(ley.media_sancion)}; min-width: 0; background: #d9c08a; border-radius: 0 10px 10px 0"></span></span>
+        <span class="legend"><span><i style="background: #b58a2c"></i>${ley.sancionados} sancionados</span><span><i style="background: #d9c08a"></i>${ley.media_sancion} con media sanción</span></span></div>
+      <span class="site-note" style="padding-top: 16px; border-top: 1px solid var(--site-line-soft)">«Sancionado» y «media sanción» son el resultado final del proyecto en el Congreso, no solo lo que hizo esta comisión.</span>`;
+    document.getElementById('mediana').textContent = ley.mediana_dias_dictamen != null ? `${ley.mediana_dias_dictamen} días` : '—';
+    const o = r.otros;
+    document.getElementById('otros-num').innerHTML = `${o.aprobados} <span style="font-size: 20px; color: var(--site-subtle)">de ${o.girados}</span>`;
+    document.getElementById('otros-text').textContent = `fueron aprobadas (${pct(o.aprobados, o.girados)}%). Beneplácitos, declaraciones de interés y pedidos de informes avanzan mucho más rápido que las leyes.`;
+  }
+
+  function renderDestacados(items) {
+    document.getElementById('destacados').innerHTML = items.map((p) => {
+      const sancionado = p.resultado === 'SANCIONADO';
+      return `<div class="mini">
+        <span class="mini__top"><span>${E(p.expediente)}</span><span>${E(p.anio)}</span></span>
+        <span class="mini__title">${E(CyT.oracion(p.titulo))}</span>
+        <span class="site-tag ${sancionado ? 'site-tag--gold' : ''}" style="align-self: flex-start; margin-top: auto">${sancionado ? 'Sancionado' : 'Media sanción'}</span>
+      </div>`;
+    }).join('') || '<div class="site-empty">Sin proyectos con media sanción o sanción.</div>';
+  }
+
+  function renderIntegrantes(data) {
+    const integrantes = data.integrantes || [];
+    const res = data.resumen_integrantes;
+    document.getElementById('hero-integrantes').textContent = res.total;
+    document.getElementById('integrantes-titulo').textContent = `${res.total} diputados de ${res.distritos} distritos`;
+
+    const autoridades = integrantes.filter((p) => p.cargo);
+    const orden = (c) => /^presidente/i.test(c) ? 0 : /vice/i.test(c) ? 1 : 2;
+    autoridades.sort((a, b) => orden(a.cargo) - orden(b.cargo));
+    const cargo = (p) => {
+      const fem = p.genero === 'F';
+      if (/^presidente/i.test(p.cargo)) return fem ? 'Presidenta' : 'Presidente';
+      if (/vice/i.test(p.cargo)) return (fem ? 'Vicepresidenta ' : 'Vicepresidente ') + (p.cargo.match(/\d+/) || ['1'])[0] + '.º';
+      return fem ? 'Secretaria' : 'Secretario';
+    };
+    document.getElementById('autoridades').innerHTML = autoridades.map((p, i) => `
+      <div class="person ${i === 0 ? 'person--lead' : ''}">
+        <span class="avatar" aria-hidden="true">${E(iniciales(p.nombre_display))}</span>
+        <span class="person__text"><span class="person__role">${E(cargo(p))}</span><span class="person__name">${E(p.nombre_display)}</span><span class="person__meta">${E(bloque(p.bloque))} · ${E(CyT.titleCase(p.distrito))}</span></span>
+      </div>`).join('');
+
+    const colorDe = {};
+    res.por_bloque.forEach((b, i) => { colorDe[b.bloque] = BLOC_COLORS[i % BLOC_COLORS.length]; });
+    document.getElementById('stack').innerHTML = res.por_bloque.map((b) => {
+      const c = colorDe[b.bloque];
+      return `<span style="width: ${(b.n / res.total * 100).toFixed(1)}%; background: ${c}; color: ${DARK_TEXT.has(c) ? '#102238' : '#fff'}" title="${E(b.bloque)}: ${b.n}">${b.n >= 3 ? E(b.bloque) : ''}</span>`;
+    }).join('');
+    document.getElementById('bloc-legend').innerHTML = res.por_bloque.map((b) => `<div><i style="background: ${colorDe[b.bloque]}"></i><span>${E(bloque(b.bloque))}</span><b>${b.n}</b></div>`).join('');
+
+    const amba = integrantes.filter((p) => /BUENOS AIRES|CABA|CIUDAD/i.test(p.distrito)).length;
+    document.getElementById('facts').innerHTML = `
+      <div><strong>${res.mujeres} · ${res.varones}</strong><span>mujeres · varones</span></div>
+      <div><strong>${amba} de ${res.total}</strong><span>son de Buenos Aires o CABA</span></div>`;
+
+    const resto = integrantes.filter((p) => !p.cargo).sort((a, b) => a.bloque.localeCompare(b.bloque) || a.nombre.localeCompare(b.nombre));
+    document.getElementById('members').innerHTML = resto.map((p) => {
+      const c = colorDe[p.bloque] || '#c9d3de';
+      return `<div class="member"><span class="avatar" aria-hidden="true" style="background: ${c}; color: ${DARK_TEXT.has(c) ? '#102238' : '#fff'}">${E(iniciales(p.nombre_display))}</span>
+        <span><strong>${E(p.nombre_display)}</strong><span>${E(bloque(p.bloque))} · ${E(CyT.titleCase(p.distrito))}</span></span></div>`;
+    }).join('');
+  }
+
+  function renderHistoria(historia) {
+    const anioActual = new Date().getFullYear();
+    const max = Math.max(...historia.map((h) => h.ley + h.otros));
+    const scale = 270 / max;
+    const cols = `repeat(${historia.length}, minmax(0, 1fr))`;
+    const chart = document.getElementById('chart');
+    const years = document.getElementById('chart-years');
+    chart.style.gridTemplateColumns = cols;
+    years.style.gridTemplateColumns = cols;
+    chart.innerHTML = historia.map((h) => `
+      <div class="chart__col ${h.anio === anioActual ? 'chart__col--now' : ''}" title="${h.anio}: ${h.ley} proyectos de ley y ${h.otros} resoluciones y declaraciones">
+        <span class="chart__total">${h.ley + h.otros}</span>
+        <span class="chart__otros" style="height: ${Math.round(h.otros * scale)}px"></span>
+        <span class="chart__ley" style="height: ${Math.round(h.ley * scale)}px"></span>
+      </div>`).join('');
+    years.innerHTML = historia.map((h) => `<span>'${String(h.anio).slice(2)}</span>`).join('');
+
+    const topTotal = historia.reduce((a, h) => (h.ley + h.otros > a.ley + a.otros ? h : a));
+    const topLey = historia.reduce((a, h) => (h.ley > a.ley ? h : a));
+    const anteriorLey = Math.max(...historia.filter((h) => h.anio !== topLey.anio).map((h) => h.ley));
+    const promedio = Math.round(historia.reduce((s, h) => s + h.ley + h.otros, 0) / historia.length);
+    const minimo = historia.reduce((a, h) => (h.ley + h.otros < a.ley + a.otros ? h : a));
+    document.getElementById('historia-titulo').textContent = topLey.anio === anioActual ? `${anioActual} ya es el año con más proyectos de ley` : `Proyectos recibidos por año, ${historia[0].anio}–${historia[historia.length - 1].anio}`;
+    document.getElementById('notes').innerHTML = `
+      <div><strong>${topTotal.anio} · ${topTotal.ley + topTotal.otros} proyectos</strong><span>El año de más actividad total.</span></div>
+      <div><strong>${minimo.anio} · mínimo</strong><span>${minimo.ley + minimo.otros} proyectos, frente a un promedio de ${promedio} por año.</span></div>
+      <div><strong>${topLey.anio} · ${topLey.ley} proyectos de ley</strong><span>Récord de proyectos de ley. El máximo anterior era ${anteriorLey}.</span></div>`;
+  }
+
+  document.addEventListener('DOMContentLoaded', async () => {
+    try {
+      const data = await CyT.getJson('data/comision.json');
+      document.getElementById('hero-girados').textContent = data.recorrido.total_girados;
+      document.getElementById('hero-girados-label').textContent = `proyectos recibidos desde ${data.recorrido.desde}`;
+      if (data.comision && data.comision.desde) document.getElementById('hero-kicker').textContent = `Comisión permanente · Desde ${data.comision.desde.slice(0, 4)}`;
+      renderRecorrido(data.recorrido);
+      renderDestacados(data.destacados || []);
+      renderIntegrantes(data);
+      renderHistoria(data.historia || []);
+      const f = CyT.parseFecha(data.fuente_actualizada);
+      document.getElementById('fuente').textContent = `Fuente: datos abiertos de la H. Cámara de Diputados (giros, dictámenes, resultado de proyectos y comisiones)${f ? `, actualizados al ${CyT.fechaCorta(f)}` : ''}.`;
+    } catch (e) {
+      console.error(e);
+      document.getElementById('contenido').insertAdjacentHTML('afterbegin', '<div class="site-empty" style="margin-top: 48px">No se pudieron cargar los datos de la comisión.</div>');
+    }
+  });
+</script>
+</body>
+</html>

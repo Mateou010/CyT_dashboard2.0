@@ -40,6 +40,7 @@ jobs:
           set -e
           for f in bills_data.json cyt_bills_data.json api/leyes.json \
                    bridge_analysis.json data/proyectos-seguimiento.json \
+                   data/comision.json data/agenda.json data/citaciones-enviadas.json \
                    package.json vercel.json; do
             [ -f "$f" ] || continue
             echo "validando $f"

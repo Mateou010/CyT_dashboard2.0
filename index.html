@@ -3,940 +3,326 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comisión de Ciencia, Tecnología e Innovación Productiva — H.C.D.N.</title>
-<meta name="description" content="Análisis legislativo de la Comisión de Ciencia, Tecnología e Innovación Productiva de la H. Cámara de Diputados de la Nación Argentina">
+<title>Monitor de Ciencia y Tecnología del Congreso — H.C.D.N.</title>
+<meta name="description" content="Proyectos de ley, consensos sobre inteligencia artificial, agenda y alertas por mail de la Comisión de Ciencia, Tecnología e Innovación Productiva de la H. Cámara de Diputados de la Nación.">
+<link rel="canonical" href="https://cyt.openarg.org/">
+<meta name="theme-color" content="#102238">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Monitor CyT · H. Cámara de Diputados">
+<meta property="og:locale" content="es_AR">
+<meta property="og:url" content="https://cyt.openarg.org/">
+<meta property="og:title" content="Monitor de Ciencia y Tecnología del Congreso">
+<meta property="og:description" content="Proyectos de ley, consensos sobre IA, agenda de la comisión y alertas por mail. Con datos abiertos de la Cámara de Diputados.">
+<meta property="og:image" content="https://cyt.openarg.org/img/og-cyt.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Monitor de Ciencia y Tecnología del Congreso, sobre una foto del recinto de la Cámara de Diputados">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Monitor de Ciencia y Tecnología del Congreso">
+<meta name="twitter:description" content="Proyectos de ley, consensos sobre IA, agenda de la comisión y alertas por mail.">
+<meta name="twitter:image" content="https://cyt.openarg.org/img/og-cyt.jpg">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
 <style>
-    :root {
-        --navy-900: #0c1b33;
-        --navy-800: #132744;
-        --navy-700: #1a3556;
-        --navy-600: #1e4175;
-        --navy-500: #2563a0;
-        --navy-400: #4a82b8;
-        --navy-300: #7ba3cc;
-        --navy-200: #b4cde0;
-        --navy-100: #dce8f2;
-        --navy-50: #f0f5fa;
-        --gold-500: #b8910f;
-        --gold-400: #d4a91a;
-        --gold-300: #e8c547;
-        --gold-200: #f0d97a;
-        --gold-100: #fdf3d1;
-        --gray-900: #111827;
-        --gray-800: #1f2937;
-        --gray-700: #374151;
-        --gray-600: #4b5563;
-        --gray-500: #6b7280;
-        --gray-400: #9ca3af;
-        --gray-300: #d1d5db;
-        --gray-200: #e5e7eb;
-        --gray-100: #f3f4f6;
-        --gray-50: #f9fafb;
-        --white: #ffffff;
-        --font-sans: 'Inter', -apple-system, sans-serif;
-        --font-serif: 'Source Serif 4', Georgia, serif;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-        font-family: var(--font-sans);
-        color: var(--gray-800);
-        line-height: 1.6;
-        -webkit-font-smoothing: antialiased;
-        background: var(--white);
-        padding-bottom: env(safe-area-inset-bottom);
-    }
-    a, button { touch-action: manipulation; }
-
-    /* ─── HERO ────────────────────────────────────── */
-    .hero {
-        background: linear-gradient(160deg, var(--navy-900) 0%, var(--navy-800) 40%, var(--navy-700) 100%);
-        color: var(--white);
-        position: relative;
-        overflow: hidden;
-        min-height: 90vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .hero::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background:
-            radial-gradient(ellipse 800px 600px at 80% 20%, rgba(212,169,26,0.06) 0%, transparent 70%),
-            radial-gradient(ellipse 600px 400px at 20% 80%, rgba(37,99,160,0.08) 0%, transparent 70%);
-    }
-
-    .hero-content {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 120px 32px 80px;
-        position: relative;
-        z-index: 1;
-    }
-
-    .hero-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        background: rgba(255,255,255,0.06);
-        border: 1px solid rgba(255,255,255,0.1);
-        padding: 6px 16px;
-        border-radius: 20px;
-        font-size: 13px;
-        color: var(--navy-200);
-        margin-bottom: 32px;
-        animation: fadeIn 0.8s ease;
-    }
-
-    .hero-badge-dot {
-        width: 6px; height: 6px;
-        border-radius: 50%;
-        background: var(--gold-400);
-    }
-
-    .hero h1 {
-        font-family: var(--font-serif);
-        font-size: clamp(36px, 5vw, 58px);
-        font-weight: 700;
-        line-height: 1.15;
-        letter-spacing: -0.02em;
-        margin-bottom: 20px;
-        animation: fadeUp 0.8s ease 0.1s both;
-    }
-
-    .hero h1 .gold { color: var(--gold-300); }
-
-    .hero-subtitle {
-        font-size: 18px;
-        color: var(--navy-200);
-        max-width: 580px;
-        line-height: 1.7;
-        margin-bottom: 40px;
-        animation: fadeUp 0.8s ease 0.25s both;
-    }
-
-    .hero-actions {
-        display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
-        animation: fadeUp 0.8s ease 0.4s both;
-    }
-
-    .btn-primary {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        background: var(--gold-400);
-        color: var(--navy-900);
-        font-weight: 700;
-        font-size: 15px;
-        padding: 14px 28px;
-        border-radius: 10px;
-        text-decoration: none;
-        transition: all 0.2s;
-        font-family: var(--font-sans);
-        border: none;
-        cursor: pointer;
-    }
-
-    .btn-primary:hover {
-        background: var(--gold-300);
-        transform: translateY(-1px);
-        box-shadow: 0 8px 24px rgba(212,169,26,0.2);
-    }
-
-    .btn-secondary {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        background: rgba(255,255,255,0.06);
-        border: 1px solid rgba(255,255,255,0.15);
-        color: var(--white);
-        font-weight: 500;
-        font-size: 15px;
-        padding: 14px 28px;
-        border-radius: 10px;
-        text-decoration: none;
-        transition: all 0.2s;
-    }
-
-    .btn-secondary:hover {
-        background: rgba(255,255,255,0.1);
-        border-color: rgba(255,255,255,0.25);
-    }
-
-    /* ─── STATS STRIP ─────────────────────────────── */
-    .stats-strip {
-        background: var(--white);
-        border-bottom: 1px solid var(--gray-200);
-        padding: 40px 32px;
-    }
-
-    .stats-inner {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 24px;
-    }
-
-    .stat-item {
-        text-align: center;
-        padding: 16px;
-    }
-
-    .stat-number {
-        font-family: var(--font-serif);
-        font-size: 42px;
-        font-weight: 700;
-        color: var(--navy-800);
-        line-height: 1;
-        margin-bottom: 6px;
-    }
-
-    .stat-label {
-        font-size: 14px;
-        color: var(--gray-500);
-        font-weight: 500;
-    }
-
-    /* ─── SECTIONS ────────────────────────────────── */
-    .section {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 64px 32px;
-    }
-
-    .section-header {
-        text-align: center;
-        margin-bottom: 48px;
-    }
-
-    .section-header h2 {
-        font-family: var(--font-serif);
-        font-size: 32px;
-        font-weight: 700;
-        color: var(--navy-800);
-        margin-bottom: 12px;
-    }
-
-    .section-header p {
-        font-size: 16px;
-        color: var(--gray-500);
-        max-width: 560px;
-        margin: 0 auto;
-    }
-
-    /* ─── DASHBOARD CARDS ─────────────────────────── */
-    .dashboard-cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
-        margin-bottom: 32px;
-    }
-
-    .dashboard-card {
-        background: var(--white);
-        border: 1px solid var(--gray-200);
-        border-radius: 16px;
-        padding: 40px 32px;
-        text-align: center;
-        transition: all 0.3s;
-        cursor: pointer;
-        text-decoration: none;
-        color: inherit;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .dashboard-card:hover {
-        border-color: var(--navy-300);
-        box-shadow: 0 12px 32px rgba(0,0,0,0.08);
-        transform: translateY(-4px);
-    }
-
-    .dashboard-card::before {
-        content: '';
-        position: absolute;
-        top: 0; left: 0; right: 0;
-        height: 4px;
-    }
-
-    .dashboard-card.cyt::before { background: linear-gradient(90deg, var(--navy-600), var(--navy-400)); }
-    .dashboard-card.ia::before { background: linear-gradient(90deg, var(--gold-500), var(--gold-300)); }
-    .dashboard-card.budget::before { background: linear-gradient(90deg, var(--navy-700), var(--gold-400)); }
-
-    .dashboard-card-icon {
-        font-size: 48px;
-        margin-bottom: 16px;
-    }
-
-    .dashboard-card-title {
-        font-family: var(--font-serif);
-        font-size: 24px;
-        font-weight: 700;
-        color: var(--navy-800);
-        margin-bottom: 8px;
-    }
-
-    .dashboard-card-desc {
-        font-size: 14px;
-        color: var(--gray-500);
-        margin-bottom: 20px;
-        line-height: 1.6;
-    }
-
-    .dashboard-card-stat {
-        font-family: var(--font-serif);
-        font-size: 36px;
-        font-weight: 700;
-        color: var(--navy-600);
-        margin-bottom: 4px;
-    }
-
-    .dashboard-card-stat-label {
-        font-size: 13px;
-        color: var(--gray-400);
-    }
-
-    .dashboard-card-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        margin-top: 20px;
-        padding: 10px 24px;
-        border-radius: 8px;
-        font-size: 13px;
-        font-weight: 700;
-        transition: all 0.2s;
-    }
-
-    .dashboard-card.cyt .dashboard-card-btn {
-        background: rgba(30,65,117,0.08);
-        color: var(--navy-600);
-        border: 1px solid rgba(30,65,117,0.2);
-    }
-    .dashboard-card.cyt:hover .dashboard-card-btn {
-        background: var(--navy-600);
-        color: var(--white);
-    }
-
-    .dashboard-card.ia .dashboard-card-btn {
-        background: rgba(212,169,26,0.08);
-        color: var(--gold-500);
-        border: 1px solid rgba(212,169,26,0.2);
-    }
-    .dashboard-card.ia:hover .dashboard-card-btn {
-        background: var(--gold-400);
-        color: var(--navy-900);
-    }
-
-    .dashboard-card.budget .dashboard-card-btn {
-        background: rgba(30,65,117,0.08);
-        color: var(--navy-700);
-        border: 1px solid rgba(30,65,117,0.2);
-    }
-    .dashboard-card.budget:hover .dashboard-card-btn {
-        background: var(--navy-800);
-        color: var(--gold-300);
-    }
-
-    /* ─── EJE CARDS ───────────────────────────────── */
-    .eje-landing-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        gap: 16px;
-    }
-
-    .eje-landing-card {
-        background: var(--white);
-        border: 1px solid var(--gray-200);
-        border-radius: 12px;
-        padding: 24px;
-        transition: all 0.25s;
-        cursor: pointer;
-        text-decoration: none;
-        color: inherit;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .eje-landing-card:hover {
-        border-color: var(--navy-300);
-        box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-        transform: translateY(-2px);
-    }
-
-    .eje-landing-icon {
-        font-size: 28px;
-        margin-bottom: 12px;
-    }
-
-    .eje-landing-name {
-        font-size: 15px;
-        font-weight: 700;
-        color: var(--gray-800);
-        margin-bottom: 4px;
-    }
-
-    .eje-landing-count {
-        font-family: var(--font-serif);
-        font-size: 24px;
-        font-weight: 700;
-        color: var(--navy-600);
-    }
-
-    .eje-landing-count span {
-        font-size: 13px;
-        font-weight: 400;
-        color: var(--gray-400);
-        font-family: var(--font-sans);
-        margin-left: 4px;
-    }
-
-    /* ─── VALUE PROPS ─────────────────────────────── */
-    .features-section {
-        background: var(--navy-50);
-        border-top: 1px solid var(--navy-100);
-        border-bottom: 1px solid var(--navy-100);
-    }
-
-    .features-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 32px;
-    }
-
-    .feature-card {
-        text-align: center;
-        padding: 32px 24px;
-    }
-
-    .feature-icon {
-        width: 56px;
-        height: 56px;
-        border-radius: 14px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-        margin: 0 auto 16px;
-        background: var(--white);
-        border: 1px solid var(--gray-200);
-        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    }
-
-    .feature-card h3 {
-        font-size: 16px;
-        font-weight: 700;
-        color: var(--navy-800);
-        margin-bottom: 8px;
-    }
-
-    .feature-card p {
-        font-size: 14px;
-        color: var(--gray-500);
-        line-height: 1.6;
-    }
-
-    /* ─── CTA BANNER ──────────────────────────────── */
-    .cta-banner {
-        background: linear-gradient(135deg, var(--navy-800), var(--navy-700));
-        color: var(--white);
-        border-radius: 16px;
-        padding: 48px;
-        text-align: center;
-        margin: 64px auto;
-        max-width: 1036px;
-    }
-
-    .cta-banner h2 {
-        font-family: var(--font-serif);
-        font-size: 28px;
-        font-weight: 700;
-        margin-bottom: 12px;
-    }
-
-    .cta-banner p {
-        color: var(--navy-200);
-        margin-bottom: 24px;
-        font-size: 15px;
-    }
-
-    /* ─── SUBSCRIPTION PANEL ─────────────────────── */
-    .subscribe-panel {
-        display: grid;
-        grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
-        gap: 28px;
-        align-items: center;
-        background:
-            radial-gradient(circle at 12% 20%, rgba(212,169,26,.16), transparent 28%),
-            linear-gradient(135deg, var(--navy-50), var(--white));
-        border: 1px solid var(--navy-100);
-        border-radius: 20px;
-        padding: 34px;
-        box-shadow: 0 18px 60px rgba(12,27,51,.08);
-    }
-
-    .subscribe-kicker {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        color: var(--gold-500);
-        font-size: 12px;
-        font-weight: 800;
-        letter-spacing: .08em;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-    }
-
-    .subscribe-panel h2 {
-        font-family: var(--font-serif);
-        color: var(--navy-800);
-        font-size: clamp(26px, 3vw, 38px);
-        line-height: 1.12;
-        margin-bottom: 12px;
-    }
-
-    .subscribe-panel p {
-        color: var(--gray-600);
-        font-size: 15px;
-        max-width: 620px;
-    }
-
-    .subscribe-form {
-        background: var(--white);
-        border: 1px solid var(--gray-200);
-        border-radius: 16px;
-        padding: 18px;
-        box-shadow: 0 14px 34px rgba(12,27,51,.08);
-    }
-
-    .subscribe-fields {
-        display: flex;
-        gap: 10px;
-    }
-
-    .subscribe-form input {
-        flex: 1;
-        min-width: 0;
-        border: 1px solid var(--gray-300);
-        border-radius: 10px;
-        padding: 13px 14px;
-        font: 500 14px var(--font-sans);
-        color: var(--gray-800);
-        outline: none;
-    }
-
-    .subscribe-form input:focus {
-        border-color: var(--navy-400);
-        box-shadow: 0 0 0 3px rgba(74,130,184,.16);
-    }
-
-    .subscribe-form button {
-        white-space: nowrap;
-    }
-
-    .subscribe-message {
-        min-height: 20px;
-        margin-top: 10px;
-        font-size: 13px;
-        color: var(--gray-500);
-    }
-
-    .subscribe-message.ok { color: #166534; }
-    .subscribe-message.error { color: #b91c1c; }
-
-    /* ─── FOOTER ──────────────────────────────────── */
-    .footer {
-        background: var(--navy-900);
-        color: var(--navy-300);
-        padding: 40px 32px;
-        text-align: center;
-    }
-
-    .footer-inner {
-        max-width: 1100px;
-        margin: 0 auto;
-    }
-
-    .footer-logo {
-        font-family: var(--font-serif);
-        font-size: 18px;
-        font-weight: 700;
-        color: var(--white);
-        margin-bottom: 8px;
-    }
-
-    .footer p {
-        font-size: 13px;
-        color: var(--navy-400);
-    }
-
-    .footer-links {
-        margin-top: 16px;
-        display: flex;
-        justify-content: center;
-        gap: 24px;
-    }
-
-    .footer-links a {
-        font-size: 13px;
-        color: var(--navy-300);
-        text-decoration: none;
-        transition: color 0.2s;
-    }
-
-    .footer-links a:hover { color: var(--gold-300); }
-
-    /* ─── ANIMATIONS ──────────────────────────────── */
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-
-    .reveal {
-        opacity: 0;
-        transform: translateY(24px);
-        transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-
-    /* ─── RESPONSIVE ──────────────────────────────── */
-    @media (max-width: 768px) {
-        .hero { min-height: auto; }
-        .hero-content { padding: 48px 16px 36px; }
-        .hero h1 { font-size: clamp(26px, 7vw, 36px); margin-bottom: 14px; }
-        .hero-subtitle { font-size: 15px; margin-bottom: 24px; line-height: 1.55; }
-        .hero-badge { font-size: 11px; padding: 5px 12px; margin-bottom: 20px; }
-        .hero-actions { flex-direction: column; gap: 10px; }
-        .btn-primary, .btn-secondary {
-            text-align: center; justify-content: center;
-            font-size: 14px; padding: 14px 20px; border-radius: 8px; min-height: 48px;
-        }
-        .stats-strip { padding: 20px 16px; }
-        .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-        .stat-item { padding: 10px 8px; }
-        .stat-number { font-size: 28px; }
-        .stat-label { font-size: 12px; }
-        .section { padding: 32px 16px; }
-        .section-header { margin-bottom: 28px; }
-        .section-header h2 { font-size: 22px; margin-bottom: 8px; }
-        .section-header p { font-size: 14px; }
-        .dashboard-cards { grid-template-columns: 1fr; gap: 16px; }
-        .dashboard-card { padding: 24px 16px; border-radius: 12px; }
-        .dashboard-card-icon { font-size: 32px; margin-bottom: 10px; }
-        .dashboard-card-title { font-size: 18px; }
-        .dashboard-card-desc { font-size: 13px; margin-bottom: 14px; }
-        .dashboard-card-stat { font-size: 28px; }
-        .dashboard-card-btn { padding: 10px 18px; font-size: 13px; margin-top: 14px; min-height: 44px; }
-        .eje-landing-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
-        .eje-landing-card { padding: 16px; border-radius: 10px; min-height: 48px; }
-        .eje-landing-icon { font-size: 22px; margin-bottom: 8px; }
-        .eje-landing-name { font-size: 13px; }
-        .eje-landing-count { font-size: 20px; }
-        .eje-landing-count span { font-size: 11px; }
-        .features-grid { grid-template-columns: 1fr; gap: 16px; }
-        .feature-card { padding: 20px 16px; }
-        .feature-icon { width: 44px; height: 44px; border-radius: 10px; font-size: 20px; margin-bottom: 12px; }
-        .feature-card h3 { font-size: 15px; }
-        .feature-card p { font-size: 13px; }
-        .cta-banner { margin: 24px 12px; padding: 24px 16px; border-radius: 12px; }
-        .cta-banner h2 { font-size: 20px; margin-bottom: 8px; }
-        .cta-banner p { font-size: 13px; margin-bottom: 16px; }
-        .cta-banner .btn-primary { font-size: 13px; padding: 10px 20px; }
-        .subscribe-panel { grid-template-columns: 1fr; padding: 22px 16px; gap: 18px; border-radius: 14px; }
-        .subscribe-panel h2 { font-size: 23px; }
-        .subscribe-panel p { font-size: 13px; }
-        .subscribe-fields { flex-direction: column; }
-        .subscribe-form { padding: 14px; border-radius: 12px; }
-        .subscribe-form button { width: 100%; justify-content: center; }
-        .footer { padding: 24px 16px; padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
-        .footer-logo { font-size: 15px; }
-        .footer p { font-size: 12px; }
-        .footer-links { gap: 16px; margin-top: 12px; }
-        .footer-links a { font-size: 12px; min-height: 44px; display: inline-flex; align-items: center; }
-    }
-
-    @media (max-width: 480px) {
-        .hero-content { padding: 36px 14px 28px; }
-        .hero h1 { font-size: clamp(22px, 6.5vw, 30px); }
-        .hero-subtitle { font-size: 14px; }
-        .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-        .stat-number { font-size: 24px; }
-        .section { padding: 24px 14px; }
-        .section-header h2 { font-size: 20px; }
-        .dashboard-card { padding: 20px 14px; }
-        .dashboard-card-icon { font-size: 28px; }
-        .dashboard-card-title { font-size: 16px; }
-        .dashboard-card-stat { font-size: 24px; }
-        .eje-landing-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-        .eje-landing-card { padding: 12px; }
-        .eje-landing-icon { font-size: 20px; margin-bottom: 6px; }
-        .eje-landing-name { font-size: 12px; }
-        .eje-landing-count { font-size: 18px; }
-        .cta-banner { margin: 20px 8px; padding: 20px 14px; }
-        .cta-banner h2 { font-size: 18px; }
-    }
+  .home-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+
+  /* Próxima reunión */
+  .agenda-strip { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 28px; padding: 18px 24px; border-radius: 16px; background: #fff; border: 1px solid var(--site-line); text-decoration: none; color: inherit; }
+  .agenda-strip[hidden] { display: none; }
+  .agenda-strip:hover { border-color: #9aafc1; }
+  .agenda-strip__label { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--site-gold-700); }
+  .agenda-strip__text { flex: 1 1 360px; font-size: 15px; line-height: 1.5; color: var(--site-ink); }
+  .agenda-strip__text strong { color: var(--site-navy-900); }
+  .agenda-strip__go { font-size: 14px; font-weight: 600; color: var(--site-navy-800); }
+
+  /* Tarjetas con foto */
+  .bento { display: flex; flex-wrap: wrap; gap: 20px; }
+  .bento__col { flex: 1 1 400px; display: flex; flex-direction: column; gap: 20px; }
+  .photo-card { position: relative; flex: 1 1 280px; min-height: 280px; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; text-decoration: none; color: #fff; background: var(--site-navy-800); }
+  .photo-card--big { flex: 1 1 560px; min-height: 600px; }
+  .photo-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+  .photo-card:hover img { transform: scale(1.03); }
+  .photo-card::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,18,32,0) 25%, rgba(8,18,32,.9) 100%); }
+  .photo-card__body { position: relative; z-index: 1; padding: clamp(22px, 3vw, 36px); display: flex; flex-direction: column; gap: 10px; }
+  .photo-card__tag { align-self: flex-start; padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.3); font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+  .photo-card__title { font-family: var(--site-serif); font-size: clamp(26px, 2.6vw, 40px); font-weight: 500; line-height: 1.12; letter-spacing: -.02em; }
+  .photo-card__desc { max-width: 520px; font-size: 15px; line-height: 1.6; color: #dbe4ee; }
+  .photo-card__foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-top: 8px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.22); }
+  .photo-card__nums { display: flex; flex-wrap: wrap; gap: 28px; font-size: 14px; color: var(--site-on-dark-muted); }
+  .photo-card__nums strong { display: block; font-family: var(--site-serif); font-size: 28px; font-weight: 500; color: #fff; font-variant-numeric: tabular-nums; }
+  .photo-card__arrow { width: 52px; height: 52px; border-radius: 50%; background: var(--site-gold-400); color: var(--site-navy-900); display: grid; place-items: center; flex-shrink: 0; }
+
+  .more-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+  .more-card { display: flex; align-items: center; gap: 18px; padding: 22px 24px; border-radius: 18px; background: #fff; border: 1px solid var(--site-line); text-decoration: none; color: inherit; }
+  .more-card:hover { border-color: #9aafc1; }
+  .more-card__icon { width: 48px; height: 48px; border-radius: 12px; background: #eef2f6; color: var(--site-navy-800); display: grid; place-items: center; flex-shrink: 0; }
+  .more-card strong { display: block; font-family: var(--site-serif); font-size: 21px; font-weight: 500; color: var(--site-navy-900); }
+  .more-card span { font-size: 14px; line-height: 1.5; color: var(--site-muted); }
+
+  /* Últimos proyectos */
+  .latest { display: flex; flex-wrap: wrap; gap: 48px; }
+  .latest__intro { flex: 1 1 300px; display: flex; flex-direction: column; gap: 16px; }
+  .latest__intro h2 { margin: 0; font-family: var(--site-serif); font-weight: 500; font-size: clamp(28px, 3vw, 40px); line-height: 1.12; letter-spacing: -.025em; color: var(--site-navy-900); }
+  .latest__intro p { margin: 0; font-size: 16px; line-height: 1.7; color: var(--site-muted); }
+  .latest__list { flex: 2 1 600px; min-width: 0; display: flex; flex-direction: column; background: #fff; border: 1px solid var(--site-line); border-radius: 20px; overflow: hidden; }
+  .latest__item { display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 22px 28px; text-decoration: none; color: inherit; border-bottom: 1px solid var(--site-line-soft); }
+  .latest__item:last-child { border-bottom: 0; }
+  .latest__item:hover { background: #f8fafc; }
+  .latest__meta { flex: 0 0 120px; display: flex; flex-direction: column; gap: 4px; font-family: var(--site-mono); font-size: 13px; color: var(--site-subtle); }
+  .latest__meta b { color: var(--site-navy-700); font-weight: 500; }
+  .latest__main { flex: 1 1 300px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .latest__title { font-size: 16px; font-weight: 600; line-height: 1.45; color: var(--site-navy-900); }
+  .latest__who { font-size: 13px; color: var(--site-subtle); }
+
+  /* Alertas */
+  .alerts { display: flex; flex-wrap: wrap; border-radius: 24px; overflow: hidden; background: var(--site-navy-900); color: #fff; }
+  .alerts__img { position: relative; flex: 1 1 420px; min-height: 340px; }
+  .alerts__img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .alerts__body { flex: 1 1 460px; padding: clamp(28px, 4vw, 56px); display: flex; flex-direction: column; justify-content: center; gap: 16px; }
+  .alerts__body h2 { margin: 0; font-family: var(--site-serif); font-weight: 500; font-size: clamp(26px, 2.8vw, 38px); line-height: 1.15; letter-spacing: -.02em; }
+  .alerts__body p { margin: 0; font-size: 16px; line-height: 1.7; color: var(--site-on-dark-muted); }
+  .alerts__form { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+  .alerts__form label { flex: 1 1 240px; display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--site-on-dark-muted); }
+  .alerts__form input { min-height: 52px; padding: 0 16px; border-radius: 12px; border: 1px solid rgba(255,255,255,.25); background: rgba(255,255,255,.08); color: #fff; font: inherit; font-size: 16px; }
+  .alerts__form input::placeholder { color: #9fb0c2; }
+  .alerts__form button { align-self: flex-end; }
+  .alerts__msg { font-size: 13px; line-height: 1.6; color: #a9b9c9; }
+  .alerts__msg[data-state="ok"] { color: #9fd3b5; }
+  .alerts__msg[data-state="error"] { color: #f2b8b8; }
 </style>
-<link rel="stylesheet" href="visual-refresh.css">
-<script src="remove-emoji.js" defer></script>
 </head>
-<body class="page-home">
+<body class="site">
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span class="hero-badge-dot"></span>
-                H. Cámara de Diputados de la Nación Argentina
-            </div>
-            <h1>
-                Comisión de <span class="gold">Ciencia, Tecnología</span>
-                e Innovación Productiva
-            </h1>
-            <p class="hero-subtitle">
-                Análisis integral de los proyectos legislativos presentados ante la comisión.
-                Explorá la agenda parlamentaria en ciencia y tecnología con datos abiertos y
-                visualizaciones interactivas.
-            </p>
-            <div class="hero-actions">
-                <a href="dashboard-cyt.html" class="btn-primary">
-                    📊 Dashboard CyT
-                </a>
-                <a href="dashboard.html" class="btn-secondary">
-                    🤖 Dashboard IA
-                </a>
-                <a href="presupuesto-2026.html" class="btn-secondary">
-                    Presupuesto
-                </a>
-                <a href="#seguimiento" class="btn-secondary">
-                    Recibir alertas
-                </a>
-            </div>
+  <header class="site-hero site-hero--home">
+    <img class="site-hero__img" src="img/congreso.jpg" alt="" style="object-position: center 38%">
+    <div class="site-hero__shade"></div>
+    <nav class="site-nav site-wrap" aria-label="Principal">
+      <a class="site-brand" href="/">
+        <span class="site-brand__mark">CyT</span>
+        <span class="site-brand__text"><strong>Monitor Legislativo CyT</strong><span>H. Cámara de Diputados</span></span>
+      </a>
+      <div class="site-links">
+        <a href="dashboard-cyt.html">Ciencia y Tecnología</a>
+        <a href="dashboard.html">Inteligencia Artificial</a>
+        <a href="comision.html">La comisión</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="presupuesto-2026.html">Presupuesto 2026</a>
+        <a class="site-links__cta" href="#alertas">Recibir alertas</a>
+      </div>
+    </nav>
+    <div class="site-hero__body site-wrap">
+      <span class="site-pill"><span class="site-dot"></span>Comisión de Ciencia, Tecnología e Innovación Productiva</span>
+      <h1 style="margin-top: 12px">La agenda de <em>ciencia y tecnología</em> del Congreso, en datos abiertos.</h1>
+      <p class="site-hero__lead" style="font-size: 18px">Seguimos cada proyecto de ley que ingresa a la comisión: lo clasificamos por tema, lo resumimos y te avisamos por mail cuando hay novedades.</p>
+      <div class="home-actions">
+        <a class="site-btn site-btn--gold" href="#dashboards">Explorar los dashboards
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="site-btn site-btn--ghost" href="#alertas">Recibir alertas por mail</a>
+      </div>
+      <div class="site-hero__statsbar">
+        <div class="site-hero__stat"><strong id="stat-total">—</strong><span>proyectos de ley analizados</span></div>
+        <div class="site-hero__stat"><strong id="stat-ia">—</strong><span>proyectos sobre inteligencia artificial</span></div>
+        <div class="site-hero__stat"><strong id="stat-ejes">—</strong><span>ejes temáticos</span></div>
+        <div class="site-hero__stat"><strong id="stat-bloques">—</strong><span>bloques políticos con autoría</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-wrap">
+    <a class="agenda-strip" id="agenda-strip" href="agenda.html" hidden>
+      <span class="agenda-strip__label">Agenda</span>
+      <span class="agenda-strip__text" id="agenda-strip-text"></span>
+      <span class="agenda-strip__go">Ver agenda →</span>
+    </a>
+
+    <section class="site-section" id="dashboards">
+      <div class="site-section__head">
+        <div>
+          <span class="site-kicker">Explorá los datos</span>
+          <h2>Tres miradas sobre la política científica</h2>
         </div>
+        <p>Proyectos de ley, inteligencia artificial y presupuesto público: cada tablero se arma con datos oficiales de la Cámara.</p>
+      </div>
+      <div class="bento">
+        <a class="photo-card photo-card--big" href="dashboard-cyt.html">
+          <img src="img/laboratorio.jpg" alt="" loading="lazy">
+          <div class="photo-card__body">
+            <span class="photo-card__tag">Dashboard</span>
+            <span class="photo-card__title">Ciencia y Tecnología</span>
+            <span class="photo-card__desc">Todos los proyectos de ley de la comisión, clasificados por eje temático, con autores, bloques y evolución por año.</span>
+            <span class="photo-card__foot">
+              <span class="photo-card__nums">
+                <span><strong id="card-cyt-total">—</strong>proyectos</span>
+                <span><strong id="card-cyt-ejes">—</strong>ejes</span>
+                <span><strong id="card-cyt-ultimo">—</strong>ingresaron este año</span>
+              </span>
+              <span class="photo-card__arrow" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span>
+            </span>
+          </div>
+        </a>
+        <div class="bento__col">
+          <a class="photo-card" href="dashboard.html">
+            <img src="img/datacenter.jpg" alt="" loading="lazy">
+            <div class="photo-card__body">
+              <span class="photo-card__title" style="font-size: clamp(24px, 2.2vw, 30px)">Inteligencia Artificial</span>
+              <span class="photo-card__desc"><span id="card-ia-total">—</span> proyectos y un semáforo de consensos: dónde coinciden los bloques y dónde no.</span>
+            </div>
+          </a>
+          <a class="photo-card" href="presupuesto-2026.html">
+            <img src="img/satelite.jpg" alt="" loading="lazy">
+            <div class="photo-card__body">
+              <span class="photo-card__title" style="font-size: clamp(24px, 2.2vw, 30px)">Presupuesto 2026</span>
+              <span class="photo-card__desc">Ejecución por organismo: CONICET, CONAE y el resto del sistema científico.</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="more-cards">
+        <a class="more-card" href="comision.html">
+          <span class="more-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.2c2.8.4 5 2.8 5 5.8"/></svg></span>
+          <span><strong>La comisión</strong><span>Quiénes la integran, qué pasa con los proyectos y su historia desde 2008.</span></span>
+        </a>
+        <a class="more-card" href="agenda.html">
+          <span class="more-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 3v4"/><path d="M16 3v4"/></svg></span>
+          <span><strong>Agenda</strong><span>Próxima reunión, historial con temarios y videos, y alertas de citación.</span></span>
+        </a>
+      </div>
     </section>
 
-    <!-- STATS -->
-    <div class="stats-strip" id="stats-strip">
-        <div class="stats-inner">
-            <div class="stat-item">
-                <div class="stat-number" id="stat-total">—</div>
-                <div class="stat-label">Proyectos analizados</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" id="stat-ia">—</div>
-                <div class="stat-label">Proyectos IA</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" id="stat-ejes">—</div>
-                <div class="stat-label">Ejes temáticos</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" id="stat-bloques">—</div>
-                <div class="stat-label">Bloques políticos</div>
-            </div>
+    <section class="site-section" id="recientes">
+      <div class="latest">
+        <div class="latest__intro">
+          <span class="site-kicker">Seguimiento automático</span>
+          <h2>Últimos proyectos ingresados</h2>
+          <p>Revisamos la comisión de lunes a viernes, cada dos horas. Cuando entra un proyecto de ley nuevo o cambia su trámite, aparece acá y sale por mail.</p>
         </div>
-    </div>
-
-    <!-- DASHBOARDS -->
-    <div class="section">
-        <div class="section-header reveal">
-            <h2>Dashboards</h2>
-            <p>Proyectos legislativos y presupuesto público de ciencia, tecnología e innovación</p>
+        <div class="latest__list" id="latest-list" aria-live="polite">
+          <div class="latest__item"><span class="latest__main"><span class="latest__who">Cargando proyectos…</span></span></div>
         </div>
-        <div class="dashboard-cards">
-            <a href="dashboard-cyt.html" class="dashboard-card cyt reveal">
-                <div class="dashboard-card-icon">CyT</div>
-                <div class="dashboard-card-title">Ciencia y Tecnología</div>
-                <div class="dashboard-card-desc">Todos los proyectos presentados ante la comisión, organizados por eje temático, bloque y año.</div>
-                <div class="dashboard-card-stat" id="card-cyt-total">—</div>
-                <div class="dashboard-card-stat-label">proyectos</div>
-                <div class="dashboard-card-btn">Explorar CyT →</div>
-            </a>
-            <a href="dashboard.html" class="dashboard-card ia reveal">
-                <div class="dashboard-card-icon">IA</div>
-                <div class="dashboard-card-title">Inteligencia Artificial</div>
-                <div class="dashboard-card-desc">Subconjunto de proyectos vinculados a IA: análisis por sector, destinatarios y coincidencias.</div>
-                <div class="dashboard-card-stat" id="card-ia-total">—</div>
-                <div class="dashboard-card-stat-label">proyectos IA</div>
-                <div class="dashboard-card-btn">Explorar IA →</div>
-            </a>
-            <a href="presupuesto-2026.html" class="dashboard-card budget reveal">
-                <div class="dashboard-card-icon">$</div>
-                <div class="dashboard-card-title">Presupuesto por organismo</div>
-                <div class="dashboard-card-desc">Ejecución 2026 de CONICET, CONAE, Ciberseguridad y otros organismos. Crédito inicial, vigente, programas y partidas.</div>
-                <div class="dashboard-card-stat">6</div>
-                <div class="dashboard-card-stat-label">organismos · ejecución y destino de los recursos</div>
-                <div class="dashboard-card-btn">Explorar presupuesto →</div>
-            </a>
-        </div>
-    </div>
-
-    <!-- SEGUIMIENTO -->
-    <section class="section" id="seguimiento">
-        <div class="subscribe-panel reveal">
-            <div>
-                <div class="subscribe-kicker">Seguimiento legislativo</div>
-                <h2>¿Querés recibir un mail cada vez que se presente un proyecto de ley?</h2>
-                <p>Dejá tu email y recibí alertas en tiempo real cuando ingresen nuevos proyectos en la Comisión de Ciencia y Tecnología, con un resumen claro para entender rápido de qué tratan.</p>
-            </div>
-            <form class="subscribe-form" id="subscribeForm">
-                <div class="subscribe-fields">
-                    <input type="email" name="email" autocomplete="email" required placeholder="tu@email.com" aria-label="Email para suscripción">
-                    <button class="btn-primary" type="submit">Recibir alertas</button>
-                </div>
-                <div class="subscribe-message" id="subscribeMessage" aria-live="polite">Sin spam: solo avisos cuando haya novedades legislativas.</div>
-            </form>
-        </div>
+      </div>
     </section>
 
-    <!-- CTA -->
-    <div class="section">
-        <div class="cta-banner reveal">
-            <h2>Explorá los datos en detalle</h2>
-            <p>Filtrá por eje, bloque, año o buscá por palabra clave. Todos los proyectos en un solo lugar.</p>
-            <a href="dashboard-cyt.html" class="btn-primary">Ir al Dashboard CyT →</a>
+    <section class="site-section" id="alertas">
+      <div class="alerts">
+        <div class="alerts__img"><img src="img/recinto.jpg" alt="Recinto de la Cámara de Diputados de la Nación" loading="lazy"></div>
+        <div class="alerts__body">
+          <span class="site-kicker" style="color: var(--site-gold-400)">Alertas por mail</span>
+          <h2>Enterate cuando se presenta un proyecto de ley.</h2>
+          <p>Te mandamos un resumen de cada proyecto nuevo y de los cambios de trámite. Sin spam: solo novedades legislativas.</p>
+          <form class="alerts__form" id="subscribeForm">
+            <label>Email
+              <input type="email" name="email" autocomplete="email" required placeholder="nombre@correo.com">
+            </label>
+            <button class="site-btn site-btn--gold" type="submit">Suscribirme</button>
+          </form>
+          <div class="alerts__msg" id="subscribeMessage" aria-live="polite">Te vamos a pedir que confirmes tu email.</div>
         </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner site-wrap">
+      <div class="site-footer__about">
+        <strong>Monitor Legislativo CyT</strong>
+        <span>Análisis de la Comisión de Ciencia, Tecnología e Innovación Productiva de la H. Cámara de Diputados de la Nación. Datos abiertos, código abierto.</span>
+      </div>
+      <div class="site-footer__links">
+        <a href="dashboard-cyt.html">Ciencia y Tecnología</a>
+        <a href="dashboard.html">Inteligencia Artificial</a>
+        <a href="comision.html">La comisión</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="presupuesto-2026.html">Presupuesto 2026</a>
+        <a href="https://github.com/Mateou010/CyT_dashboard2.0">Código en GitHub</a>
+      </div>
     </div>
+    <div class="site-footer__credits site-wrap">
+      Fotos: «Atardecer en el Congreso de la Nación Argentina», Miguel César (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>) ·
+      «A group of scientists working in a laboratory», Esculab (CC0) ·
+      «BalticServers data center», BalticServers.com (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>) ·
+      «SAOCOM 1A @ Invap», Casa Rosada (<a href="https://creativecommons.org/licenses/by/2.5/ar/">CC BY 2.5 AR</a>) ·
+      «Recinto de la Cámara de Diputados de la Nación», H. Cámara de Diputados (dominio público). Vía Wikimedia Commons.
+    </div>
+  </footer>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-logo">Comisión de CyT — H.C.D.N.</div>
-            <p>Datos extraídos y analizados a partir de los proyectos presentados ante la comisión</p>
-            <div class="footer-links">
-                <a href="dashboard-cyt.html">Dashboard CyT</a>
-                <a href="dashboard.html">Dashboard IA</a>
-                <a href="presupuesto-2026.html">Presupuesto</a>
-                <a href="/">Inicio</a>
-            </div>
-        </div>
-    </footer>
+<script src="site.js"></script>
+<script>
+  const IA_EXCLUIDOS = (b) => String(b.dashboard || '').toUpperCase() === 'NO';
 
-    <script>
-        function setupSubscribeForm() {
-            const form = document.getElementById('subscribeForm');
-            const msg = document.getElementById('subscribeMessage');
-            if (!form || !msg) return;
+  async function cargarCifras() {
+    const cyt = await CyT.getJson('cyt_bills_data.json');
+    const total = cyt.metadata.total;
+    const anio = new Date().getFullYear();
+    const delAnio = (cyt.year_stats || []).find((y) => Number(y['año']) === anio);
+    const bloques = (cyt.bloque_stats || []).filter((s) => s.bloque !== 'Sin datos').length;
+    document.getElementById('stat-total').textContent = total;
+    document.getElementById('stat-ejes').textContent = cyt.eje_stats.length;
+    document.getElementById('stat-bloques').textContent = bloques;
+    document.getElementById('card-cyt-total').textContent = total;
+    document.getElementById('card-cyt-ejes').textContent = cyt.eje_stats.length;
+    document.getElementById('card-cyt-ultimo').textContent = delAnio ? delAnio.cantidad : '—';
 
-            form.addEventListener('submit', async (event) => {
-                event.preventDefault();
-                const email = form.elements.email.value.trim();
-                const button = form.querySelector('button[type="submit"]');
-                msg.className = 'subscribe-message';
-                msg.textContent = 'Guardando tu suscripción...';
-                if (button) {
-                    button.disabled = true;
-                    button.textContent = 'Guardando...';
-                }
+    const ia = await CyT.getJson('bills_data.json');
+    const iaBills = (ia.bills || []).filter((b) => !IA_EXCLUIDOS(b));
+    document.getElementById('stat-ia').textContent = iaBills.length;
+    document.getElementById('card-ia-total').textContent = iaBills.length;
+    return new Set(iaBills.map((b) => b.id || b.expediente));
+  }
 
-                try {
-                    const response = await fetch('/api/subscribe', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ email }),
-                    });
-                    const data = await response.json().catch(() => ({}));
-                    if (!response.ok) throw new Error(data.error || 'No se pudo completar la suscripción.');
-                    msg.className = 'subscribe-message ok';
-                    msg.textContent = data.message || 'Gracias por suscribirte. Pronto vas a recibir los proyectos en tiempo real, ya resumidos.';
-                    form.reset();
-                } catch (error) {
-                    msg.className = 'subscribe-message error';
-                    msg.textContent = error.message || 'No se pudo conectar. Probá de nuevo.';
-                } finally {
-                    if (button) {
-                        button.disabled = false;
-                        button.textContent = 'Recibir alertas';
-                    }
-                }
-            });
-        }
+  async function cargarRecientes(iaIds) {
+    const list = document.getElementById('latest-list');
+    try {
+      const items = await CyT.getJson('data/proyectos-seguimiento.json');
+      const recientes = items
+        .map((p) => ({ ...p, _fecha: CyT.parseFecha(p.fecha) }))
+        .sort((a, b) => b._fecha - a._fecha)
+        .slice(0, 5);
+      list.innerHTML = recientes.map((p) => {
+        const autor = (p.autores || [])[0] || {};
+        const otros = (p.autores || []).length > 1 ? ' y otros' : '';
+        const quien = [CyT.nombrePersona(autor.nombre) + otros, CyT.titleCase(autor.bloque || ''), CyT.titleCase(autor.distrito || '')].filter(Boolean).join(' · ');
+        const esIa = iaIds.has(p.expediente);
+        const url = p.url || `https://www.hcdn.gob.ar/proyectos/resultados-buscador.html?expediente=${encodeURIComponent(p.expediente)}`;
+        return `<a class="latest__item" href="${CyT.escapeHtml(url)}" target="_blank" rel="noopener">
+          <span class="latest__meta"><span>${CyT.fechaCorta(p._fecha)}</span><b>${CyT.escapeHtml(p.expediente)}</b></span>
+          <span class="latest__main"><span class="latest__title">${CyT.escapeHtml(CyT.oracion(p.sumario))}</span><span class="latest__who">${CyT.escapeHtml(quien)}</span></span>
+          <span class="site-tag ${esIa ? 'site-tag--ia' : ''}" style="align-self: flex-start">${esIa ? 'IA' : 'Ley'}</span>
+        </a>`;
+      }).join('');
+    } catch (e) {
+      list.innerHTML = '<div class="latest__item"><span class="latest__who">No se pudieron cargar los proyectos recientes.</span></div>';
+    }
+  }
 
-        // Load data for stats and eje cards
-        async function init() {
-            try {
-                // Load CyT data
-                const cytResp = await fetch('cyt_bills_data.json');
-                const cytData = await cytResp.json();
+  async function cargarAgenda() {
+    try {
+      const agenda = await CyT.getJson('data/agenda.json');
+      const strip = document.getElementById('agenda-strip');
+      const text = document.getElementById('agenda-strip-text');
+      if (agenda.proxima) {
+        const f = CyT.parseFecha(agenda.proxima.fecha);
+        text.innerHTML = `<strong>La comisión se reúne el ${CyT.fechaLarga(f)} a las ${CyT.escapeHtml(agenda.proxima.hora)} h.</strong> ${CyT.escapeHtml(CyT.oracion(agenda.proxima.temario || ''))}`;
+      } else if ((agenda.reuniones || []).length) {
+        const ultima = CyT.parseFecha(agenda.reuniones[0].fecha);
+        const dias = CyT.diasEntre(ultima, new Date());
+        text.innerHTML = `<strong>No hay reunión convocada.</strong> La última fue el ${CyT.fechaLarga(ultima)}, hace ${dias} días.`;
+      } else {
+        return;
+      }
+      strip.hidden = false;
+    } catch (e) { /* sin agenda: la franja queda oculta */ }
+  }
 
-                // Stats
-                document.getElementById('stat-total').textContent = cytData.metadata.total;
-                document.getElementById('stat-ejes').textContent = cytData.eje_stats.length;
-                document.getElementById('card-cyt-total').textContent = cytData.metadata.total;
-                const bloqueCount = (cytData.bloque_stats || []).filter(s => s.bloque !== 'Sin datos').length;
-                document.getElementById('stat-bloques').textContent = bloqueCount;
-
-                // Load IA data
-                try {
-                    const iaResp = await fetch('bills_data.json');
-                    const iaData = await iaResp.json();
-                    const iaTotal = (iaData.bills || []).filter(b => String(b.dashboard || '').toUpperCase() !== 'NO').length;
-                    document.getElementById('stat-ia').textContent = iaTotal;
-                    document.getElementById('card-ia-total').textContent = iaTotal;
-                } catch(e) {
-                    document.getElementById('stat-ia').textContent = '—';
-                }
-
-                // Trigger reveal
-                setTimeout(observeReveals, 100);
-            } catch (e) {
-                console.error('Error loading data:', e);
-            }
-        }
-
-        function observeReveals() {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-        }
-
-        // Animate stat numbers
-        function animateNumbers() {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const el = entry.target;
-                        const target = parseInt(el.textContent);
-                        if (isNaN(target)) return;
-                        const duration = 1200;
-                        const start = performance.now();
-                        function step(ts) {
-                            const progress = Math.min((ts - start) / duration, 1);
-                            const ease = 1 - Math.pow(1 - progress, 3);
-                            el.textContent = Math.round(target * ease);
-                            if (progress < 1) requestAnimationFrame(step);
-                        }
-                        el.textContent = '0';
-                        requestAnimationFrame(step);
-                        observer.unobserve(el);
-                    }
-                });
-            }, { threshold: 0.5 });
-
-            document.querySelectorAll('.stat-number').forEach(el => observer.observe(el));
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            setupSubscribeForm();
-            init().then(() => {
-                animateNumbers();
-            });
-        });
-    </script>
+  document.addEventListener('DOMContentLoaded', async () => {
+    CyT.setupSubscribe(document.getElementById('subscribeForm'), document.getElementById('subscribeMessage'), 'Suscribirme');
+    cargarAgenda();
+    let iaIds = new Set();
+    try { iaIds = await cargarCifras(); } catch (e) { console.error('Error cargando cifras:', e); }
+    cargarRecientes(iaIds);
+  });
+</script>
 </body>
 </html>
