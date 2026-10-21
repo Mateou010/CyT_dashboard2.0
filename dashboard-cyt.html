@@ -3,29 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comisión de CyT — Dashboard Ciencia y Tecnología</title>
+<title>Dashboard Ciencia y Tecnología — Monitor CyT</title>
+<meta name="description" content="Los proyectos de ley de la Comisión de Ciencia, Tecnología e Innovación Productiva de Diputados, por grupo temático, bloque político y autor.">
+<link rel="canonical" href="https://cyt.openarg.org/dashboard-cyt.html">
+<meta name="theme-color" content="#102238">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Monitor CyT · H. Cámara de Diputados">
+<meta property="og:locale" content="es_AR">
+<meta property="og:url" content="https://cyt.openarg.org/dashboard-cyt.html">
+<meta property="og:title" content="Dashboard Ciencia y Tecnología — Monitor CyT">
+<meta property="og:description" content="Los proyectos de ley de la comisión, por grupo temático, bloque político y autor.">
+<meta property="og:image" content="https://cyt.openarg.org/img/og-cyt.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Monitor de Ciencia y Tecnología del Congreso, sobre una foto del recinto de la Cámara de Diputados">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cyt.openarg.org/img/og-cyt.jpg">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <style>
-/* ── NECO FONT ───────────────────────────── */
-@font-face {
-  font-family: 'Neco';
-  src: url('fonts/Neco-Variable.woff2') format('woff2'),
-       url('fonts/Neco-Variable.woff') format('woff');
-  font-weight: 400 900;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Neco';
-  src: url('fonts/Neco-VariableItalic.woff2') format('woff2'),
-       url('fonts/Neco-VariableItalic.woff') format('woff');
-  font-weight: 400 900;
-  font-display: swap;
-  font-style: italic;
-}
-
 /* ── TOKENS ────────────────────────────── */
 :root {
   --bg:      #f0f5fa;
@@ -370,24 +367,42 @@ footer { border-top:1px solid var(--border); padding:24px; text-align:center }
 .footer-text { font-size:12px; color:var(--muted) }
 
 </style>
+<link rel="stylesheet" href="visual-refresh.css">
+<link rel="stylesheet" href="site.css">
+<script src="remove-emoji.js" defer></script>
 </head>
-<body>
+<body class="page-dashboard page-cyt site">
 
-<div class="app">
-
-  <!-- HEADER -->
-  <header class="header">
-    <div class="header-top">
-      <div class="logo">
-        <div class="logo-icon">🔬</div>
-        <div class="logo-text">
-          <h1><span style="color:var(--violet)">Comisión de CyT</span> · Ciencia y Tecnología</h1>
-          <p>H. Cámara de Diputados de la Nación Argentina</p>
-        </div>
-      </div>
-      <a class="back-link" href="index.html">← Volver al inicio</a>
+<header class="site-hero">
+  <img class="site-hero__img" src="img/laboratorio.jpg" alt="" style="object-position: center 45%">
+  <div class="site-hero__shade"></div>
+  <nav class="site-nav site-wrap" aria-label="Principal">
+    <a class="site-brand" href="/">
+      <span class="site-brand__mark">CyT</span>
+      <span class="site-brand__text"><strong>Monitor Legislativo CyT</strong><span>H. Cámara de Diputados</span></span>
+    </a>
+    <div class="site-links">
+      <a href="dashboard-cyt.html" aria-current="page">Ciencia y Tecnología</a>
+      <a href="dashboard.html">Inteligencia Artificial</a>
+      <a href="comision.html">La comisión</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="presupuesto-2026.html">Presupuesto 2026</a>
     </div>
-  </header>
+  </nav>
+  <div class="site-hero__body site-wrap">
+    <div class="site-hero__text">
+      <span class="site-kicker">Dashboard · Período 2025–2026</span>
+      <h1>Ciencia y Tecnología</h1>
+      <p class="site-hero__lead">Los proyectos de ley presentados ante la Comisión de Ciencia, Tecnología e Innovación Productiva, agrupados por tema, bloque político y autor.</p>
+    </div>
+    <div class="site-hero__stats">
+      <div class="site-hero__stat"><strong id="heroTotal">—</strong><span>proyectos de ley</span></div>
+      <div class="site-hero__stat"><strong id="heroGrupos">—</strong><span>grupos temáticos</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="app" style="padding-top: 56px">
 
   <!-- INTRO -->
   <div class="intro-text" id="introCard">
@@ -463,8 +478,21 @@ footer { border-top:1px solid var(--border); padding:24px; text-align:center }
   </div>
 </div>
 
-<footer>
-  <div class="footer-text">Comisión de CyT · H. Cámara de Diputados de la Nación Argentina · 2025–2026</div>
+<footer class="site-footer">
+  <div class="site-footer__inner site-wrap">
+    <div class="site-footer__about">
+      <strong>Monitor Legislativo CyT</strong>
+      <span>Análisis de la Comisión de Ciencia, Tecnología e Innovación Productiva de la H. Cámara de Diputados de la Nación. Datos abiertos, código abierto.</span>
+    </div>
+    <div class="site-footer__links">
+      <a href="/">Inicio</a>
+      <a href="dashboard.html">Inteligencia Artificial</a>
+      <a href="comision.html">La comisión</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="presupuesto-2026.html">Presupuesto 2026</a>
+    </div>
+  </div>
+  <div class="site-footer__credits site-wrap">Foto: «A group of scientists working in a laboratory», Esculab (CC0), vía Wikimedia Commons.</div>
 </footer>
 
 <script>
@@ -495,6 +523,8 @@ function renderIntro() {
     </div>
   `;
   document.getElementById('donutTotal').textContent = total;
+  document.getElementById('heroTotal').textContent = total;
+  document.getElementById('heroGrupos').textContent = CYT_DATA.length;
 }
 
 /* ── Donut chart on Canvas ── */
@@ -595,7 +625,7 @@ function drawDonut() {
       const lx = ox + Math.cos(midAngle) * labelR;
       const ly = oy + Math.sin(midAngle) * labelR;
       ctx.fillStyle = '#fff';
-      ctx.font = '700 13px Neco, sans-serif';
+      ctx.font = '600 13px Inter, sans-serif';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.fillText(pct + '%', lx, ly);
@@ -675,7 +705,7 @@ function drawSubDonut() {
       const lx = ox + Math.cos(midAngle) * labelR;
       const ly = oy + Math.sin(midAngle) * labelR;
       subCtx.fillStyle = '#fff';
-      subCtx.font = '700 12px Neco, sans-serif';
+      subCtx.font = '600 12px Inter, sans-serif';
       subCtx.textAlign = 'center';
       subCtx.textBaseline = 'middle';
       subCtx.fillText(`${pct}%`, lx, ly);
